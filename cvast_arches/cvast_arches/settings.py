@@ -149,12 +149,16 @@ STATIC_ROOT = '/var/www/media'
 INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,'storages',)
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-AWS_STORAGE_BUCKET_NAME = get_env_variable('DJANGO_S3_AWS_STORAGE_BUCKET_NAME')
-AWS_ACCESS_KEY_ID = get_env_variable('DJANGO_S3_AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = get_env_variable('DJANGO_S3_AWS_SECRET_ACCESS_KEY')
-S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-MEDIA_URL = S3_URL
+AWS_STORAGE_BUCKET_NAME = get_optional_env_variable('DJANGO_S3_AWS_STORAGE_BUCKET_NAME')
+AWS_ACCESS_KEY_ID = get_optional_env_variable('DJANGO_S3_AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = get_optional_env_variable('DJANGO_S3_AWS_SECRET_ACCESS_KEY')
 AWS_QUERYSTRING_AUTH = False
+
+if AWS_STORAGE_BUCKET_NAME != None:
+    S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+    MEDIA_URL = S3_URL
+else:
+    MEDIA_URL = '%s/uploaded-media/' % DJANGO_SUBPATH
 
 
 # ROOT_DIR = ''
