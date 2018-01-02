@@ -1,8 +1,19 @@
 #/bin/bash
 
 
+APP_FOLDER=${WEB_ROOT}/${ARCHES_PROJECT}
+
+
+cd_app_folder() {
+	cd ${APP_FOLDER}
+	echo "Current work directory: ${APP_FOLDER}"
+}
+
+
 init_custom_db() {
 	
+	cd_app_folder
+
 	# Import graphs
 	if ! graphs_exist; then
 		echo "Running: python manage.py packages -o import_graphs"
