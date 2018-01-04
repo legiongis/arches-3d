@@ -158,6 +158,7 @@ if AWS_STORAGE_BUCKET_NAME != None:
     MEDIA_URL = S3_URL
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 else:
+    MEDIA_ROOT = os.path.join(APP_ROOT)
     MEDIA_URL = '%s/uploaded-media/' % DJANGO_SUBPATH
 
 
