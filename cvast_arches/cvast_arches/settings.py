@@ -128,7 +128,7 @@ STATICFILES_DIRS = (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '%s/media/' % DJANGO_SUBPATH
+STATIC_URL = '%s/static/' % DJANGO_SUBPATH
 
 FUNCTION_TEMPLATES = os.path.join(APP_ROOT, 'functions', 'templates')
 PROJECT_TEMPLATES = os.path.join(APP_ROOT, 'templates')
