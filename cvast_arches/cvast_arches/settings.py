@@ -144,7 +144,7 @@ if not SECRET_KEY:
 
 ROOT_URLCONF = 'cvast_arches.urls'
 WSGI_APPLICATION = 'cvast_arches.wsgi.application'
-STATIC_ROOT = '/var/www/media'
+STATIC_ROOT = '/www/static'
 
 INSTALLED_APPS = INSTALLED_APPS + (PACKAGE_NAME,'storages',)
 
@@ -159,7 +159,7 @@ if AWS_STORAGE_BUCKET_NAME != None:
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 else:
     MEDIA_ROOT = os.path.join(APP_ROOT)
-    MEDIA_URL = '%s/uploaded-media/' % DJANGO_SUBPATH
+    MEDIA_URL = '%s/files/' % DJANGO_SUBPATH
 
 
 # ROOT_DIR = ''
