@@ -66,7 +66,6 @@ services:
       restart: always
       image: elasticsearch:5.2
       volumes:
-        - elasticsearch-config:/usr/share/elasticsearch/config
         - elasticsearch-data:/usr/share/elasticsearch/data
       ports:
         - '9200:9200'
@@ -85,10 +84,6 @@ volumes:
     couchdb-data:
     couchdb-log:
     elasticsearch-data:
-    elasticsearch-config:
-    nginx-root:
-    nginx-conf:
-    nginx-logs:
     letsencrypt-workdir:
     letsencrypt-config:
     letsencrypt-log:
