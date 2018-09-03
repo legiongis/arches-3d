@@ -25,11 +25,11 @@ init_custom_db() {
 	# Import concepts
 	if ! concepts_exist; then
 		import_reference_data arches_3d/db/schemes/arches_concept_scheme.rdf
-		import_reference_data arches_3d/db/schemes/cvast_concept_scheme.rdf
+		import_reference_data arches_3d/db/schemes/arches_3d_concept_scheme.rdf
 	else
 		echo "Concepts already exist in the database."
 		echo "Skipping 'arches_concept_scheme.rdf'."		
-		echo "Skipping 'cvast_concept_scheme.rdf'."		
+		echo "Skipping 'arches_3d_concept_scheme.rdf'."
 	fi
 	
 	# Import collections

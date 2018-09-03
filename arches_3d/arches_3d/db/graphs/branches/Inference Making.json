@@ -1,0 +1,311 @@
+{
+    "graph": [
+        {
+            "author": " CVAST", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "b565f99a-569d-11e7-8742-0242ac120004", 
+                    "description": "", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "name": "Bibliography Reference", 
+                    "nodegroup_id": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "afa3b9ac-569d-11e7-afc7-0242ac120004", 
+                    "description": "", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "name": "Inference Making", 
+                    "nodegroup_id": "682dba9c-5511-11e7-b378-0242ac120004", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "b77178f0-56a6-11e7-8af5-0242ac120004", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Authority behind a decision or conclusion, e.g. a person or institute", 
+                    "name": "Other Authority", 
+                    "nodegroup_id": "732347e6-56a6-11e7-8e25-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "b565f99a-569d-11e7-8742-0242ac120004", 
+                    "config": {
+                        "label": "Page Number", 
+                        "maxLength": null, 
+                        "placeholder": "Enter a page number", 
+                        "width": "100%"
+                    }, 
+                    "id": "b565fe72-569d-11e7-8742-0242ac120004", 
+                    "label": "Page Number", 
+                    "node_id": "b565fbca-569d-11e7-8742-0242ac120004", 
+                    "sortorder": 1, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "b565f99a-569d-11e7-8742-0242ac120004", 
+                    "config": {
+                        "label": "Bibliographical Reference", 
+                        "options": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "1cb9b830-112f-4dd7-8043-eb970a230219", 
+                                        "id": "cbcb60aa-dbba-4f8c-8ff8-70a70bd47f5a", 
+                                        "sortorder": "", 
+                                        "text": "Bell, M., III, 1981"
+                                    }, 
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "c60970ef-cdb2-4cac-a8b0-bb1d804e4e52", 
+                                        "id": "10283adb-060d-4586-9df6-a8df8abac946", 
+                                        "sortorder": "", 
+                                        "text": "Stone, S.C., 2014"
+                                    }
+                                ], 
+                                "collector": "collector", 
+                                "conceptid": "8d299aa6-2eae-4df8-8e5e-c3974a5394eb", 
+                                "sortorder": "", 
+                                "text": "Academic Publications"
+                            }, 
+                            {
+                                "children": [
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "f84022fe-199f-4542-b436-1918c08e13c4", 
+                                        "id": "bbf3d4e2-567c-40f7-b3d7-b428f7fc5ada", 
+                                        "sortorder": "", 
+                                        "text": "Museo Archeologico di Aidone Inventory"
+                                    }
+                                ], 
+                                "collector": "", 
+                                "conceptid": "eace6ca4-08a8-42d8-a21d-9312c42dacd3", 
+                                "id": "85511db5-9361-4f41-9f86-5fb840d05f61", 
+                                "sortorder": "", 
+                                "text": "Institute Inventories"
+                            }
+                        ], 
+                        "placeholder": "Select a reference"
+                    }, 
+                    "id": "b565fd5a-569d-11e7-8742-0242ac120004", 
+                    "label": "Bibliographical Reference", 
+                    "node_id": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "sortorder": 0, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "b77178f0-56a6-11e7-8af5-0242ac120004", 
+                    "config": {
+                        "label": "Authority", 
+                        "options": [
+                            {
+                                "children": [], 
+                                "collector": "", 
+                                "conceptid": "581bbe66-a119-4d50-92e6-a7d9d465d535", 
+                                "id": "65b2b4b7-e608-4413-b6d1-edb9cea4cf2a", 
+                                "sortorder": "", 
+                                "text": "CVAST"
+                            }, 
+                            {
+                                "children": [], 
+                                "collector": "", 
+                                "conceptid": "1dba0917-c9bb-427a-b8c5-53cd716a1634", 
+                                "id": "c6481d9b-7e10-4e88-8219-763cf5743e03", 
+                                "sortorder": "", 
+                                "text": "Elisa Bonacini"
+                            }, 
+                            {
+                                "children": [], 
+                                "collector": "", 
+                                "conceptid": "8c870b29-e841-48ca-8b2c-482d52a1168f", 
+                                "id": "b54945f3-704c-46ce-87ad-a779a499585e", 
+                                "sortorder": "", 
+                                "text": "Victor Manuel Lopez-Menchero Bendicho"
+                            }
+                        ], 
+                        "placeholder": "Select one or more authorities"
+                    }, 
+                    "id": "41948bbc-56a7-11e7-9698-0242ac120004", 
+                    "label": "Authority", 
+                    "node_id": "732347e6-56a6-11e7-8e25-0242ac120004", 
+                    "sortorder": 0, 
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                }
+            ], 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "682dba9c-5511-11e7-b378-0242ac120004", 
+                    "edgeid": "b5660408-569d-11e7-8742-0242ac120004", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in", 
+                    "rangenode_id": "b565f45e-569d-11e7-8742-0242ac120004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "edgeid": "b56601d8-569d-11e7-8742-0242ac120004", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by", 
+                    "rangenode_id": "b565fbca-569d-11e7-8742-0242ac120004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "682dba9c-5511-11e7-b378-0242ac120004", 
+                    "edgeid": "73234c64-56a6-11e7-8e25-0242ac120004", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by", 
+                    "rangenode_id": "732347e6-56a6-11e7-8e25-0242ac120004"
+                }
+            ], 
+            "forms": [], 
+            "forms_x_cards": [], 
+            "functions_x_graphs": [], 
+            "graphid": "682dc0f0-5511-11e7-b378-0242ac120004", 
+            "iconclass": "fa fa-user-md", 
+            "isactive": true, 
+            "isresource": false, 
+            "mapfeaturecolor": "#FF0000", 
+            "maplinewidth": 1, 
+            "mappointsize": 3, 
+            "name": "Inference Making", 
+            "nodegroups": [
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "682dba9c-5511-11e7-b378-0242ac120004", 
+                    "parentnodegroup_id": null
+                }, 
+                {
+                    "cardinality": "n", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "parentnodegroup_id": "682dba9c-5511-11e7-b378-0242ac120004"
+                }, 
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "732347e6-56a6-11e7-8e25-0242ac120004", 
+                    "parentnodegroup_id": "682dba9c-5511-11e7-b378-0242ac120004"
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": {
+                        "rdmCollection": "aae46cf5-c73c-4af2-af8c-9d8e1b6908bf"
+                    }, 
+                    "datatype": "concept", 
+                    "description": "", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "is_collector": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Bibliographical Reference", 
+                    "nodegroup_id": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "nodeid": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E31_Document", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in"
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "is_collector": true, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Inference Making", 
+                    "nodegroup_id": "682dba9c-5511-11e7-b378-0242ac120004", 
+                    "nodeid": "682dba9c-5511-11e7-b378-0242ac120004", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMsci/S5_Inference_Making", 
+                    "parentproperty": ""
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "is_collector": false, 
+                    "issearchable": false, 
+                    "istopnode": false, 
+                    "name": "Page Number", 
+                    "nodegroup_id": "b565f45e-569d-11e7-8742-0242ac120004", 
+                    "nodeid": "b565fbca-569d-11e7-8742-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": "1500b540-765c-4d50-82a5-36888127974d"
+                    }, 
+                    "datatype": "concept-list", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                    "is_collector": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Actor Authority", 
+                    "nodegroup_id": "732347e6-56a6-11e7-8e25-0242ac120004", 
+                    "nodeid": "732347e6-56a6-11e7-8e25-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": null, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "682dc0f0-5511-11e7-b378-0242ac120004", 
+                "is_collector": true, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Inference Making", 
+                "nodegroup_id": "682dba9c-5511-11e7-b378-0242ac120004", 
+                "nodeid": "682dba9c-5511-11e7-b378-0242ac120004", 
+                "ontologyclass": "http://www.ics.forth.gr/isl/CRMsci/S5_Inference_Making", 
+                "parentproperty": ""
+            }, 
+            "subtitle": "Decision-making on the basis of an authority", 
+            "version": ""
+        }
+    ], 
+    "metadata": {
+        "db": "PostgreSQL 9.6.3 on x86_64-pc-linux-gnu, compiled by gcc (Debian 4.9.2-10) 4.9.2, 64-bit", 
+        "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
+        "os": "Linux", 
+        "os version": "4.9.36-moby"
+    }
+}
