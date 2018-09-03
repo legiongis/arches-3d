@@ -4,7 +4,7 @@ services:
     arches:
       container_name: arches
       restart: always
-      image: cvast/cvast-arches:latest
+      image: globaldigitalheritage/arches-3d:latest
       build:
         context: .
         dockerfile: ./Dockerfile
