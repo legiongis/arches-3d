@@ -1,7 +1,7 @@
-<rdf:RDF 
-    xmlns:arches="http://www.archesproject.org/" 
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+<rdf:RDF
+    xmlns:arches="http://www.archesproject.org/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dcterms="http://purl.org/dc/terms/">
     <skos:Concept rdf:about="http://www.archesproject.org/60e8794a-c262-4365-af33-cd9637d452a2">
         <skos:inScheme>
@@ -10,7 +10,7 @@
                 <skos:hasTopConcept rdf:resource="http://www.archesproject.org/563ea71c-aa14-4e69-a3d2-328c0c92c7e8"/>
                 <skos:hasTopConcept rdf:resource="http://www.archesproject.org/b798aa18-bf5f-480d-8ec0-1d8e552faf8c"/>
                 <dcterms:title xml:lang="en-US">
-{"id": "3308f469-4728-4a09-8138-eefef48574af", "value": "CVAST"}
+{"id": "3308f469-4728-4a09-8138-eefef48574af", "value": "Arches_3D"}
 </dcterms:title>
                 <skos:hasTopConcept rdf:resource="http://www.archesproject.org/92d7af67-6e56-44b4-82aa-77dfe8166f59"/>
                 <skos:hasTopConcept rdf:resource="http://www.archesproject.org/9ee505f4-d654-455a-a97c-71e45289b96f"/>
@@ -324,7 +324,7 @@
             <skos:Concept rdf:about="http://www.archesproject.org/581bbe66-a119-4d50-92e6-a7d9d465d535">
                 <skos:inScheme rdf:resource="http://www.archesproject.org/4e5ceaa5-441d-4c14-b6fd-672127c18764"/>
                 <skos:prefLabel xml:lang="en-US">
-{"id": "65b2b4b7-e608-4413-b6d1-edb9cea4cf2a", "value": "CVAST"}
+{"id": "65b2b4b7-e608-4413-b6d1-edb9cea4cf2a", "value": "Arches_3D"}
 </skos:prefLabel>
             </skos:Concept>
         </skos:narrower>
