@@ -34,6 +34,7 @@ services:
         - '81:8000'
       depends_on:
         - db
+        - couchdb
         - elasticsearch
 
     db:
