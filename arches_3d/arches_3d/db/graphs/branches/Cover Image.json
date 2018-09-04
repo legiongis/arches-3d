@@ -1,0 +1,107 @@
+{
+    "graph": [
+        {
+            "author": " GDH", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "865cb150-b021-11e8-bcc1-0242ac130005", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "description": "", 
+                    "graph_id": "865b0670-b021-11e8-bcc1-0242ac130005", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Add a single cover image", 
+                    "is_editable": true, 
+                    "name": "Cover Image", 
+                    "nodegroup_id": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                    "sortorder": null, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "865cb150-b021-11e8-bcc1-0242ac130005", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "b3ff5c7a-b021-11e8-8bff-0242ac130005", 
+                    "label": "Cover Image", 
+                    "node_id": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                    "sortorder": 0, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }
+            ], 
+            "color": null, 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [], 
+            "forms": [], 
+            "forms_x_cards": [], 
+            "functions_x_graphs": [], 
+            "graphid": "865b0670-b021-11e8-bcc1-0242ac130005", 
+            "iconclass": "fa fa-image", 
+            "is_editable": true, 
+            "isactive": true, 
+            "isresource": false, 
+            "jsonldcontext": null, 
+            "name": "Cover Image", 
+            "nodegroups": [
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                    "parentnodegroup_id": null
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": null, 
+                    "datatype": "file-list", 
+                    "description": "", 
+                    "graph_id": "865b0670-b021-11e8-bcc1-0242ac130005", 
+                    "is_collector": true, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Cover Image", 
+                    "nodegroup_id": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                    "nodeid": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
+                    "parentproperty": ""
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": null, 
+                "datatype": "file-list", 
+                "description": "", 
+                "graph_id": "865b0670-b021-11e8-bcc1-0242ac130005", 
+                "is_collector": true, 
+                "isrequired": true, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Cover Image", 
+                "nodegroup_id": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                "nodeid": "865b0184-b021-11e8-bcc1-0242ac130005", 
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image"
+            }, 
+            "subtitle": "", 
+            "version": ""
+        }
+    ], 
+    "metadata": {
+        "db": "PostgreSQL 9.6.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 6.4.0) 6.4.0, 64-bit", 
+        "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
+        "os": "Linux", 
+        "os version": "4.9.93-linuxkit-aufs"
+    }
+}
