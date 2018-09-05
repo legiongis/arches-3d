@@ -1430,38 +1430,7 @@
                     "sortorder": 4
                 }
             ], 
-            "functions_x_graphs": [
-                {
-                    "config": {
-                        "triggering_nodegroups": [
-                            "9f210d2d-e74a-11e6-84a6-026d961c88e6"
-                        ]
-                    }, 
-                    "function_id": "60000000-0000-0000-0000-000000000000", 
-                    "graph_id": "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
-                    "id": "36693082-934a-11e7-b86b-0242ac120004"
-                }, 
-                {
-                    "config": {
-                        "description": {
-                            "nodegroup_id": "aa4096f1-e74a-11e6-84a6-026d961c88e6", 
-                            "string_template": "<Title>, <Title Type>"
-                        }, 
-                        "map_popup": {
-                            "nodegroup_id": "aa4096f1-e74a-11e6-84a6-026d961c88e6", 
-                            "string_template": "<Title>"
-                        }, 
-                        "name": {
-                            "nodegroup_id": "aa4096f1-e74a-11e6-84a6-026d961c88e6", 
-                            "string_template": "<Title>"
-                        }, 
-                        "triggering_nodegroups": []
-                    }, 
-                    "function_id": "60000000-0000-0000-0000-000000000001", 
-                    "graph_id": "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
-                    "id": "3669595e-934a-11e7-b86b-0242ac120004"
-                }
-            ], 
+            "functions_x_graphs": [],
             "graphid": "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
             "iconclass": "fa fa-file", 
             "is_editable": false, 
