@@ -12,7 +12,10 @@ except ImportError:
     pass
 
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
+STATICFILES_DIRS = (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
+
+RESOURCE_GRAPH_LOCATIONS = (
+    os.path.join(APP_ROOT, 'db', 'graphs', 'branches'), os.path.join(APP_ROOT, 'db', 'graphs', 'resource_models'))
 
 DATATYPE_LOCATIONS.append('arches_3d.datatypes')
 FUNCTION_LOCATIONS.append('arches_3d.functions')
@@ -54,7 +57,6 @@ DATABASES = {
     }
 }
 
-
 ALLOWED_HOSTS = []
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
@@ -63,18 +65,18 @@ STATIC_ROOT = '/var/www/media'
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
-LOGGING = {   'disable_existing_loggers': False,
-    'handlers': {   'file': {   'class': 'logging.FileHandler',
-                                'filename': os.path.join(APP_ROOT, 'arches.log'),
-                                'level': 'DEBUG'}},
-    'loggers': {   'arches': {   'handlers': [   'file'],
-                                 'level': 'DEBUG',
-                                 'propagate': True}},
-    'version': 1}
+LOGGING = {'disable_existing_loggers': False,
+           'handlers': {'file': {'class': 'logging.FileHandler',
+                                 'filename': os.path.join(APP_ROOT, 'arches.log'),
+                                 'level': 'DEBUG'}},
+           'loggers': {'arches': {'handlers': ['file'],
+                                  'level': 'DEBUG',
+                                  'propagate': True}},
+           'version': 1}
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 
-MEDIA_ROOT =  os.path.join(APP_ROOT)
+MEDIA_ROOT = os.path.join(APP_ROOT)
 
 TILE_CACHE_CONFIG = {
     "name": "Disk",
@@ -103,10 +105,10 @@ CACHES = {
     }
 }
 
-#Identify the usernames and duration (seconds) for which you want to cache the time wheel
+# Identify the usernames and duration (seconds) for which you want to cache the time wheel
 CACHE_BY_USER = {'anonymous': 3600 * 24}
 
-APP_TITLE = 'Arches | Heritage Data Management'
+APP_TITLE = 'Arches 3D | Global Digital Heritage'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = '2018'
 
