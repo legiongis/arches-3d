@@ -6,12 +6,16 @@
                 {
                     "active": true, 
                     "cardid": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
                     "description": "The Measurement branch measures instances of a Heritage Resource E18 or a Heritage Resource Group E27\n\nRelates to those resource models via P39i", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Capture the measurements associated to this resource.", 
+                    "is_editable": true, 
                     "name": "Measurement", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "sortorder": null, 
@@ -19,121 +23,6 @@
                 }
             ], 
             "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
-                    "config": {
-                        "label": "Measurement Value", 
-                        "max": "", 
-                        "min": "", 
-                        "placeholder": "E.g. 12.6", 
-                        "width": "100%"
-                    }, 
-                    "id": "fc0448fe-ab8d-11e6-84a5-026d961c88e6", 
-                    "label": "Measurement Value", 
-                    "node_id": "578120f5-ab8d-11e6-84a5-026d961c88e6", 
-                    "sortorder": 3, 
-                    "widget_id": "10000000-0000-0000-0000-000000000008"
-                }, 
-                {
-                    "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
-                    "config": {
-                        "label": "Measurement Method", 
-                        "options": [
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "b777e3c0-164e-4ec3-8fa2-f406e5d7fcb2", 
-                                "id": "4834daca-f59a-4386-9fe6-75ebd4426485", 
-                                "sortorder": "", 
-                                "text": "On Digital Object"
-                            }, 
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "97661934-b931-484b-81b5-b4d5aa449b9e", 
-                                "id": "8beb13df-9743-4886-a933-517e28f12376", 
-                                "sortorder": "", 
-                                "text": "On Physical Object"
-                            }
-                        ], 
-                        "placeholder": "How was it measured?"
-                    }, 
-                    "id": "15c398e6-4f74-11e7-8d7b-0242ac120004", 
-                    "label": "Measurement Method", 
-                    "node_id": "2c3161c2-4f6e-11e7-9173-0242ac130004", 
-                    "sortorder": 0, 
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                }, 
-                {
-                    "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
-                    "config": {
-                        "label": "Measurement Type", 
-                        "options": [
-                            {
-                                "children": [
-                                    {
-                                        "children": [], 
-                                        "collector": "", 
-                                        "conceptid": "2d152d1d-17e5-4fed-ac36-919f823be256", 
-                                        "id": "857d8806-0e0f-4f7d-aed6-fad250ef97ea", 
-                                        "sortorder": "", 
-                                        "text": "Breadth"
-                                    }, 
-                                    {
-                                        "children": [], 
-                                        "collector": "", 
-                                        "conceptid": "99e96cb3-21ec-499b-9536-2ed69754d2c5", 
-                                        "id": "8a3fe0fe-3c5f-4a8e-a08d-b2fe4ad95653", 
-                                        "sortorder": "", 
-                                        "text": "Depth"
-                                    }, 
-                                    {
-                                        "children": [], 
-                                        "collector": "", 
-                                        "conceptid": "d08e6562-85f2-4df0-9b26-cf3743e7af5b", 
-                                        "id": "4553010c-49cf-4cca-bd2d-6ff6462c7b25", 
-                                        "sortorder": "", 
-                                        "text": "Diameter"
-                                    }, 
-                                    {
-                                        "children": [], 
-                                        "collector": "", 
-                                        "conceptid": "5e0124cc-c308-4fec-ab60-08a39ba1f643", 
-                                        "id": "db42d2f8-d2d7-465f-b1b2-189f433a6b7c", 
-                                        "sortorder": "", 
-                                        "text": "Height"
-                                    }, 
-                                    {
-                                        "children": [], 
-                                        "collector": "", 
-                                        "conceptid": "8a0cf26a-2184-4af4-9df4-5ee5dc4879b0", 
-                                        "id": "88f2a040-48c0-4240-a9e2-75312a6dd04d", 
-                                        "sortorder": "", 
-                                        "text": "Length"
-                                    }
-                                ], 
-                                "collector": "collector", 
-                                "conceptid": "184c95ac-1825-4b4c-9e8e-3b066361a6e8", 
-                                "sortorder": "", 
-                                "text": "Length"
-                            }, 
-                            {
-                                "children": [], 
-                                "collector": "", 
-                                "conceptid": "32a94c6d-d55f-4019-9f56-3ac7934b59a3", 
-                                "id": "a9bfce58-2a2f-4c48-a8fe-88f1b24463d6", 
-                                "sortorder": "", 
-                                "text": "Weight"
-                            }
-                        ], 
-                        "placeholder": "Length, weight, etc."
-                    }, 
-                    "id": "fc0448ff-ab8d-11e6-84a5-026d961c88e6", 
-                    "label": "Measurement Type", 
-                    "node_id": "f4a13701-ab8a-11e6-84a5-026d961c88e6", 
-                    "sortorder": 1, 
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                }, 
                 {
                     "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
                     "config": {
@@ -146,11 +35,13 @@
                     "label": "Measurement Description", 
                     "node_id": "c4d5d7fa-4f73-11e7-80e0-0242ac120004", 
                     "sortorder": 4, 
+                    "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000005"
                 }, 
                 {
                     "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
                     "config": {
+                        "defaultValue": "", 
                         "label": "Measurement Unit", 
                         "options": [
                             {
@@ -280,21 +171,149 @@
                     "label": "Measurement Unit", 
                     "node_id": "8ceadf51-ab8d-11e6-84a5-026d961c88e6", 
                     "sortorder": 2, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Measurement Method", 
+                        "options": [
+                            {
+                                "children": [], 
+                                "collector": "", 
+                                "conceptid": "b777e3c0-164e-4ec3-8fa2-f406e5d7fcb2", 
+                                "id": "4834daca-f59a-4386-9fe6-75ebd4426485", 
+                                "sortorder": "", 
+                                "text": "On Digital Object"
+                            }, 
+                            {
+                                "children": [], 
+                                "collector": "", 
+                                "conceptid": "97661934-b931-484b-81b5-b4d5aa449b9e", 
+                                "id": "8beb13df-9743-4886-a933-517e28f12376", 
+                                "sortorder": "", 
+                                "text": "On Physical Object"
+                            }
+                        ], 
+                        "placeholder": "How was it measured?"
+                    }, 
+                    "id": "15c398e6-4f74-11e7-8d7b-0242ac120004", 
+                    "label": "Measurement Method", 
+                    "node_id": "2c3161c2-4f6e-11e7-9173-0242ac130004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Measurement Value", 
+                        "max": "", 
+                        "min": "", 
+                        "placeholder": "E.g. 12.6", 
+                        "precision": "", 
+                        "prefix": "", 
+                        "step": "", 
+                        "suffix": "", 
+                        "width": "100%"
+                    }, 
+                    "id": "fc0448fe-ab8d-11e6-84a5-026d961c88e6", 
+                    "label": "Measurement Value", 
+                    "node_id": "578120f5-ab8d-11e6-84a5-026d961c88e6", 
+                    "sortorder": 3, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000008"
+                }, 
+                {
+                    "card_id": "9bab22c1-ab8a-11e6-84a5-026d961c88e6", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Measurement Type", 
+                        "options": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "2d152d1d-17e5-4fed-ac36-919f823be256", 
+                                        "id": "857d8806-0e0f-4f7d-aed6-fad250ef97ea", 
+                                        "sortorder": "", 
+                                        "text": "Breadth"
+                                    }, 
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "99e96cb3-21ec-499b-9536-2ed69754d2c5", 
+                                        "id": "8a3fe0fe-3c5f-4a8e-a08d-b2fe4ad95653", 
+                                        "sortorder": "", 
+                                        "text": "Depth"
+                                    }, 
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "d08e6562-85f2-4df0-9b26-cf3743e7af5b", 
+                                        "id": "4553010c-49cf-4cca-bd2d-6ff6462c7b25", 
+                                        "sortorder": "", 
+                                        "text": "Diameter"
+                                    }, 
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "5e0124cc-c308-4fec-ab60-08a39ba1f643", 
+                                        "id": "db42d2f8-d2d7-465f-b1b2-189f433a6b7c", 
+                                        "sortorder": "", 
+                                        "text": "Height"
+                                    }, 
+                                    {
+                                        "children": [], 
+                                        "collector": "", 
+                                        "conceptid": "8a0cf26a-2184-4af4-9df4-5ee5dc4879b0", 
+                                        "id": "88f2a040-48c0-4240-a9e2-75312a6dd04d", 
+                                        "sortorder": "", 
+                                        "text": "Length"
+                                    }
+                                ], 
+                                "collector": "collector", 
+                                "conceptid": "184c95ac-1825-4b4c-9e8e-3b066361a6e8", 
+                                "sortorder": "", 
+                                "text": "Length"
+                            }, 
+                            {
+                                "children": [], 
+                                "collector": "", 
+                                "conceptid": "32a94c6d-d55f-4019-9f56-3ac7934b59a3", 
+                                "id": "a9bfce58-2a2f-4c48-a8fe-88f1b24463d6", 
+                                "sortorder": "", 
+                                "text": "Weight"
+                            }
+                        ], 
+                        "placeholder": "Length, weight, etc."
+                    }, 
+                    "id": "fc0448ff-ab8d-11e6-84a5-026d961c88e6", 
+                    "label": "Measurement Type", 
+                    "node_id": "f4a13701-ab8a-11e6-84a5-026d961c88e6", 
+                    "sortorder": 1, 
+                    "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 }
             ], 
+            "color": null, 
+            "config": {}, 
             "deploymentdate": null, 
             "deploymentfile": null, 
             "description": "The Measurement branch measures instances of a Heritage Resource E18 or a Heritage Resource Group E27\n\nRelates to those resource models via P39i", 
             "edges": [
                 {
                     "description": null, 
-                    "domainnode_id": "f2d2fbe7-ab8c-11e6-84a5-026d961c88e6", 
-                    "edgeid": "8ceadf52-ab8d-11e6-84a5-026d961c88e6", 
+                    "domainnode_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
+                    "edgeid": "f4a13702-ab8a-11e6-84a5-026d961c88e6", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit", 
-                    "rangenode_id": "8ceadf51-ab8d-11e6-84a5-026d961c88e6"
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "rangenode_id": "f4a13701-ab8a-11e6-84a5-026d961c88e6"
                 }, 
                 {
                     "description": null, 
@@ -326,32 +345,29 @@
                 {
                     "description": null, 
                     "domainnode_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
-                    "edgeid": "f4a13702-ab8a-11e6-84a5-026d961c88e6", 
-                    "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
-                    "rangenode_id": "f4a13701-ab8a-11e6-84a5-026d961c88e6"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "edgeid": "f2d2fbe8-ab8c-11e6-84a5-026d961c88e6", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "name": null, 
                     "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension", 
                     "rangenode_id": "f2d2fbe7-ab8c-11e6-84a5-026d961c88e6"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "f2d2fbe7-ab8c-11e6-84a5-026d961c88e6", 
+                    "edgeid": "8ceadf52-ab8d-11e6-84a5-026d961c88e6", 
+                    "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit", 
+                    "rangenode_id": "8ceadf51-ab8d-11e6-84a5-026d961c88e6"
                 }
             ], 
-            "forms": [], 
-            "forms_x_cards": [], 
             "functions_x_graphs": [], 
             "graphid": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
-            "iconclass": "fa fa-anchor", 
+            "iconclass": "fa fa-arrows-alt", 
+            "is_editable": true, 
             "isactive": true, 
             "isresource": false, 
-            "mapfeaturecolor": "#FF0000", 
-            "maplinewidth": 1, 
-            "mappointsize": 3, 
+            "jsonldcontext": null, 
             "name": "Measurement", 
             "nodegroups": [
                 {
@@ -368,13 +384,15 @@
                     "description": "Represents a single node in a graph", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Measurement", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "f2d2fbe7-ab8c-11e6-84a5-026d961c88e6", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": null, 
@@ -382,13 +400,15 @@
                     "description": "Represents a single node in a graph", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Measurement Value", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "578120f5-ab8d-11e6-84a5-026d961c88e6", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E60_Number", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P90_has_value", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": {
@@ -398,13 +418,15 @@
                     "description": "Represents a single node in a graph", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Measurement Method", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "2c3161c2-4f6e-11e7-9173-0242ac130004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": null, 
@@ -412,13 +434,15 @@
                     "description": "Represents a single node in a graph", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Measurement Description", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "c4d5d7fa-4f73-11e7-80e0-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E62_String", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": {
@@ -428,13 +452,15 @@
                     "description": "Represents a single node in a graph", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Measurement Type", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "f4a13701-ab8a-11e6-84a5-026d961c88e6", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": null, 
@@ -442,13 +468,15 @@
                     "description": "", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": true, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": true, 
-                    "name": "Measurement Event", 
+                    "name": "Measurement", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement", 
-                    "parentproperty": ""
+                    "parentproperty": "", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": {
@@ -458,18 +486,19 @@
                     "description": "Represents a single node in a graph", 
                     "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                     "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Measurement Unit", 
                     "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                     "nodeid": "8ceadf51-ab8d-11e6-84a5-026d961c88e6", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit"
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit", 
+                    "sortorder": 0
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [], 
-            "reports": [], 
             "resource_2_resource_constraints": [], 
             "root": {
                 "config": null, 
@@ -477,22 +506,24 @@
                 "description": "", 
                 "graph_id": "9bab22bf-ab8a-11e6-84a5-026d961c88e6", 
                 "is_collector": true, 
+                "isrequired": false, 
                 "issearchable": true, 
                 "istopnode": true, 
-                "name": "Measurement Event", 
+                "name": "Measurement", 
                 "nodegroup_id": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                 "nodeid": "9bab22be-ab8a-11e6-84a5-026d961c88e6", 
                 "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement", 
-                "parentproperty": ""
+                "sortorder": 0
             }, 
             "subtitle": "Stores measurement type, values, and units", 
+            "template_id": "50000000-0000-0000-0000-000000000001", 
             "version": ""
         }
     ], 
     "metadata": {
-        "db": "PostgreSQL 9.6.3 on x86_64-pc-linux-gnu, compiled by gcc (Debian 4.9.2-10) 4.9.2, 64-bit", 
+        "db": "PostgreSQL 9.6.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 6.4.0) 6.4.0, 64-bit", 
         "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
         "os": "Linux", 
-        "os version": "4.9.36-moby"
+        "os version": "4.9.93-linuxkit-aufs"
     }
 }
