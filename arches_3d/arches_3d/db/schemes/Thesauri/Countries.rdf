@@ -1,0 +1,3170 @@
+<rdf:RDF xmlns:arches="http://www.archesproject.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/">
+    <skos:Concept rdf:about="http://www.archesproject.org/d9bdc1e8-ef0e-4fec-a425-583faa022cd1">
+        <arches:sortorder xml:lang="en">
+            {"id": "5d26fefc-8639-46bf-a205-ebd70ed859e4", "value": "209"}
+        </arches:sortorder>
+        <skos:inScheme>
+            <skos:ConceptScheme rdf:about="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4dbc89a6-32bc-45f0-876b-efb09f001a3e", "value":
+                    "http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"}
+                </dcterms:identifier>
+                <skos:hasTopConcept rdf:resource="http://www.archesproject.org/c7e1dcf4-8cd9-496c-975a-458ab74231e4"/>
+                <dcterms:title xml:lang="en">
+                    {"id": "a45deed6-b87c-4090-b6da-5c46de0bde45", "value": "Countries"}
+                </dcterms:title>
+            </skos:ConceptScheme>
+        </skos:inScheme>
+        <dcterms:identifier xml:lang="en-US">
+            {"id": "7341e045-86e8-4075-98c1-3e629e1f7090", "value":
+            "http://www.archesproject.org/d9bdc1e8-ef0e-4fec-a425-583faa022cd1"}
+        </dcterms:identifier>
+        <skos:prefLabel xml:lang="en">
+            {"id": "ea91dec1-649a-4c62-b75d-68fc23c00e83", "value": "Zimbabwe"}
+        </skos:prefLabel>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.archesproject.org/eb919b63-3003-4774-b811-2d4c81d3bd36">
+        <skos:prefLabel xml:lang="en">
+            {"id": "812d0581-9b78-4f4a-a895-325765325051", "value": "Belarus"}
+        </skos:prefLabel>
+        <arches:sortorder xml:lang="en">
+            {"id": "36acea18-e591-4ada-9dca-3e382738422b", "value": "016"}
+        </arches:sortorder>
+        <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+        <dcterms:identifier xml:lang="en-US">
+            {"id": "1e9ed626-0cc6-4a32-afaf-9a8afc3799f3", "value":
+            "http://www.archesproject.org/eb919b63-3003-4774-b811-2d4c81d3bd36"}
+        </dcterms:identifier>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.archesproject.org/43f4a67c-f7b8-4e8a-8d17-03ffb167c672">
+        <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+        <arches:sortorder xml:lang="en">
+            {"id": "9efaf958-8473-4e19-a82c-add2a6ad60a5", "value": "077"}
+        </arches:sortorder>
+        <skos:prefLabel xml:lang="en">
+            {"id": "82a654fa-8e5b-465b-9a9e-fa525ca96403", "value": "Herzegovina"}
+        </skos:prefLabel>
+        <dcterms:identifier xml:lang="en-US">
+            {"id": "3e952dac-33a9-4a0b-9b5f-0a1b7b4067c6", "value":
+            "http://www.archesproject.org/43f4a67c-f7b8-4e8a-8d17-03ffb167c672"}
+        </dcterms:identifier>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.archesproject.org/c516da87-8bb8-4dc7-ab12-76854a22d840">
+        <arches:sortorder xml:lang="en">
+            {"id": "f79b3f57-e262-4e0e-92e6-38fe5ce81a04", "value": "201"}
+        </arches:sortorder>
+        <dcterms:identifier xml:lang="en-US">
+            {"id": "b8d5a872-8d33-484f-995a-5720a016f268", "value":
+            "http://www.archesproject.org/c516da87-8bb8-4dc7-ab12-76854a22d840"}
+        </dcterms:identifier>
+        <skos:prefLabel xml:lang="en">
+            {"id": "0e2737da-5b4f-4c3a-bab8-f7b346e2b113", "value": "Vanuatu"}
+        </skos:prefLabel>
+        <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="http://www.archesproject.org/c7e1dcf4-8cd9-496c-975a-458ab74231e4">
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/1836d867-14ba-428d-ae54-25c4603712b5">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "5400c411-6807-4190-bac5-7b7f3d28a7f1", "value": "Guinea"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "986b2e2e-6bc5-4799-98f4-ee2eace390a6", "value": "074"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a450a757-0f55-4ebe-83b3-3d514bdd150e", "value":
+                    "http://www.archesproject.org/1836d867-14ba-428d-ae54-25c4603712b5"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3db26e5c-8345-4027-a406-0e3428f717ab">
+                <arches:sortorder xml:lang="en">
+                    {"id": "8841a5ad-9d2f-4cff-bb8c-4f0f73201515", "value": "166"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "8a5bb615-84f9-4efe-b016-9ffe91f326df", "value": "South Africa"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f2fa223f-4dba-48cc-a7a9-5cf67faf190e", "value":
+                    "http://www.archesproject.org/3db26e5c-8345-4027-a406-0e3428f717ab"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/c452b15e-b7af-4149-9780-3abef11f25b5">
+                <arches:sortorder xml:lang="en">
+                    {"id": "0bfbd162-0b99-4b53-8609-83d3a4c4517e", "value": "110"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "663c89a4-ef99-4904-a323-2ab5b120380b", "value":
+                    "http://www.archesproject.org/c452b15e-b7af-4149-9780-3abef11f25b5"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "76cdde69-d1ba-4ab6-b852-8c1591cad3c9", "value": "Madagascar"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/387af609-878f-4723-b88a-12eccdf78022">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e446e3ac-0bc8-4e8a-b2d4-b2812ba45e73", "value":
+                    "http://www.archesproject.org/387af609-878f-4723-b88a-12eccdf78022"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "415cefc3-32e2-4b87-9cfe-dcdb4b7f2c45", "value": "184"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "4f874eac-b993-4559-93f4-b207378aefa8", "value": "Tanzania"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/9078e0d7-812f-461e-b3af-37219cd23e9e">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1a8f6274-f32a-45f1-bbb8-4249861c0bb6", "value": "Sweden"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "8b4a90c9-18f6-416c-bdac-c28c2b28599c", "value":
+                    "http://www.archesproject.org/9078e0d7-812f-461e-b3af-37219cd23e9e"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "be56f5ff-d8a4-4577-8eaa-c03c334d73fb", "value": "179"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/29fafb99-7e40-4c0c-82b0-7063dcab55bc">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b5128992-1686-4d1e-8eb7-e1c82037d47a", "value": "Dominica"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ada3c9a9-5cde-413a-a4c6-56d5ea52810c", "value":
+                    "http://www.archesproject.org/29fafb99-7e40-4c0c-82b0-7063dcab55bc"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "930c9650-7c87-441b-9eb4-a24886eb87e8", "value": "051"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/27e70131-ff15-4f5a-a14f-cfe2ce472c9f">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d36a33da-24ae-4ff3-8e3e-2c89563491d2", "value": "Lithuania"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "857024aa-5ae3-4ec3-839c-ca69f390556e", "value": "107"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "df8af7a9-003c-4188-beeb-e46cc123aa3f", "value":
+                    "http://www.archesproject.org/27e70131-ff15-4f5a-a14f-cfe2ce472c9f"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/50968065-f2b5-447a-a18e-ae7833d4208c">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "08075944-40b1-4ed5-9e6f-92439014d066", "value":
+                    "http://www.archesproject.org/50968065-f2b5-447a-a18e-ae7833d4208c"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "a154f704-3a1a-40aa-8adb-3f770f19d15a", "value": "054"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a80db6a8-d0d3-4662-9d68-bc2b4b731abd", "value": "Egypt"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2b5cca05-36fc-40f4-adff-2fab0ea0f8e9">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f0e1eb1c-ebe8-4d92-908e-62a5c227f9d3", "value":
+                    "http://www.archesproject.org/2b5cca05-36fc-40f4-adff-2fab0ea0f8e9"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d3c83af7-03a0-448e-8758-9ee63e0e7039", "value": "076"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "fcef681e-2fba-4e72-b458-d0bdbd1f8cdb", "value": "Haiti"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/82c1563e-cf4e-4475-9d53-08a38778f1c0">
+                <arches:sortorder xml:lang="en">
+                    {"id": "40a3e340-b299-42b3-a1af-feede0e22beb", "value": "106"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6f61e105-36ce-4af3-b11c-295f1c2feaba", "value": "Liechtenstein"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ee1d1748-9a00-4519-b132-bf1f9e40ea42", "value":
+                    "http://www.archesproject.org/82c1563e-cf4e-4475-9d53-08a38778f1c0"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/08e814ce-8e52-4ce3-a88c-378b4b72aa27">
+                <arches:sortorder xml:lang="en">
+                    {"id": "666a51ce-5791-4b23-b5e9-80e46ee75bca", "value": "161"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2f960677-5970-43b5-b677-b41cba5f2b6d", "value":
+                    "http://www.archesproject.org/08e814ce-8e52-4ce3-a88c-378b4b72aa27"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "8ea8d4d8-96ee-4c52-90dd-b3b72e501153", "value": "Singapore"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a8462b3b-e1ff-490b-a5a3-cc3f1d49511e">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d61581d2-2211-4a3a-add0-070c4831664f", "value": "Iraq"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "90a19d1d-54a5-4cd8-baef-2da0c80a4d19", "value":
+                    "http://www.archesproject.org/a8462b3b-e1ff-490b-a5a3-cc3f1d49511e"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "b3015100-f00b-48db-adab-608bae455362", "value": "085"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/0820f560-c790-4ff3-b07b-cfbe7b5c5133">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2f88ad55-8466-42f2-8cac-a5697c66791f", "value":
+                    "http://www.archesproject.org/0820f560-c790-4ff3-b07b-cfbe7b5c5133"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "330ea01b-8883-4cc8-aff9-c11e122b1931", "value": "003"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "cc1dc4dc-7f68-47ba-bca8-1d7499a97c5b", "value": "America"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/138fc329-382a-47ec-a47c-09c62aa23457">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5ff3c777-0ce7-4027-8e9c-bcdfb6fa3d30", "value":
+                    "http://www.archesproject.org/138fc329-382a-47ec-a47c-09c62aa23457"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "42ac9ede-f251-4e43-b88a-14ffa27adc77", "value": "064"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "65325985-e742-44ad-ace2-d93471b57178", "value": "Gabon"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8b2d54a0-d71a-48cb-b948-f222bb15960b">
+                <arches:sortorder xml:lang="en">
+                    {"id": "1042c333-e169-4598-aff7-6cbfa8227683", "value": "143"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b38c90e7-30ed-45ff-8520-87933f3666b0", "value": "Peru"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "0aa428f1-d1e3-4e4b-9dc4-cbd5cc1eac5f", "value":
+                    "http://www.archesproject.org/8b2d54a0-d71a-48cb-b948-f222bb15960b"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ac4464ce-3f45-4544-b21e-2695d5a755b4">
+                <arches:sortorder xml:lang="en">
+                    {"id": "1d5bc862-3f5d-4661-a0c2-0ef61dac9d8b", "value": "026"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "9e1427af-35d3-43ae-8386-92d3a1cb3b37", "value":
+                    "http://www.archesproject.org/ac4464ce-3f45-4544-b21e-2695d5a755b4"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "766a84cd-7229-4e67-ba2e-1008232290cd", "value": "British"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/679a6c5c-1013-42c7-8385-6bf7da273c9b">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d75d06d9-e534-4b70-a1c7-2307324382df", "value":
+                    "http://www.archesproject.org/679a6c5c-1013-42c7-8385-6bf7da273c9b"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "a73a240f-aef4-4cb0-9f30-49f014d1c99e", "value": "121"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "98016a0e-ad7a-49d2-a7cd-8bfba34132e6", "value": "Moldova"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ca8e1eb9-59b6-483b-9555-2ca9efefcbea">
+                <arches:sortorder xml:lang="en">
+                    {"id": "6fdfdc63-5417-49f7-b6f5-853f3fb3758b", "value": "086"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b5ebd124-f628-418b-ad05-e8ff4e4e7399", "value": "Ireland"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "81d4b000-a4ca-4494-8e2f-411813200888", "value":
+                    "http://www.archesproject.org/ca8e1eb9-59b6-483b-9555-2ca9efefcbea"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4e326995-ab2b-4e26-928d-f3768ca4ba66">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "44044f24-08a6-46c0-b8ca-b296eda46853", "value":
+                    "http://www.archesproject.org/4e326995-ab2b-4e26-928d-f3768ca4ba66"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "73fc3d42-c859-4e0c-9e52-ca8b829ddcab", "value": "Uzbekistan"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "6da8a814-2e07-40ce-b427-279c30e4759d", "value": "200"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/1e19e8d9-928e-47ab-83c9-6afd4fa1b283">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "71f04a32-1b8d-42bf-818a-d0365771042a", "value": "124"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "532384cb-d036-4ff0-a244-f089dd32cd3f", "value":
+                    "http://www.archesproject.org/1e19e8d9-928e-47ab-83c9-6afd4fa1b283"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "44a4f8c6-af2f-4867-a5f9-2ad4a1149b8b", "value": "Montenegro"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/b8668055-cc72-4080-9ddd-5b8688a33f55">
+                <arches:sortorder xml:lang="en">
+                    {"id": "42343fce-da7a-4001-94a0-b4d86924b43e", "value": "191"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "2c444209-ef8a-4573-a003-9a6b148855fb", "value": "Turkey"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b9874e71-f69f-44b5-b7b5-570409925204", "value":
+                    "http://www.archesproject.org/b8668055-cc72-4080-9ddd-5b8688a33f55"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a3dde5e3-155a-440b-b6ad-81e8c884d725">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9d2e296e-2fe8-4d64-b62f-7ca94c31501d", "value": "Bosnia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "7e66208e-bcee-49a5-9f95-f81e7760bd79", "value": "023"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d1848a35-52fd-42d3-8659-b66167e02b8b", "value":
+                    "http://www.archesproject.org/a3dde5e3-155a-440b-b6ad-81e8c884d725"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/e22a8d76-8497-46ca-8860-fc7b6d315c69">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "cf3aa0df-884a-40e2-958c-ebb0aa837318", "value": "112"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "906c5d8c-475b-49a1-a1ae-87c033cc44b5", "value":
+                    "http://www.archesproject.org/e22a8d76-8497-46ca-8860-fc7b6d315c69"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "28df6511-b696-4127-b874-f89984893c76", "value": "Malaysia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/1f7057af-d494-4967-bf65-7526e8689d5e">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "423e0e67-dbf0-4979-b54b-991cc5f04504", "value": "Andorra"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b6222982-f805-4174-b994-39fbef55d2ec", "value":
+                    "http://www.archesproject.org/1f7057af-d494-4967-bf65-7526e8689d5e"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "1ed97bd0-7dd6-49e5-9af4-b6d41b98a7f6", "value": "004"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2c6ceef0-a910-46bf-bd7e-d944a1f23636">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "09536fde-8067-4843-a3fb-d03da98b57c2", "value":
+                    "http://www.archesproject.org/2c6ceef0-a910-46bf-bd7e-d944a1f23636"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "596e4b96-65e5-40f8-b5c0-734e1591e650", "value": "088"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "40fe0eec-cd89-4d15-b5cf-918cbd3b99f6", "value": "Italy"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/eec71324-6dcf-43ff-9dbc-263795efa27c">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5cd3cca5-6c50-4e21-a793-2a7543e8e4a3", "value":
+                    "http://www.archesproject.org/eec71324-6dcf-43ff-9dbc-263795efa27c"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "2f0decbd-cf90-40bf-86e8-d6318f9351d6", "value": "Saudi Arabia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "8058b8fe-d839-4252-9a0e-01e54ea7b4f9", "value": "154"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fa335be7-b0ca-4604-a69b-b4ff2ccb455d">
+                <arches:sortorder xml:lang="en">
+                    {"id": "f10c61da-999b-45f7-8eb3-222c42a57606", "value": "027"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "80cf120f-19a2-4fd1-b830-9b11478253b5", "value": "Brunei"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2721919d-2714-424a-9e95-5997f896b614", "value":
+                    "http://www.archesproject.org/fa335be7-b0ca-4604-a69b-b4ff2ccb455d"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/6b0d327c-f1ff-4e60-a9cf-fc89b91613f9">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9a99d934-9b56-47d0-a2e7-28532c013b94", "value": "Estonia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "31878995-aae4-4888-adf7-c14d78053b20", "value": "059"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f4dd1992-1acc-4282-a4d2-8d0bc87252c4", "value":
+                    "http://www.archesproject.org/6b0d327c-f1ff-4e60-a9cf-fc89b91613f9"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4469fe37-acf2-43a4-b774-970ed9a29f79">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "813dd4fb-d8d4-4e23-a85d-ac6670a58254", "value": "073"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "ea266fa8-aa08-46bd-bc22-7c64bf011038", "value": "Guatemala"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "489d545f-4113-4bb1-8e5f-ffb6ad9940aa", "value":
+                    "http://www.archesproject.org/4469fe37-acf2-43a4-b774-970ed9a29f79"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:prefLabel xml:lang="en">
+            {"id": "e5512129-e88b-4191-8e99-d359a0280133", "value": "Countries"}
+        </skos:prefLabel>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/056ccc13-5b29-41cd-8aec-cb0f17caefda">
+                <arches:sortorder xml:lang="en">
+                    {"id": "104dd2b6-6074-4c3f-b8c0-1aa7c1a33fcd", "value": "062"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "7d4d646b-8f0f-442f-9bc3-860212241802", "value":
+                    "http://www.archesproject.org/056ccc13-5b29-41cd-8aec-cb0f17caefda"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6cc15916-0b00-4e81-9d47-57f206fa9f86", "value": "Finland"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/975077f3-88e2-4f18-a901-a6c4362b4796">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bdb62488-7ae5-4df3-a9eb-eac1743837d7", "value":
+                    "http://www.archesproject.org/975077f3-88e2-4f18-a901-a6c4362b4796"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "13109e80-72ab-40a5-86ae-0348fa5d464e", "value": "Spain"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "8ec665a6-f303-44c2-afa3-218dfe5fbc48", "value": "168"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ff316eef-3847-41f6-be53-131704e38d0e">
+                <arches:sortorder xml:lang="en">
+                    {"id": "e64ce1bb-b47d-4ac2-9cdd-4626ea83fea0", "value": "203"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "12387771-2242-476b-a5bb-0a60a7ac1ff2", "value": "Venezuela"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "6c1708d1-f742-45d8-9ca8-2311c96b85cd", "value":
+                    "http://www.archesproject.org/ff316eef-3847-41f6-be53-131704e38d0e"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fa28588b-9575-455f-aa6d-c1eff3db0ccc">
+                <arches:sortorder xml:lang="en">
+                    {"id": "c5da66a7-c6db-44c8-8e30-b90e52ad8894", "value": "018"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "74a4fa71-3ddd-424c-aa97-6f36decc5b8f", "value": "Belize"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "359a54d9-d00b-41cf-b075-4cf22aa3aa61", "value":
+                    "http://www.archesproject.org/fa28588b-9575-455f-aa6d-c1eff3db0ccc"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/67ee6924-0d85-4b79-8440-3b93ee8e4ec9">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6b35adb5-4934-452f-a807-e9ca6d74b0cf", "value": "Mauritius"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "fe91f760-1cf2-4441-a913-de321e7bd988", "value":
+                    "http://www.archesproject.org/67ee6924-0d85-4b79-8440-3b93ee8e4ec9"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "9b12ca3a-42eb-43f2-a2a0-8d19c0ec4c01", "value": "118"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ac272a90-7c3c-4a43-8679-73a0e078a4ad">
+                <arches:sortorder xml:lang="en">
+                    {"id": "de613d2f-ccaa-487b-ad06-3831ccce0c54", "value": "094"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2ae13999-fb0e-4c4a-bec5-45a94de7e0c7", "value":
+                    "http://www.archesproject.org/ac272a90-7c3c-4a43-8679-73a0e078a4ad"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "da5a07d9-303a-4b5f-9030-2a1bf3f191ae", "value": "Kenya"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/e1399155-cb47-4b57-94b6-cdf01f01802f">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0889077d-fe66-45dd-867d-71a860411fd6", "value": "Mozambique"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "70167fc1-cc33-42f3-bf74-6daf3801840c", "value": "126"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "19584be4-db83-4446-8954-bfb9d40c3bd3", "value":
+                    "http://www.archesproject.org/e1399155-cb47-4b57-94b6-cdf01f01802f"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/cd316ff2-1c42-4fe7-a101-40b43edcd24b">
+                <arches:sortorder xml:lang="en">
+                    {"id": "e9fac485-d49d-4f1d-9825-73506d74427e", "value": "084"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "14cf8b4a-f494-4bc4-aa94-068feae1bba5", "value": "Iran"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "855c75b5-274d-4a31-a748-21575e13e818", "value":
+                    "http://www.archesproject.org/cd316ff2-1c42-4fe7-a101-40b43edcd24b"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/b18726c6-6da5-4eab-8693-199fd51a0529">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "3567dd0b-a387-4b55-89e5-c40c28bb44ae", "value": "Tonga"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d7873428-313c-414c-995b-bb786422f885", "value": "188"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d949e824-e14c-4f2d-b4d6-c5dad4e825e5", "value":
+                    "http://www.archesproject.org/b18726c6-6da5-4eab-8693-199fd51a0529"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fecee999-ddf1-430b-9924-d0a424f483e1">
+                <arches:sortorder xml:lang="en">
+                    {"id": "2d896aaf-1246-460b-bfa6-f46518385d98", "value": "041"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "6a74d7ac-efec-4bc7-9cae-21be34e1bcd6", "value":
+                    "http://www.archesproject.org/fecee999-ddf1-430b-9924-d0a424f483e1"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "f48b8e9c-628a-4827-bdd2-e580bdf61d94", "value": "Comoros"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/1967d9d9-0d1d-440e-91ad-d2d70d48dd48">
+                <arches:sortorder xml:lang="en">
+                    {"id": "50282594-9b68-4f38-b1d9-3016f902a59d", "value": "151"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "84b7cc01-a85d-4439-817c-fbe786b176fe", "value":
+                    "http://www.archesproject.org/1967d9d9-0d1d-440e-91ad-d2d70d48dd48"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "e49056d0-5fc9-4392-8583-541905d2d945", "value": "Samoa"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ec49144a-5e2b-4437-a7a5-4632cd9f20a3">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "416ec317-28b6-43a1-afb0-f37301f4ad42", "value": "105"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5e47c2d8-85d2-43a1-a7be-3e5e4da14a60", "value":
+                    "http://www.archesproject.org/ec49144a-5e2b-4437-a7a5-4632cd9f20a3"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "151816e7-69f0-4939-8ca5-6a7c5afbeb6d", "value": "Libya"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/83c82699-633e-4224-b534-4d248ead7a99">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "02a64f48-5206-4fc7-9f8e-9f740a27083b", "value": "147"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "bfc1375f-7acc-4635-a387-b229249a6f1a", "value": "Qatar"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "fc5c5aba-de90-4fdd-ad7b-0aa5a6f3d851", "value":
+                    "http://www.archesproject.org/83c82699-633e-4224-b534-4d248ead7a99"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ed1abce6-2838-4f08-b456-db4c4eba10fb">
+                <arches:sortorder xml:lang="en">
+                    {"id": "f35a53c9-e647-442d-a011-02ff51572c39", "value": "101"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d63bb81c-4336-4e7b-b253-8c6e07c41cbb", "value": "Latvia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4a36df7d-d7e9-41e1-b3ed-681e09cb688a", "value":
+                    "http://www.archesproject.org/ed1abce6-2838-4f08-b456-db4c4eba10fb"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a55bff15-7c1b-41a5-9c28-be2858ac015e">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "6fdba34c-a463-4426-ac7e-a169fbad0a1c", "value": "117"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a5c784b0-f314-40e1-88b9-ddf424b48359", "value":
+                    "http://www.archesproject.org/a55bff15-7c1b-41a5-9c28-be2858ac015e"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b944f836-71be-453d-863e-d6c7f184c350", "value": "Mauritania"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d0556144-b304-4078-84ed-bee58f9fb3cf">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "ca854562-7d73-4aef-9309-0d366e272f4f", "value": "St Lucia"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f478f3b8-24af-4010-a969-411ca1f39696", "value":
+                    "http://www.archesproject.org/d0556144-b304-4078-84ed-bee58f9fb3cf"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "fe0852a0-7d4f-403c-8911-e031433d7bf1", "value": "173"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fd516dab-4340-447b-b58f-b3a04147f4cc">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "504af3cb-e132-4024-a4b2-5f1f4998ae52", "value":
+                    "http://www.archesproject.org/fd516dab-4340-447b-b58f-b3a04147f4cc"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "83f02244-14be-4827-bf15-db173fa17b37", "value": "Angola"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "69ed60a9-00be-4e77-8ccc-183c486f32ac", "value": "005"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/5e0e54b1-e32d-4beb-8a5a-772c68505977">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "c8124126-e061-437c-aebd-9f55ea39be2a", "value":
+                    "http://www.archesproject.org/5e0e54b1-e32d-4beb-8a5a-772c68505977"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "090628e0-24ae-42ee-876d-cfbe9133fc40", "value": "087"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "dd9fcedf-fffc-4d6a-92f9-705f0074fc5f", "value": "Israel"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/c06fe583-2537-43a4-86c0-6a622e382d93">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b38d69c1-e7fc-4c48-b22f-e35e0f8e4814", "value":
+                    "http://www.archesproject.org/c06fe583-2537-43a4-86c0-6a622e382d93"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "be34e01b-210a-4995-bb01-456139dca19e", "value": "Cyprus"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "0d623d29-a064-4efd-a1e5-126750f5d306", "value": "047"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a22b9c0b-5bb0-4456-9fd7-1f69ef9434b2">
+                <arches:sortorder xml:lang="en">
+                    {"id": "05f19706-0b57-406a-9162-4cbad5f6a34c", "value": "022"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "1dfb8c86-f13a-4607-ad24-9cb09675737c", "value":
+                    "http://www.archesproject.org/a22b9c0b-5bb0-4456-9fd7-1f69ef9434b2"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "848e2112-073f-461b-b4a7-38199c76d59b", "value": "Bolivia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/e35dca35-6b6e-48e1-a410-4974880ae3bf">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "c911d0d7-63f0-4b52-9512-b9b909ff224c", "value": "Yemen"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "1b52ea41-0fb2-48ad-86c2-9bc5cf9dea72", "value": "207"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "abd68d8d-b805-4c50-be50-6d234f971ad7", "value":
+                    "http://www.archesproject.org/e35dca35-6b6e-48e1-a410-4974880ae3bf"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8e94bd29-7d36-4a2e-b589-5a0cd8a17610">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "924aff16-8ffb-41de-babe-843ee44dbcd0", "value": "174"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "8099083e-1334-424d-984e-13337d05806e", "value": "Saint Kitts"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2b8ee182-8b5e-49ad-8cd7-11e24197b404", "value":
+                    "http://www.archesproject.org/8e94bd29-7d36-4a2e-b589-5a0cd8a17610"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/29bdd60c-7982-499e-b104-704d2acf9ed3">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "26c33016-65a2-4e16-9f7a-940b0cff503e", "value":
+                    "http://www.archesproject.org/29bdd60c-7982-499e-b104-704d2acf9ed3"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "729584ab-c373-42be-bdf6-a041f89f024d", "value": "130"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "2200ca57-11be-4e1d-ac56-ca81d74c6cb5", "value": "Nepal"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4b3031e0-40e8-44cf-926a-bb5a46037013">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "faf409ce-593e-4da9-a4e7-90dca377010e", "value": "Morocco"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "895d71d2-ce44-4c46-bfe4-29a68c98593d", "value":
+                    "http://www.archesproject.org/4b3031e0-40e8-44cf-926a-bb5a46037013"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "16de5528-629c-4909-ae80-fb4358bab2fa", "value": "125"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/9632084a-4c67-47c3-92b6-3f531b72568a">
+                <arches:sortorder xml:lang="en">
+                    {"id": "83dac592-34ff-42ac-9a86-7bd5fbc3aac1", "value": "061"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "8d2dd1da-f854-48af-9ac4-74da23961286", "value":
+                    "http://www.archesproject.org/9632084a-4c67-47c3-92b6-3f531b72568a"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "fc45f42c-082f-4940-aaa1-0f183deef8c6", "value": "Fiji"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f378708d-a87e-4fc2-bd5a-e453b18a7285">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "f3e26c3b-67e3-4950-bf3f-7c21b4274a10", "value": "Czech"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "04e8b435-185e-45d0-988e-60426618f903", "value": "048"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b1cdbe76-d73f-4298-b0d9-0b483839ab09", "value":
+                    "http://www.archesproject.org/f378708d-a87e-4fc2-bd5a-e453b18a7285"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/282762d2-e9ad-4bf2-826d-d3a64ab57040">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "8a2768c8-a54b-4d8b-a8ed-60326b8d76a6", "value":
+                    "http://www.archesproject.org/282762d2-e9ad-4bf2-826d-d3a64ab57040"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0362ec0f-569e-47a9-903e-1939c160ec74", "value": "Antigua"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "1549da45-ca3a-479d-923f-5146d88586b5", "value": "006"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/1878ba80-2861-4056-9af3-d09211b8d0aa">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a0e52b94-76b1-4dc0-b2c5-a8b14a5d1bf9", "value":
+                    "http://www.archesproject.org/1878ba80-2861-4056-9af3-d09211b8d0aa"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6753c0ca-7292-4878-868c-0b61e7e5ce10", "value": "Gambia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "1369c9ad-247b-4168-a786-a59f18fc154a", "value": "065"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f130232d-cf4c-420b-baa9-f9a50990a1c2">
+                <arches:sortorder xml:lang="en">
+                    {"id": "8f2f4c32-f963-429c-b749-3773a8cdfbaf", "value": "177"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "3ed33cd5-e27e-46f5-88ac-6577fb1ecab6", "value":
+                    "http://www.archesproject.org/f130232d-cf4c-420b-baa9-f9a50990a1c2"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "2883cbc9-0a8d-4b6e-8d8b-40bf41294133", "value": "Suriname"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d5373d08-0d02-43f7-b276-120239bc74f0">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b81a3d4a-5352-4a4e-a53c-344eeb0e9907", "value": "Canada"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "32c5f5d2-8d62-4edb-970e-cb10ee32d8f1", "value": "034"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "3672989f-5206-4ac4-8af6-7549401f58df", "value":
+                    "http://www.archesproject.org/d5373d08-0d02-43f7-b276-120239bc74f0"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/bc9efb9f-f1e4-43db-bf05-abd036130fad">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "3a920794-0209-4785-a9f5-5b47501b575e", "value": "Togo"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b9894f86-4416-40dc-b829-205ca3bbe03c", "value":
+                    "http://www.archesproject.org/bc9efb9f-f1e4-43db-bf05-abd036130fad"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "42d502b9-1c05-45c4-9bed-43ff6d1e78df", "value": "187"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/48f44579-3976-42de-9b03-911d85d0f38f">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e872c591-329a-4a10-b8d1-b7ab9b9fe81d", "value":
+                    "http://www.archesproject.org/48f44579-3976-42de-9b03-911d85d0f38f"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "8f69caba-3f39-4abf-b60d-08c044d90d54", "value": "011"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "e9c987d7-2d5a-4c28-8725-869699666bab", "value": "Azerbaijan"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/23bc54ed-c151-4c7a-be5c-41b7bec6484f">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "85f82350-1ea1-4bcf-a14c-14d9629e1726", "value": "Cape Verde"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "20771fe8-5b79-4bdd-a972-6e7e9d6b9c0f", "value":
+                    "http://www.archesproject.org/23bc54ed-c151-4c7a-be5c-41b7bec6484f"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "69c79c17-5b3c-4b1c-8f84-f637c4d76f55", "value": "035"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3a924b71-0d2a-40de-a4a1-164b79ffc675">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a063d6e6-157c-4235-bf26-f63a2e32614f", "value": "Indonesia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "248451d4-cb7f-4bb8-a7df-48b383ec77c3", "value": "083"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "117181f2-bd1a-4c15-9166-121a7ac2f0db", "value":
+                    "http://www.archesproject.org/3a924b71-0d2a-40de-a4a1-164b79ffc675"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/9f38a491-458d-443f-9267-938887a82fb3">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "46e56af1-5eff-4d44-8446-370afb572e94", "value":
+                    "http://www.archesproject.org/9f38a491-458d-443f-9267-938887a82fb3"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "242143ea-50e8-4346-8a4c-717863845c87", "value": "Romania"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "ba430ae2-b197-4550-83e2-a3d94340f4b1", "value": "148"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/9ee451f4-4238-484e-92cf-c1f431598749">
+                <arches:sortorder xml:lang="en">
+                    {"id": "2abcf612-7b99-4ed3-90c1-575d52ecb5d7", "value": "108"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "0f89d2f6-438d-4a37-abf1-e749d6864123", "value":
+                    "http://www.archesproject.org/9ee451f4-4238-484e-92cf-c1f431598749"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "99b12d24-3e84-4911-a001-8b2b865d3d59", "value": "Luxembourg"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fec151f9-036c-424b-9f9b-b779799b8266">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5f1c7c71-bc15-45da-9d55-b24033199951", "value":
+                    "http://www.archesproject.org/fec151f9-036c-424b-9f9b-b779799b8266"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "4d4c4f1e-0d30-4aeb-b921-224ca93817c1", "value": "Grenada"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "86a390a2-5bef-4d40-878d-b860ebbd12ef", "value": "071"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/475c495a-db3c-451b-90d1-dee57d749156">
+                <arches:sortorder xml:lang="en">
+                    {"id": "5ba3cc4b-cde7-4f0f-ae12-7291e466793e", "value": "145"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "fbbefa82-8c76-45eb-86b3-d1a886e47514", "value": "Poland"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "6fee0ecd-9e49-4700-b0c6-4fe3260ceaf7", "value":
+                    "http://www.archesproject.org/475c495a-db3c-451b-90d1-dee57d749156"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8128a8c9-0fba-44b7-ad36-feeb401b2ce7">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "18450124-f30e-4d29-b835-eb02986d9ef5", "value":
+                    "http://www.archesproject.org/8128a8c9-0fba-44b7-ad36-feeb401b2ce7"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "f04a42a7-a0b3-4a09-a52a-ded54505e6dc", "value": "056"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "02ecd598-f510-443b-b1d6-bd59dfa3e431", "value": "Emirate"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/c190d897-ff13-4d32-bfc5-3ce77ff275d3">
+                <arches:sortorder xml:lang="en">
+                    {"id": "ed4a04ad-b0c9-4f0b-bbca-ddbc155acd53", "value": "028"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "be69d02b-40e7-47cb-8a64-46e0da6678c2", "value":
+                    "http://www.archesproject.org/c190d897-ff13-4d32-bfc5-3ce77ff275d3"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6b7d1a76-f1e7-4787-8869-bf905103a0fc", "value": "Bulgaria"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/cf2998e0-5d0e-4696-ba9e-7847bfdbf014">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bc191400-d511-4c47-be40-fc0d62ffd328", "value":
+                    "http://www.archesproject.org/cf2998e0-5d0e-4696-ba9e-7847bfdbf014"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "f0ac0ccd-bcd1-4b09-94f7-920997d2fa51", "value": "114"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "845d624c-7b38-4abd-8922-12ac4899db11", "value": "Mali"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8d45fcbb-8ea7-43b7-832c-daadaa745afa">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "76f785b6-05f7-49ff-89e6-b8f9ee63c1d6", "value":
+                    "http://www.archesproject.org/8d45fcbb-8ea7-43b7-832c-daadaa745afa"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "fa9575e6-dff2-4d43-934e-bc1142c2fde3", "value": "193"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "70a72c9f-1003-45ac-9459-2570672ba588", "value": "Tuvalu"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/721ce93e-01ee-47ca-8824-d72d6bf9a79d">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d492ad4d-fbde-46ac-9beb-55a7b9496115", "value":
+                    "http://www.archesproject.org/721ce93e-01ee-47ca-8824-d72d6bf9a79d"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "94209d0c-866f-4122-aed9-ebfe17e49b81", "value": "195"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "89ae54e4-2536-4443-94cc-b51a3eb2e496", "value": "Ukraine"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3290fa8d-d8aa-4b1c-b246-58398aecffce">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "3fe052d6-7700-4dd3-86b5-0dbb6bba0ee3", "value": "Niger"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "39446b62-d328-4e2c-b4c3-162151b2aacb", "value": "134"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "de900821-85d0-426c-b446-bf2ce6396771", "value":
+                    "http://www.archesproject.org/3290fa8d-d8aa-4b1c-b246-58398aecffce"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f5ffaeba-2733-4fcc-a57c-fdc7ab6585aa">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "aa3a4411-d035-48a2-8c87-52f6f9468b76", "value": "102"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "683dd30b-b825-455a-9352-0389359c2ced", "value": "Lebanon"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "adff34e1-fa6c-44dc-b3fd-417bdc45e1c6", "value":
+                    "http://www.archesproject.org/f5ffaeba-2733-4fcc-a57c-fdc7ab6585aa"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/7d94816d-fe06-409c-87cd-63ed0dc4ca0e">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0644d1a4-f10b-4795-bbd0-cb810f5938fa", "value": "Bahamas"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "84110af9-2280-4f10-b2d2-d7076264fa1a", "value":
+                    "http://www.archesproject.org/7d94816d-fe06-409c-87cd-63ed0dc4ca0e"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "b0ac89b7-d5bc-4b29-876f-5a171b7f2813", "value": "012"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/b7b50564-b3ba-416c-b1c0-c1ad4ca95416">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "ebadc3e1-f692-41c6-90f7-cfc24c96bcd3", "value": "USA"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "9159638c-aafe-4cd3-900f-8acf4b0ec0cc", "value":
+                    "http://www.archesproject.org/b7b50564-b3ba-416c-b1c0-c1ad4ca95416"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "3305de6a-f9f6-4705-a26f-06de7caff3ee", "value": "199"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3dece93c-b4cc-4e10-97ae-73d312788307">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "e0d7dddd-0145-404a-afaf-c4e1335d4261", "value": "wales"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c1e3f1ff-bff5-4c37-86a7-1ae75a95f39e", "value": "205"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4cf003ca-6b1e-4c75-9b81-0cce37023e5f", "value":
+                    "http://www.archesproject.org/3dece93c-b4cc-4e10-97ae-73d312788307"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2ed9be84-f3d5-4d43-a221-f7758947146a">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "30eb34bd-6f11-4c31-b7ef-1780a1ae9592", "value": "Sao Tome"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "7784ebb2-af16-4422-bbfa-40e6ed126586", "value":
+                    "http://www.archesproject.org/2ed9be84-f3d5-4d43-a221-f7758947146a"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "767c665e-ddda-4002-9327-5ea924e800d8", "value": "153"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/74d93efb-2426-466a-8100-7c484d464e96">
+                <arches:sortorder xml:lang="en">
+                    {"id": "c874e653-78a7-42f8-a8bf-eb5ebde8779c", "value": "127"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d91f28a6-aaef-4810-b0b3-b0dbaa96efae", "value":
+                    "http://www.archesproject.org/74d93efb-2426-466a-8100-7c484d464e96"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1de6852b-f6b6-4ecc-a70a-9114a17089fc", "value": "Myanmar"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fb050493-fd99-45f3-96ed-5cf411db80e8">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "fdd4ec1d-687d-49a2-9adf-6804c2aca499", "value": "030"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "53db5182-00b9-4d5e-aa71-32afddc02282", "value": "Burma"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "32f95108-daa3-427e-8a01-2f4360d53ce0", "value":
+                    "http://www.archesproject.org/fb050493-fd99-45f3-96ed-5cf411db80e8"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ccc463cc-846b-4fbd-8297-ca1f80112965">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2da593c8-3a39-48fc-8055-25943fef29b9", "value":
+                    "http://www.archesproject.org/ccc463cc-846b-4fbd-8297-ca1f80112965"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "7d2f3e8b-67ad-4647-a00d-958b2aed8b4a", "value": "180"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "7fba3801-df63-4e3e-b6ad-3b40d2dae375", "value": "Switzerland"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/6efd37c0-a906-44c3-959b-1615ebb0fdf1">
+                <arches:sortorder xml:lang="en">
+                    {"id": "963d6f61-6ca0-4d9b-910c-a0063d47ad97", "value": "037"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ed56770c-9f9d-4478-a95d-9cb5c9613f4c", "value":
+                    "http://www.archesproject.org/6efd37c0-a906-44c3-959b-1615ebb0fdf1"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b83c5ea2-347a-42c3-b3a5-801098bae636", "value": "Chad"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d85b735f-bf2a-4ee0-acd3-5b7ac1e99a2c">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "63f86b8e-ffa3-4856-85ed-fef41fef06da", "value":
+                    "http://www.archesproject.org/d85b735f-bf2a-4ee0-acd3-5b7ac1e99a2c"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "90832797-726a-4f15-bcf5-4113b57bfb40", "value": "038"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a5cea104-9b1b-40d4-8dc8-62208c4b3454", "value": "Chile"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3f2ca48d-bc89-4e8e-92b7-e611fff8b5c8">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "7418bbed-6ed4-44a3-a25a-c0e311779175", "value": "009"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "cc7ed8f3-5c89-44de-9902-f5e60461d4a8", "value":
+                    "http://www.archesproject.org/3f2ca48d-bc89-4e8e-92b7-e611fff8b5c8"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9489e1d5-cd27-4683-85fc-820e4d45f8fb", "value": "Australia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/835e2d53-203d-4c35-b883-60731421f908">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "c09b7371-d385-43b1-8cef-5104afdf1189", "value": "Swaziland"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "91cb3811-14e8-4c00-a62a-4c4c9d2533fd", "value": "178"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a0fdcc9a-599b-4488-b7ab-784260af8ad1", "value":
+                    "http://www.archesproject.org/835e2d53-203d-4c35-b883-60731421f908"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4ee26c15-8c65-4afe-9418-26dbc3bc9407">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2170b0ea-1d6a-45da-95f9-bcaa9fccf87a", "value":
+                    "http://www.archesproject.org/4ee26c15-8c65-4afe-9418-26dbc3bc9407"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c9d6410c-8ef8-445e-a299-96f2575695cc", "value": "132"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "484ac21b-0945-48a6-91f4-7f0bb38b0cc7", "value": "New Zealand"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/313da510-35f7-4830-9275-55a454af322e">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ad333b47-db5f-411e-ba03-be75bbc31f25", "value":
+                    "http://www.archesproject.org/313da510-35f7-4830-9275-55a454af322e"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0ebd48f4-5a55-44e0-abc8-bcfa14448271", "value": "San Marino"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "7af859ea-fe50-4b7e-a97b-a3be19fecc6c", "value": "152"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d9abda88-c0d7-4ab9-be17-b9c0a6ce050f">
+                <arches:sortorder xml:lang="en">
+                    {"id": "229493d9-114b-419f-9bb4-006aa0d4badb", "value": "104"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "3f5dd960-7a86-4e6a-9ee2-bfd5267d2f1a", "value":
+                    "http://www.archesproject.org/d9abda88-c0d7-4ab9-be17-b9c0a6ce050f"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "7fd6c28f-2ab8-4642-b4c2-d723a6297120", "value": "Liberia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3c10afd1-b5d7-48a6-932c-c86ecd443b5e">
+                <arches:sortorder xml:lang="en">
+                    {"id": "2b5df5cb-423c-4735-b1c9-4f02188b732a", "value": "031"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "33d11e30-a269-4cfa-88f0-b819d9c6d275", "value":
+                    "http://www.archesproject.org/3c10afd1-b5d7-48a6-932c-c86ecd443b5e"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0b747585-c68a-4c55-a231-bcc0dd154bf5", "value": "Burundi"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/33a169e2-b78f-43a4-826e-a3649a9ae201">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "daedfee3-1d1b-4773-84ad-60154f56c2de", "value": "Ghana"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "0c73d6ab-bda0-4f43-99df-d77da0057ca8", "value": "068"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2bbffed2-7358-4c26-be89-3c32642f4734", "value":
+                    "http://www.archesproject.org/33a169e2-b78f-43a4-826e-a3649a9ae201"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/255ebb2a-ac61-4831-98c4-7756044999c8">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c03e3b29-9301-4d78-ba09-b9202ee0bf5e", "value": "097"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "14abbf59-ce70-49a9-90d0-533897561b83", "value": "Kosovo"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "177de409-0586-4bdf-a63b-099768a5d47c", "value":
+                    "http://www.archesproject.org/255ebb2a-ac61-4831-98c4-7756044999c8"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/bb47d094-fe96-4ab7-992c-fb371b06a206">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "e619b54d-e432-4e5a-a6f2-951e7b8fc5d0", "value": "050"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "21f400f0-cfcb-4f6f-b4c9-d37619307d27", "value":
+                    "http://www.archesproject.org/bb47d094-fe96-4ab7-992c-fb371b06a206"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "2679dee8-ef82-49ea-929f-e996ae07e5c2", "value": "Djibouti"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f2cc37ba-7853-4170-8db0-4798c0ae058e">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "9b3c9bc5-79c2-41a3-bdfa-93564cffabfa", "value":
+                    "http://www.archesproject.org/f2cc37ba-7853-4170-8db0-4798c0ae058e"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "86056fe9-e5ec-48b1-9e0c-7881cb10ef0c", "value": "Zambia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "54ea3b5f-b4fd-4671-8d11-f5fb8dbf839a", "value": "208"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d2b75f75-29db-494c-8e58-6f84e0a5d02f">
+                <arches:sortorder xml:lang="en">
+                    {"id": "66e98288-0e47-40e8-b112-a51248302a58", "value": "089"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "94b664eb-f757-4584-9355-4af8879ef562", "value":
+                    "http://www.archesproject.org/d2b75f75-29db-494c-8e58-6f84e0a5d02f"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "53ff579f-ede6-46b8-876b-3b0d05f9b2a5", "value": "Ivory Coast"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/c39ce4aa-c573-4745-bb32-da3ad47c2242">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1519f893-c19b-4115-9d69-0cfca24ed80e", "value": "Benin"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a7aec1c7-1cd4-4601-b1ce-f79dfe5b7f08", "value":
+                    "http://www.archesproject.org/c39ce4aa-c573-4745-bb32-da3ad47c2242"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "040099ef-fb49-4e7b-8063-597cf20b24d3", "value": "019"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/b56b21f0-e685-4986-aad4-9026d28e8bc2">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "83ad45e4-c381-437c-8127-a69b6eab1184", "value": "Kyrgyzstan"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "7b6e8239-a4e6-46b7-bbfa-434536af6ab7", "value":
+                    "http://www.archesproject.org/b56b21f0-e685-4986-aad4-9026d28e8bc2"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "017faa50-a483-4020-a5c5-46a149060ac0", "value": "099"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f29c5c64-d243-4f9e-a405-e370e0539c11">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "1326a5ae-1555-499e-8657-6fe3e17b259f", "value": "090"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "cdfa66b1-03ac-4b58-b1b9-0a519fe431da", "value": "Jamaica"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "cc09cb56-21bf-4c10-a918-6737089ad29a", "value":
+                    "http://www.archesproject.org/f29c5c64-d243-4f9e-a405-e370e0539c11"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/764ea621-ea30-4212-8976-bbfbb2f2bae9">
+                <arches:sortorder xml:lang="en">
+                    {"id": "dd8379cb-24b3-4f0d-b582-c3c43892b509", "value": "158"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "36a53861-2524-4692-9e1e-6036e02045e9", "value": "Serbia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "792b63ca-f979-4d8f-bd39-6e916c46b05c", "value":
+                    "http://www.archesproject.org/764ea621-ea30-4212-8976-bbfbb2f2bae9"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/558a7a31-8f1d-40af-84dd-99e1b0be86b9">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "af8ab28d-c516-4778-8a64-b9b7fe0843f6", "value": "Malta"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "16da7067-a9c4-4f16-84d3-927afc5faae0", "value": "115"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "924de841-dd83-4ddb-828c-6b37d28c4f5a", "value":
+                    "http://www.archesproject.org/558a7a31-8f1d-40af-84dd-99e1b0be86b9"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/25f9c037-4c6d-4783-a9e2-1efbd075dd58">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bc8cf3e0-abbb-4bcf-a0db-66d36f5478de", "value":
+                    "http://www.archesproject.org/25f9c037-4c6d-4783-a9e2-1efbd075dd58"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "73dd4f66-23e0-4190-bf29-e038bb2e69f9", "value": "092"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a7e73e87-05ac-4135-8070-f07c63b816ab", "value": "Jordan"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8a80b824-c002-4ea1-bf83-73da6043c4ee">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "67596d61-45b8-4d2d-8d69-e9606f731da3", "value": "Kazakhstan"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "4e8102a6-ab28-455a-80ff-e7974f3e87ba", "value": "093"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2d7fb5d9-3354-4450-99c7-84d3690bff39", "value":
+                    "http://www.archesproject.org/8a80b824-c002-4ea1-bf83-73da6043c4ee"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/032eab5f-726c-43d0-9162-665dc5c544ab">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "eb83d3a9-f9e2-4cbf-9ad2-8a5c4c30f80c", "value": "Oman"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bba4746a-b9c5-4679-8320-32ebad7eeec8", "value":
+                    "http://www.archesproject.org/032eab5f-726c-43d0-9162-665dc5c544ab"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c16e6ea6-f52e-42b5-924c-9346089bdf65", "value": "137"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/6ccadadf-75eb-4cc6-b1e6-9fe57769c19c">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "49ecff5d-24b9-4801-b3e5-7e090db71220", "value": "country debt"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "89ca318a-227e-4f5f-a7ff-76a6bd0f78b5", "value": "044"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a09158e2-c684-46df-813e-25f8a469c086", "value":
+                    "http://www.archesproject.org/6ccadadf-75eb-4cc6-b1e6-9fe57769c19c"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3ba87f16-e7c0-4c8d-a32a-89ea72bbed7c">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "fc933b69-e383-4f6e-855c-99ea334de7b0", "value": "021"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "5103d21e-48cc-4cee-a077-b17e99590337", "value": "Bissau"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "645761ec-dd6d-414a-85a2-a2dda008461b", "value":
+                    "http://www.archesproject.org/3ba87f16-e7c0-4c8d-a32a-89ea72bbed7c"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/176d26a9-417c-417e-bb0e-111fc8292934">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "3f30558e-22c3-49e6-a4b5-0f85a6052aef", "value": "Cameroon"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "9be8d3b0-d58d-4598-b92b-f4b05899f2f4", "value":
+                    "http://www.archesproject.org/176d26a9-417c-417e-bb0e-111fc8292934"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "9fd065f2-ac90-4aab-a6bf-8fc35e9e32b9", "value": "033"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/b7d6b63f-3791-4978-bb96-025f3dee7f66">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "77d129f3-925c-4d32-8405-16f572cdb677", "value":
+                    "http://www.archesproject.org/b7d6b63f-3791-4978-bb96-025f3dee7f66"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "2c16d44b-6d3a-4115-bb66-a99a4d9ba222", "value": "146"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "93272a35-1b83-4857-befc-519fe84cab79", "value": "Portugal"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/12317378-4f24-4a68-bd50-17cfe1d28825">
+                <arches:sortorder xml:lang="en">
+                    {"id": "5d8e0b20-aff6-41b4-a017-2df6e7027c85", "value": "206"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "374ecb55-f1ea-451f-892b-cd1b68d938ab", "value":
+                    "http://www.archesproject.org/12317378-4f24-4a68-bd50-17cfe1d28825"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "818b337b-7e7b-4ecf-a94a-636121c81217", "value": "welsh"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/398dbd2f-82b1-4e18-afab-fb75ee6e4762">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "463ddf1b-9640-4b23-8920-4646980e1e6f", "value": "Croatia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "27ca8726-a792-4492-995a-a2af58fcc283", "value": "045"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "95a8208f-5c04-4c25-90a8-6b62654a8c9f", "value":
+                    "http://www.archesproject.org/398dbd2f-82b1-4e18-afab-fb75ee6e4762"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8bbe9991-0b8f-46f5-af9d-e0d12d0d253e">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "71d8feca-e95a-42af-a5a8-66d767b7c7ed", "value": "scotland"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "92e23b3e-1de6-4d55-9b2e-188198af61a3", "value": "155"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "095920c2-037b-47bc-9f90-d92072252b9a", "value":
+                    "http://www.archesproject.org/8bbe9991-0b8f-46f5-af9d-e0d12d0d253e"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/0df328b9-69e6-4a15-b32c-eb890f94c728">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b6ed95d9-2b1a-4dc7-861f-2769cfe8c165", "value": "Kuwait"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "19117868-9997-44ec-b43a-6381be709555", "value": "098"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f70976bd-fb3c-40e6-8ff5-234a9127aad9", "value":
+                    "http://www.archesproject.org/0df328b9-69e6-4a15-b32c-eb890f94c728"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4c1f8ed2-6004-4af8-a265-1899fb098260">
+                <arches:sortorder xml:lang="en">
+                    {"id": "47910cdd-b459-45a7-9871-228c0f3a69fa", "value": "015"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "706eff9d-cb8f-4e76-82d9-756f2d6164b6", "value":
+                    "http://www.archesproject.org/4c1f8ed2-6004-4af8-a265-1899fb098260"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "251e77ef-afd9-438e-83da-ac367fc0d73f", "value": "Barbados"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/18fcf162-9808-4e45-a9e0-583babda8805">
+                <arches:sortorder xml:lang="en">
+                    {"id": "e337e9b3-c056-4ac0-9947-38934ec1690e", "value": "133"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "f8ee5438-cd9a-47e3-a00b-08139914f904", "value": "Nicaragua"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "72232532-7c39-4463-a9b6-6ee0e12d48a9", "value":
+                    "http://www.archesproject.org/18fcf162-9808-4e45-a9e0-583babda8805"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/664a97c4-e5fb-45df-a89f-efc592abe4ff">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "520f2c87-ca62-4fc1-b6eb-934846042aba", "value": "Tobago"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "82a654e8-7c25-46e3-8760-ac20ac62b719", "value": "186"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "26871f66-fbc4-4d55-addc-e829ec7d864c", "value":
+                    "http://www.archesproject.org/664a97c4-e5fb-45df-a89f-efc592abe4ff"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/effbee60-7e84-4f21-a12f-0a98e6769221">
+                <arches:sortorder xml:lang="en">
+                    {"id": "fa4bb8fb-dcde-4c5a-8729-1eb79fa2b0e4", "value": "165"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "080c0bff-c1fb-4bd8-81cf-c3c0c2ca515a", "value":
+                    "http://www.archesproject.org/effbee60-7e84-4f21-a12f-0a98e6769221"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9a1d9300-07ed-40a6-bfb8-13cf08153a9f", "value": "Somalia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/7fd38a7c-50da-4340-8a35-d2331f5db24a">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "cc798fcf-e845-4d21-ae10-2e58f042e70a", "value": "058"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "acab1246-0fdb-4f63-88ab-f44dc6801cc1", "value": "Eritrea"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "6620f974-fae7-4ccc-8ae0-298cbed62fc7", "value":
+                    "http://www.archesproject.org/7fd38a7c-50da-4340-8a35-d2331f5db24a"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/55abdbbd-2129-4aa9-882a-c4c7ac5f68f6">
+                <arches:sortorder xml:lang="en">
+                    {"id": "e8a2dc2d-a773-4890-8ddd-9724f09cbbc1", "value": "198"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "12f6f526-e829-4da4-a0a2-54002128ae7f", "value": "Uruguay"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "15d1d19b-1ca5-4c5d-95b6-d49421b6649b", "value":
+                    "http://www.archesproject.org/55abdbbd-2129-4aa9-882a-c4c7ac5f68f6"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/cdf1a153-7579-41fa-8473-f23f25499c2b">
+                <arches:sortorder xml:lang="en">
+                    {"id": "e6437874-718c-4aaf-9969-68a507066626", "value": "157"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "570d7571-c12b-4075-bebe-b6c9ea220d2f", "value": "Senegal"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "dd30350d-4a9d-4d08-a380-3e3c3adbbd13", "value":
+                    "http://www.archesproject.org/cdf1a153-7579-41fa-8473-f23f25499c2b"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/719b0e47-bacc-40a9-a1d1-18eba1f579ee">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b96b13ab-0392-4178-925f-60037075c3b8", "value": "Palau"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "4b8d9578-91c9-4edb-9bff-24da9618f099", "value": "139"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "9e52e581-d531-44b1-86ef-6aaf0a0e348c", "value":
+                    "http://www.archesproject.org/719b0e47-bacc-40a9-a1d1-18eba1f579ee"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/5bbca479-d36b-43bf-9ea8-db546a6ddc2b">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a380df69-3a43-4a3d-a531-cd5131d47421", "value":
+                    "http://www.archesproject.org/5bbca479-d36b-43bf-9ea8-db546a6ddc2b"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "5c2e75e2-d694-4698-bee2-7ddfba34a835", "value": "007"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1184ecd6-11ef-4e49-90f5-df0d913fb8db", "value": "Argentina"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f250f058-88b6-485b-b838-7cd2b3b64709">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ab24565c-2324-4d85-ad5d-0177ec5a2018", "value":
+                    "http://www.archesproject.org/f250f058-88b6-485b-b838-7cd2b3b64709"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "9d0203de-a505-473b-a3ca-5b8da3c91a30", "value": "113"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "c4c15d2a-8c42-42c8-ac32-0925c72910db", "value": "Maldives"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4b3e215e-f79e-46c5-a26d-3f0297018712">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0f4a3956-8efa-47c0-b97b-a5afd6e2213a", "value": "Botswana"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "731d542c-882b-4125-8b8d-aad08cb7b6cd", "value": "024"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4b86036a-e6ee-4910-9048-25301f76eb5a", "value":
+                    "http://www.archesproject.org/4b3e215e-f79e-46c5-a26d-3f0297018712"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/7263a459-9008-4199-ad2f-93dde29b126b">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9f5832fc-a732-4a0c-b397-b91cd1bb23e3", "value": "Slovakia"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "06310f51-b67f-46d5-a7b0-76c0b0e722c6", "value":
+                    "http://www.archesproject.org/7263a459-9008-4199-ad2f-93dde29b126b"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "da4f54d1-f0c3-473c-9274-a10fe03c46c4", "value": "162"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/994766b4-0f12-4aa0-8c75-a20a2f0e82c6">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "13bd8eb4-c66d-4c38-b2d6-c76ba12348d5", "value": "Bangladesh"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b2ce744f-8bd7-4b38-8f04-6713f35c5eaf", "value":
+                    "http://www.archesproject.org/994766b4-0f12-4aa0-8c75-a20a2f0e82c6"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "6faf8722-6cae-4e70-90de-28196ec3a920", "value": "014"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/55f2d874-d64c-423c-a22b-0e8141af5afb">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "28b11e68-389b-4ad0-b75a-088f6a5b9675", "value": "Vietnam"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "5bf9f30d-d206-403b-a670-795c08c76db7", "value": "204"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d1f38e59-8547-4bc1-ba47-27d21bc01a81", "value":
+                    "http://www.archesproject.org/55f2d874-d64c-423c-a22b-0e8141af5afb"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/740c4196-737a-4301-8be2-86be0a1cf3c1">
+                <arches:sortorder xml:lang="en">
+                    {"id": "7654bf85-cf81-40ed-bb29-1c2ac778e6d9", "value": "135"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "e8706786-2262-45f8-9a33-a78857a74d63", "value": "Nigeria"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "05bfcdca-cf96-4b22-a29d-8e31d70e77de", "value":
+                    "http://www.archesproject.org/740c4196-737a-4301-8be2-86be0a1cf3c1"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/6e92dfc9-951c-42ad-a65e-d6f793e2ee59">
+                <arches:sortorder xml:lang="en">
+                    {"id": "deb87555-b51a-4e60-811e-0246ae3687d5", "value": "020"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b490b5a1-bab4-4f6b-817b-3392b4b2a6e6", "value": "Bhutan"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "18d2a9c6-4f2c-4a88-a734-d881d10df23f", "value":
+                    "http://www.archesproject.org/6e92dfc9-951c-42ad-a65e-d6f793e2ee59"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/15b492ac-fcdd-44ae-a8f3-8b94afdc3871">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "a2ba4974-94ec-4603-b24c-4f234d4f6365", "value": "002"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9aefc061-3c18-4640-97e7-970a29c28e1a", "value": "Algeria"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4145f53a-3eb3-488c-b04a-bd03c8cae553", "value":
+                    "http://www.archesproject.org/15b492ac-fcdd-44ae-a8f3-8b94afdc3871"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/869fced0-c701-449a-bb59-58dc5743adfd">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "de0c6096-f9cb-4f98-9d34-17648a817e07", "value":
+                    "http://www.archesproject.org/869fced0-c701-449a-bb59-58dc5743adfd"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "e924baa9-c7a9-41a4-870a-39f5008fb585", "value": "060"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "f05fc2c0-12fa-4567-a9f8-2488f951c883", "value": "Ethiopia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/7072117b-7fca-4d7b-a8d8-f8ab6a29a789">
+                <arches:sortorder xml:lang="en">
+                    {"id": "4db3b12c-ca46-4502-8c3d-b45603c3dea2", "value": "164"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a2013c39-eb83-447e-9e6d-35d15be8dc13", "value":
+                    "http://www.archesproject.org/7072117b-7fca-4d7b-a8d8-f8ab6a29a789"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "4b62a3e7-c5c0-4c43-99ae-58ecf24fe72a", "value": "Solomon"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2f35726c-37b4-4d89-b3b8-b0a93c716402">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6e1be4df-d4e8-42ef-a05a-002aaef05168", "value": "United Kingdom"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "be3bb744-7d13-4da9-9e20-2297232f1db2", "value": "196"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4d3a6b9f-8f49-4c06-96ae-f3120f1e6cc2", "value":
+                    "http://www.archesproject.org/2f35726c-37b4-4d89-b3b8-b0a93c716402"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8c3e5dff-bf16-45dc-b511-89bc04be7d11">
+                <arches:sortorder xml:lang="en">
+                    {"id": "46f66143-990a-463b-a0d1-e98dae6846ab", "value": "055"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ec828161-b942-462e-8559-1a642db07e81", "value":
+                    "http://www.archesproject.org/8c3e5dff-bf16-45dc-b511-89bc04be7d11"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "beb3cd37-8ff0-463f-88f2-91c626360b17", "value": "El Salvador"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ba9506b3-07e7-40df-894b-20bf05b22d7c">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1a111df3-cfe7-4dbc-a8eb-628d5cc43574", "value": "Germany"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ac392c80-2e82-4042-a0ee-4e3382a8cb5c", "value":
+                    "http://www.archesproject.org/ba9506b3-07e7-40df-894b-20bf05b22d7c"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "97f50978-692b-4505-931d-c4cb731e4762", "value": "067"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2db1afb2-ede2-493d-8ead-e2ed4e475925">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2e111d99-c416-40c2-92b9-e08aa9a7dd96", "value":
+                    "http://www.archesproject.org/2db1afb2-ede2-493d-8ead-e2ed4e475925"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "cc876761-305f-47fe-8b83-ae4637cdd8c6", "value": "167"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a8b93975-84fd-4b31-9f3a-b8c4ff3264c8", "value": "South Sudan"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower rdf:resource="http://www.archesproject.org/d9bdc1e8-ef0e-4fec-a425-583faa022cd1"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/1d1a1ee5-c9be-43b5-9680-4e78ee0b26ff">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "01071b7c-48e2-4582-8585-c60405a9b58a", "value": "Macedonia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "8aa27ea9-b315-404d-b829-4116168b9e1f", "value": "109"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d5a64167-4e7a-4c8c-affa-68ba6bfd6069", "value":
+                    "http://www.archesproject.org/1d1a1ee5-c9be-43b5-9680-4e78ee0b26ff"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/65eb2926-aaca-4a8b-b27d-066d54960ae3">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "6adeed4d-03cd-483a-8ff6-aa1f69db6e5a", "value":
+                    "http://www.archesproject.org/65eb2926-aaca-4a8b-b27d-066d54960ae3"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "fa711fe9-22c4-4f47-adb0-d4b7eafe9a22", "value": "East Timor"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "707c8b73-98a6-45df-b7bf-6b0d18db98ea", "value": "052"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/458789a6-770f-4418-9239-b52297041216">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f0ec870a-cb5c-4ca7-b693-2d94a5383663", "value":
+                    "http://www.archesproject.org/458789a6-770f-4418-9239-b52297041216"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "18a5db49-f1fd-4d8d-ac41-27cbf12ecc50", "value": "Russia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d54b1fef-fefd-49df-9f62-10a24c20a1e7", "value": "149"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower rdf:resource="http://www.archesproject.org/c516da87-8bb8-4dc7-ab12-76854a22d840"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d9972502-1144-4daf-89fe-e829427b702d">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a85e764f-47dd-4519-9242-a0ab9958fb41", "value": "Seychelles"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "03b6e9a8-8548-48f7-aa2a-a6c9bd976ae1", "value":
+                    "http://www.archesproject.org/d9972502-1144-4daf-89fe-e829427b702d"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "6898eb44-4c4a-44ec-93d3-56810c2a4735", "value": "159"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/93796afd-4634-48a2-8d70-70e6a393bd53">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "42b081d5-ab08-4305-82e5-fd548be04a98", "value": "025"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5ed53026-5af4-4d52-a6be-d2862098caf5", "value":
+                    "http://www.archesproject.org/93796afd-4634-48a2-8d70-70e6a393bd53"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "53c15fa2-2463-4b32-b73b-10e79d3547df", "value": "Brazil"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fada386e-8c2f-4334-84bf-e51e4938e49e">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "188e40be-5bbf-4b87-bcd0-778d31476431", "value":
+                    "http://www.archesproject.org/fada386e-8c2f-4334-84bf-e51e4938e49e"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "56940b4c-a1d4-4785-a89c-da9d18c645ec", "value": "China"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c326e431-17b5-499b-9b7f-280907e75d61", "value": "039"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/03817b09-e0a5-491d-9cba-a05e173db0b2">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f644b35f-11a0-439d-82de-dbe298459b7e", "value":
+                    "http://www.archesproject.org/03817b09-e0a5-491d-9cba-a05e173db0b2"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "b9d8eef4-7ec6-4723-a85c-944628072bc4", "value": "072"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0ef51238-0d48-4969-9055-d7a836d257eb", "value": "Grenadines"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/593ea9f8-d7eb-479a-97e1-ffb82b47c222">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d2c2235f-6289-4088-8aec-c0afab8aa100", "value": "Nauru"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e819d231-c356-458f-bc16-9cc501533270", "value":
+                    "http://www.archesproject.org/593ea9f8-d7eb-479a-97e1-ffb82b47c222"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "91babcd0-8f47-4fca-8d0d-f4e73841d1a0", "value": "129"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/5c75c800-6754-426b-92ef-87a1b9567dca">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a5835c36-fefe-4354-a2a7-e8d08dc26308", "value":
+                    "http://www.archesproject.org/5c75c800-6754-426b-92ef-87a1b9567dca"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "6c0e1305-d6d6-449c-8fd2-ebc110a99511", "value": "142"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a0afe48d-e3d5-46b8-bd72-1f08bcb39d02", "value": "Paraguay"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <dcterms:identifier xml:lang="en-US">
+            {"id": "72e8d6f0-e673-4a41-9331-fa521201773b", "value":
+            "http://www.archesproject.org/c7e1dcf4-8cd9-496c-975a-458ab74231e4"}
+        </dcterms:identifier>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/86ee01aa-ee1f-4d51-b359-c2efafa8095d">
+                <arches:sortorder xml:lang="en">
+                    {"id": "18716020-417f-4a27-bb0a-c2632cd013b6", "value": "111"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "4333a464-f17b-4b5f-a38d-ee30c02cfee4", "value":
+                    "http://www.archesproject.org/86ee01aa-ee1f-4d51-b359-c2efafa8095d"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "76d6e4e4-30af-4731-9f67-2410ee8b6a4d", "value": "Malawi"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/62581fe7-8095-4b0f-a5c6-37ecddb1248a">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "59be39e3-7ae2-4ea6-9ac7-a3afefde86ec", "value": "Panama"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "717b9bf8-8c2d-489d-a3b7-5a28128466df", "value": "140"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5e5e99f9-ffce-435d-9ee3-4528f03c7a98", "value":
+                    "http://www.archesproject.org/62581fe7-8095-4b0f-a5c6-37ecddb1248a"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f3541f4e-fa59-4cb7-b86b-9e7232608210">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "53e5eb15-dad2-4d84-aced-6b13174061f9", "value": "181"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "25d41118-cd3c-4f47-9604-2c893fbcd1b0", "value":
+                    "http://www.archesproject.org/f3541f4e-fa59-4cb7-b86b-9e7232608210"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a0a92e6b-8da8-4556-823e-3db54191c931", "value": "Syria"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/ee380ff6-80c9-4d67-a5ea-1b54b2699cb1">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "4cc6bcba-5bff-4a31-8d33-009361f6dddd", "value": "Hungary"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "b57ad82c-b568-479b-8a2f-e4c5db439a64", "value": "079"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d6559b0f-54b4-470b-a91a-20411aa292bc", "value":
+                    "http://www.archesproject.org/ee380ff6-80c9-4d67-a5ea-1b54b2699cb1"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/61925a33-26fe-4061-82d9-1df23863876f">
+                <arches:sortorder xml:lang="en">
+                    {"id": "c3d3c599-2318-4e38-9d83-29256ec1b66a", "value": "123"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "a6581cfa-2de8-486f-8ba4-61b13887491b", "value": "Mongolia"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "03572e37-41ba-4e6b-894f-6c49cdc21325", "value":
+                    "http://www.archesproject.org/61925a33-26fe-4061-82d9-1df23863876f"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/fa8a0e31-acbe-41da-afc0-939b33797144">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "709d7e16-72c0-4941-865d-f0ed33404cf1", "value": "England"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "aa8fa154-3ac0-43dc-b7ee-a7f055985344", "value": "057"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a4a04d8f-7764-4d04-b89d-64ce81215ddc", "value":
+                    "http://www.archesproject.org/fa8a0e31-acbe-41da-afc0-939b33797144"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/87f15e84-eec9-4af2-84db-ec490beac8eb">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "dabd980e-31be-4c0e-9629-0285039e88c5", "value":
+                    "http://www.archesproject.org/87f15e84-eec9-4af2-84db-ec490beac8eb"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "e5a47501-b598-4d2c-846a-efc5db45a70f", "value": "Bahrain"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "b71d2cce-7435-451b-a469-4d175d28f54b", "value": "013"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/f67df242-21b5-4a69-9d61-9f96abf73382">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b90689b5-aedf-4b86-87eb-bba33aead0a7", "value":
+                    "http://www.archesproject.org/f67df242-21b5-4a69-9d61-9f96abf73382"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "ed37d686-303d-4afd-adbc-91ad02eec041", "value": "100"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "fb06e448-759b-48f1-83fb-73831d27e232", "value": "Laos"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/133ae63a-7c0a-41ad-b1d9-43c6a60c4af3">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "6cb9c4e9-73c1-4566-bcda-c8902755393d", "value":
+                    "http://www.archesproject.org/133ae63a-7c0a-41ad-b1d9-43c6a60c4af3"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c2a330b0-fd00-4f37-9ab5-730302e6480d", "value": "081"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "90be754e-3ebe-4393-a581-3ff668bcc33c", "value": "in usa"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/344860db-80b0-4005-9aa3-840e6e28d98a">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bc39f14c-a6e7-40ee-94d4-a7ae9f7a8d4a", "value":
+                    "http://www.archesproject.org/344860db-80b0-4005-9aa3-840e6e28d98a"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "0c2b77d9-41dc-4009-9a44-9c9ff7a5ceea", "value": "192"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "ce4803fd-bbf6-494a-a504-7ac1b26d7d7a", "value": "Turkmenistan"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/42be531d-876c-4483-8b2b-ef787d1c6739">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "39ede6f1-3c12-4453-95b8-78fc7dba1e4d", "value": "103"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "060f345f-b441-476c-8b5e-39ead0019e99", "value":
+                    "http://www.archesproject.org/42be531d-876c-4483-8b2b-ef787d1c6739"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6dd7cb39-c1c5-427e-a03c-6b06398c48c1", "value": "Lesotho"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a91f9050-f8bd-4f2d-b71a-f60a83a26eaa">
+                <arches:sortorder xml:lang="en">
+                    {"id": "adca84b7-c9a1-4648-8131-71a6931c983d", "value": "075"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ed96557f-5e88-4646-b977-074169894cdb", "value":
+                    "http://www.archesproject.org/a91f9050-f8bd-4f2d-b71a-f60a83a26eaa"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "4bf25603-6c0c-4000-854c-8ae3f9501834", "value": "Guyana"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8c2e4d12-980f-49e1-a8c4-43789a24b300">
+                <arches:sortorder xml:lang="en">
+                    {"id": "6906a491-6848-4368-bcf1-430e13e600bd", "value": "049"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d3ad1353-dfdd-4df7-bb9f-4d34e0adcb77", "value": "Denmark"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "be59b48f-94ed-45d1-94f0-2ed4e7ec13b0", "value":
+                    "http://www.archesproject.org/8c2e4d12-980f-49e1-a8c4-43789a24b300"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/aec2641e-c3e1-4428-a093-66c6b123da3c">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "8603a699-8c75-44e2-a923-94099a63d166", "value": "Ecuador"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "5fa00454-1aae-49da-b58d-5dd71652daa3", "value": "053"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b408d91b-da7b-4ddf-a07c-1180f117daf1", "value":
+                    "http://www.archesproject.org/aec2641e-c3e1-4428-a093-66c6b123da3c"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4b0da43a-bf54-4119-8d39-8110ab6e27bd">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "42182f05-a4bf-47c9-877f-94fe8a7c4e5f", "value": "138"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "1fbc2deb-41f3-4650-a827-13ac71f143a9", "value":
+                    "http://www.archesproject.org/4b0da43a-bf54-4119-8d39-8110ab6e27bd"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "c4d367a6-be3b-4e4f-a9d8-d74f682f8287", "value": "Pakistan"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/76b953e6-ba71-4416-9895-5eebe8ac50b7">
+                <arches:sortorder xml:lang="en">
+                    {"id": "4622b2e7-2e9a-4558-8528-3ccbe46d86a2", "value": "017"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2accea7c-cbb0-4050-87f9-ef68dea3fdd6", "value":
+                    "http://www.archesproject.org/76b953e6-ba71-4416-9895-5eebe8ac50b7"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "33db6f54-e017-4875-b5e2-625068dd8fbd", "value": "Belgium"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/31788ef8-734c-4c57-abd3-07cfa80f08fe">
+                <arches:sortorder xml:lang="en">
+                    {"id": "b8b4f429-10a4-44f0-8f2d-60567b391c1d", "value": "150"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "50653fb9-b8c6-44f1-82ef-4a9d489ec10d", "value": "Rwanda"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "8e3a4746-5729-4e36-90c2-3904788bac9b", "value":
+                    "http://www.archesproject.org/31788ef8-734c-4c57-abd3-07cfa80f08fe"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8801a9c6-d4b8-4312-a803-b0b80712c118">
+                <arches:sortorder xml:lang="en">
+                    {"id": "2df276d8-00e3-4739-ac5b-747fe55acb17", "value": "029"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "ea0d4807-8982-462c-b8b4-b19889d1a8cc", "value": "Burkina"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "211c4d31-c8e6-4050-8aaf-3c69622e0ed1", "value":
+                    "http://www.archesproject.org/8801a9c6-d4b8-4312-a803-b0b80712c118"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/181ea56c-4b99-4d88-baef-14fe690adae0">
+                <arches:sortorder xml:lang="en">
+                    {"id": "8b9d5bdf-09cc-49b4-aea3-161ce59e5525", "value": "119"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d6def2c2-b6da-4630-acb7-dc05f07a5328", "value": "Mexico"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b03f3b9c-28d2-4622-b25d-e122230bdead", "value":
+                    "http://www.archesproject.org/181ea56c-4b99-4d88-baef-14fe690adae0"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/85fa63c8-510f-477f-bd07-3580f00379dc">
+                <arches:sortorder xml:lang="en">
+                    {"id": "114e83f4-1576-4ccb-9a30-8b06b82603d7", "value": "010"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "533a4118-e3bc-496e-af71-d7b073230625", "value": "Austria"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "5bac02f5-1b7a-4bc0-ad25-91ede1a0c7fd", "value":
+                    "http://www.archesproject.org/85fa63c8-510f-477f-bd07-3580f00379dc"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/877412dd-7bad-4bdc-b41c-c258a3df3d0e">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "39adf558-7b45-4532-ad53-48fd01769e19", "value": "Cuba"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "22e3735e-7ce8-48b4-bee0-64aee41a8ed4", "value":
+                    "http://www.archesproject.org/877412dd-7bad-4bdc-b41c-c258a3df3d0e"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d09b12b7-13e6-4d0e-ac31-498f6cc69664", "value": "046"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/c838555e-c7b2-404c-9d2b-34c7b81e1fd5">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d9f6b755-1ba0-480e-9e2c-2c763ed6fe50", "value": "Cambodia"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "612b6afe-99ac-4e98-9bb9-c65ea6a79df7", "value": "032"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "1caf0f7e-25c2-47ec-b530-be264536850d", "value":
+                    "http://www.archesproject.org/c838555e-c7b2-404c-9d2b-34c7b81e1fd5"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/05e10e16-98cc-4cde-aa83-e965605e3e72">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "5d102d2d-ba46-4ce3-8c45-016ad9a607c7", "value": "scottish"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "04a0d12b-0b7e-4ee9-8de6-1e829a7952b3", "value": "156"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "befcd2dc-c2e0-4eb3-b7fc-bacf892e6030", "value":
+                    "http://www.archesproject.org/05e10e16-98cc-4cde-aa83-e965605e3e72"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/265a9ad4-6a8a-4dfc-91b3-bdcf21e75c87">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "fde30dcc-2de0-4e99-bb7c-c3ad2825364b", "value":
+                    "http://www.archesproject.org/265a9ad4-6a8a-4dfc-91b3-bdcf21e75c87"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "fc350a24-6e4c-4ea3-bab2-a29b3fe503ba", "value": "Slovenia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "17846e78-5ea8-4f27-ba5b-aa0523d0fec8", "value": "163"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/aca01acb-f476-4444-8a2c-b1c2be869862">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "41c01789-2144-4e3c-8861-e3959acb3f9a", "value": "Congo"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "23f6bda2-0fe2-44f4-8990-40cbb41e50fd", "value": "042"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e772961c-352e-4b05-abe1-f4b974ce2a58", "value":
+                    "http://www.archesproject.org/aca01acb-f476-4444-8a2c-b1c2be869862"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2895751b-98b7-4435-8f14-3f5a2d51d038">
+                <arches:sortorder xml:lang="en">
+                    {"id": "a0046713-2d02-4282-9e81-18b45ad1d512", "value": "160"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d78f9b84-172c-4ae8-a4cc-9eb1a8fdb683", "value": "Sierra Leone"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e9f7032c-141e-4dc9-9abd-7de7827d833e", "value":
+                    "http://www.archesproject.org/2895751b-98b7-4435-8f14-3f5a2d51d038"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/6562e878-40cf-4917-8812-efa786dc49c9">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "35b09c67-3ee2-4f63-9e9d-7522364eb13a", "value":
+                    "http://www.archesproject.org/6562e878-40cf-4917-8812-efa786dc49c9"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "f2e50f6f-2e5b-4fed-b70f-bbe29068137a", "value": "Sudan"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "5d14cd8c-e16d-43d1-9864-df8c367fa613", "value": "176"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/625259a4-f215-43af-ba2b-e8b87e6ed547">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b94ac56e-5771-4273-9165-8571cbfd19e1", "value": "Central African Republic"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "8ce10add-663e-40cc-be76-0d2798809e64", "value": "036"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2a71a8bb-6098-4f42-ba9a-6a220cf30733", "value":
+                    "http://www.archesproject.org/625259a4-f215-43af-ba2b-e8b87e6ed547"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/92aa13df-f615-4a05-8d1b-bcde71c192a4">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e67fc0a5-3c4b-457c-9964-09527260deb7", "value":
+                    "http://www.archesproject.org/92aa13df-f615-4a05-8d1b-bcde71c192a4"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "4e741bfb-3681-4a3e-9d66-e55db0722281", "value": "136"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "db0d5da0-b829-4c0f-b663-e86ba516791b", "value": "Norway"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/599127eb-d80b-4537-82a3-c44c33c5dc20">
+                <arches:sortorder xml:lang="en">
+                    {"id": "8504b670-db93-48c6-97fe-7e83f8d3d31b", "value": "063"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f5b0605c-67de-4e24-a5d9-accc0f37d7b1", "value":
+                    "http://www.archesproject.org/599127eb-d80b-4537-82a3-c44c33c5dc20"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "d77e7ec9-ae8d-483c-a9d4-d9e263201ae6", "value": "France"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/dc9ce653-6e6d-48ca-8d9d-7a0951ddc3eb">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "acedff12-3361-4a8a-800d-b2ff3eff8516", "value": "Vatican"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bdd23248-896d-4622-bd30-97f3e6d8087b", "value":
+                    "http://www.archesproject.org/dc9ce653-6e6d-48ca-8d9d-7a0951ddc3eb"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "ca4d27f9-07c7-4af7-b775-a330c1d0ad90", "value": "202"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/43f998fa-e9dd-4bdb-9028-ce59c753e113">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "54ffbd02-8a24-406c-ad36-029cd53e712e", "value": "Costa Rica"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "a8d4a44d-771a-4ae0-903a-e3d9f038d7dd", "value": "043"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2b02f3c3-815c-4282-9fd1-a67c46969e77", "value":
+                    "http://www.archesproject.org/43f998fa-e9dd-4bdb-9028-ce59c753e113"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/3913a832-bd38-4a32-a989-c3ea29261a48">
+                <arches:sortorder xml:lang="en">
+                    {"id": "d24114c8-6fbf-4184-99f9-a85b0fcc2893", "value": "194"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "5d477242-ea8a-4e9c-b594-b40d2b01cf91", "value": "Uganda"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "676d1db6-7232-4429-8674-2b8d48ea3792", "value":
+                    "http://www.archesproject.org/3913a832-bd38-4a32-a989-c3ea29261a48"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/245857db-6160-4df9-841c-dadac6a17303">
+                <arches:sortorder xml:lang="en">
+                    {"id": "13d969f6-dd0d-4a5e-90be-b8eda8dde98d", "value": "131"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "943c4123-0ad0-43ae-9538-69812a8b6e91", "value": "Netherlands"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "1b71121c-5586-4177-8788-a5730e1cdf0e", "value":
+                    "http://www.archesproject.org/245857db-6160-4df9-841c-dadac6a17303"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/9d75333a-6e38-42f6-a829-35c4bab45674">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "13a1c2c2-417d-4347-acc0-768ed9c26b6b", "value": "Trinidad"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "00ed6303-6348-4b48-bbbe-666683bd8d7a", "value":
+                    "http://www.archesproject.org/9d75333a-6e38-42f6-a829-35c4bab45674"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "99363a93-5006-4c7e-a560-8a0273aceff5", "value": "189"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/cdc77951-ee86-4826-a282-c658a76a8f03">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "b1061dee-3b12-4c29-b0eb-4a2c150a8edf", "value":
+                    "http://www.archesproject.org/cdc77951-ee86-4826-a282-c658a76a8f03"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "bc38e9c4-91b6-4ad6-8f1f-f473e980b313", "value": "069"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6d5fb778-fc01-4076-a60e-0762fdb48954", "value": "Great Britain"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/408f7a0d-26e1-41f9-90e6-c878707841ad">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "18fc668a-fe0a-4caa-8966-6f1e68d67a51", "value": "Greece"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "c24fa653-2375-40c4-bc59-2a47f4102ba6", "value":
+                    "http://www.archesproject.org/408f7a0d-26e1-41f9-90e6-c878707841ad"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "319bf468-d6ff-4ef0-b375-faef18b99d88", "value": "070"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/c371fb07-4242-4017-9085-f7192b7f17f2">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "956dfd2f-78ff-4362-81cb-dfa4ce04007d", "value": "082"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "2f7f9c4e-722c-4c19-931c-f9070643422e", "value":
+                    "http://www.archesproject.org/c371fb07-4242-4017-9085-f7192b7f17f2"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "dfec7b0a-f3b8-4f86-89a5-43a656a038cd", "value": "India"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/df8fef7a-44e3-4d37-9a16-f4cf1d3bc804">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "c1a631cb-7089-48a9-a25f-8bd283920497", "value":
+                    "http://www.archesproject.org/df8fef7a-44e3-4d37-9a16-f4cf1d3bc804"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9ac11bfe-25c4-4525-9f7b-74fba2e7bd32", "value": "Tajikistan"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "385e71a8-e6ee-431c-b9b3-906a26ccd3a0", "value": "183"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/85477943-3c4f-4e48-bb03-7ed00805792e">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "9307818e-027d-4f6e-93a8-6e8d4e634f91", "value": "Iceland"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "a9248f7f-ba05-47e1-b3ae-f0f2ee6cdd42", "value": "080"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e146e086-dd71-469e-8a2e-40da33c5c28d", "value":
+                    "http://www.archesproject.org/85477943-3c4f-4e48-bb03-7ed00805792e"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/18b30135-524d-4ee5-bdee-0e84a76699e7">
+                <arches:sortorder xml:lang="en">
+                    {"id": "aa9efad6-094c-4ea2-9fe0-6cb98de927d6", "value": "141"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "a0552bc8-be1e-4a00-a768-a1035745fc66", "value":
+                    "http://www.archesproject.org/18b30135-524d-4ee5-bdee-0e84a76699e7"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "de8f91d2-126e-4b5a-ace3-f7e7d6b3dbc9", "value": "Papua"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/0bb4171c-ccb6-4ca5-ba30-c2f6da110bc3">
+                <arches:sortorder xml:lang="en">
+                    {"id": "7a8f7f8e-07b8-4b7d-8643-4026f36cd49c", "value": "170"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "f9cb1416-9dd1-407b-9f4b-9af81fac0484", "value":
+                    "http://www.archesproject.org/0bb4171c-ccb6-4ca5-ba30-c2f6da110bc3"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "bb33ca08-d05a-45e2-ad63-f5115e0bc460", "value": "St. Kitts"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/651e18db-362a-4234-8983-24928a26f9f7">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "9b8acd58-1a9f-49e6-a7dc-e34c49c688b5", "value":
+                    "http://www.archesproject.org/651e18db-362a-4234-8983-24928a26f9f7"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d4dee067-1d07-4610-9be9-2bf1864f2bdc", "value": "000"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "2e0195ce-2aba-4b24-9260-e664a29f3ee8", "value": "Afghanistan"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a6754547-a50f-4521-a454-f91be723807c">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "40b24f6c-5a81-4c4a-9a83-437f69c2afc9", "value":
+                    "http://www.archesproject.org/a6754547-a50f-4521-a454-f91be723807c"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b4395656-663d-4258-8636-5c836bb25635", "value": "Kiribati"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c1c574d5-7cc3-4bad-935a-056e92d4959c", "value": "095"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2b669460-64cf-4048-b068-f2553c901d36">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "dfac33b1-5ecc-400e-8b61-11f88eeb4261", "value":
+                    "http://www.archesproject.org/2b669460-64cf-4048-b068-f2553c901d36"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c86ebad3-124e-4cd9-8dd1-8c89b02409ed", "value": "122"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "64408ec8-ba71-489c-8292-d9abbad468ea", "value": "Monaco"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/6944ca5d-e7c2-4e30-9c07-489a1ccdbda0">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1774c49f-6e55-4314-952a-0afb5d47eb4f", "value": "Albania"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "04613617-17fd-4331-9698-36f0d3996074", "value":
+                    "http://www.archesproject.org/6944ca5d-e7c2-4e30-9c07-489a1ccdbda0"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d505c9da-6897-4d4a-ba32-1a638282ed2c", "value": "001"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower rdf:resource="http://www.archesproject.org/eb919b63-3003-4774-b811-2d4c81d3bd36"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/49494175-d9ef-4559-9ee1-52b5401bb1ff">
+                <arches:sortorder xml:lang="en">
+                    {"id": "fae63ec3-b93f-4297-8403-41f8c506fd75", "value": "190"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "b756b09b-181d-43a2-85be-28eef588a54f", "value": "Tunisia"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "8a9e2e00-b164-45da-a2fc-7aa0372e7d90", "value":
+                    "http://www.archesproject.org/49494175-d9ef-4559-9ee1-52b5401bb1ff"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/af8a7758-0292-4924-baa4-d1ab530fec11">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "e10704cc-e793-46b9-9e15-d7a6599e7821", "value": "Micronesia"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "0f76fddd-e448-4b9f-ad76-9d6c7a9a2480", "value":
+                    "http://www.archesproject.org/af8a7758-0292-4924-baa4-d1ab530fec11"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "a0e2b2a7-acfb-4175-ad20-2327af0b9c20", "value": "120"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/821ae673-d0ac-432f-831f-849e554d9866">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "0c68a4b9-4287-455e-8cd6-1d03834151aa", "value":
+                    "http://www.archesproject.org/821ae673-d0ac-432f-831f-849e554d9866"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "ce9cb4fc-5d9e-45f0-838e-c7ac2c1fb005", "value": "096"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "141b4782-7045-4c7e-bec2-cffe88d619f4", "value": "Korea"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/2aec20be-d47b-4ed4-9111-ecf7ee61e421">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "239d1cab-ff30-49d6-b75c-bd3d6fc06725", "value": "Colombia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d81b0750-e527-452a-a684-95117cca3051", "value": "040"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "037e5a99-66af-4b0f-914e-ac66829acb79", "value":
+                    "http://www.archesproject.org/2aec20be-d47b-4ed4-9111-ecf7ee61e421"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/d06b91da-2c88-473c-abfe-7341f00bfbcb">
+                <arches:sortorder xml:lang="en">
+                    {"id": "5d1a554c-6fd4-4450-8bcd-17cdfb39a657", "value": "091"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "8d2d9855-4954-4f79-8775-e477b63789e7", "value": "Japan"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "e588b427-fc8b-4210-af21-1df2a95bb1ed", "value":
+                    "http://www.archesproject.org/d06b91da-2c88-473c-abfe-7341f00bfbcb"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/322b42af-7ac6-4089-906c-b3cba55a2226">
+                <arches:sortorder xml:lang="en">
+                    {"id": "404cf49f-7943-48ec-afc8-450ea1d2e408", "value": "172"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "84c74095-a6b0-4787-b117-e8aeebadcc93", "value": "St Kitts"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "153ded29-8afa-4676-9143-d4b6b6dd26a0", "value":
+                    "http://www.archesproject.org/322b42af-7ac6-4089-906c-b3cba55a2226"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/30264e88-b3f8-476e-9e8e-94d96dd845b0">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "0a65b75f-70d6-49c5-88fe-0241f940290f", "value": "Santa Lucia"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "04703c33-162e-4731-8de1-69e7773c4147", "value": "175"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "cce713c4-da53-4910-b1a3-ac211e130797", "value":
+                    "http://www.archesproject.org/30264e88-b3f8-476e-9e8e-94d96dd845b0"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/e71cf4d9-dfd3-4d5b-856e-61a2895d1978">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "6590cde7-a88e-4860-a341-4c27014f49c2", "value": "Sri Lanka"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "42a8ba47-f6e3-44c0-a764-628fd20c7264", "value": "169"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "32303b2f-55c8-4a40-8742-f8f11fb258cb", "value":
+                    "http://www.archesproject.org/e71cf4d9-dfd3-4d5b-856e-61a2895d1978"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/e47431df-608d-4052-aa1d-745e3e2425e8">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "76fcb29d-8cb3-4a1e-81e9-3b71c0b95bdf", "value": "Taiwan"}
+                </skos:prefLabel>
+                <arches:sortorder xml:lang="en">
+                    {"id": "5dadce63-fbbe-468e-8cf9-fbacc8a384b3", "value": "182"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "7dadfddf-6867-4303-8fbe-2037254c8e17", "value":
+                    "http://www.archesproject.org/e47431df-608d-4052-aa1d-745e3e2425e8"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/8a65f535-7e7a-4093-950c-a461c7b65827">
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "bda33759-f164-456f-b327-8b189b27a2a1", "value":
+                    "http://www.archesproject.org/8a65f535-7e7a-4093-950c-a461c7b65827"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "4bceafb0-1496-4054-9e82-738c2c562578", "value": "066"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "05a33106-cb32-458b-be37-690f4874637c", "value": "Georgia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/a794a94c-0940-44b9-adda-eed87de41314">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "c9bbcec6-5517-42f4-9385-4031f1d86784", "value": "Marshall"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "c707e793-6f56-43aa-b9c7-2bb862cf33a3", "value": "116"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "d8876161-b8bd-4bcc-991c-4808cb1b4930", "value":
+                    "http://www.archesproject.org/a794a94c-0940-44b9-adda-eed87de41314"}
+                </dcterms:identifier>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower rdf:resource="http://www.archesproject.org/43f4a67c-f7b8-4e8a-8d17-03ffb167c672"/>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/43af2d5f-7096-4146-bb91-4b835d115191">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "76683732-e904-4eae-a3b1-4b5014bca5a4", "value":
+                    "http://www.archesproject.org/43af2d5f-7096-4146-bb91-4b835d115191"}
+                </dcterms:identifier>
+                <arches:sortorder xml:lang="en">
+                    {"id": "ee94bf5e-fbb3-4368-996f-210cd84c5136", "value": "078"}
+                </arches:sortorder>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "566c78f5-b065-4b78-8991-1670c898fad5", "value": "Honduras"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/4bd07ca6-1daf-4b8a-8a63-03d52d070a39">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "267ae1b9-8a31-4af5-9947-58a090065f8a", "value": "St. Lucia"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "ba39669c-73d9-47ee-8ddf-ec49fd9dfab0", "value":
+                    "http://www.archesproject.org/4bd07ca6-1daf-4b8a-8a63-03d52d070a39"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "62af17f5-ae4e-451d-994d-d74d483c66c6", "value": "171"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/9286f6b8-d8b1-4959-9e77-e7cbcfe1ce59">
+                <skos:prefLabel xml:lang="en">
+                    {"id": "1974ab42-cf41-4a58-be44-dd11560289ca", "value": "United States"}
+                </skos:prefLabel>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "3f474de5-d7d5-4627-9c50-df8351fb6f2e", "value":
+                    "http://www.archesproject.org/9286f6b8-d8b1-4959-9e77-e7cbcfe1ce59"}
+                </dcterms:identifier>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "5e6eb825-6661-4738-8f58-389c98d8efc8", "value": "197"}
+                </arches:sortorder>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/00eaeec4-2d80-4134-8d3a-713868458e50">
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <arches:sortorder xml:lang="en">
+                    {"id": "d1063056-29b9-4a94-be56-93267d6013fd", "value": "128"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "aff4e6e1-f95d-4936-9d51-c2497875b455", "value":
+                    "http://www.archesproject.org/00eaeec4-2d80-4134-8d3a-713868458e50"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "efb198b2-c2cb-4d78-9d4f-ecdf6733a070", "value": "Namibia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/254751e7-e317-4ab2-9965-c9dac3d84eb1">
+                <arches:sortorder xml:lang="en">
+                    {"id": "4a8b7429-0836-4101-b174-05534a81ac32", "value": "185"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "103e4c96-fe2a-4713-a632-e9a2378244a0", "value":
+                    "http://www.archesproject.org/254751e7-e317-4ab2-9965-c9dac3d84eb1"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "083cbb63-e1ab-4885-99ab-c687690f7d71", "value": "Thailand"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/21c7d392-fd7c-4556-a8ae-768ce45e40fa">
+                <arches:sortorder xml:lang="en">
+                    {"id": "663638ac-a5bf-4ec2-aecb-806148279b07", "value": "008"}
+                </arches:sortorder>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "886c60cb-1c6a-4181-8752-e7662e5d0815", "value":
+                    "http://www.archesproject.org/21c7d392-fd7c-4556-a8ae-768ce45e40fa"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "78385034-7292-4771-8fef-88255b062c33", "value": "Armenia"}
+                </skos:prefLabel>
+            </skos:Concept>
+        </skos:narrower>
+        <skos:narrower>
+            <skos:Concept rdf:about="http://www.archesproject.org/be621655-5ba7-4e1a-8692-b6bbb247e7a7">
+                <arches:sortorder xml:lang="en">
+                    {"id": "87ab080c-5c6e-4aaf-a4fa-3023996cb9d3", "value": "144"}
+                </arches:sortorder>
+                <dcterms:identifier xml:lang="en-US">
+                    {"id": "58001e8c-39e1-4961-aad9-779ac7a9a9c9", "value":
+                    "http://www.archesproject.org/be621655-5ba7-4e1a-8692-b6bbb247e7a7"}
+                </dcterms:identifier>
+                <skos:prefLabel xml:lang="en">
+                    {"id": "3a416eb3-75cf-4ae0-bc10-396d8c3bbca7", "value": "Philippines"}
+                </skos:prefLabel>
+                <skos:inScheme rdf:resource="http://www.archesproject.org/d947a234-58cd-460e-8752-ac8699bfe99a"/>
+            </skos:Concept>
+        </skos:narrower>
+    </skos:Concept>
+</rdf:RDF>
