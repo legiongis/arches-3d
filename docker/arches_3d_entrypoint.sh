@@ -2,6 +2,8 @@
 
 
 APP_FOLDER=${WEB_ROOT}/${ARCHES_PROJECT}
+THESAURI_FOLDER=${APP_FOLDER}/arches_3d/db/schemes/thesauri
+COLLECTIONS_FOLDER=${APP_FOLDER}/arches_3d/db/schemes/collections
 
 
 cd_app_folder() {
@@ -19,24 +21,25 @@ init_custom_db() {
 		echo "Running: python manage.py packages -o import_graphs"
 		python manage.py packages -o import_graphs
 	else
-		echo "Graphs already exist in the database. Skipping 'import_graphs'."
+		echo "Graphs already exist in the database. Skipping..."
 	fi
 	
 	# Import concepts
 	if ! concepts_exist; then
-		import_reference_data arches_3d/db/schemes/arches_concept_scheme.rdf
-		import_reference_data arches_3d/db/schemes/arches_3d_concept_scheme.rdf
+	    for file_path in ${THESAURI_FOLDER}/*.rdf; do
+	        import_reference_data ${file_path}
+        done
 	else
-		echo "Concepts already exist in the database."
-		echo "Skipping 'arches_concept_scheme.rdf'."		
-		echo "Skipping 'arches_3d_concept_scheme.rdf'."
+		echo "Concepts already exist in the database. Skipping..."
 	fi
 	
 	# Import collections
 	if ! collections_exist; then
-		import_reference_data arches_3d/db/schemes/arches_concept_collections.rdf
+        for file_path in ${COLLECTIONS_FOLDER}/*.rdf; do
+	        import_reference_data ${file_path}
+        done
 	else
-		echo "Collections already exist in the database. Skipping 'import_reference_data arches_concept_collections.rdf'."
+		echo "collections already exist in the database. Skipping..."
 	fi
 	
 }
