@@ -12,6 +12,7 @@ services:
         - PGDBNAME=arches
         - PGHOST=db
         - PGPORT=5432
+        - SSLMODE=False
         - ESHOST=elasticsearch
         - ESPORT=9200
         - COUCHDB_HOST=couchdb

@@ -33,6 +33,7 @@ DATABASES = {
         'HOST': get_env_variable('PGHOST'),
         'PORT': get_env_variable('PGPORT'),
         'POSTGIS_TEMPLATE': 'template_postgis_20',
+        'OPTIONS': {'sslmode': get_env_variable('SSLMODE')},
     }
 }
 

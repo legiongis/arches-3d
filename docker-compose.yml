@@ -20,6 +20,7 @@ services:
         - PGDBNAME=arches
         - PGHOST=db
         - PGPORT=5432
+        - SSLMODE=False
         - COUCHDB_HOST=couchdb
         - COUCHDB_PORT=5984
         - COUCHDB_USER=admin
