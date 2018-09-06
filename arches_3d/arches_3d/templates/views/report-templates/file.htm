@@ -1,18 +1,18 @@
 {% extends "views/report-templates/default.htm" %} {% load i18n %} {% load staticfiles %} 
 
 {% block header %}
-<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}bower_components/three-d-hop/minimal/stylesheet/3dhop.css"/>
+<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}packages/three-d-hop/minimal/stylesheet/3dhop.css"/>
 <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/report.css"/>
 
 
 <!-- ko if: threeDHopFiles().length > 0 -->
-<div class="cvast-report-media-wrapper">
+<div class="report-media-wrapper">
     {% include 'views/components/three-d-hop/three-d-hop-canvas.htm' %}
 </div>
 <!-- /ko -->
 
 <!-- ko if: imgs().length > 0 -->
-<div class="cvast-report-media-wrapper">
+<div class="report-media-wrapper">
     <div data-bind="carousel: { content: { name: 'carouselItemTemplate', data: imgs } }"></div> 
     <template id="carouselItemTemplate">
     </template> 

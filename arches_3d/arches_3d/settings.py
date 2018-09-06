@@ -23,6 +23,8 @@ TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'functions', 'templates'))
 TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'widgets', 'templates'))
 TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
+INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '1-)jb^2^7b=)ck4#)z(sypp3upwjqc8+#&ay0cj5)&wft_r!xa'
 
