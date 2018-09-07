@@ -4,7 +4,7 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = []
+    dependencies = [('models', '0003_40b4')]
 
     operations = [
         migrations.RunSQL(
