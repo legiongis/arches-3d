@@ -9,8 +9,9 @@ services:
         dockerfile: ./Dockerfile
       command: run_arches
       volumes:
-        - arches-log:/arches/arches/logs
+        - arches-log:/web_root/arches_3d/arches_3d/logs
         - arches-static:/static_root
+        - arches-uploadedfiles:/web_root/arches_3d/arches_3d/uploadedfiles
       environment:
         - ARCHES_PROJECT=arches-3d
         - INSTALL_DEFAULT_GRAPHS=False
