@@ -1,4 +1,4 @@
-FROM archesproject/arches:4.3.1
+FROM globaldigitalheritage/arches:4.3.1.1
 
 ENV YARN_DIR=${WEB_ROOT}/arches_3d/arches_3d
 ENV ENTRYPOINT_DIR=/docker/entrypoint
