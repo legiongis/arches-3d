@@ -44,13 +44,8 @@ init_custom_db() {
 	
 }
 
-db_exists() {
-	echo "Checking if database "${PGDBNAME}" exists..."
-	psql -lqt -h $PGHOST -U postgres | cut -d \| -f 1 | grep -qw ${PGDBNAME}
-}
-
 graphs_exist() {
-	row_count=$(psql -h ${PGHOST} -U postgres -d ${PGDBNAME} -Atc "SELECT COUNT(*) FROM public.graphs")
+	row_count=$(psql --host=${PGHOST} --port=${PGPORT} --user=${PGUSERNAME} --dbname=${PGDBNAME} -Atc "SELECT COUNT(*) FROM public.graphs")
 	if [[ ${row_count} -le 3 ]]; then
 		return 1
 	else 
@@ -59,7 +54,7 @@ graphs_exist() {
 }
 
 concepts_exist() {
-	row_count=$(psql -h ${PGHOST} -U postgres -d ${PGDBNAME} -Atc "SELECT COUNT(*) FROM public.concepts WHERE nodetype = 'Concept'")
+	row_count=$(psql --host=${PGHOST} --port=${PGPORT} --user=${PGUSERNAME} --dbname=${PGDBNAME} -Atc "SELECT COUNT(*) FROM public.concepts WHERE nodetype = 'Concept'")
 	if [[ ${row_count} -le 2 ]]; then
 		return 1
 	else 
@@ -68,7 +63,7 @@ concepts_exist() {
 }
 
 collections_exist() {
-	row_count=$(psql -h ${PGHOST} -U postgres -d ${PGDBNAME} -Atc "SELECT COUNT(*) FROM public.concepts WHERE nodetype = 'Collection'")
+	row_count=$(psql --host=${PGHOST} --port=${PGPORT} --user=${PGUSERNAME} --dbname=${PGDBNAME} -Atc "SELECT COUNT(*) FROM public.concepts WHERE nodetype = 'Collection'")
 	if [[ ${row_count} -le 1 ]]; then
 		return 1
 	else 
