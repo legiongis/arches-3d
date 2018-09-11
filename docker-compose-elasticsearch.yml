@@ -1,0 +1,49 @@
+version: '2'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    image: elasticsearch:5.2
+    restart: always
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - TZ=EST
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - esnet
+#
+#  elasticsearch2:
+#    container_name: elasticsearch2
+#    image: elasticsearch:5.2
+#    restart: always
+#    volumes:
+#      - elasticsearch-data2:/usr/share/elasticsearch/data
+#    environment:
+#      - cluster.name=docker-cluster
+#      - bootstrap.memory_lock=true
+#      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+#      - discovery.zen.ping.unicast.hosts=elasticsearch
+#      - TZ=EST
+#    ulimits:
+#      memlock:
+#        soft: -1
+#        hard: -1
+#    networks:
+#      - esnet
+
+volumes:
+  elasticsearch-data:
+#  elasticsearch-data2:
+
+networks:
+  esnet:
