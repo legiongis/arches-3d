@@ -1,5 +1,4 @@
 define([
-    'arches_3d_javascript',
     'underscore',
     'knockout',
     'viewmodels/report',
@@ -7,7 +6,7 @@ define([
     'reports/three-d-hop',
     'knockstrap',
     'bindings/chosen'
-], function (js, _, ko, ReportViewModel, arches, threeDHop) {
+], function (_, ko, ReportViewModel, arches, threeDHop) {
         return ko.components.register('file-report', {
         viewModel: function (params) {
             var self = this;
