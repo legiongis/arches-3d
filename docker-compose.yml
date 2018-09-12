@@ -32,6 +32,8 @@ services:
         - DJANGO_MODE=PROD
         - DJANGO_DEBUG=False
         # - DJANGO_REMOTE_DEBUG=False
+        - AZURE_ACCOUNT_NAME=
+        - AZURE_ACCOUNT_KEY=
         - DOMAIN_NAMES=localhost
         - TZ=PST
       ports:

@@ -53,3 +53,13 @@ if USER_SECRET_KEY:
     SECRET_KEY = USER_SECRET_KEY
 
 STATIC_ROOT = '/static_root'
+
+AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
+AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
+AZURE_CONTAINER = get_optional_env_variable('AZURE_CONTAINER') or 'arches'
+AZURE_SSL = get_optional_env_variable('AZURE_SSL') or False
+AZURE_UPLOAD_MAX_CONN = get_optional_env_variable('AZURE_UPLOAD_MAX_CONN') or 2
+AZURE_CONNECTION_TIMEOUT_SECS = get_optional_env_variable('AZURE_CONNECTION_TIMEOUT_SECS') or 99999
+AZURE_BLOB_MAX_MEMORY_SIZE = get_optional_env_variable('AZURE_BLOB_MAX_MEMORY_SIZE') or '2MB'
+AZURE_URL_EXPIRATION_SECS = get_optional_env_variable('AZURE_URL_EXPIRATION_SECS') or None
+AZURE_OVERWRITE_FILES = get_optional_env_variable('AZURE_OVERWRITE_FILES') or False
