@@ -34,6 +34,7 @@ services:
         # - DJANGO_REMOTE_DEBUG=False
         - AZURE_ACCOUNT_NAME=
         - AZURE_ACCOUNT_KEY=
+        - STATIC_URL=
         - DOMAIN_NAMES=localhost
         - TZ=PST
       ports:

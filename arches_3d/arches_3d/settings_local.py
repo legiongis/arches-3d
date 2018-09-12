@@ -53,6 +53,7 @@ if USER_SECRET_KEY:
     SECRET_KEY = USER_SECRET_KEY
 
 STATIC_ROOT = '/static_root'
+STATIC_URL = get_env_variable('STATIC_URL') or '/media/'
 
 AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
