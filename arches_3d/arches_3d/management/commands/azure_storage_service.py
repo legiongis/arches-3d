@@ -36,8 +36,6 @@ class AzureStorageService:
                 target_blob_name = self.resolve_target_blob_name(blob, origin_prefix, target_prefix)
                 if not self.block_blob_service.exists(self.container_name, target_blob_name):
                     self.copy_blob(blob.name, target_blob_name)
-                else:
-                    print "Already exists: {target_blob_name}".format(target_blob_name=target_blob_name)
 
     def resolve_target_blob_name(self, blob, origin_prefix, target_prefix):
         path_after_prefix = os.path.relpath(blob.name, origin_prefix)
@@ -49,8 +47,6 @@ class AzureStorageService:
 
         source_url = self.make_blob_url(origin_blob_name)
         self.block_blob_service.copy_blob(self.container_name, target_blob_name, source_url)
-
-        # self.block_blob_service.delete_blob(self.container_name, target_url)
 
     def make_blob_url(self, blob_name):
         return self.block_blob_service.make_blob_url(self.container_name, blob_name)
