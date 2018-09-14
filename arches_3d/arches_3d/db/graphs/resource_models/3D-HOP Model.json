@@ -15,7 +15,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter a description and description type for the resource.", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Description", 
                     "nodegroup_id": "93ccb3a2-b833-11e8-b252-0242ac120004", 
                     "sortorder": 2, 
@@ -33,7 +33,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Select the information carrier for the information resource.", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Information Carrier", 
                     "nodegroup_id": "dbb23422-b832-11e8-9fdc-0242ac120004", 
                     "sortorder": 4, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the information resource's title and the type of that title. ", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Title", 
                     "nodegroup_id": "4173eecc-b833-11e8-aad3-0242ac120004", 
                     "sortorder": 0, 
@@ -246,10 +246,31 @@
                     "rangenode_id": "baae150c-b832-11e8-8c79-0242ac120004"
                 }
             ], 
-            "functions_x_graphs": [], 
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "93ccb3a2-b833-11e8-b252-0242ac120004", 
+                            "string_template": "<Description>"
+                        }, 
+                        "map_popup": {
+                            "nodegroup_id": "4173eecc-b833-11e8-aad3-0242ac120004", 
+                            "string_template": "<Title>"
+                        }, 
+                        "name": {
+                            "nodegroup_id": "4173eecc-b833-11e8-aad3-0242ac120004", 
+                            "string_template": "<Title>"
+                        }, 
+                        "triggering_nodegroups": []
+                    }, 
+                    "function_id": "60000000-0000-0000-0000-000000000001", 
+                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                    "id": "39367af0-b837-11e8-a46c-0242ac120004"
+                }
+            ], 
             "graphid": "36bcaff4-b82f-11e8-8598-0242ac120004", 
             "iconclass": "fa fa-file-photo-o", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
