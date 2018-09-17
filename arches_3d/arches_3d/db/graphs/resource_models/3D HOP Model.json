@@ -106,20 +106,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
-                    "card_id": "baae1d36-b832-11e8-8c79-0242ac120004", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "Cover Image", 
-                        "maxFilesize": "2"
-                    }, 
-                    "id": "baae2060-b832-11e8-8c79-0242ac120004", 
-                    "label": "Cover Image", 
-                    "node_id": "baae150c-b832-11e8-8c79-0242ac120004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
                     "card_id": "93ccb7b2-b833-11e8-b252-0242ac120004", 
                     "config": {
                         "defaultValue": "", 
@@ -144,6 +130,20 @@
                     "id": "b7ce4e88-b832-11e8-94b1-0242ac120004", 
                     "label": "Thumbnail Image", 
                     "node_id": "b7ce3c18-b832-11e8-94b1-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "baae1d36-b832-11e8-8c79-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "baae2060-b832-11e8-8c79-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "baae150c-b832-11e8-8c79-0242ac120004", 
                     "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
@@ -274,7 +274,7 @@
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
-            "name": "3D-HOP Model", 
+            "name": "3D HOP Model", 
             "nodegroups": [
                 {
                     "cardinality": "n", 
@@ -322,7 +322,7 @@
                     "nodeid": "dbb23422-b832-11e8-9fdc-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
-                    "sortorder": 0
+                    "sortorder": 4
                 }, 
                 {
                     "config": {
@@ -351,7 +351,7 @@
                     "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": true, 
-                    "name": "3D-HOP Model", 
+                    "name": "3D HOP Model", 
                     "nodegroup_id": null, 
                     "nodeid": "36bca82e-b82f-11e8-8598-0242ac120004", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object", 
@@ -372,7 +372,7 @@
                     "nodeid": "b7ce3c18-b832-11e8-94b1-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
-                    "sortorder": 3
+                    "sortorder": 2
                 }, 
                 {
                     "config": null, 
@@ -388,7 +388,7 @@
                     "nodeid": "93ccb3a2-b833-11e8-b252-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by", 
-                    "sortorder": 1
+                    "sortorder": 3
                 }, 
                 {
                     "config": null, 
@@ -454,7 +454,7 @@
                     "nodeid": "baae150c-b832-11e8-8c79-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
-                    "sortorder": 2
+                    "sortorder": 1
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
@@ -467,8 +467,8 @@
                 "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
                 "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
                 "243f8689-b8f6-11e6-84a5-026d961c88e6", 
-                "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
-                "36bcaff4-b82f-11e8-8598-0242ac120004"
+                "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "3caf329f-b8f7-11e6-84a5-026d961c88e6"
             ], 
             "resource_2_resource_constraints": [], 
             "root": {
@@ -480,14 +480,14 @@
                 "isrequired": false, 
                 "issearchable": true, 
                 "istopnode": true, 
-                "name": "3D-HOP Model", 
+                "name": "3D HOP Model", 
                 "nodegroup_id": null, 
                 "nodeid": "36bca82e-b82f-11e8-8598-0242ac120004", 
                 "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object", 
                 "sortorder": 0
             }, 
             "subtitle": "", 
-            "template_id": "50000000-0000-0000-0000-000000000004", 
+            "template_id": "50000000-0000-0000-0000-000000000005", 
             "version": ""
         }
     ], 
