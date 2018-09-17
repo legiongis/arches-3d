@@ -7,35 +7,21 @@ define([
     'knockstrap',
     'bindings/chosen'
 ], function (_, ko, ReportViewModel, arches, threeDHopSetup) {
-        return ko.components.register('file-report', {
+        return ko.components.register('three-d-hop-report', {
         viewModel: function (params) {
             var self = this;
             params.configKeys = ['nodes'];
             ReportViewModel.apply(this, [params]);
 
-            self.imgs = ko.observableArray([]);
             self.threeDHopFiles = ko.observableArray([]);
 
             if (self.report.get('tiles')) {
-                var imgs = [];
                 var threeDHopFiles = [];
                 var nodes = self.nodes();
                 self.report.get('tiles').forEach(function (tile) {
                     _.each(tile.data, function (val, key) {
                         if (Array.isArray(val)) {
                             val.forEach(function (item) {
-
-                                if (item.status &&
-                                    item.type &&
-                                    item.status === 'uploaded' &&
-                                    item.type.indexOf('image') > -1 &&
-                                    _.contains(nodes, key)
-                                ) {
-                                    imgs.push({
-                                        src: item.url,
-                                        alt: item.name
-                                    });
-                                }
 
                                 if (item.status &&
                                     item.status === 'uploaded' &&
@@ -51,10 +37,6 @@ define([
                     }, self);
                 }, self);
 
-                if (imgs.length > 0) {
-                    self.imgs(imgs);
-                }
-
                 if (threeDHopFiles.length > 0) {
                     self.threeDHopFiles(threeDHopFiles);
                     var filepath = threeDHopFiles[0].src;
@@ -63,7 +45,6 @@ define([
                     sectiontoolInit()
                 }
             }
-
 
             var widgets = [];
             var getCardWidgets = function(card) {
@@ -83,7 +64,7 @@ define([
             );
         },
         template: {
-            require: 'text!report-templates/file'
+            require: 'text!report-templates/three-d-hop'
         }
     });
 });
