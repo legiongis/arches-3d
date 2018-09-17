@@ -86,7 +86,7 @@ fix_static_paths() {
 
 init_custom_db
 
-if [[ ! -z ${AZURE_ACCOUNT_NAME} ]]; then
+if [[ "${DJANGO_MODE}" == "PROD" ]] && [[ ! -z ${AZURE_ACCOUNT_NAME} ]]; then
     fix_static_paths
 fi
 
