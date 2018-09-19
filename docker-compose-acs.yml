@@ -1,0 +1,75 @@
+version: '3'
+services:
+
+    arches:
+      image: globaldigitalheritage/arches-3d:master
+      command: run_arches
+      volumes:
+        - arches-log:/web_root/arches_3d/arches_3d/logs
+      environment:
+        - ARCHES_PROJECT=arches_3d
+        - INSTALL_DEFAULT_GRAPHS=False
+        - INSTALL_DEFAULT_CONCEPTS=False
+        - PGUSERNAME=
+        - PGPASSWORD=
+        - PGDBNAME=arches
+        - PGHOST=
+        - PGPORT=5432
+        - COUCHDB_HOST=couchdb
+        - COUCHDB_PORT=5984
+        - COUCHDB_USER=
+        - COUCHDB_PASS=
+        - ESHOST=
+        - ESPORT=9200
+        - ELASTICSEARCH_PREFIX=arches_3d
+        - DJANGO_MODE=PROD
+        - DJANGO_DEBUG=False
+        - AZURE_ACCOUNT_NAME=
+        - AZURE_ACCOUNT_KEY=
+        - STATIC_URL=
+        - DOMAIN_NAMES=localhost
+        - TZ=EST
+      ports:
+        - '8000:8000'
+
+    nginx:
+      image: vmeijer/nginx-proxy:1.2.3b
+      ports:
+        - '80:80'
+        - '443:443'
+      volumes:
+        - letsencrypt-acme-challenge:/var/www
+        - letsencrypt:/etc/letsencrypt
+      environment:
+        - NGINX_PROXY_MODE=local
+        - NGINX_PROTOCOL=http
+        - LOCAL_PROXY_HOST=arches
+        - LOCAL_PROXY_PORT=8000
+        - DOMAIN_NAMES=localhost
+        - PUBLIC_MODE=False
+        - TZ=EST
+      depends_on:
+        - arches
+
+    letsencrypt:
+      image: vmeijer/letsencrypt-client:1.1
+      volumes:
+        - letsencrypt-acme-challenge:/var/www
+        - letsencrypt:/etc/letsencrypt
+        - letsencrypt-log:/var/log/letsencrypt
+      command: get_certificate
+      environment:
+        - MODE=regular
+        - LETSENCRYPT_EMAIL=
+        - DOMAIN_NAMES=
+        - PRODUCTION_MODE=False
+        - PERSISTENT_MODE=True
+        - TZ=EST
+      depends_on:
+        - nginx
+
+volumes:
+    arches-log:
+    letsencrypt:
+    letsencrypt-log:
+    letsencrypt-acme-challenge:
