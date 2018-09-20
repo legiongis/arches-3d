@@ -6,6 +6,7 @@ services:
       command: run_arches
       volumes:
         - arches-log:/web_root/arches_3d/arches_3d/logs
+        - arches-static:/static_root
       environment:
         - ARCHES_PROJECT=arches_3d
         - INSTALL_DEFAULT_GRAPHS=False
@@ -70,6 +71,7 @@ services:
 
 volumes:
     arches-log:
+    arches-static:
     letsencrypt:
     letsencrypt-log:
     letsencrypt-acme-challenge:
