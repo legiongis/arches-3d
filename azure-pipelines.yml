@@ -9,7 +9,7 @@ steps:
   displayName: Login
   inputs:
     containerregistrytype: 'Container Registry'
-    dockerRegistryEndpoint: 'Docker Hub'
+    dockerRegistryEndpoint: 'docker_hub'
     command: login
 
 - script: docker-compose -f docker-compose-azure-pipelines.yml build arches
