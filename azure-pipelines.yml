@@ -5,7 +5,7 @@ variables:
   imageName: 'globaldigitalheritage/arches-3d:$(build.buildId)'
 
 steps:
-- script: docker login -u $(docker_id) -p $(docker_password)
+- script: docker login -u $(dockerId) -p $(dockerPassword)
   displayName: 'docker login'
 
 - script: docker-compose -f docker-compose-azure-pipelines.yml build arches
