@@ -55,6 +55,6 @@
         "select2": "3.5.1",
         "underscore": "1.9.1",
         "uuidjs": "^3.3.0",
-        "three-d-hop": "https://github.com/cnr-isti-vclab/3DHOP.git#573e03058163ab51d3d32f02415b37567b6a0649"
+        "three-d-hop": "cnr-isti-vclab/3DHOP#4.2"
     }
 }
