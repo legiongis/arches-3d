@@ -8,7 +8,7 @@ steps:
 - task: Docker@1
   displayName: Login
   inputs:
-    containerregistrytype: 'Container Registry'
+    containerregistrytype: 'Dockerregistry'
     dockerRegistryEndpoint: 'docker_hub'
     command: login
 
