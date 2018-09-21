@@ -26,7 +26,6 @@ services:
       depends_on:
         - db
         - elasticsearch
-        - couchdb
 
     db:
       container_name: db
@@ -45,12 +44,3 @@ services:
         - "9300:9300"
       environment:
         - TZ=PST
-
-    couchdb:
-      container_name: couchdb
-      image: couchdb:2.1.1
-      ports:
-        - "5984:5984"
-      environment:
-        COUCHDB_USER: admin
-        COUCHDB_PASSWORD: password
