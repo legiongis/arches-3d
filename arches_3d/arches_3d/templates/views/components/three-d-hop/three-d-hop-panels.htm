@@ -1,7 +1,15 @@
 {% load i18n %} {% load staticfiles %}
 
+<!--MEASURE-->
+ <div id="measure-box" class="output-box">Measured length<hr/><span id="measure-output" class="output-text" onmousedown="event.stopPropagation()">0.0</span></div>
+<!--MEASURE-->
+
+<!--POINT PICKING-->
+ <div id="pickpoint-box" class="output-box">XYZ picked point<hr/><span id="pickpoint-output" class="output-text" onmousedown="event.stopPropagation()">[ 0 , 0 , 0 ]</span></div>
+<!--POINT PICKING-->
+
 <!-- 3D HOP Sections panel -->
-<div id="sections-box" class="output-box">
+<div id="sections-box" class="output-box" style="left: 80px; top: 50px; display: table;">
     <table class="output-table" onmousedown="event.stopPropagation()">
         <tr>
             <td>Plane</td>

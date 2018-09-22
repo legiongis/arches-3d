@@ -1,37 +1,64 @@
 {% load i18n %} {% load staticfiles %}
 
 <!-- 3D HOP window and side buttons -->
-<div id="3dhop" class="tdhop" style="width: 100% !important; height: 500px !important;" onMouseDown="if (event.preventDefault) event.preventDefault()">
+<div id="3dhop" class="tdhop" style="width: 100% !important; height: 650px !important;" onMouseDown="if (event.preventDefault) event.preventDefault()">
     <div id="tdhlg"></div>
     <div id="toolbar">
-        <img id="home" title="Home" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/home.png" /><br/>
-        <img id="zoomin" title="Zoom In" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/zoomin.png"
-        /><br/>
-        <img id="zoomout" title="Zoom Out" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/zoomout.png"
-        /><br/>
-        <img id="light_on" title="Disable Light Control" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/light_on.png"
-            style="position:absolute; visibility:hidden;" />
-        <img id="light" title="Enable Light Control" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/light.png"
-        /><br/>
 
-        <img id="sections_on" title="Disable Plane Sections" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections_on.png"
-            style="position:absolute; visibility:hidden;" />
-        <img id="sections" title="Enable Plane Sections" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections.png"
-        
-        /><br/>
-        <img id="pick_on" title="Disable PickPoint Mode" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/pick_on.png"
-            style="position:absolute; visibility:hidden;" />
-        <img id="pick" title="Enable PickPoint Mode" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/pick.png"
-        /><br/>
-        <img id="full_on" title="Exit Full Screen" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full_on.png"
-            style="position:absolute; visibility:hidden;" />
-        <img id="full" title="Full Screen" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full.png"
-        />
+        <!--HOME-->
+        <img id="home"          title="Home"                   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/home.png"/><br/>
+        <!--HOME-->
+
+        <!--ZOOM-->
+          <img id="zoomin"      title="Zoom In"                src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/zoomin.png"/><br/>
+          <img id="zoomout"     title="Zoom Out"               src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/zoomout.png"/><br/>
+        <!--ZOOM-->
+
+        <!--LIGHTING-->
+          <img id="lighting_off" title="Enable Lighting"       src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lighting_off.png" style="position:absolute; visibility:hidden;"/>
+          <img id="lighting"     title="Disable Lighting"      src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lighting.png"/><br/>
+        <!--LIGHTING-->
+
+        <!--LIGHT-->
+          <img id="light_on"    title="Disable Light Control"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lightcontrol_on.png" style="position:absolute; visibility:hidden;"/>
+          <img id="light"       title="Enable Light Control"   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lightcontrol.png"/><br/>
+        <!--LIGHT-->
+
+        <!--MEASURE-->
+          <img id="measure_on"  title="Disable Measure Tool"   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/measure_on.png" style="position:absolute; visibility:hidden;"/>
+          <img id="measure"     title="Enable Measure Tool"    src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/measure.png"/><br/>
+        <!--MEASURE-->
+
+        <!--POINT PICKING-->
+          <img id="pick_on"     title="Disable PickPoint Mode" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/pick_on.png" style="position:absolute; visibility:hidden;"/>
+          <img id="pick"        title="Enable PickPoint Mode"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/pick.png"/><br/>
+        <!--POINT PICKING-->
+
+        <!--SECTIONS-->
+          <img id="sections_on" title="Disable Plane Sections" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections_on.png" style="position:absolute; visibility:hidden;"/>
+          <img id="sections"    title="Enable Plane Sections"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections.png"/><br/>
+        <!--SECTIONS-->
+
+        <!--COLOR-->
+          <img id="color_on"    title="Disable Solid Color"    src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/color_on.png" style="position:absolute; visibility:hidden;"/>
+          <img id="color"       title="Enable Solid Color"     src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/color.png"/><br/>
+        <!--COLOR-->
+
+        <!--CAMERA-->
+          <img id="perspective"  title="Perspective Camera"    src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/perspective.png" style="position:absolute; visibility:hidden;"/>
+          <img id="orthographic" title="Orthographic Camera"   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/orthographic.png"/><br/>
+        <!--CAMERA-->
+
+        <!--FULLSCREEN-->
+          <img id="full_on"     title="Exit Full Screen"       src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full_on.png" style="position:absolute; visibility:hidden;"/>
+          <img id="full"        title="Full Screen"            src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full.png"/>
+        <!--FULLSCREEN-->
+
     </div>
-    <div id="pickpoint-box" class="output-box">XYZ picked point
-        <hr/><span id="pickpoint-output" class="output-text" onMouseDown="event.stopPropagation()">[ 0 , 0 , 0 ]</span>
-    </div>
-    {% include 'views/components/three-d-hop/three-d-hop-sections-panel.htm' %}
+
+    {% include 'views/components/three-d-hop/three-d-hop-panels.htm' %}
+
     <canvas id="draw-canvas" />
+
 </div>
 <!-- End 3D HOP window and side buttons -->

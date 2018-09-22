@@ -4,29 +4,47 @@ define([
     'jquery',
     'presenter',
     'nexus',
+    'ply',
     'trackball_sphere',
     'trackball_turntable',
     'trackball_turntable_pan',
     'trackball_pantilt',
-    'ply',
     'init',
-], function (spidergl, $, presenter, nexus, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, ply, init) {
+], function (spidergl, $, presenter, nexus, ply, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, init) {
+
 
     window.actionsToolbar = function actionsToolbar(action) {
-        if (action == 'home') presenter.resetTrackball();
-        else if (action == 'zoomin') presenter.zoomIn();
-        else if (action == 'zoomout') presenter.zoomOut();
-        else if (action == 'light' || action == 'light_on') { presenter.enableLightTrackball(!presenter.isLightTrackballEnabled()); lightSwitch(); }
+        if (action == 'home') window.presenter.resetTrackball();
+        else if (action == 'zoomin') window.presenter.zoomIn();
+        else if (action == 'zoomout') window.presenter.zoomOut();
+	    else if (action=='lighting' || action=='lighting_off') { window.presenter.enableSceneLighting(!window.presenter.isSceneLightingEnabled()); lightingSwitch(); }
+        else if (action == 'light' || action == 'light_on') { window.presenter.enableLightTrackball(!window.presenter.isLightTrackballEnabled()); lightSwitch(); }
+        else if (action=='perspective' || action=='orthographic') { window.presenter.toggleCameraType(); cameraSwitch(); }
+        else if (action=='color' || action=='color_on') { window.presenter.toggleInstanceSolidColor(HOP_ALL, true); colorSwitch(); }
+        else if (action=='measure' || action=='measure_on') { window.presenter.enableMeasurementTool(!window.presenter.isMeasurementToolEnabled()); measureSwitch(); }
+        else if (action=='pick' || action=='pick_on') { window.presenter.enablePickpointMode(!window.presenter.isPickpointModeEnabled()); pickpointSwitch(); }
         else if (action == 'sections' || action == 'sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
         else if (action == 'full' || action == 'full_on') fullscreenSwitch();
     }
 
 
+    function onEndMeasure(measure) {
+        // measure.toFixed(2) sets the number of decimals when displaying the measure
+        // depending on the model measure units, use "mm","m","km" or whatever you have
+        $('#measure-output').html(measure.toFixed(2) + "mm");
+    }
+
+    function onEndPick(point) {
+        // .toFixed(2) sets the number of decimals when displaying the picked point
+        var x = point[0].toFixed(2);
+        var y = point[1].toFixed(2);
+        var z = point[2].toFixed(2);
+        $('#pickpoint-output').html("[ "+x+" , "+y+" , "+z+" ]");
+    }
+
     return {
 
-        setupURL: function (source) {
-
-            window.presenter = new Presenter("draw-canvas");
+        setup3DHOP: function (source) {
 
             window.presenter.setScene({
                 meshes: {
@@ -50,6 +68,12 @@ define([
                     radiusMode: "scene"
                 }
             });
+
+            window.presenter._onEndMeasurement = onEndMeasure;
+
+            window.presenter._onEndPickingPoint = onEndPick;
+
+            sectiontoolInit();
         }
     }
 });

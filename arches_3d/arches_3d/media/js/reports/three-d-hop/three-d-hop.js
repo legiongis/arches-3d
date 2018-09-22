@@ -40,8 +40,9 @@ define([
                 if (threeDHopFiles.length > 0) {
                     self.threeDHopFiles(threeDHopFiles);
                     var filepath = threeDHopFiles[0].src;
+                    window.presenter = new Presenter("draw-canvas");
                     init3dhop();
-                    threeDHopSetup.setupURL(filepath);
+                    threeDHopSetup.setup3DHOP(filepath);
                     sectiontoolInit()
                 }
             }
