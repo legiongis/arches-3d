@@ -1,3 +1,24 @@
 .report-media-wrapper {
     border-bottom: 1px solid #ddd;
 }
+
+
+/*3D HOP*/
+#3dhop {
+    height: 685px;
+    width: 100vw;
+}
+
+.output-box {
+    top: 80px !important;
+    left: 80px !important;
+}
+
+#sections-box {
+    left: 80px; 
+    top: 50px;
+}
+
+#toolbar {
+    margin-top: 20px;
+}
