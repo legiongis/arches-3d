@@ -17,9 +17,8 @@ define([
 
             if (self.report.get('tiles')) {
                 var threeDHopFiles = [];
-                var nodes = self.nodes();
                 self.report.get('tiles').forEach(function (tile) {
-                    _.each(tile.data, function (val, key) {
+                    _.each(tile.data, function (val) {
                         if (Array.isArray(val)) {
                             val.forEach(function (item) {
 
