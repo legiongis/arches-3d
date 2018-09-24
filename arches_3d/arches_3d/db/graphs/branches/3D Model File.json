@@ -1,0 +1,230 @@
+{
+    "graph": [
+        {
+            "author": "GDH", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "f7882b9c-bfe5-11e8-b532-0242ac160004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Stores the file and metadata related to a 3D model", 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Select a 3D model file and enter its metadata.", 
+                    "is_editable": true, 
+                    "name": "3D Model File", 
+                    "nodegroup_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "sortorder": null, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "f7882b9c-bfe5-11e8-b532-0242ac160004", 
+                    "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
+                    "id": "f7882ffc-bfe5-11e8-b532-0242ac160004", 
+                    "label": "Information Carrier", 
+                    "node_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "f7882b9c-bfe5-11e8-b532-0242ac160004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "File Format", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "98097ac6-bfe6-11e8-9824-0242ac160004", 
+                    "label": "File Format", 
+                    "node_id": "f7882e80-bfe5-11e8-b532-0242ac160004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                }, 
+                {
+                    "card_id": "f7882b9c-bfe5-11e8-b532-0242ac160004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Measurement Unit", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "980a9442-bfe6-11e8-9824-0242ac160004", 
+                    "label": "Measurement Unit", 
+                    "node_id": "714f2ba6-bfe6-11e8-bf11-0242ac160004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "f7882b9c-bfe5-11e8-b532-0242ac160004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "3D HOP Model File", 
+                        "maxFilesize": "0"
+                    }, 
+                    "id": "f3ee585c-bfeb-11e8-9574-0242ac160004", 
+                    "label": "3D HOP Model File", 
+                    "node_id": "8f6c40e2-bfeb-11e8-a4f3-0242ac160004", 
+                    "sortorder": 2, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }
+            ], 
+            "color": null, 
+            "config": {}, 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "Stores the file and metadata related to a 3D model", 
+            "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "edgeid": "8f6c4470-bfeb-11e8-a4f3-0242ac160004", 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P62_depicts", 
+                    "rangenode_id": "8f6c40e2-bfeb-11e8-a4f3-0242ac160004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "edgeid": "f7883308-bfe5-11e8-b532-0242ac160004", 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "rangenode_id": "f7882e80-bfe5-11e8-b532-0242ac160004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "edgeid": "714f2f3e-bfe6-11e8-bf11-0242ac160004", 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "rangenode_id": "714f2ba6-bfe6-11e8-bf11-0242ac160004"
+                }
+            ], 
+            "functions_x_graphs": [], 
+            "graphid": "f788205c-bfe5-11e8-b532-0242ac160004", 
+            "iconclass": "fa fa-film", 
+            "is_editable": true, 
+            "isactive": true, 
+            "isresource": false, 
+            "jsonldcontext": null, 
+            "name": "3D Model File", 
+            "nodegroups": [
+                {
+                    "cardinality": "n", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "parentnodegroup_id": null
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": null, 
+                    "datatype": "file-list", 
+                    "description": null, 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "is_collector": false, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "3D Model File", 
+                    "nodegroup_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "nodeid": "8f6c40e2-bfeb-11e8-a4f3-0242ac160004", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D13_Digital_Information_Carrier", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P62_depicts", 
+                    "sortorder": 2
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": "fb19992e-25a5-4512-a9d5-9f214248bfc0"
+                    }, 
+                    "datatype": "concept", 
+                    "description": null, 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "is_collector": false, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Measurement Unit", 
+                    "nodegroup_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "nodeid": "714f2ba6-bfe6-11e8-bf11-0242ac160004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "sortorder": 1
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": "100b7101-9630-4cf0-8944-96f9e9a03fb5"
+                    }, 
+                    "datatype": "concept-list", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "is_collector": false, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "File Format Type", 
+                    "nodegroup_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "nodeid": "f7882e80-bfe5-11e8-b532-0242ac160004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "3D Model File", 
+                    "nodegroup_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "nodeid": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
+                    "parentproperty": "", 
+                    "sortorder": 0
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": null, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "f788205c-bfe5-11e8-b532-0242ac160004", 
+                "is_collector": true, 
+                "isrequired": false, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "3D Model File", 
+                "nodegroup_id": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                "nodeid": "f78822aa-bfe5-11e8-b532-0242ac160004", 
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
+                "sortorder": 0
+            }, 
+            "subtitle": "Stores the file and metadata related to a single 3D model", 
+            "template_id": "50000000-0000-0000-0000-000000000001", 
+            "version": ""
+        }
+    ], 
+    "metadata": {
+        "db": "PostgreSQL 9.6.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 6.4.0) 6.4.0, 64-bit", 
+        "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
+        "os": "Linux", 
+        "os version": "4.9.93-linuxkit-aufs"
+    }
+}
