@@ -1,0 +1,14 @@
+.git
+.eggs
+.github
+.idea
+.vscode
+.editorconfig
+.gitignore
+.travis.yml
+
+docker-compose*.yml
+Dockerfile*
+
+arches_3d/arches_3d/media/packages
+arches_3d/arches_3d/uploadedfiles
