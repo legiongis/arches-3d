@@ -4,6 +4,8 @@ Django settings for arches_3d project.
 
 import inspect
 import os
+import ast
+from django.core.exceptions import ImproperlyConfigured
 
 try:
     from arches.settings import *
