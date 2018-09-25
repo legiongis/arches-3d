@@ -25,5 +25,11 @@ if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "arches_3d.settings")
 
     from django.core.management import execute_from_command_line
+    from arches_3d import settings
+
+    if settings.REMOTE_DEBUG:
+        import ptvsd
+        ptvsd.enable_attach(address = ('0.0.0.0', 3000))
+        print "Attached remote debugger"
 
     execute_from_command_line(sys.argv)

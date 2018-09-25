@@ -31,6 +31,7 @@ def get_optional_env_variable(var_name):
 
 MODE = get_env_variable('DJANGO_MODE')  # options are either "PROD" or "DEV"
 DEBUG = ast.literal_eval(get_env_variable('DJANGO_DEBUG'))
+REMOTE_DEBUG = ast.literal_eval(get_env_variable('DJANGO_REMOTE_DEBUG'))
 
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 STATICFILES_DIRS = (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
