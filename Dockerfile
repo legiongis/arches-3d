@@ -8,11 +8,12 @@ COPY ./arches_3d/arches_3d/install/requirements.txt ${APP_DIR}/install/requireme
 RUN	. ${WEB_ROOT}/ENV/bin/activate &&\
 	pip install -r ${APP_DIR}/install/requirements.txt
 
-COPY ./arches_3d ${WEB_ROOT}/arches_3d
-COPY ./docker/arches_3d_entrypoint.sh ${ENTRYPOINT_DIR}/arches_3d_entrypoint.sh
-
+COPY ./arches_3d/arches_3d/package.json ${APP_DIR}/package.json
 WORKDIR ${YARN_DIR}
 RUN yarn install
+
+COPY ./arches_3d ${WEB_ROOT}/arches_3d
+COPY ./docker/arches_3d_entrypoint.sh ${ENTRYPOINT_DIR}/arches_3d_entrypoint.sh
 
 RUN chmod -R 700 ${ENTRYPOINT_DIR} &&\
     dos2unix ${ENTRYPOINT_DIR}/*
