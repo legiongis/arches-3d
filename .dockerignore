@@ -7,8 +7,12 @@
 .gitignore
 .travis.yml
 
+*.pyc
+
 docker-compose*.yml
 Dockerfile*
+
+**/*settings_local.py
 
 arches_3d/arches_3d/media/packages
 arches_3d/arches_3d/uploadedfiles
