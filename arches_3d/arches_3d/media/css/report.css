@@ -2,18 +2,34 @@
     border-bottom: 1px solid #ddd;
 }
 
-
 /*3D HOP*/
+
 .output-box {
     top: 80px !important;
     left: 80px !important;
 }
 
 #sections-box {
-    left: 80px; 
+    left: 80px;
     top: 50px;
 }
 
 #toolbar {
     margin-top: 20px;
+}
+
+/* Potree */
+
+#potree_render_area {
+    height: 685px;
+    width: 100%;
+    top: inherit;
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+}
+
+#potree_sidebar_container {
+    height: inherit;
+    width: 100%;
 }
