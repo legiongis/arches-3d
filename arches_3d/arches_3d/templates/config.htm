@@ -17,8 +17,18 @@
             'trackball_turntable_pan': '{{ STATIC_URL }}packages/three-d-hop/minimal/js/trackball_turntable_pan',
             'trackball_pantilt': '{{ STATIC_URL }}packages/three-d-hop/minimal/js/trackball_pantilt',
             'init': '{{ STATIC_URL }}packages/three-d-hop/minimal/js/init',
-            // 'setup': '{{ STATIC_URL }}packages/three-d-hop/js/setup',
-            'three-d-hop': '{{ STATIC_URL }}js/reports/three-d-hop'
+            'three-d-hop': '{{ STATIC_URL }}js/reports/three-d-hop',
+            'spectrum': '{{ STATIC_URL }}js/reports/potree/libs/spectrum/spectrum',
+            'perfect-scrollbar': '{{ STATIC_URL }}js/reports/potree/libs/perfect-scrollbar/js/perfect-scrollbar.jquery',
+            'three': '{{ STATIC_URL }}js/reports/potree/libs/three.js/build/three.min',
+            'binary-heap': '{{ STATIC_URL }}js/reports/potree/libs/other/BinaryHeap',
+            'tween': '{{ STATIC_URL }}js/reports/potree/libs/tween/tween.min',
+            'd3': '{{ STATIC_URL }}js/reports/potree/libs/d3/d3',
+            'ol': '{{ STATIC_URL }}js/reports/potree/libs/openlayers3/ol',
+            'i18next': '{{ STATIC_URL }}js/reports/potree/libs/i18next/i18next',
+            'jstree': '{{ STATIC_URL }}js/reports/potree/libs/jstree/jstree',
+            'potree-official': '{{ STATIC_URL }}js/reports/potree/libs/potree/potree',
+            'laslaz': '{{ STATIC_URL }}js/reports/potree/libs/plasio/js/laslaz',
         },
         shim: {
             'spidergl': {
@@ -61,9 +71,15 @@
             'three-d-hop': {
                 deps: ['init']
             },
+            'three': {
+                exports: ['THREE']
+            },
+            'potree-official': {
+                deps: ['three'],
+                exports: 'Potree'
+            },
         }
     });
 
 
-    </script>
-
+</script>
