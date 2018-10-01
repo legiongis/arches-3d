@@ -6,10 +6,10 @@ variables:
 
 steps:
 - powershell: |
-    if ("$env:BUILD_SOURCEBRANCHNAME" -e "master") {
+    if ("$env:BUILD_SOURCEBRANCHNAME" -eq "master") {
       Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER")
     }
-    elseif ("$env:BUILD_SOURCEBRANCHNAME" -e "master-test") {
+    elseif ("$env:BUILD_SOURCEBRANCHNAME" -eq "master-test") {
       Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-test")
     }
     else {
