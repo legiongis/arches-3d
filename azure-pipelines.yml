@@ -22,9 +22,8 @@ steps:
     }
   displayName: Resolve image version
 
-- script: echo Image version [$env:IMAGE_VERSION]
-  env:
-    image.version: $(IMAGE_VERSION)
+- script: echo Image version [$(IMAGE_VERSION)]
+  displayName: Print image version
 
 - script: docker login -u $(dockerId) -p $(dockerPassword)
   displayName: Docker login
