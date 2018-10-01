@@ -20,6 +20,7 @@ steps:
       }
       Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-$PreReleasePostFix")  
     }
+    Write-Host("Image version [$(IMAGE_VERSION)])
   displayName: Resolve image version
 
 - script: docker login -u $(dockerId) -p $(dockerPassword)
