@@ -2,7 +2,7 @@ version: '2'
 services:
 
     arches:
-      image: globaldigitalheritage/arches-3d:${BUILD_BUILDID}
+      image: globaldigitalheritage/arches-3d:${IMAGE_VERSION}
       build:
         context: .
         dockerfile: ./Dockerfile
