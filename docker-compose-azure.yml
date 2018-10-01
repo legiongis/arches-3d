@@ -1,102 +1,79 @@
-version: '3.3'
-
+version: '2'
 services:
-  arches:
-    container_name: arches
-    image: globaldigitalheritage/arches-3d:master
-    restart: always
-    command: run_arches
-    volumes:
-      - arches-log:/web_root/arches_3d/arches_3d/logs
-      - arches-static:/static_root
-      - arches-uploadedfiles:/web_root/arches_3d/arches_3d/uploadedfiles
-    environment:
-      ARCHES_PROJECT: arches_3d
-      INSTALL_DEFAULT_GRAPHS: False
-      INSTALL_DEFAULT_CONCEPTS: False
-      PGUSERNAME: postgres
-      PGPASSWORD: postgres
-      PGDBNAME: arches
-      PGHOST: db
-      PGPORT: 5432
-      COUCHDB_HOST: couchdb
-      COUCHDB_PORT: 5984
-      COUCHDB_USER: admin
-      COUCHDB_PASS: password
-      ESHOST: elasticsearch
-      ESPORT: 9200
-      ELASTICSEARCH_PREFIX: arches_3d
-      DJANGO_MODE: DEV
-      DJANGO_DEBUG: True
-      DOMAIN_NAMES: localhost
-      TZ: EST
-    ports:
-      - "8000:8000"
-    depends_on:
-      - db
-      - elasticsearch
 
-  db:
-    container_name: db
-    image: mdillon/postgis:9.6-alpine
-    restart: always
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-      - postgres-log:/var/log/postgresql
-    environment:
-      POSTGRES_PASSWORD: postgres
-      TZ: EST
-    ports:
-      - '5432:5432'
+    arches:
+      image: globaldigitalheritage/arches-3d:${IMAGE_VERSION}
+      command: run_arches
+      volumes:
+        - arches-log:/web_root/arches_3d/arches_3d/logs
+        - arches-static:/static_root
+      environment:
+        - ARCHES_PROJECT=arches_3d
+        - INSTALL_DEFAULT_GRAPHS=False
+        - INSTALL_DEFAULT_CONCEPTS=False
+        - PGUSERNAME=postgres
+        - PGPASSWORD=postgres
+        - PGDBNAME=arches
+        - PGHOST=example.postgres.database.azure.com
+        - PGPORT=5432
+        - COUCHDB_HOST=couchdb
+        - COUCHDB_PORT=5984
+        - COUCHDB_USER=example
+        - COUCHDB_PASS=example
+        - ESHOST=example
+        - ESPORT=9200
+        - ELASTICSEARCH_PREFIX=arches_3d
+        - DJANGO_MODE=PROD
+        - DJANGO_DEBUG=False
+        - AZURE_ACCOUNT_NAME=example
+        - AZURE_ACCOUNT_KEY=example
+        - AZURE_SSL=True
+        - DOMAIN_NAMES=example.com
+        - TZ=EST
+      ports:
+        - '8000:8000'
 
-  elasticsearch:
-    container_name: elasticsearch
-    image: elasticsearch:5.2
-    restart: always
-    volumes:
-      - elasticsearch-data:/usr/share/elasticsearch/data
-    environment:
-      cluster.name: docker-cluster
-      bootstrap.memory_lock: true
-      ES_JAVA_OPTS: -Xms512m -Xmx512m
-      TZ: EST
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    networks:
-      - esnet
+    nginx:
+      image: vmeijer/nginx-proxy:1.2.3b
+      ports:
+        - '80:80'
+        - '443:443'
+      volumes:
+        - arches-static:/www/static
+        - letsencrypt-acme-challenge:/var/www
+        - letsencrypt:/etc/letsencrypt
+      environment:
+        - NGINX_PROXY_MODE=local
+        - NGINX_PROTOCOL=strict-https
+        - LOCAL_PROXY_HOST=arches
+        - LOCAL_PROXY_PORT=8000
+        - DOMAIN_NAMES=example.com
+        - PUBLIC_MODE=False
+        - STATIC_URL=/media
+        - TZ=EST
+      depends_on:
+        - arches
 
-  elasticsearch2:
-    container_name: elasticsearch2
-    image: elasticsearch:5.2
-    restart: always
-    volumes:
-      - elasticsearch-data2:/usr/share/elasticsearch/data
-    environment:
-      cluster.name: docker-cluster
-      bootstrap.memory_lock: true
-      ES_JAVA_OPTS: -Xms512m -Xmx512m
-      discovery.zen.ping.unicast.hosts: elasticsearch
-      TZ: EST
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-    networks:
-      - esnet
+    letsencrypt:
+      image: vmeijer/letsencrypt-client:1.1
+      volumes:
+        - letsencrypt-acme-challenge:/var/www
+        - letsencrypt:/etc/letsencrypt
+        - letsencrypt-log:/var/log/letsencrypt
+      command: get_certificate
+      environment:
+        - MODE=regular
+        - LETSENCRYPT_EMAIL=example@example.com
+        - DOMAIN_NAMES=example.com
+        - PRODUCTION_MODE=True
+        - PERSISTENT_MODE=True
+        - TZ=EST
+      depends_on:
+        - nginx
 
 volumes:
-  arches-log:
-  arches-static:
-  arches-uploadedfiles:
-  postgres-data:
-  postgres-log:
-  elasticsearch-data:
-  elasticsearch-data2:
-
-networks:
-  esnet:
+    arches-log:
+    arches-static:
+    letsencrypt:
+    letsencrypt-log:
+    letsencrypt-acme-challenge:
