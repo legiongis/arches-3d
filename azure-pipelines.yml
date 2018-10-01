@@ -24,7 +24,7 @@ steps:
   displayName: Resolve image version
 
 - script: docker login -u $(dockerId) -p $(dockerPassword)
-  displayName: 'docker login'
+  displayName: Docker login
 
 - task: Docker@1
   displayName: Build image
@@ -32,7 +32,7 @@ steps:
     imageName: 'globaldigitalheritage/arches-3d:$(IMAGE_VERSION)'
 
 - script: docker-compose -f docker-compose-azure-pipelines.yml run arches
-  displayName: 'docker-compose tests'
+  displayName: Run tests
 
 - task: Docker@1
   displayName: Push image
