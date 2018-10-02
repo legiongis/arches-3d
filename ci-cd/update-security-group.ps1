@@ -11,6 +11,8 @@ Param(
     [Parameter(Mandatory=$True)]
     [string]$destinationPortRange,
     [Parameter(Mandatory=$True)]
+    [string]$destinationApplicationSecurityGroups,
+    [Parameter(Mandatory=$True)]
     [int]$priority
 )
 
@@ -24,5 +26,7 @@ Set-AzureRmNetworkSecurityRuleConfig -Name $securityRuleName `
                                      -SourceAddressPrefix * `
                                      -Priority $priority `
                                      -Direction Inbound `
-                                     -DestinationAddressPrefix *
+                                     -DestinationAddressPrefix * `
+                                     -DestinationAddressPrefixes * `
+                                     -DestinationApplicationSecurityGroups $destinationApplicationSecurityGroups `
 Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup $nsg
