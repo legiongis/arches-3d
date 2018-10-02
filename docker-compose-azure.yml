@@ -2,7 +2,7 @@ version: '2'
 services:
 
     arches:
-      image: globaldigitalheritage/arches-3d:${RELEASE_ARTIFACTS_ARCHES_3D_BUILD_TEST_BUILDNUMBER}
+      image: globaldigitalheritage/arches-3d:${IMAGE_VERSION}
       command: run_arches
       volumes:
         - arches-log:/web_root/arches_3d/arches_3d/logs
