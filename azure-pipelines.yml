@@ -13,7 +13,7 @@ steps:
       Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-test")
     }
     else {
-      # The special version part cannot exceed 20 characters, and cannot start with numbers 
+      # The special version part cannot exceed 20 characters, and cannot start with numbers
       $PreReleasePostFix = "$env:BUILD_SOURCEBRANCHNAME"
       if ($PreReleasePostFix.length -gt 20) {
           $PreReleasePostFix = $PreReleasePostFix.substring(0, 20)
