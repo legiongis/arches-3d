@@ -1,5 +1,0 @@
-version: '2'
-services:
-
-    arches:
-      image: globaldigitalheritage/arches-3d:${RELEASE_ARTIFACTS_ARCHES_3D_BUILD_TEST_BUILDNUMBER}-test
