@@ -11,24 +11,24 @@ services:
         - ARCHES_PROJECT=arches_3d
         - INSTALL_DEFAULT_GRAPHS=False
         - INSTALL_DEFAULT_CONCEPTS=False
-        - PGUSERNAME=postgres
-        - PGPASSWORD=postgres
+        - PGUSERNAME=${PGUSERNAME}
+        - PGPASSWORD=${PGPASSWORD}
         - PGDBNAME=arches
-        - PGHOST=example.postgres.database.azure.com
+        - PGHOST=${PGHOST}
         - PGPORT=5432
         - COUCHDB_HOST=couchdb
         - COUCHDB_PORT=5984
         - COUCHDB_USER=example
         - COUCHDB_PASS=example
-        - ESHOST=example
+        - ESHOST=${ESHOST}
         - ESPORT=9200
         - ELASTICSEARCH_PREFIX=arches_3d
         - DJANGO_MODE=PROD
         - DJANGO_DEBUG=False
-        - AZURE_ACCOUNT_NAME=example
-        - AZURE_ACCOUNT_KEY=example
+        - AZURE_ACCOUNT_NAME=${AZURE_ACCOUNT_NAME}
+        - AZURE_ACCOUNT_KEY=${AZURE_ACCOUNT_KEY}
         - AZURE_SSL=True
-        - DOMAIN_NAMES=example.com
+        - DOMAIN_NAMES=${DOMAIN_NAMES}
         - TZ=EST
       ports:
         - '8000:8000'
@@ -47,8 +47,8 @@ services:
         - NGINX_PROTOCOL=strict-https
         - LOCAL_PROXY_HOST=arches
         - LOCAL_PROXY_PORT=8000
-        - DOMAIN_NAMES=example.com
-        - PUBLIC_MODE=False
+        - DOMAIN_NAMES=${DOMAIN_NAMES}
+        - PUBLIC_MODE=${PUBLIC_MODE}
         - STATIC_URL=/media
         - TZ=EST
       depends_on:
@@ -63,8 +63,8 @@ services:
       command: get_certificate
       environment:
         - MODE=regular
-        - LETSENCRYPT_EMAIL=example@example.com
-        - DOMAIN_NAMES=example.com
+        - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
+        - DOMAIN_NAMES=${DOMAIN_NAMES}
         - PRODUCTION_MODE=True
         - PERSISTENT_MODE=True
         - TZ=EST
