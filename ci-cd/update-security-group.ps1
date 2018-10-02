@@ -11,14 +11,17 @@ Param(
     [Parameter(Mandatory=$True)]
     [string]$destinationPortRange,
     [Parameter(Mandatory=$True)]
-    [string]$destinationApplicationSecurityGroups,
+    [string]$destinationApplicationSecurityGroup,
     [Parameter(Mandatory=$True)]
     [int]$priority
 )
 
-$nsg = Get-AzureRmNetworkSecurityGroup -ResourceGroupName $resourceGroupName -Name $networkSecurityGroupName
+$networkSecurityGroup = Get-AzureRmNetworkSecurityGroup -ResourceGroupName $resourceGroupName -Name $networkSecurityGroupName
+
+$applicationSecurityGroup = Get-AzureRmApplicationSecurityGroup -ResourceGroupName $resourceGroupName -Name $destinationApplicationSecurityGroup
+
 Set-AzureRmNetworkSecurityRuleConfig -Name $securityRuleName `
-                                     -NetworkSecurityGroup $nsg `
+                                     -NetworkSecurityGroup $networkSecurityGroup `
                                      -Access $allowOrDeny `
                                      -Protocol Tcp `
                                      -SourcePortRange * `
@@ -26,5 +29,6 @@ Set-AzureRmNetworkSecurityRuleConfig -Name $securityRuleName `
                                      -SourceAddressPrefix * `
                                      -Priority $priority `
                                      -Direction Inbound `
-                                     -DestinationApplicationSecurityGroups $destinationApplicationSecurityGroups
-Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup $nsg
+                                     -DestinationApplicationSecurityGroup $applicationSecurityGroup
+                                     
+Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup $networkSecurityGroup
