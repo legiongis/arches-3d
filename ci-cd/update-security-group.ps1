@@ -27,6 +27,6 @@ Set-AzureRmNetworkSecurityRuleConfig -Name $securityRuleName `
                                      -Priority $priority `
                                      -Direction Inbound `
                                      -DestinationAddressPrefix * `
-                                     -DestinationAddressPrefixes * `
+                                     -DestinationAddressPrefixes [] `
                                      -DestinationApplicationSecurityGroups $destinationApplicationSecurityGroups
 Set-AzureRmNetworkSecurityGroup -NetworkSecurityGroup $nsg
