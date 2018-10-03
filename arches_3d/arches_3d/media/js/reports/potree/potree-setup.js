@@ -15,6 +15,8 @@ define('ol-wrapped', ['ol'], function (ol) {
 });
 
 define([
+    'module',
+    'arches',
     'jquery',
     'jquery-ui',
     'proj4-wrapped',
@@ -29,8 +31,15 @@ define([
     'jstree',
     'potree-official',
     'laslaz'
-], function ($, jqueryUi, proj4, spectrum, perfectScrollbar, three, binaryHeap, tween, d3, ol, i18next, jstree, Potree, laslaz) {
+], function (module, arches, $, jqueryUi, proj4, spectrum, perfectScrollbar, three, binaryHeap, tween, d3, ol, i18next, jstree, Potree, laslaz) {
 
+    var currentUrl = module.uri;
+    urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
+    urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
+    potreePath = location.origin + urlWithoutFilename + '/libs/potree' 
+    Potree.scriptPath = new URL(potreePath);
+    Potree.resourcePath = Potree.scriptPath + '/resources';
+    
     return {
         setupPotree: function (sourcePath, pointcloudName) {
             
