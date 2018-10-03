@@ -39,14 +39,14 @@ define([
     potreePath = location.origin + urlWithoutFilename + '/libs/potree' 
     Potree.scriptPath = new URL(potreePath);
     Potree.resourcePath = Potree.scriptPath + '/resources';
-    
+
     return {
         setupPotree: function (sourcePath, pointcloudName) {
             
             viewer.setEDLEnabled(true);
             viewer.setFOV(60);
             viewer.setPointBudget(1 * 1000 * 1000);
-            document.title = "";
+
             viewer.setEDLEnabled(false);
             viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
             viewer.setDescription(``);
