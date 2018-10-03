@@ -1,0 +1,43 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  imageName: 'globaldigitalheritage/arches-3d:$(IMAGE_VERSION)'
+
+steps:
+- powershell: |
+    if ("$env:BUILD_SOURCEBRANCHNAME" -eq "master") {
+      Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER")
+    }
+    elseif ("$env:BUILD_SOURCEBRANCHNAME" -eq "master-test") {
+      Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-test")
+    }
+    else {
+      # The special version part cannot exceed 20 characters, and cannot start with numbers
+      $PreReleasePostFix = "$env:BUILD_SOURCEBRANCHNAME"
+      if ($PreReleasePostFix.length -gt 20) {
+          $PreReleasePostFix = $PreReleasePostFix.substring(0, 20)
+      }
+      Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-$PreReleasePostFix")  
+    }
+  displayName: Resolve image version
+
+- script: echo Image version [$(IMAGE_VERSION)]
+  displayName: Print image version
+
+- script: docker login -u $(dockerId) -p $(dockerPassword)
+  displayName: Docker login
+
+- task: Docker@1
+  displayName: Build image
+  inputs:
+    imageName: 'globaldigitalheritage/arches-3d:$(IMAGE_VERSION)'
+
+- script: docker-compose -f docker-compose-azure-pipelines.yml run arches
+  displayName: Run tests
+
+- task: Docker@1
+  displayName: Push image
+  inputs:
+    imageName: 'globaldigitalheritage/arches-3d:$(IMAGE_VERSION)'
+    command: 'push'
