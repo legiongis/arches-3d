@@ -57,7 +57,6 @@ define([
                 $("#menu_appearance").next().show();
                 $("#menu_tools").next().show();
                 $("#menu_scene").next().show();
-                viewer.toggleSidebar();
             });
 
             Potree.loadPointCloud(sourcePath, pointcloudName, e => {
