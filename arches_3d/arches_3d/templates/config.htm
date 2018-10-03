@@ -20,7 +20,7 @@
             'three-d-hop': '{{ STATIC_URL }}js/reports/three-d-hop',
             'spectrum': '{{ STATIC_URL }}js/reports/potree/libs/spectrum/spectrum',
             'perfect-scrollbar': '{{ STATIC_URL }}js/reports/potree/libs/perfect-scrollbar/js/perfect-scrollbar.jquery',
-            'three': '{{ STATIC_URL }}js/reports/potree/libs/three.js/build/three.min',
+            'three-official': '{{ STATIC_URL }}js/reports/potree/libs/three.js/build/three.min',
             'binary-heap': '{{ STATIC_URL }}js/reports/potree/libs/other/BinaryHeap',
             'tween': '{{ STATIC_URL }}js/reports/potree/libs/tween/tween.min',
             'd3': '{{ STATIC_URL }}js/reports/potree/libs/d3/d3',
@@ -71,15 +71,14 @@
             'three-d-hop': {
                 deps: ['init']
             },
-            'three': {
+            'three-official': {
                 exports: ['THREE']
             },
             'potree-official': {
-                deps: ['three'],
+                deps: ['three-official'],
                 exports: 'Potree'
             },
         }
     });
-
 
 </script>

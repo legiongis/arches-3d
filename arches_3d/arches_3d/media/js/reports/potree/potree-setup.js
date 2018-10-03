@@ -1,22 +1,36 @@
-require([
+
+define('three-wrapped', ['three-official'], function (THREE) {
+    window.THREE = THREE;
+    return THREE;
+});
+
+define('proj4-wrapped', ['proj4'], function (proj4) {
+    window.proj4 = proj4;
+    return proj4;
+});
+
+define('ol-wrapped', ['ol'], function (ol) {
+    window.ol = ol;
+    return ol;
+});
+
+define([
     'jquery',
     'jquery-ui',
-    'proj4',
+    'proj4-wrapped',
     'spectrum',
     'perfect-scrollbar',
-    'three',
+    'three-wrapped',
     'binary-heap',
     'tween',
     'd3',
-    'ol',
+    'ol-wrapped',
     'i18next',
     'jstree',
     'potree-official',
     'laslaz'
-], function ($, jqueryUi, proj4, spectrum, perfectScrollbar, three, binaryHeap, tween, d3, ol, i18next, jstree, potreeOfficial, laslaz) {
+], function ($, jqueryUi, proj4, spectrum, perfectScrollbar, three, binaryHeap, tween, d3, ol, i18next, jstree, Potree, laslaz) {
 
-    window.THREE = three;
-    
     return {
         setupPotree: function (sourcePath, pointcloudName) {
             
