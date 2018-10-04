@@ -19,30 +19,24 @@ init_custom_db() {
 
 	# Import graphs
 	if ! graphs_exist; then
-		echo "Running: python manage.py packages -o import_graphs"
-		python manage.py packages -o import_graphs
+		import_graphs
 	else
 		echo "Graphs already exist in the database. Skipping..."
 	fi
 	
 	# Import concepts
 	if ! concepts_exist; then
-	    for file_path in ${THESAURI_FOLDER}/*.rdf; do
-	        import_reference_data ${file_path}
-        done
+		import_concepts
 	else
 		echo "Concepts already exist in the database. Skipping..."
 	fi
 	
 	# Import collections
 	if ! collections_exist; then
-        for file_path in ${COLLECTIONS_FOLDER}/*.rdf; do
-	        import_reference_data ${file_path}
-        done
+		import_collections
 	else
 		echo "collections already exist in the database. Skipping..."
 	fi
-	
 }
 
 graphs_exist() {
@@ -72,6 +66,25 @@ collections_exist() {
 	fi
 }
 
+import_graphs() {
+	echo "Running: python manage.py packages -o import_graphs"
+	python manage.py packages -o import_graphs
+}
+
+import_concepts() {
+	echo "Importing all concepts in ${THESAURI_FOLDER}"
+	for file_path in ${THESAURI_FOLDER}/*.rdf; do
+		import_reference_data ${file_path}
+	done
+}
+
+import_collections() {
+	echo "Importing all collections in ${COLLECTIONS_FOLDER}"
+	for file_path in ${COLLECTIONS_FOLDER}/*.rdf; do
+		import_reference_data ${file_path}
+	done	
+}
+
 import_reference_data() {
 	# Import example concept schemes
 	local rdf_file="$1"
@@ -84,6 +97,8 @@ fix_static_paths() {
     python manage.py azure_storage_service fix_static_paths
 }
 
+
+# Start
 init_custom_db
 
 if [[ "${DJANGO_MODE}" == "PROD" ]] && [[ ! -z ${AZURE_ACCOUNT_NAME} ]] && [[ ! -z ${STATIC_URL} ]]; then
