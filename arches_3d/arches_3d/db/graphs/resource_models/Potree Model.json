@@ -5,7 +5,7 @@
             "cards": [
                 {
                     "active": true, 
-                    "cardid": "9b595234-c0f2-11e8-9c8c-0242ac120004", 
+                    "cardid": "9b592994-c0f2-11e8-9c8c-0242ac120004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
                     "cssclass": null, 
@@ -14,11 +14,11 @@
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "Add a single thumbnail image. Size: 400 x 400 pixels.", 
+                    "instructions": "Add a single cover image", 
                     "is_editable": true, 
-                    "name": "Thumbnail Image", 
-                    "nodegroup_id": "9b594c8a-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 3, 
+                    "name": "Cover Image", 
+                    "nodegroup_id": "9b591c38-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 2, 
                     "visible": true
                 }, 
                 {
@@ -41,6 +41,42 @@
                 }, 
                 {
                     "active": true, 
+                    "cardid": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Stores the file and metadata related to a 3D model", 
+                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Select a 3D model file and enter its metadata.", 
+                    "is_editable": true, 
+                    "name": "3D Model File", 
+                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 4, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "9b595234-c0f2-11e8-9c8c-0242ac120004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "", 
+                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Add a single thumbnail image. Size: 400 x 400 pixels.", 
+                    "is_editable": true, 
+                    "name": "Thumbnail Image", 
+                    "nodegroup_id": "9b594c8a-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 3, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
                     "cardid": "9b593484-c0f2-11e8-9c8c-0242ac120004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -56,73 +92,9 @@
                     "nodegroup_id": "9b592d7c-c0f2-11e8-9c8c-0242ac120004", 
                     "sortorder": 1, 
                     "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "9b592994-c0f2-11e8-9c8c-0242ac120004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "", 
-                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Add a single cover image", 
-                    "is_editable": true, 
-                    "name": "Cover Image", 
-                    "nodegroup_id": "9b591c38-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 2, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Stores the file and metadata related to a 3D model", 
-                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Select a 3D model file and enter its metadata.", 
-                    "is_editable": false, 
-                    "name": "3D Model File", 
-                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 4, 
-                    "visible": true
                 }
             ], 
             "cards_x_nodes_x_widgets": [
-                {
-                    "card_id": "9b592994-c0f2-11e8-9c8c-0242ac120004", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "Cover Image", 
-                        "maxFilesize": "2"
-                    }, 
-                    "id": "9b5973cc-c0f2-11e8-9c8c-0242ac120004", 
-                    "label": "Cover Image", 
-                    "node_id": "9b591c38-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "9b593484-c0f2-11e8-9c8c-0242ac120004", 
-                    "config": {
-                        "label": "Description", 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "9b597264-c0f2-11e8-9c8c-0242ac120004", 
-                    "label": "Description", 
-                    "node_id": "9b595e78-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000005"
-                }, 
                 {
                     "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
                     "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
@@ -149,16 +121,16 @@
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 }, 
                 {
-                    "card_id": "9b595234-c0f2-11e8-9c8c-0242ac120004", 
+                    "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
                     "config": {
-                        "acceptedFiles": "", 
-                        "label": "Thumbnail Image", 
-                        "maxFilesize": "0.1"
+                        "acceptedFiles": ".zip", 
+                        "label": "Octree (Potree) Model Zip File", 
+                        "maxFilesize": "100000"
                     }, 
-                    "id": "9b596b3e-c0f2-11e8-9c8c-0242ac120004", 
-                    "label": "Thumbnail Image", 
-                    "node_id": "9b594c8a-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 0, 
+                    "id": "9b596f94-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Octree (Potree) Model Zip File", 
+                    "node_id": "9b59568a-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 2, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
@@ -178,6 +150,48 @@
                     "widget_id": "10000000-0000-0000-0000-000000000012"
                 }, 
                 {
+                    "card_id": "9b593484-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "label": "Description", 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "9b597264-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Description", 
+                    "node_id": "9b595e78-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                }, 
+                {
+                    "card_id": "9b592994-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "9b5973cc-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "9b591c38-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "9b595234-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.1"
+                    }, 
+                    "id": "9b596b3e-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "9b594c8a-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
                     "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
                     "config": {
                         "defaultValue": "", 
@@ -191,20 +205,6 @@
                     "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                }, 
-                {
-                    "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
-                    "config": {
-                        "acceptedFiles": ".zip", 
-                        "label": "Octree (Potree) Model Zip File", 
-                        "maxFilesize": "100000"
-                    }, 
-                    "id": "9b596f94-c0f2-11e8-9c8c-0242ac120004", 
-                    "label": "Octree (Potree) Model Zip File", 
-                    "node_id": "9b59568a-c0f2-11e8-9c8c-0242ac120004", 
-                    "sortorder": 2, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }
             ], 
             "color": "rgba(56,98,204,0.94)", 
@@ -332,7 +332,7 @@
             ], 
             "graphid": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
             "iconclass": "fa fa-image", 
-            "is_editable": false, 
+            "is_editable": true, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -404,7 +404,7 @@
                 }, 
                 {
                     "config": {
-                        "rdmCollection": "2424b323-f650-478e-be1d-f2061af60253"
+                        "rdmCollection": "100b7101-9630-4cf0-8944-96f9e9a03fb5"
                     }, 
                     "datatype": "concept-list", 
                     "description": "Represents a single node in a graph", 
@@ -561,10 +561,9 @@
                 "64ae35a0-2b53-11e7-9130-0242ac140004", 
                 "3854b1f2-14a9-11e7-b06e-0242ac150005", 
                 "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
-                "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
+                "9b591814-c0f2-11e8-9c8c-0242ac120004", 
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
-                "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
-                "9b591814-c0f2-11e8-9c8c-0242ac120004"
+                "3caf329f-b8f7-11e6-84a5-026d961c88e6"
             ], 
             "resource_2_resource_constraints": [], 
             "root": {
@@ -583,8 +582,121 @@
                 "sortorder": 0
             }, 
             "subtitle": "Describes a model specifically purposed for the Potree 3D viewer", 
-            "template_id": "50000000-0000-0000-0000-000000000003", 
-            "version": ""
+            "template_id": "50000000-0000-0000-0000-000000000006", 
+            "version": "", 
+            "widgets": [
+                {
+                    "card_id": "9b595234-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.1"
+                    }, 
+                    "id": "9b596b3e-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "9b594c8a-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Measurement Unit", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "9b5969ae-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Measurement Unit", 
+                    "node_id": "9b5964ae-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "9b593484-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Description Type", 
+                        "options": [], 
+                        "placeholder": "Select a description type"
+                    }, 
+                    "id": "9b596cb0-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Description Type", 
+                    "node_id": "9b596198-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "9b592994-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "9b5973cc-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "9b591c38-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
+                    "id": "9b5970fc-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Information Carrier", 
+                    "node_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Original File Format", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "9b596e2c-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Original File Format", 
+                    "node_id": "9b5967ba-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                }, 
+                {
+                    "card_id": "9b594884-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": ".zip", 
+                        "label": "Octree (Potree) Model Zip File", 
+                        "maxFilesize": "100000"
+                    }, 
+                    "id": "9b596f94-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Octree (Potree) Model Zip File", 
+                    "node_id": "9b59568a-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 2, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "9b593484-c0f2-11e8-9c8c-0242ac120004", 
+                    "config": {
+                        "label": "Description", 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "9b597264-c0f2-11e8-9c8c-0242ac120004", 
+                    "label": "Description", 
+                    "node_id": "9b595e78-c0f2-11e8-9c8c-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                }
+            ]
         }
     ], 
     "metadata": {
