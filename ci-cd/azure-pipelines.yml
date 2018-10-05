@@ -8,9 +8,11 @@ steps:
 - powershell: |
     if ("$env:BUILD_SOURCEBRANCHNAME" -eq "master") {
       Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER")
+      Write-Host("##vso[task.setvariable variable=INCLUDE_LATEST]true")
     }
     elseif ("$env:BUILD_SOURCEBRANCHNAME" -eq "master-test") {
       Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-test")
+      Write-Host("##vso[task.setvariable variable=INCLUDE_LATEST]false")
     }
     else {
       # The special version part cannot exceed 20 characters, and cannot start with numbers
@@ -18,12 +20,16 @@ steps:
       if ($PreReleasePostFix.length -gt 20) {
           $PreReleasePostFix = $PreReleasePostFix.substring(0, 20)
       }
-      Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-$PreReleasePostFix")  
+      Write-Host("##vso[task.setvariable variable=IMAGE_VERSION]$env:BUILD_BUILDNUMBER-$PreReleasePostFix")
+      Write-Host("##vso[task.setvariable variable=INCLUDE_LATEST]false")
     }
   displayName: Resolve image version
 
 - script: echo Image version [$(IMAGE_VERSION)]
   displayName: Print image version
+  
+- script: echo Include latest image tag [$(INCLUDE_LATEST)]
+  displayName: Print include latest image tag
 
 - script: docker login -u $(dockerId) -p $(dockerPassword)
   displayName: Docker login
@@ -32,6 +38,7 @@ steps:
   displayName: Build image
   inputs:
     imageName: 'globaldigitalheritage/arches-3d:$(IMAGE_VERSION)'
+    includeLatestTag: "$(includeLatest)"
 
 - script: docker-compose -f docker-compose-azure-pipelines.yml run arches
   displayName: Run tests
@@ -40,4 +47,5 @@ steps:
   displayName: Push image
   inputs:
     imageName: 'globaldigitalheritage/arches-3d:$(IMAGE_VERSION)'
+    includeLatestTag: "$(includeLatest)"
     command: 'push'
