@@ -28,7 +28,7 @@ define([
                                 ) {
                                     potreeZipFiles.push({
                                         src: item.url,
-                                        alt: item.name
+                                        name: item.name
                                     });
                                 }
                             });
@@ -38,9 +38,11 @@ define([
 
                 if (potreeZipFiles.length > 0) {
                     self.potreeZipFiles(potreeZipFiles);
-                    var filepath = potreeZipFiles[0].src;
+                    let modelName = potreeZipFiles[0].name;
+                    let filepath = potreeZipFiles[0].src;
+                    let extractedFilePath = filepath + "_extracted"
                     window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
-                    potreeSetup.setupPotree("https://testarchesstorage.blob.core.windows.net/arches/uploadedfiles/stanford_bunny_reduced.ply.potree/cloud.js", "Bunny Point Cloud")
+                    potreeSetup.setupPotree(extractedFilePath + "/cloud.js", modelName)
                 }
             }
 
