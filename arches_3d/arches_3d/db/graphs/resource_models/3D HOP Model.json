@@ -110,6 +110,20 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
+                    "card_id": "baae1d36-b832-11e8-8c79-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "baae2060-b832-11e8-8c79-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "baae150c-b832-11e8-8c79-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
                     "card_id": "93ccb7b2-b833-11e8-b252-0242ac120004", 
                     "config": {
                         "defaultValue": "", 
@@ -123,20 +137,6 @@
                     "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000002"
-                }, 
-                {
-                    "card_id": "baae1d36-b832-11e8-8c79-0242ac120004", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "Cover Image", 
-                        "maxFilesize": "2"
-                    }, 
-                    "id": "baae2060-b832-11e8-8c79-0242ac120004", 
-                    "label": "Cover Image", 
-                    "node_id": "baae150c-b832-11e8-8c79-0242ac120004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
                     "card_id": "93ccb7b2-b833-11e8-b252-0242ac120004", 
@@ -156,21 +156,6 @@
                     "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
                     "config": {
                         "defaultValue": "", 
-                        "label": "File Format", 
-                        "options": [], 
-                        "placeholder": "Select an option"
-                    }, 
-                    "id": "a7fba24a-bfed-11e8-a478-0242ac160004", 
-                    "label": "File Format", 
-                    "node_id": "a7fb9944-bfed-11e8-a478-0242ac160004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
-                }, 
-                {
-                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
-                    "config": {
-                        "defaultValue": "", 
                         "label": "Measurement Unit", 
                         "options": [], 
                         "placeholder": "Select an option"
@@ -181,6 +166,21 @@
                     "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "File Format", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "a7fba24a-bfed-11e8-a478-0242ac160004", 
+                    "label": "File Format", 
+                    "node_id": "a7fb9944-bfed-11e8-a478-0242ac160004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
                 }, 
                 {
                     "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
@@ -556,11 +556,11 @@
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "9b591814-c0f2-11e8-9c8c-0242ac120004", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
                 "64ae35a0-2b53-11e7-9130-0242ac140004", 
                 "3854b1f2-14a9-11e7-b06e-0242ac150005", 
                 "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
-                "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
                 "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
                 "ccbd1537-ac5e-11e6-84a5-026d961c88e6"
@@ -583,7 +583,120 @@
             }, 
             "subtitle": "Describes a model specifically purposed for the 3D HOP viewer", 
             "template_id": "50000000-0000-0000-0000-000000000005", 
-            "version": ""
+            "version": "", 
+            "widgets": [
+                {
+                    "card_id": "b7ce4b68-b832-11e8-94b1-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.1"
+                    }, 
+                    "id": "b7ce4e88-b832-11e8-94b1-0242ac120004", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "b7ce3c18-b832-11e8-94b1-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "93ccb7b2-b833-11e8-b252-0242ac120004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Description Type", 
+                        "options": [], 
+                        "placeholder": "Select a description type"
+                    }, 
+                    "id": "93ccc446-b833-11e8-b252-0242ac120004", 
+                    "label": "Description Type", 
+                    "node_id": "93ccc004-b833-11e8-b252-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "93ccb7b2-b833-11e8-b252-0242ac120004", 
+                    "config": {
+                        "label": "Description", 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "93ccc50e-b833-11e8-b252-0242ac120004", 
+                    "label": "Description", 
+                    "node_id": "93ccc176-b833-11e8-b252-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
+                }, 
+                {
+                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "File Format", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "a7fba24a-bfed-11e8-a478-0242ac160004", 
+                    "label": "File Format", 
+                    "node_id": "a7fb9944-bfed-11e8-a478-0242ac160004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                }, 
+                {
+                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "3D HOP Model File", 
+                        "maxFilesize": "100000"
+                    }, 
+                    "id": "a7fba452-bfed-11e8-a478-0242ac160004", 
+                    "label": "3D HOP Model File", 
+                    "node_id": "a7fb9b60-bfed-11e8-a478-0242ac160004", 
+                    "sortorder": 2, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
+                    "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
+                    "id": "a7fba01a-bfed-11e8-a478-0242ac160004", 
+                    "label": "Information Carrier", 
+                    "node_id": "a7fb8cf6-bfed-11e8-a478-0242ac160004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Measurement Unit", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "a7fba358-bfed-11e8-a478-0242ac160004", 
+                    "label": "Measurement Unit", 
+                    "node_id": "a7fb9de0-bfed-11e8-a478-0242ac160004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }, 
+                {
+                    "card_id": "baae1d36-b832-11e8-8c79-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "baae2060-b832-11e8-8c79-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "baae150c-b832-11e8-8c79-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }
+            ]
         }
     ], 
     "metadata": {
