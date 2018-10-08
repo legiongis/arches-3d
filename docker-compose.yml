@@ -35,6 +35,7 @@ services:
         # - AZURE_ACCOUNT_NAME=
         # - AZURE_ACCOUNT_KEY=
         # - STATIC_URL=
+        - PYTHONUNBUFFERED=0
         - DOMAIN_NAMES=localhost
         - TZ=PST
       ports:

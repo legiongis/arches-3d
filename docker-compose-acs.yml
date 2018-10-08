@@ -29,6 +29,7 @@ services:
         - AZURE_ACCOUNT_KEY=
         - STATIC_URL=
         - DOMAIN_NAMES=localhost
+        - PYTHONUNBUFFERED=0
         - TZ=EST
       ports:
         - '8000:8000'
