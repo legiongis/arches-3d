@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./arches_setup_functions.sh
+source ${ENTRYPOINT_DIR}/arches_setup_functions.sh
 
 init_custom_db
 
