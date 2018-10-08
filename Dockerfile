@@ -15,6 +15,7 @@ RUN yarn install
 
 COPY ./ci-cd/refresh_concepts_collections.sh ${CICD_DIR}/refresh_concepts_collections.sh
 COPY ./docker/arches_3d_entrypoint.sh ${ENTRYPOINT_DIR}/arches_3d_entrypoint.sh
+COPY ./docker/arches_setup_functions.sh ${ENTRYPOINT_DIR}/arches_setup_functions.sh
 RUN chmod -R 700 ${ENTRYPOINT_DIR} ${CICD_DIR} &&\
     dos2unix ${ENTRYPOINT_DIR}/* ${CICD_DIR}/*
 
