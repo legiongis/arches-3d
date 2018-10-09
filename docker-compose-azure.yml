@@ -28,6 +28,7 @@ services:
         - AZURE_ACCOUNT_NAME=${AZURE_ACCOUNT_NAME}
         - AZURE_ACCOUNT_KEY=${AZURE_ACCOUNT_KEY}
         - AZURE_SSL=True
+        - COMPRESS_STATIC_FILES=True
         - DOMAIN_NAMES=${DOMAIN_NAMES}
         - PYTHONUNBUFFERED=0
         - TZ=EST
