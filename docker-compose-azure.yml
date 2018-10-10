@@ -30,6 +30,8 @@ services:
         - AZURE_SSL=True
         - COMPRESS_STATIC_FILES=True
         - DOMAIN_NAMES=${DOMAIN_NAMES}
+        - GUNICORN_WORKERS=${GUNICORN_WORKERS}
+        - GUNICORN_WORKER_TIMEOUT=1800
         - PYTHONUNBUFFERED=0
         - TZ=EST
       ports:
