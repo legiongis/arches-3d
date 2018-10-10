@@ -40,9 +40,9 @@ define([
                     self.potreeZipFiles(potreeZipFiles);
                     let modelName = potreeZipFiles[0].name;
                     let filepath = potreeZipFiles[0].src;
-                    let extractedFilePath = filepath + "_extracted"
+                    let filepathWithoutExtension = filepath.replace(/\.[^/.]+$/, "");
                     window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
-                    potreeSetup.setupPotree(extractedFilePath + "/cloud.js", modelName)
+                    potreeSetup.setupPotree(filepathWithoutExtension + "/cloud.js", modelName)
                 }
             }
 
