@@ -7,7 +7,7 @@ define([
     'knockstrap',
     'bindings/chosen',
 ], function (_, ko, ReportViewModel, potreeSetup) {
-        return ko.components.register('potree-report', {
+    return ko.components.register('potree-report', {
         viewModel: function (params) {
             var self = this;
             params.configKeys = ['nodes'];
@@ -23,9 +23,7 @@ define([
                             val.forEach(function (item) {
 
                                 if (item.status &&
-                                    item.status === 'uploaded' &&
-                                    (item.name.split('.').pop() == 'zip')
-                                ) {
+                                    (item.name.split('.').pop() == 'zip')) {
                                     potreeZipFiles.push({
                                         src: item.url,
                                         name: item.name
@@ -47,9 +45,9 @@ define([
             }
 
             var widgets = [];
-            var getCardWidgets = function(card) {
+            var getCardWidgets = function (card) {
                 widgets = widgets.concat(card.model.get('widgets')());
-                card.cards().forEach(function(card) {
+                card.cards().forEach(function (card) {
                     getCardWidgets(card);
                 });
             };
