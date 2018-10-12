@@ -39,7 +39,7 @@ define([
                     let modelName = potreeZipFiles[0].name;
                     let filepath = potreeZipFiles[0].src;
                     let filepathWithoutExtension = "";
-                    if (filepath !== undefined) {
+                    if (filepath != null) {
                         filepathWithoutExtension = filepath.replace(/\.[^/.]+$/, "");
                     }
                     window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
