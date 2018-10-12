@@ -26,7 +26,7 @@ define([
                                     (item.name.split('.').pop() == 'zip')) {
                                         // Hotfix for status being 'queued' while the file is actually uploaded
                                         if (item.status == 'queued'){
-                                            let url = arches.urls.media + item.name;
+                                            let url = arches.urls.uploadedfiles + item.name;
                                             console.log("setting url: " + url);
                                             item.url = url;
                                         }
