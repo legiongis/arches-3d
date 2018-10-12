@@ -6,7 +6,7 @@ define([
     'arches',
     'knockstrap',
     'bindings/chosen',
-], function (_, ko, ReportViewModel, potreeSetup) {
+], function (_, ko, ReportViewModel, potreeSetup, arches) {
     return ko.components.register('potree-report', {
         viewModel: function (params) {
             var self = this;
@@ -24,6 +24,12 @@ define([
 
                                 if (item.status &&
                                     (item.name.split('.').pop() == 'zip')) {
+                                        // Hotfix for status being 'queued' while the file is actually uploaded
+                                        if (item.status == 'queued'){
+                                            let url = arches.urls.media + item.name;
+                                            console.log("setting url: " + url);
+                                            item.url = url;
+                                        }
                                     potreeZipFiles.push({
                                         src: item.url,
                                         name: item.name

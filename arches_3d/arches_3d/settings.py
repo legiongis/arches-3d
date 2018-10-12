@@ -134,8 +134,12 @@ LOGGING = {'disable_existing_loggers': False,
            'version': 1}
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-
 MEDIA_ROOT = os.path.join(APP_ROOT)
+
+# URL that handles the media served from MEDIA_ROOT, used for managing stored files.
+# It must end in a slash if set to a non-empty value.
+MEDIA_URL = get_optional_env_variable('MEDIA_URL') or '/files/'
+
 
 TILE_CACHE_CONFIG = {
     "name": "Disk",
