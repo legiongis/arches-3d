@@ -31,6 +31,7 @@ class Arches3dCustomStorage(AzureStorage):
                         )
 
                         super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
+                print "Finished uploading: " + actual_file_name
 
             except BadZipfile:
                 print "Uploaded file was corrupt"
