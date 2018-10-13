@@ -4,7 +4,6 @@
 APP_FOLDER=${WEB_ROOT}/${ARCHES_PROJECT}
 THESAURI_FOLDER=${APP_FOLDER}/arches_3d/db/schemes/thesauri
 COLLECTIONS_FOLDER=${APP_FOLDER}/arches_3d/db/schemes/collections
-FIX_STATIC_PATHS_SCRIPT=${APP_FOLDER}/arches_3d/install/fix_static_paths.py
 
 
 cd_app_folder() {
@@ -93,8 +92,8 @@ import_reference_data() {
 }
 
 fix_static_paths() {
-    echo "Running: python manage.py azure_storage_service fix_static_paths"
-    python manage.py azure_storage_service fix_static_paths
+    echo "Running: python manage.py storage fix_static_paths"
+    python manage.py storage fix_static_paths
 }
 
 
