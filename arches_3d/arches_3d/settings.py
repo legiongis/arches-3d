@@ -98,7 +98,6 @@ DATABASES = {
 
 COUCHDB_URL = 'http://{}:{}@{}:{}'.format(get_env_variable('COUCHDB_USER'), get_env_variable('COUCHDB_PASS'),get_env_variable('COUCHDB_HOST'), get_env_variable('COUCHDB_PORT')) # defaults to localhost:5984
 
-
 ALLOWED_HOSTS = get_env_variable('DOMAIN_NAMES').split()
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
@@ -108,7 +107,7 @@ WSGI_APPLICATION = 'arches_3d.wsgi.application'
 STATIC_ROOT = '/static_root'
 STATIC_URL = get_optional_env_variable('STATIC_URL') or '/media/'
 
-DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+DEFAULT_FILE_STORAGE = 'storage.arches_3d_custom_storage.Arches3dCustomStorage'
 # STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 
 AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
