@@ -15,12 +15,11 @@ class Arches3dCustomStorage(AzureStorage):
         
         if file_extension == '.zip':
             try:
-                print "Unzipping: " + actual_file_name
+                print "Unzipping and saving contents of: " + actual_file_name
                 input_zip = ZipFile(content)
                 for file in input_zip.filelist:
                     if not self.IsDirectory(file):
                         output_filepath = os.path.join(filepath, file.filename)
-                        print "Saving: " + output_filepath
 
                         content_type = mimetypes.guess_type(file.filename)[0]
                         content = input_zip.open(file).read()
@@ -32,7 +31,7 @@ class Arches3dCustomStorage(AzureStorage):
                         )
 
                         super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
-                        
+
             except BadZipfile:
                 print "Uploaded file was corrupt"
             except Exception as e:
