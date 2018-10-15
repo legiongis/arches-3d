@@ -28,6 +28,7 @@ class Arches3dCustomStorage(AzureStorage):
             input_zip = ZipFile(content)
             
             process_pool_nodes = int(settings.PROCESS_POOL_NODES)
+            print "Processing archive contents with a process pool of {0} nodes".format(process_pool_nodes)
             pool = ProcessPool(process_pool_nodes)
             pool.map(self.save_file, [(zipinfo_file.filename, input_zip.open(zipinfo_file).read(), original_filepath) for zipinfo_file in input_zip.filelist])
 
