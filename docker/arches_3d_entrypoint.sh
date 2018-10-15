@@ -9,6 +9,6 @@ if [[ "${DJANGO_MODE}" == "PROD" ]] && [[ ! -z ${AZURE_ACCOUNT_NAME} ]] && [[ ! 
 fi
 
 if [[ ! -z ${CPUS} ]] && [[ -z ${GUNICORN_WORKERS} ]]; then
-    export GUNICORN_WORKERS=${CPUS}*2+1
+    export GUNICORN_WORKERS=$((${CPUS}*2+1))
     echo "Setting gunicorn workers to: ${GUNICORN_WORKERS}"
 fi
