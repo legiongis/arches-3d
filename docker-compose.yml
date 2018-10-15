@@ -121,6 +121,7 @@ services:
 volumes:
     arches-log:
     arches-static:
+    arches-uploadedfiles:
     couchdb-data:
     couchdb-log:
     postgres-data:
