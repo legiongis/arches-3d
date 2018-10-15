@@ -8,6 +8,8 @@ from storages.backends.azure_storage import AzureStorage
 from zipfile import BadZipfile, ZipFile
 import mimetypes
 
+from arches_3d.arches_3d import settings
+
 
 class Arches3dCustomStorage(AzureStorage):
 
@@ -25,7 +27,8 @@ class Arches3dCustomStorage(AzureStorage):
             print "Unzipping and saving contents of: " + actual_file_name
             input_zip = ZipFile(content)
             
-            pool = ProcessPool(4)
+            process_pool_nodes = settings.PROCESS_POOL_NODES
+            pool = ProcessPool(process_pool_nodes)
             pool.map(self.save_file, [(zipinfo_file.filename, input_zip.open(zipinfo_file).read(), original_filepath) for zipinfo_file in input_zip.filelist])
 
             print "Finished saving contents of: " + actual_file_name
