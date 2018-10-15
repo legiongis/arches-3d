@@ -8,7 +8,7 @@ from storages.backends.azure_storage import AzureStorage
 from zipfile import BadZipfile, ZipFile
 import mimetypes
 
-from arches_3d.arches_3d import settings
+from arches_3d import settings
 
 
 class Arches3dCustomStorage(AzureStorage):
