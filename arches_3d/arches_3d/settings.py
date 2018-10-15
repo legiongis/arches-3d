@@ -50,6 +50,8 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
 INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
 
+MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware'] + MIDDLEWARE
+
 # SECURITY WARNING: keep the secret key used in production secret!
 USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
 # Make this unique, and don't share it with anybody.
@@ -108,7 +110,7 @@ STATIC_ROOT = '/static_root'
 STATIC_URL = get_optional_env_variable('STATIC_URL') or '/media/'
 
 DEFAULT_FILE_STORAGE = 'storage.arches_3d_custom_storage.Arches3dCustomStorage'
-# STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
