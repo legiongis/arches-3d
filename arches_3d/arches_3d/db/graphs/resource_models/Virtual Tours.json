@@ -88,20 +88,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
-                    "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
-                    "config": {
-                        "acceptedFiles": ".zip", 
-                        "label": "Octree (Potree) Model Zip File", 
-                        "maxFilesize": "100000"
-                    }, 
-                    "id": "ddf1eb48-d145-11e8-897e-0242ac1a0004", 
-                    "label": "Octree (Potree) Model Zip File", 
-                    "node_id": "ddf1e74c-d145-11e8-897e-0242ac1a0004", 
-                    "sortorder": 2, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
                     "card_id": "ddf1da04-d145-11e8-897e-0242ac1a0004", 
                     "config": {
                         "defaultValue": "", 
@@ -118,16 +104,16 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
                 {
-                    "card_id": "ddf1df86-d145-11e8-897e-0242ac1a0004", 
+                    "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
                     "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
-                        "maxFilesize": "0.2"
+                        "acceptedFiles": ".zip", 
+                        "label": "Octree (Potree) Model Zip File", 
+                        "maxFilesize": "100000"
                     }, 
-                    "id": "ddf1ef80-d145-11e8-897e-0242ac1a0004", 
-                    "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
-                    "node_id": "ddf1e878-d145-11e8-897e-0242ac1a0004", 
-                    "sortorder": 1, 
+                    "id": "ddf1eb48-d145-11e8-897e-0242ac1a0004", 
+                    "label": "Octree (Potree) Model Zip File", 
+                    "node_id": "ddf1e74c-d145-11e8-897e-0242ac1a0004", 
+                    "sortorder": 2, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
@@ -153,6 +139,20 @@
                     "id": "ddf1ebfc-d145-11e8-897e-0242ac1a0004", 
                     "label": "Information Carrier", 
                     "node_id": "ddf1cb5e-d145-11e8-897e-0242ac1a0004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "ddf1df86-d145-11e8-897e-0242ac1a0004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
+                        "maxFilesize": "0.2"
+                    }, 
+                    "id": "ddf1ef80-d145-11e8-897e-0242ac1a0004", 
+                    "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
+                    "node_id": "ddf1e878-d145-11e8-897e-0242ac1a0004", 
                     "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
@@ -467,7 +467,7 @@
                 "sortorder": 0
             }, 
             "subtitle": "Describes a model specifically purposed for the Virtual Tours viewer", 
-            "template_id": "50000000-0000-0000-0000-000000000006", 
+            "template_id": "50000000-0000-0000-0000-000000000001", 
             "version": ""
         }
     ], 
