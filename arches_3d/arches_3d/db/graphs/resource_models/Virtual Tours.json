@@ -55,7 +55,7 @@
                     "name": "Summary", 
                     "nodegroup_id": "ddf1d5ea-d145-11e8-897e-0242ac1a0004", 
                     "sortorder": 0, 
-                    "visible": false
+                    "visible": true
                 }
             ], 
             "cards_x_nodes_x_widgets": [
@@ -88,22 +88,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
-                    "card_id": "ddf1da04-d145-11e8-897e-0242ac1a0004", 
-                    "config": {
-                        "defaultValue": "", 
-                        "label": "Title", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "ddf1ea8a-d145-11e8-897e-0242ac1a0004", 
-                    "label": "Title", 
-                    "node_id": "ddf1e0ee-d145-11e8-897e-0242ac1a0004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                }, 
-                {
                     "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
                     "config": {
                         "acceptedFiles": ".zip", 
@@ -121,15 +105,15 @@
                     "card_id": "ddf1da04-d145-11e8-897e-0242ac1a0004", 
                     "config": {
                         "defaultValue": "", 
-                        "label": "Description", 
+                        "label": "Title", 
                         "maxLength": null, 
                         "placeholder": "Enter text", 
                         "width": "100%"
                     }, 
-                    "id": "ddf1f02a-d145-11e8-897e-0242ac1a0004", 
-                    "label": "Description", 
-                    "node_id": "ddf1e3c8-d145-11e8-897e-0242ac1a0004", 
-                    "sortorder": 1, 
+                    "id": "ddf1ea8a-d145-11e8-897e-0242ac1a0004", 
+                    "label": "Title", 
+                    "node_id": "ddf1e0ee-d145-11e8-897e-0242ac1a0004", 
+                    "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
@@ -156,6 +140,22 @@
                     "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "ddf1da04-d145-11e8-897e-0242ac1a0004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Description", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "ddf1f02a-d145-11e8-897e-0242ac1a0004", 
+                    "label": "Description", 
+                    "node_id": "ddf1e3c8-d145-11e8-897e-0242ac1a0004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 }
             ], 
             "color": "rgba(67,166,33,0.8)", 
@@ -467,7 +467,7 @@
                 "sortorder": 0
             }, 
             "subtitle": "Describes a model specifically purposed for the Virtual Tours viewer", 
-            "template_id": "50000000-0000-0000-0000-000000000001", 
+            "template_id": "50000000-0000-0000-0000-000000000007", 
             "version": ""
         }
     ], 
