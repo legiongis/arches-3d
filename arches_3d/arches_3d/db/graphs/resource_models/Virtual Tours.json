@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the information resource's title anddescription", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Summary", 
                     "nodegroup_id": "ddf1d5ea-d145-11e8-897e-0242ac1a0004", 
                     "sortorder": 0, 
@@ -88,20 +88,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
-                    "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
-                    "config": {
-                        "acceptedFiles": ".zip", 
-                        "label": "Octree (Potree) Model Zip File", 
-                        "maxFilesize": "100000"
-                    }, 
-                    "id": "ddf1eb48-d145-11e8-897e-0242ac1a0004", 
-                    "label": "Octree (Potree) Model Zip File", 
-                    "node_id": "ddf1e74c-d145-11e8-897e-0242ac1a0004", 
-                    "sortorder": 2, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
                     "card_id": "ddf1da04-d145-11e8-897e-0242ac1a0004", 
                     "config": {
                         "defaultValue": "", 
@@ -116,6 +102,20 @@
                     "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
+                    "config": {
+                        "acceptedFiles": ".zip", 
+                        "label": "Octree (Potree) Model Zip File", 
+                        "maxFilesize": "100000"
+                    }, 
+                    "id": "ddf1eb48-d145-11e8-897e-0242ac1a0004", 
+                    "label": "Octree (Potree) Model Zip File", 
+                    "node_id": "ddf1e74c-d145-11e8-897e-0242ac1a0004", 
+                    "sortorder": 2, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
                     "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
@@ -155,7 +155,7 @@
                     "node_id": "ddf1e3c8-d145-11e8-897e-0242ac1a0004", 
                     "sortorder": 1, 
                     "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                    "widget_id": "10000000-0000-0000-0000-000000000005"
                 }
             ], 
             "color": "rgba(67,166,33,0.8)", 
@@ -265,7 +265,7 @@
             ], 
             "graphid": "ddf1c942-d145-11e8-897e-0242ac1a0004", 
             "iconclass": "fa fa-binoculars", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
