@@ -293,15 +293,15 @@
                 {
                     "config": {
                         "description": {
-                            "nodegroup_id": "9b592d7c-c0f2-11e8-9c8c-0242ac120004", 
+                            "nodegroup_id": "ae3c907c-d138-11e8-8f5d-0242ac1a0004", 
                             "string_template": "<Description>"
                         }, 
                         "map_popup": {
-                            "nodegroup_id": "9b59383a-c0f2-11e8-9c8c-0242ac120004", 
+                            "nodegroup_id": "ae3c907c-d138-11e8-8f5d-0242ac1a0004", 
                             "string_template": "<Title>"
                         }, 
                         "name": {
-                            "nodegroup_id": "9b59383a-c0f2-11e8-9c8c-0242ac120004", 
+                            "nodegroup_id": "ae3c907c-d138-11e8-8f5d-0242ac1a0004", 
                             "string_template": "<Title>"
                         }, 
                         "triggering_nodegroups": []
@@ -521,7 +521,9 @@
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
-            "relatable_resource_model_ids": [], 
+            "relatable_resource_model_ids": [
+                "ddf1c942-d145-11e8-897e-0242ac1a0004"
+            ], 
             "resource_2_resource_constraints": [], 
             "root": {
                 "config": null, 
