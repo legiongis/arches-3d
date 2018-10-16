@@ -272,7 +272,7 @@
             "name": "Virtual Tours", 
             "nodegroups": [
                 {
-                    "cardinality": "n", 
+                    "cardinality": "1", 
                     "legacygroupid": null, 
                     "nodegroupid": "ddf1cb5e-d145-11e8-897e-0242ac1a0004", 
                     "parentnodegroup_id": null
@@ -321,7 +321,7 @@
                     "nodeid": "ddf1dc5c-d145-11e8-897e-0242ac1a0004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of", 
-                    "sortorder": 2
+                    "sortorder": 1
                 }, 
                 {
                     "config": null, 
@@ -401,7 +401,7 @@
                     "nodeid": "ddf1cb5e-d145-11e8-897e-0242ac1a0004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
-                    "sortorder": 0
+                    "sortorder": 2
                 }, 
                 {
                     "config": null, 
