@@ -14,9 +14,9 @@
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "Select a 3D model file and enter its metadata.", 
+                    "instructions": "Select the zip file with your Virtual Tours data.", 
                     "is_editable": true, 
-                    "name": "3D Model File", 
+                    "name": "Virtual Tours Files", 
                     "nodegroup_id": "ddf1cb5e-d145-11e8-897e-0242ac1a0004", 
                     "sortorder": 2, 
                     "visible": true
@@ -107,11 +107,11 @@
                     "card_id": "ddf1d310-d145-11e8-897e-0242ac1a0004", 
                     "config": {
                         "acceptedFiles": ".zip", 
-                        "label": "Octree (Potree) Model Zip File", 
+                        "label": "Virtual Tours Zip File", 
                         "maxFilesize": "100000"
                     }, 
                     "id": "ddf1eb48-d145-11e8-897e-0242ac1a0004", 
-                    "label": "Octree (Potree) Model Zip File", 
+                    "label": "Virtual Tours Zip File", 
                     "node_id": "ddf1e74c-d145-11e8-897e-0242ac1a0004", 
                     "sortorder": 2, 
                     "visible": true, 
