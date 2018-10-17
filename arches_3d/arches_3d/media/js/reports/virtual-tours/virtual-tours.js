@@ -80,7 +80,7 @@ function (_, ko, ReportViewModel, virtualToursSetup ,arches) {
             );
         },
         template: {
-            require: 'text!report-templates/potree'
+            require: 'text!report-templates/virtual-tours'
         }
     });
 });
