@@ -49,7 +49,7 @@ function (_, ko, ReportViewModel, virtualToursSetup ,arches) {
                     if (filepath != null) {
                         filepathWithoutExtension = filepath.replace(/\.[^/.]+$/, "");
                     }
-                    let filenameWithoutExtension = filenameWithoutExtension.substr(filenameWithoutExtension.lastIndexOf('/') +1);
+                    let filenameWithoutExtension = filepathWithoutExtension.substr(filepathWithoutExtension.lastIndexOf('/') +1);
                     let htmlPath = filepathWithoutExtension + '/' + filenameWithoutExtension + '/' + filenameWithoutExtension + '.html';
                     virtualToursSetup.setupVirtualTours(htmlPath)
                 }
