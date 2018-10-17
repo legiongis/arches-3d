@@ -45,12 +45,19 @@ function (_, ko, ReportViewModel, virtualToursSetup ,arches) {
                     self.virtualTourZipFiles(virtualTourZipFiles);
                     // let modelName = virtualTourZipFiles[0].name;
                     let filepath = virtualTourZipFiles[0].src;
+                    let originalName = virtualTourZipFiles[0].name;
+
                     let filepathWithoutExtension = "";
                     if (filepath != null) {
                         filepathWithoutExtension = filepath.replace(/\.[^/.]+$/, "");
                     }
-                    let filenameWithoutExtension = filepathWithoutExtension.substr(filepathWithoutExtension.lastIndexOf('/') +1);
-                    let htmlPath = filepathWithoutExtension + '/' + filenameWithoutExtension + '/' + filenameWithoutExtension + '.html';
+
+                    let originalNameWithoutExtension = ""
+                    if (originalName != null) {
+                        originalNameWithoutExtension = originalName.replace(/\.[^/.]+$/, "");
+                    }
+
+                    let htmlPath = filepathWithoutExtension + '/' + originalNameWithoutExtension + '/' + originalNameWithoutExtension + '.html';
                     virtualToursSetup.setupVirtualTours(htmlPath)
                 }
             }
