@@ -52,8 +52,8 @@ define([
             // $('#message_listing').append(fullScreenToggle)
 
             
-            let virtual_tours_container = $('virtual_tours_container')
-            virtual_tours_container.attr('src') = sourcePath
+            let virtual_tours_container = $('#virtual_tours_container');
+            virtual_tours_container.attr('src', sourcePath);
         }
     }
 
