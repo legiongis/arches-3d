@@ -142,7 +142,6 @@ MEDIA_ROOT = os.path.join(APP_ROOT)
 MEDIA_URL = get_optional_env_variable('MEDIA_URL') or '/files/'
 
 CPUS = get_env_variable('CPUS')
-PROCESS_POOL_NODES = int(CPUS) - 1
 
 TILE_CACHE_CONFIG = {
     "name": "Disk",
