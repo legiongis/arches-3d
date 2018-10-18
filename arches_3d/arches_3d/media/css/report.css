@@ -2,6 +2,11 @@
     border-bottom: 1px solid #ddd;
 }
 
+.report-render-area {
+    height: 685px;
+    width: 100%;
+}
+
 /*3D HOP*/
 
 .output-box {
@@ -21,8 +26,6 @@
 /* Potree */
 
 #potree_render_area {
-    height: 685px;
-    width: 100%;
     top: inherit;
     bottom: inherit;
     left: inherit;
