@@ -7,6 +7,15 @@
     width: 100%;
 }
 
+.fullscreen-button{
+    margin: 8px 8px;
+    background: none;
+    width: 2.5em;
+    height: 2.5em;
+    z-index: 100;
+    cursor: pointer;  
+}
+
 /*3D HOP*/
 
 .output-box {
@@ -61,3 +70,37 @@
     top: 0;
     left: 0;
 }
+
+
+/* Virtual Tours */
+
+#virtual-tours-container #fullscreen-button {
+    z-index: 9999;
+    position: absolute;
+    float: left;
+    bottom: 30px;
+    left: 10px
+}
+
+#virtual-tours-container {
+    position: relative;
+}
+
+#virtual-tours-container.fullscreen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+}
+
+#virtual-tours-render-area.fullscreen {
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+

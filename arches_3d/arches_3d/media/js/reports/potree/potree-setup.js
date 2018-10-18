@@ -47,7 +47,7 @@ define([
         $('#potree_render_area').toggleClass('fullscreen');
         $('#potree_sidebar_container').toggleClass('fullscreen');
         
-        let button = $('#potree_fullscreen_button');
+        let button = $('#fullscreen-button');
         if (button.attr('src').indexOf('fullscreen_off_white.svg') != -1) {
             button.attr('src', fullscreenImageOn);
         }
@@ -70,7 +70,7 @@ define([
 
             let fullScreenToggle = document.createElement('img');
             fullScreenToggle.src = fullscreenImageOff;
-            fullScreenToggle.id = 'potree_fullscreen_button'
+            fullScreenToggle.id = 'fullscreen-button'
             fullScreenToggle.onclick = toggleFullscreen;
             fullScreenToggle.classList.add('potree_button');
 

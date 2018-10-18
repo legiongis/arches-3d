@@ -12,10 +12,11 @@ define([
     var fullscreenImageOn = arches.urls.media + 'img/fullscreen_on_white.svg';
 
     function toggleFullscreen() {
-        $('#potree_render_area').toggleClass('fullscreen');
-        $('#potree_sidebar_container').toggleClass('fullscreen');
+        $('#virtual-tours-render-area').toggleClass('fullscreen');
+        $('#fullscreen-button').toggleClass('fullscreen');
+        $('#virtual-tours-container').toggleClass('fullscreen');
         
-        let button = $('#potree_fullscreen_button');
+        let button = $('#fullscreen-button');
         if (button.attr('src').indexOf('fullscreen_off_white.svg') != -1) {
             button.attr('src', fullscreenImageOn);
         }
@@ -27,17 +28,10 @@ define([
     return {
         setupVirtualTours: function (sourcePath) {
 
-            // let fullScreenToggle = document.createElement('img');
-            // fullScreenToggle.src = fullscreenImageOff;
-            // fullScreenToggle.id = 'potree_fullscreen_button'
-            // fullScreenToggle.onclick = toggleFullscreen;
-            // fullScreenToggle.classList.add('potree_button');
+            $('#fullscreen-button').click(toggleFullscreen);
 
-            // $('#message_listing').append(fullScreenToggle)
-
-            
-            let virtual_tours_container = $('#virtual_tours_container');
-            virtual_tours_container.attr('src', sourcePath);
+            let virtual_tours_render_area = $('#virtual-tours-render-area');
+            virtual_tours_render_area.attr('src', sourcePath);
         }
     }
 
