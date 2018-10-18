@@ -1,19 +1,3 @@
-
-define('three-wrapped', ['three-official'], function (THREE) {
-    window.THREE = THREE;
-    return THREE;
-});
-
-define('proj4-wrapped', ['proj4'], function (proj4) {
-    window.proj4 = proj4;
-    return proj4;
-});
-
-define('ol-wrapped', ['ol'], function (ol) {
-    window.ol = ol;
-    return ol;
-});
-
 define([
     'module',
     'arches',
