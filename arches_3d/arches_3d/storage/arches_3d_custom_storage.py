@@ -9,6 +9,7 @@ from storages.backends.azure_storage import AzureStorage
 
 from zipfile import BadZipfile, ZipFile
 import mimetypes
+import chardet
 
 import tempfile
 import shutil
@@ -17,6 +18,7 @@ import logging
 
 from arches_3d import settings
 
+logging.getLogger("azure.storage").setLevel(logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 class Arches3dCustomStorage(AzureStorage):
@@ -70,13 +72,41 @@ class Arches3dCustomStorage(AzureStorage):
 
         content_type = mimetypes.guess_type(input_filepath)[0]
 
+        try_again = True
+        encoding = None
+        while try_again:
+            try:
+                memory_file = self.createMemoryFile(output_filepath, input_filepath, content_type, encoding)
+                super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
+                try_again = False
+            except UnicodeDecodeError as e:
+                logger.error("Failed to save file: {0}".format(input_filepath))
+                logger.error(e)
+                logger.info("Retrying with detected encoding")
+                detected = chardet.detect(open(input_filepath, "rb").read())
+                logger.debug("detected")
+                logger.debug(detected)
+                encoding = detected.encoding
+                logger.debug("encoding")
+                logger.debug(encoding)
+            except Exception as e:
+                logger.error("Failed to save file: {0}".format(input_filepath))
+                logger.error(e)
+                raise
+
+    @staticmethod
+    def createMemoryFile(output_filepath, input_filepath, content_type, encoding=None):
+        if encoding:
+            content = open(input_filepath, encoding=encoding)
+        else:
+            content = open(input_filepath)
+
         memory_file = SimpleUploadedFile(
             name=output_filepath,
-            content=open(input_filepath).read(),
+            content=content.read(),
             content_type=content_type
         )
-
-        super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
+        return memory_file
 
     @staticmethod
     def extract_file(content, target_dir):
