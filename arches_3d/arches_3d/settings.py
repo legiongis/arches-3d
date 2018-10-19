@@ -126,13 +126,25 @@ AZURE_OVERWRITE_FILES = get_optional_env_variable('AZURE_OVERWRITE_FILES') or Fa
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
 LOGGING = {'disable_existing_loggers': False,
-           'handlers': {'file': {'class': 'logging.FileHandler',
-                                 'filename': os.path.join(APP_ROOT, 'arches.log'),
-                                 'level': 'DEBUG'}},
-           'loggers': {'arches': {'handlers': ['file'],
-                                  'level': 'DEBUG',
-                                  'propagate': True}},
-           'version': 1}
+           'handlers': {
+               'console': {
+                   'class': 'logging.StreamHandler',
+               },
+               'file': {
+                   'class': 'logging.FileHandler',
+                   'filename': os.path.join(APP_ROOT, 'arches.log'),
+                   'level': 'DEBUG'
+               }
+           },
+           'loggers': {
+               'arches': {
+                   'handlers': [ 'console','file'],
+                   'level': 'DEBUG',
+                   'propagate': True
+               }
+           },
+           'version': 1
+           }
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT = os.path.join(APP_ROOT)
