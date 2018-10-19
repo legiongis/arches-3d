@@ -82,7 +82,8 @@ class Arches3dCustomStorage(AzureStorage):
         input_zip = ZipFile(content)
         try:
             input_zip.extractall(target_dir)
-        except:
-            print "Failed to extract zipfile"
+        except Exception as e:
+            logger.error("Failed to extract zipfile: [{0}]".format(e.message))
+            raise
         finally:
             input_zip.close()
