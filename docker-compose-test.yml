@@ -49,9 +49,7 @@ services:
 
     couchdb:
       container_name: couchdb
-      image: couchdb:2.1.1
+      image: filiosoft/pouchdb:latest
       ports:
         - "5984:5984"
-      environment:
-        COUCHDB_USER: admin
-        COUCHDB_PASSWORD: password
+
