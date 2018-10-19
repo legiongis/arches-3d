@@ -13,8 +13,11 @@ import mimetypes
 import tempfile
 import shutil
 
+import logging
+
 from arches_3d import settings
 
+logger = logging.getLogger(__name__)
 
 class Arches3dCustomStorage(AzureStorage):
 
@@ -31,11 +34,11 @@ class Arches3dCustomStorage(AzureStorage):
         temp_dir = tempfile.mkdtemp()
         
         try:
-            print "Unzipping and saving contents of: {0}".format(actual_file_name)
+            logger.info("Unzipping and saving contents of: {0}".format(actual_file_name))
             self.extract_file(content, temp_dir)
             
             num_workers = multiprocessing.cpu_count() - 1
-            print "Processing archive contents with a process pool of {0} nodes".format(num_workers)
+            logger.debug("Processing archive contents with a process pool of {0} nodes".format(num_workers))
             pool = ProcessPool(num_workers)
 
             filepaths = [os.path.join(os.path.relpath(root, temp_dir), filename) for root, _, filenames in os.walk(temp_dir) for filename in filenames]
@@ -43,20 +46,18 @@ class Arches3dCustomStorage(AzureStorage):
             chunksize, rest = divmod(file_count, 4 * num_workers)
             if rest:
                 chunksize += 1
-            print "Processing workload in chunks of: {0}".format(chunksize)
+            logger.debug("Processing workload in chunks of: {0}".format(chunksize))
 
             arguments = [(temp_dir, filepaths, original_filepath) for filepaths in filepaths]
             pool.map(self.save_file, arguments, chunksize = chunksize)
 
-            print "Finished saving contents of: " + actual_file_name
+            logger.info("Finished saving contents of: " + actual_file_name)
 
         except BadZipfile:
-            print "Uploaded file was corrupt"
+            logger.error("Uploaded file was corrupt")
             raise
         except Exception as e:
-            print "Upload of zip file failed: "
-            print e
-            print traceback.format_exc()
+            logger.error("Upload of zip file failed: [{0}]".format(e))
             raise
         finally:
             shutil.rmtree(temp_dir)
@@ -83,7 +84,7 @@ class Arches3dCustomStorage(AzureStorage):
         try:
             input_zip.extractall(target_dir)
         except Exception as e:
-            logger.error("Failed to extract zipfile: [{0}]".format(e.message))
+            logger.error("Failed to extract zipfile: [{0}]".format(e))
             raise
         finally:
             input_zip.close()
