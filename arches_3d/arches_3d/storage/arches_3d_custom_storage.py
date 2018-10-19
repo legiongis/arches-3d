@@ -52,10 +52,12 @@ class Arches3dCustomStorage(AzureStorage):
 
         except BadZipfile:
             print "Uploaded file was corrupt"
+            raise
         except Exception as e:
             print "Upload of zip file failed: "
             print e
             print traceback.format_exc()
+            raise
         finally:
             shutil.rmtree(temp_dir)
 
