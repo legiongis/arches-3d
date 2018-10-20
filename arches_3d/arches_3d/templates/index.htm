@@ -43,6 +43,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <link href="{% static 'css/unify.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
 </head>
 
@@ -66,7 +67,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 </button>
 
                 <a class="navbar-brand" style="padding-top: 5px;" href="#intro">
-                    <img src="{% static 'img/landing/arches_logo_light.png' %}" style="height: 36px; width: 36px;" alt="Logo">
+                    <img src="{% static 'img/logos/gdh-logo.png' %}" style="height: 36px; width: 36px;" alt="Logo">
                 </a>
             </div>
 
@@ -130,18 +131,18 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="fullscreenbanner">
                 <ul>
                     <!-- SLIDE 1 -->
-                    <li data-transition="slideright" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+                    <li data-transition="slideleft" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
                         <!-- MAIN IMAGE -->
-                        <img src="{% static 'img/landing/landing1.png' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img src="{% static 'img/photos/2016_spain_bart_tls.jpg' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <!-- LAYERS -->
                         <div class="tp-caption rs-caption-1 sft start text-bold" delay="4500" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="1000" data-easing="Back.easeInOut" data-endspeed="300">
-                            Arches
+                            It's Bart
                         </div>
 
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-2 sft" data-x="center" data-hoffset="0" data-y="200" data-speed="1000" data-start="3000" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            {% trans "A Data Management and Integration Platform<br> To Preserve and Protect Cultural Heritage." %}
+                            {% trans "Sometimes there is a man<br> that fits right in there. In his time and place." %}
                         </div>
 
                         <!-- LAYER -->
@@ -157,23 +158,23 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                         <!-- Attribution -->
                         <div class="" style="position: absolute; top: 95%; left: 15px; color: #fff; padding: 10px; background: rgba(0,0,0,.5);">
-                            <span class="">Photo:  https://www.flickr.com/photos/bibendum84/ (CC BY 2.0)</span>
+                            <span class="">Photo:  Some bald guy</span>
                         </div>
                     </li>
 
                     <!-- SLIDE 2 -->
-                    <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+                    <li data-transition="slideleft" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
                         <!-- MAIN IMAGE -->
-                        <img src="{% static 'img/landing/landing2.jpg' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img src="{% static 'img/photos/home_banner.jpg' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <!-- LAYERS -->
                         <div class="tp-caption rs-caption-1 sft start text-bold" data-x="center" data-hoffset="0" data-y="100" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
-                            {% trans "Dynamically Define Your Inventory" %}
+                            {% trans "Documenting, Monitoring, and Preserving" %}
                         </div>
 
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-2 sft" data-x="center" data-hoffset="0" data-y="200" data-speed="1000" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            {% trans "Arches Lets You Easily Create Inventory Databases<br> And Share Them With Others" %}
+                            {% trans "Our Global Cultural and Natural Heritage" %}
                         </div>
 
                         <!-- LAYER -->
@@ -183,33 +184,33 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 
                         <!-- Attribution -->
                         <div class="" style="position: absolute; top: 95%; left: 15px; color: #fff; padding: 10px; background: rgba(0,0,0,.5);">
-                            <span class="">Photo:  https://www.flickr.com/photos/davidedamico/ (CC BY 2.0)</span>
+                            <span class="">Photo:  Drone capture of a castle</span>
                         </div>
                     </li>
 
                     <!-- SLIDE 3 -->
-                    <li data-transition="slideup" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
+                    <li data-transition="slideleft" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
                         <!-- MAIN IMAGE -->
-                        <img src="{% static 'img/landing/landing3.jpg' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        <img src="{% static 'img/photos/2017_machine_gun_bunker_of_alhama.jpg' %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                         <!-- LAYERS -->
                         <div class="tp-caption rs-caption-1 sft start text-bold" data-x="center" data-hoffset="0" data-y="110" data-speed="800" data-start="1500" data-easing="Back.easeInOut" data-endspeed="300">
-                            {% trans "Data Discovery" %}
+                            {% trans "Public Online Repository" %}
                         </div>
 
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-2 sfb" data-x="center" data-hoffset="0" data-y="210" data-speed="800" data-start="2500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            {% trans "Easily Find Relevant Projects, Artistic Works<br> and Retrieve Data for Interpretation and Analysis" %}
+                            {% trans "Browse our data, including all 3D models" %}
                         </div>
 
                         <!-- LAYER -->
                         <div class="tp-caption rs-caption-3 sfb" data-x="center" data-hoffset="0" data-y="370" data-speed="800" data-start="3500" data-easing="Power4.easeOut" data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
-                            <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Arches" %}</a></span>
+                            <span class="page-scroll"><a href="{% url 'search_home' %}" class="btn-u btn-brd btn-brd-hover btn-u-light">{% trans "Search Arches" %}</a></span>
                         </div>
 
                         <!-- Attribution -->
                         <div class="" style="position: absolute; top: 95%; left: 15px; color: #fff; padding: 10px; background: rgba(0,0,0,.5);">
-                            <span class="">Photo:  https://www.flickr.com/photos/pedrosz/ (CC BY 2.0)</span>
+                            <span class="">Photo:  Machine gun bunker of Alhama</span>
                         </div>
                     </li>
                 </ul>
@@ -227,11 +228,22 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         <div id="about" class="about-image bg-grey">
             <div class="container">
                 <div class="title-v1">
-                    <h1>{% trans "What is Arches" %}</h1>
-                    <p>{% trans "Arches is <strong>awesome</strong> technology designed to ease Cultural Heritage data management.<br> Use Arches to build an inventory of cultural heritage assets such as objects, research activities, areas, datasets, and people or  organizations." %}</p>
+                    <h1>{% trans "GDH Mission and Goals" %}</h1>
+                </div>
+                <div class="title-v1 spacer-top-small">
+                    <h4>{% trans "Mission" %}</h4>
+                    <p>{% trans "Global Digital Heritage (GDH) is a not-for-profit, private research and education organization dedicated to documenting, monitoring, and preserving our global cultural and natural heritage. We use digital visualization, 3D virtualization, geospatial informatics, and open access solutions to provide digital data and 3D models to governments, regional institutions, museums, local scholars, and the public. A key element of our mission is the democratization of science-we make all data freely available to the world in support of cultural heritage, heritage management, education, public access, scientific research, and to enhance the digital humanities." %}</p>
                 </div>
                 <div class="img-center">
-                    <img class="img-responsive" src="{% static 'img/landing/disco.jpg' %}" alt="">
+                    <img class="img-responsive" src="{% static 'img/photos/2016_spain_motilla_ortophoto_2.png' %}" alt="">
+                </div>
+                <div class="title-v1 spacer-top-small">
+                    <h4>{% trans "Overview and Goals" %}</h4>
+                    <p>{% trans "We believe that many nations, local and regional museums, and universities have specific and spectacular places, monuments, and museum collections that are critical to the global scientific agenda. While these are often recognized for their heritage value, they are underutilized in science and research because of distance or because the scientific community does not know they exist. We use virtualization technology to digitize entire collections, entire museums, and entire archaeological and paleontological landscapes. We make virtual repositories available to any student, any child, any scientist or any enthusiast anywhere in the world at any time. We create online analytical tools to democratize education and research through global analyses and exploration. Our virtual repository approach allows scientific analyses of places, monuments, and collections on a global scale, and provides a mean to highlight the importance of those collections to their communities."%}</p>
+                </div>
+                <div class="title-v1 spacer-top-small">
+                    <h4>{% trans "What we offer" %}</h4>
+                    <p>{% trans "In the face of an increasingly hostile world, a global landscape where conflict and natural disaster are destroying our shared heritage at an accelerating rate, we provide 3D digital services to document and preserve places and specimens critical to our global heritage. We do this for free. We then return all of the data and results to the host institution or regional/local authorities who can do anything they wisah with the materials. All we ask is that we are allowed to publish papers on the project, and to also include the scan data and results on our web site." %}</p>
                 </div>
             </div>
         </div>
@@ -243,50 +255,45 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <section id="services">
         <div class="container content-lg">
             <div class="title-v1">
-                <h2>{% trans "Capabilities" %}</h2>
-                <p>{% trans "Arches can <strong> streamline your work</strong> so that you can focus on managing your assets.<br> Build interoperable, shareable, and secure <strong> cultural heritage data repositories</strong> as a natural part of your workflow." %}</p>
+                <h2>{% trans "Data" %}</h2>
+                <p style="text-align: center">{% trans "All our data is publicly accessible.<br> <strong>No exceptions.</strong>" %}</p>
             </div>
 
             <div class="row service-box-v1">
                 <div class="col-md-4 col-sm-6">
                     <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-lightbulb-o"></i>
-                        <h2 class="heading-md">{% trans "Manage Heritage Inventories" %}</h2>
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-university"></i>
+                        <h2 class="heading-md">{% trans "Heritage Data" %}</h2>
                         <p></p>
-                        <ul class="list-unstyled">
-                            <li>{% trans "Heritage Objects" %}</li>
-                            <li>{% trans "Research Activities" %}</li>
-                            <li>{% trans "People and Orgnizations" %}</li>
-                            <li>{% trans "Important Areas" %}</li>
-                            <li>{% trans "Documents and Images" %}</li>
+                        <ul class="list-unstyled">                            
+                            <li><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"243f8689-b8f6-11e6-84a5-026d961c88e6"%2C"name"%3A"Project"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' target="_blank">{% trans "Projects" %}</a></li>
+                            <li><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"fad0563b-b8f8-11e6-84a5-026d961c88e6"%2C"name"%3A"Heritage%20Site"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' target="_blank">{% trans "Heritage Sites" %}</a></li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Heritage Objects" %}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-present"></i>
-                        <h2 class="heading-md">{% trans "Research Data" %}</h2>
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line text-center fa fa-barcode"></i>
+                        <h2 class="heading-md">{% trans "3D Data" %}</h2>
                         <p></p>
                         <ul class="list-unstyled">
-                            <li>{% trans "Manage Digital Datasets" %}</li>
-                            <li>{% trans "Visualize Spectra" %}</li>
-                            <li>{% trans "Easy Dataset Import" %}</li>
-                            <li>{% trans "View & Manage Data" %}</li>
-                            <li>{% trans "Easy Access" %}</li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Point Clouds" %}</a></li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Meshed Models" %}</a></li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Raw 3D Data" %}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-rocket"></i>
-                        <h2 class="heading-md">{% trans "Interpretations & Results" %}</h2>
+                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line text-center fa fa-file-photo-o"></i>
+                        <h2 class="heading-md">{% trans "2D Data" %}</h2>
                         <p></p>
                         <ul class="list-unstyled">
-                            <li>{% trans "Manage Data Interpretations" %}</li>
-                            <li>{% trans "Share Research Results" %}</li>
-                            <li>{% trans "Tie Results to Iconography" %}</li>
-                            <li>{% trans "Centralize Results" %}</li>
-                            <li>{% trans "Publish Results" %}</li>
+                            <li><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"ddf1c942-d145-11e8-897e-0242ac1a0004"%2C"name"%3A"Virtual%20Tours"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' target="_blank">{% trans "Virtual Tours" %}</a></li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Orthophotos" %}</a></li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Photos & Images" %}</a></li>
+                            <li><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Videos" %}</a></li>
                         </ul>
                     </div>
                 </div>
