@@ -13,7 +13,7 @@ services:
         - arches-static:/static_root
         - arches-uploadedfiles:/web_root/arches_3d/arches_3d/uploadedfiles
       environment:
-        - ARCHES_PROJECT=arches-3d
+        - ARCHES_PROJECT=arches_3d
         - INSTALL_DEFAULT_GRAPHS=False
         - INSTALL_DEFAULT_CONCEPTS=False
         - PGUSERNAME=postgres
@@ -28,7 +28,7 @@ services:
         - COUCHDB_PASS=password
         - ESHOST=elasticsearch
         - ESPORT=9200
-        - ELASTICSEARCH_PREFIX=arches-3d
+        - ELASTICSEARCH_PREFIX=arches_3d
         - DJANGO_MODE=PROD
         - DJANGO_DEBUG=False
         # - DJANGO_REMOTE_DEBUG=False
