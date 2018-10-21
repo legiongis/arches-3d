@@ -31,7 +31,6 @@ services:
         - AZURE_SSL=True
         - MEDIA_URL=${MEDIA_URL}
         - DOMAIN_NAMES=${DOMAIN_NAMES}
-        - CPUS=${CPUS}
         - GUNICORN_WORKER_TIMEOUT=28800
         - PYTHONUNBUFFERED=0
         - TZ=EST

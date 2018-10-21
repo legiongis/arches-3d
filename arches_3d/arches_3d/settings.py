@@ -153,8 +153,6 @@ MEDIA_ROOT = os.path.join(APP_ROOT)
 # It must end in a slash if set to a non-empty value.
 MEDIA_URL = get_optional_env_variable('MEDIA_URL') or '/files/'
 
-CPUS = get_env_variable('CPUS')
-
 TILE_CACHE_CONFIG = {
     "name": "Disk",
     "path": os.path.join(APP_ROOT, 'tileserver', 'cache')

@@ -10,7 +10,7 @@ fi
 
 if [[ -z ${GUNICORN_WORKERS} ]]; then
     CPUS=$(grep -c ^processor /proc/cpuinfo)
-    echo "CPUS: ${CPUS}"
+    echo "CPUS in current system: ${CPUS}"
     export GUNICORN_WORKERS=$((${CPUS}*2+1))
     echo "Setting gunicorn workers to: ${GUNICORN_WORKERS}"
 fi
