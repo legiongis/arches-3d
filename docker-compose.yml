@@ -44,7 +44,6 @@ services:
       depends_on:
         - db
         - elasticsearch
-        - couchdb
 
     nginx:
       container_name: nginx
