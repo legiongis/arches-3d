@@ -8,7 +8,9 @@ if [[ "${DJANGO_MODE}" == "PROD" ]] && [[ ! -z ${AZURE_ACCOUNT_NAME} ]] && [[ ! 
     fix_static_paths
 fi
 
-if [[ ! -z ${CPUS} ]] && [[ -z ${GUNICORN_WORKERS} ]]; then
+if [[ -z ${GUNICORN_WORKERS} ]]; then
+    CPUS=$(grep -c ^processor /proc/cpuinfo)
+    echo "CPUS: ${CPUS}"
     export GUNICORN_WORKERS=$((${CPUS}*2+1))
     echo "Setting gunicorn workers to: ${GUNICORN_WORKERS}"
 fi
