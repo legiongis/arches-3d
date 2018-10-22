@@ -118,33 +118,51 @@ AZURE_CONTAINER = get_optional_env_variable('AZURE_CONTAINER') or 'arches'
 AZURE_SSL = get_optional_env_variable('AZURE_SSL') or False
 AZURE_UPLOAD_MAX_CONN = get_optional_env_variable('AZURE_UPLOAD_MAX_CONN') or 2
 AZURE_CONNECTION_TIMEOUT_SECS = get_optional_env_variable('AZURE_CONNECTION_TIMEOUT_SECS') or 99999
-AZURE_BLOB_MAX_MEMORY_SIZE = get_optional_env_variable('AZURE_BLOB_MAX_MEMORY_SIZE') or '2MB'
+AZURE_BLOB_MAX_MEMORY_SIZE = get_optional_env_variable('AZURE_BLOB_MAX_MEMORY_SIZE') or 2*1024*1024
 AZURE_URL_EXPIRATION_SECS = get_optional_env_variable('AZURE_URL_EXPIRATION_SECS') or None
 AZURE_OVERWRITE_FILES = get_optional_env_variable('AZURE_OVERWRITE_FILES') or False
 
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
-LOGGING = {'disable_existing_loggers': False,
-           'handlers': {
-               'console': {
-                   'class': 'logging.StreamHandler',
-               },
-               'file': {
-                   'class': 'logging.FileHandler',
-                   'filename': os.path.join(APP_ROOT, 'arches.log'),
-                   'level': 'DEBUG'
-               }
-           },
-           'loggers': {
-               'arches': {
-                   'handlers': [ 'console','file'],
-                   'level': 'DEBUG',
-                   'propagate': True
-               }
-           },
-           'version': 1
-           }
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'default': {
+            'format': '[%(asctime)s] [%(name)-12s] [%(levelname)-8s] %(message)s'
+        }
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'default'
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(APP_ROOT, 'arches.log'),
+            'formatter': 'default'
+        }
+    },
+    'loggers': {
+        'arches': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True
+        },
+        'arches_3d': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True
+        },
+        '': {
+            'handlers': ['console', 'file'],
+            'level': 'ERROR',
+            'propagate': True
+        }
+    }
+}
+
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT = os.path.join(APP_ROOT)
