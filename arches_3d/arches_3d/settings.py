@@ -148,12 +148,12 @@ LOGGING = {
         'arches': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
-            'propagate': True
+            'propagate': False
         },
         'arches_3d': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
-            'propagate': True
+            'propagate': False
         },
         '': {
             'handlers': ['console', 'file'],
