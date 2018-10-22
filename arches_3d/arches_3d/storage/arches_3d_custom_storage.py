@@ -18,7 +18,6 @@ import logging
 
 from arches_3d import settings
 
-logging.getLogger("azure.storage").setLevel(logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 class Arches3dCustomStorage(AzureStorage):
