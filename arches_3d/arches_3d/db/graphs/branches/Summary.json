@@ -19,7 +19,7 @@
                     "name": "Summary", 
                     "nodegroup_id": "e24828ee-d12f-11e8-ae4d-0242ac1a0004", 
                     "sortorder": null, 
-                    "visible": false
+                    "visible": true
                 }
             ], 
             "cards_x_nodes_x_widgets": [
