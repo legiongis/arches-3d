@@ -15,7 +15,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the information resource's title anddescription", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Summary", 
                     "nodegroup_id": "53d4b76c-d6d4-11e8-9eb1-0242ac150004", 
                     "sortorder": 0, 
@@ -33,7 +33,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": null, 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Publication Event", 
                     "nodegroup_id": "29964b10-d6d3-11e8-9eb1-0242ac150004", 
                     "sortorder": 5, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter information for identifiers of the resource from other external sources.", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "External Identifier", 
                     "nodegroup_id": "2996150a-d6d3-11e8-9eb1-0242ac150004", 
                     "sortorder": 7, 
@@ -69,7 +69,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Select and upload image file(s)", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Information Carrier", 
                     "nodegroup_id": "29963df0-d6d3-11e8-9eb1-0242ac150004", 
                     "sortorder": 3, 
@@ -87,7 +87,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Describe the copyright for the information resource.", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Information Resource Copyright", 
                     "nodegroup_id": "29965f38-d6d3-11e8-9eb1-0242ac150004", 
                     "sortorder": 6, 
@@ -123,7 +123,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Select keywords associated with the resource.", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Keyword", 
                     "nodegroup_id": "2996563c-d6d3-11e8-9eb1-0242ac150004", 
                     "sortorder": 1, 
@@ -703,10 +703,31 @@
                     "rangenode_id": "29964b10-d6d3-11e8-9eb1-0242ac150004"
                 }
             ], 
-            "functions_x_graphs": [], 
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "53d4b76c-d6d4-11e8-9eb1-0242ac150004", 
+                            "string_template": "<Title>"
+                        }, 
+                        "map_popup": {
+                            "nodegroup_id": "53d4b76c-d6d4-11e8-9eb1-0242ac150004", 
+                            "string_template": "<Title>"
+                        }, 
+                        "name": {
+                            "nodegroup_id": "53d4b76c-d6d4-11e8-9eb1-0242ac150004", 
+                            "string_template": "<Title>"
+                        }, 
+                        "triggering_nodegroups": []
+                    }, 
+                    "function_id": "60000000-0000-0000-0000-000000000001", 
+                    "graph_id": "2995daea-d6d3-11e8-9eb1-0242ac150004", 
+                    "id": "d50420d8-d6df-11e8-a86c-0242ac150004"
+                }
+            ], 
             "graphid": "2995daea-d6d3-11e8-9eb1-0242ac150004", 
             "iconclass": "fa fa-file-image-o", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
