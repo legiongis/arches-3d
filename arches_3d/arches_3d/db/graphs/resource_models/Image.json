@@ -19,7 +19,7 @@
                     "name": "Summary", 
                     "nodegroup_id": "53d4b76c-d6d4-11e8-9eb1-0242ac150004", 
                     "sortorder": 0, 
-                    "visible": false
+                    "visible": true
                 }, 
                 {
                     "active": true, 
@@ -316,6 +316,24 @@
                     "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "53d4bd2a-d6d4-11e8-9eb1-0242ac150004", 
+                    "config": {
+                        "dateFormat": "YYYY-MM-DD", 
+                        "defaultValue": "", 
+                        "label": "Date of Creation", 
+                        "maxDate": false, 
+                        "minDate": false, 
+                        "placeholder": "Enter date", 
+                        "viewMode": "days"
+                    }, 
+                    "id": "184909b8-d6df-11e8-a86c-0242ac150004", 
+                    "label": "Date of Creation", 
+                    "node_id": "bbcdfc7c-d6d7-11e8-9eb1-0242ac150004", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
                 }, 
                 {
                     "card_id": "299677f2-d6d3-11e8-9eb1-0242ac150004", 
