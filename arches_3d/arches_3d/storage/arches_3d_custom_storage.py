@@ -16,9 +16,8 @@ import shutil
 
 import logging
 
-from arches_3d import settings
-
 logger = logging.getLogger(__name__)
+
 
 class Arches3dCustomStorage(AzureStorage):
 
@@ -42,14 +41,26 @@ class Arches3dCustomStorage(AzureStorage):
             logger.debug("Processing archive contents with a process pool of {0} nodes".format(num_workers))
             pool = ProcessPool(num_workers)
 
-            filepaths = [os.path.join(os.path.relpath(root, temp_dir), filename) for root, _, filenames in os.walk(temp_dir) for filename in filenames]
+            filepaths = []
+            try:
+                for root, _, filenames in os.walk(temp_dir):
+                    for filename in filenames:
+                        full_relative_path = os.path.join(os.path.relpath(root, temp_dir), filename)
+                        filepaths.append(full_relative_path)
+            except UnicodeDecodeError as e:
+                logger.error("Encoding error while walking files in zip file: {0}".format(actual_file_name))
+                logger.error(e)
+                if hasattr(e, 'object'):
+                    logger.error("Potential cause: {0}".format(e.object))
+                raise
+
             file_count = len(filepaths)
             chunksize, rest = divmod(file_count, 4 * num_workers)
             if rest:
                 chunksize += 1
             logger.debug("Processing workload in chunks of: {0}".format(chunksize))
 
-            arguments = [(temp_dir, filepaths, original_filepath) for filepaths in filepaths]
+            arguments = [(temp_dir, filepath, original_filepath) for filepath in filepaths]
             pool.map(self.save_file, arguments, chunksize = chunksize)
 
             logger.info("Finished saving contents of: " + actual_file_name)
@@ -57,10 +68,18 @@ class Arches3dCustomStorage(AzureStorage):
         except BadZipfile:
             logger.error("Uploaded file was corrupt")
             raise
+        except UnicodeDecodeError as e:
+            logger.error("Encoding error while handling zip file: {0}".format(actual_file_name))
+            if hasattr(e, 'object'):
+                logger.error("Potential culprit: {0}".format(e.object))
+
+            e.message = e.message + "Potential cause: special characters in file/folder names"
+            raise(e)
         except Exception as e:
             logger.error("Upload of zip file failed: [{0}]".format(e))
             raise
         finally:
+            logger.debug("Removing temp dir: {0}".format(temp_dir))
             shutil.rmtree(temp_dir)
 
     def save_file(self, arguments):
@@ -69,32 +88,26 @@ class Arches3dCustomStorage(AzureStorage):
         input_filepath = os.path.join(temp_dir, relative_filepath)
         output_filepath = os.path.join(original_filepath, relative_filepath)
 
-        content_type = mimetypes.guess_type(input_filepath)[0]
-
-        try_again = True
-        encoding = None
-        while try_again:
-            try:
-                memory_file = self.createMemoryFile(output_filepath, input_filepath, content_type, encoding)
-                super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
-                try_again = False
-            except UnicodeDecodeError as e:
-                logger.error("Failed to save file: {0}".format(input_filepath))
-                logger.error(e)
-                logger.info("Retrying with detected encoding")
-                detected = chardet.detect(open(input_filepath, "rb").read())
-                logger.debug("detected")
-                logger.debug(detected)
-                encoding = detected.encoding
-                logger.debug("encoding")
-                logger.debug(encoding)
-            except Exception as e:
-                logger.error("Failed to save file: {0}".format(input_filepath))
-                logger.error(e)
-                raise
+        try:
+            logger.debug("Handling file: {0}".format(input_filepath))
+            content_type = mimetypes.guess_type(input_filepath)[0]
+            memory_file = self.create_memory_file(output_filepath, input_filepath, content_type)
+            super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
+        except UnicodeDecodeError as e:
+            logger.error("Failed to save file: {0}".format(input_filepath))
+            logger.error(e)
+            detected = chardet.detect(open(input_filepath, "rb").read())
+            encoding = detected.encoding
+            logger.info("Retrying with detected encoding: {0}".format(encoding))
+            memory_file = self.create_memory_file(output_filepath, input_filepath, content_type, encoding)
+            super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
+        except Exception as e:
+            logger.error("Unexpected error while saving file: {0}".format(input_filepath))
+            logger.error(e)
+            raise
 
     @staticmethod
-    def createMemoryFile(output_filepath, input_filepath, content_type, encoding=None):
+    def create_memory_file(output_filepath, input_filepath, content_type, encoding=None):
         if encoding:
             content = open(input_filepath, encoding=encoding)
         else:
