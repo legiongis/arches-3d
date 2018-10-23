@@ -61,8 +61,9 @@ class Arches3dCustomStorage(AzureStorage):
             logger.debug("Processing workload in chunks of: {0}".format(chunksize))
 
             arguments = [(temp_dir, filepath, original_filepath) for filepath in filepaths]
+            
+            logger.info("Started saving contents of: " + actual_file_name)
             pool.map(self.save_file, arguments, chunksize = chunksize)
-
             logger.info("Finished saving contents of: " + actual_file_name)
 
         except BadZipfile:
@@ -89,7 +90,6 @@ class Arches3dCustomStorage(AzureStorage):
         output_filepath = os.path.join(original_filepath, relative_filepath)
 
         try:
-            logger.debug("Handling file: {0}".format(input_filepath))
             content_type = mimetypes.guess_type(input_filepath)[0]
             memory_file = self.create_memory_file(output_filepath, input_filepath, content_type)
             super(Arches3dCustomStorage, self)._save(output_filepath, memory_file)
