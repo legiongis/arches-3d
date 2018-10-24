@@ -52,6 +52,8 @@ INSTALLED_APPS = ('whitenoise.runserver_nostatic',) + INSTALLED_APPS + ('arches_
 
 MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware'] + MIDDLEWARE
 
+X_FRAME_OPTIONS = 'ALLOW'
+
 # SECURITY WARNING: keep the secret key used in production secret!
 USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
 # Make this unique, and don't share it with anybody.
