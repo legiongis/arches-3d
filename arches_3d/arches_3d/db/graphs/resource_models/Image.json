@@ -260,50 +260,6 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
                 {
-                    "card_id": "299677f2-d6d3-11e8-9eb1-0242ac150004", 
-                    "config": {
-                        "basemap": "streets", 
-                        "bearing": 0, 
-                        "centerX": 14.36119220344537, 
-                        "centerY": 32.2280294718674, 
-                        "defaultValue": "", 
-                        "defaultValueType": "", 
-                        "featureColor": "rgba(0,255,133,1)", 
-                        "featureLineWidth": 1, 
-                        "featurePointSize": 3, 
-                        "geocodePlaceholder": "Search", 
-                        "geocodeProvider": "MapzenGeocoder", 
-                        "geocoderVisible": true, 
-                        "geometryTypes": [
-                            {
-                                "id": "Point", 
-                                "text": "Point"
-                            }, 
-                            {
-                                "id": "Line", 
-                                "text": "Line"
-                            }, 
-                            {
-                                "id": "Polygon", 
-                                "text": "Polygon"
-                            }
-                        ], 
-                        "label": "Spatial Coordinates Geometry", 
-                        "maxZoom": 20, 
-                        "minZoom": 0, 
-                        "overlayConfigs": [], 
-                        "overlayOpacity": 0, 
-                        "pitch": 0, 
-                        "zoom": 1.0961178338339037
-                    }, 
-                    "id": "2996d1f2-d6d3-11e8-9eb1-0242ac150004", 
-                    "label": "Spatial Coordinates Geometry", 
-                    "node_id": "29969ade-d6d3-11e8-9eb1-0242ac150004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000007"
-                }, 
-                {
                     "card_id": "2996446c-d6d3-11e8-9eb1-0242ac150004", 
                     "config": {
                         "acceptedFiles": "image/*, .RAW, .PDF, .SVG", 
@@ -334,6 +290,50 @@
                     "sortorder": 2, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000004"
+                }, 
+                {
+                    "card_id": "299677f2-d6d3-11e8-9eb1-0242ac150004", 
+                    "config": {
+                        "basemap": "streets", 
+                        "bearing": 0, 
+                        "centerX": 14.36119220344537, 
+                        "centerY": 32.2280294718674, 
+                        "defaultValue": "", 
+                        "defaultValueType": 0, 
+                        "featureColor": "rgba(0,255,133,1)", 
+                        "featureLineWidth": 1, 
+                        "featurePointSize": 3, 
+                        "geocodePlaceholder": "Search", 
+                        "geocodeProvider": "10000000-0000-0000-0000-010000000000", 
+                        "geocoderVisible": true, 
+                        "geometryTypes": [
+                            {
+                                "id": "Point", 
+                                "text": "Point"
+                            }, 
+                            {
+                                "id": "Line", 
+                                "text": "Line"
+                            }, 
+                            {
+                                "id": "Polygon", 
+                                "text": "Polygon"
+                            }
+                        ], 
+                        "label": "Spatial Coordinates Geometry", 
+                        "maxZoom": 20, 
+                        "minZoom": 0, 
+                        "overlayConfigs": [], 
+                        "overlayOpacity": 0, 
+                        "pitch": 0, 
+                        "zoom": 1.0961178338339037
+                    }, 
+                    "id": "2996d1f2-d6d3-11e8-9eb1-0242ac150004", 
+                    "label": "Spatial Coordinates Geometry", 
+                    "node_id": "29969ade-d6d3-11e8-9eb1-0242ac150004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000007"
                 }, 
                 {
                     "card_id": "299677f2-d6d3-11e8-9eb1-0242ac150004", 
@@ -1165,6 +1165,7 @@
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
                 "2995daea-d6d3-11e8-9eb1-0242ac150004", 
+                "601c830e-d780-11e8-918f-0242ac120004", 
                 "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
                 "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
