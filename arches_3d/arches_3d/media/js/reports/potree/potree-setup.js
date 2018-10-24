@@ -69,7 +69,7 @@ define([
             viewer.loadSettingsFromURL();
 
             let fullScreenToggle = document.createElement('img');
-            fullScreenToggle.src = fullscreenImageOff;
+            fullScreenToggle.src = fullscreenImageOn;
             fullScreenToggle.id = 'fullscreen-button'
             fullScreenToggle.onclick = toggleFullscreen;
             fullScreenToggle.classList.add('potree_button');

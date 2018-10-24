@@ -74,6 +74,9 @@ define([
             window.presenter._onEndPickingPoint = onEndPick;
 
             sectiontoolInit();
+
+            // Run fullscreen by default
+            fullscreenSwitch();
         }
     }
 });
