@@ -51,6 +51,7 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 INSTALLED_APPS = ('whitenoise.runserver_nostatic',) + INSTALLED_APPS + ('arches_3d',)
 
 MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware'] + MIDDLEWARE
+MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
