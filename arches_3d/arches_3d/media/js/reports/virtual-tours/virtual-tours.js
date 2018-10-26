@@ -43,7 +43,6 @@ function (_, ko, ReportViewModel, virtualToursSetup ,arches) {
 
                 if (virtualTourZipFiles.length > 0) {
                     self.virtualTourZipFiles(virtualTourZipFiles);
-                    // let modelName = virtualTourZipFiles[0].name;
                     let filepath = virtualTourZipFiles[0].src;
                     let originalName = virtualTourZipFiles[0].name;
 

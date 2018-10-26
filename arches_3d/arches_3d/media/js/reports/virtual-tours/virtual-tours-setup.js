@@ -32,6 +32,9 @@ define([
 
             let virtual_tours_render_area = $('#virtual-tours-render-area');
             virtual_tours_render_area.attr('src', sourcePath);
+
+            // Run fullscreen by default
+            toggleFullscreen();
         }
     }
 
