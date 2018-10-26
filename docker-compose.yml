@@ -47,7 +47,7 @@ services:
 
     nginx:
       container_name: nginx
-      image: vmeijer/nginx-proxy:1.3.1b
+      image: vmeijer/nginx-proxy:1.3.1.1
       restart: unless-stopped
       ports:
         - '80:80'
@@ -62,7 +62,8 @@ services:
         - LOCAL_PROXY_HOST=arches
         - LOCAL_PROXY_PORT=8000
         - DOMAIN_NAMES=localhost
-        - X_FRAME_ALLOWED_HOSTS=localhost *.cloudflare.com
+        - SCRIPT_SOURCE_ALLOWED_HOSTS=*.cloudflare.com
+        - X_FRAME_ALLOWED_HOSTS=localhost
         - PUBLIC_MODE=False
         - TZ=PST
       depends_on:
