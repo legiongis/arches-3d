@@ -92,6 +92,9 @@ define([
                 material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
                 material.shape = Potree.PointShape.SQUARE;
                 viewer.fitToScreen();
+                
+                // Run fullscreen by default
+                toggleFullscreen();
             });
         }
     }

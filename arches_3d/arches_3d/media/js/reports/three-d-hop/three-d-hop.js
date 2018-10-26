@@ -42,7 +42,7 @@ define([
                     window.presenter = new Presenter("draw-canvas");
                     init3dhop();
                     threeDHopSetup.setup3DHOP(filepath);
-                    sectiontoolInit()
+                    sectiontoolInit();
                 }
             }
 
