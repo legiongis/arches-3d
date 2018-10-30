@@ -36,12 +36,13 @@ define([
     let currentUrl = module.uri;
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
     urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
-    let mediaUrl = arches.urls.media;
-    let prefix = "";
-    if (!mediaUrl.startsWith("//") || !mediaUrl.startsWith("http")){
-        prefix = location.origin;
+    
+    let baseUrl = "";
+    if (!isValidUrl(urlWithoutFilename)){
+        baseUrl = location.origin;
     }
-    potreePath = prefix + urlWithoutFilename + '/libs/potree'
+
+    potreePath = baseUrl + urlWithoutFilename + '/libs/potree'
     Potree.scriptPath = new URL(potreePath);
     Potree.resourcePath = Potree.scriptPath + '/resources';
 
@@ -105,3 +106,13 @@ define([
     }
 
 });
+
+function isValidUrl(url) {
+    try {
+        new URL(url);
+        return true;
+    }
+    catch (err) {
+        return false;
+    }
+}
