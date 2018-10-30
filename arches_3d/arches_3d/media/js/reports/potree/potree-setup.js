@@ -36,7 +36,7 @@ define([
     let currentUrl = module.uri;
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
     urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
-    potreePath = location.origin + urlWithoutFilename + '/libs/potree'
+    potreePath = urlWithoutFilename + '/libs/potree'
     Potree.scriptPath = new URL(potreePath);
     Potree.resourcePath = Potree.scriptPath + '/resources';
 
