@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from arches_3d.arches_3d.storage.azure_storage_service import AzureStorageService
+from arches_3d.storage.azure_storage_service import AzureStorageService
 
 
 class Command(BaseCommand):
