@@ -36,7 +36,15 @@ define([
     let currentUrl = module.uri;
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
     urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
-    potreePath = urlWithoutFilename + '/libs/potree'
+    let mediaUrl = arches.urls.media;
+    let prefix = "";
+    if (mediaUrl.startsWith("//") || mediaUrl.startsWith("http")){
+        prefix = arches.urls.media
+    }
+    else {
+        prefix = location.origin;
+    }
+    potreePath = prefix + urlWithoutFilename + '/libs/potree'
     Potree.scriptPath = new URL(potreePath);
     Potree.resourcePath = Potree.scriptPath + '/resources';
 
