@@ -38,10 +38,7 @@ define([
     urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
     let mediaUrl = arches.urls.media;
     let prefix = "";
-    if (mediaUrl.startsWith("//") || mediaUrl.startsWith("http")){
-        prefix = arches.urls.media
-    }
-    else {
+    if (!mediaUrl.startsWith("//") || !mediaUrl.startsWith("http")){
         prefix = location.origin;
     }
     potreePath = prefix + urlWithoutFilename + '/libs/potree'
