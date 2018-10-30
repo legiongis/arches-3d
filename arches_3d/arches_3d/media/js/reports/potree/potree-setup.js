@@ -37,12 +37,16 @@ define([
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
     urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
     
-    let baseUrl = "";
     if (!isValidUrl(urlWithoutFilename)){
-        baseUrl = location.origin;
+        if (urlWithoutFilename.startsWith('//')){
+            urlWithoutFilename = location.protocol + urlWithoutFilename
+        }
+        else {
+            urlWithoutFilename = location.origin + urlWithoutFilename;
+        }
     }
 
-    potreePath = baseUrl + urlWithoutFilename + '/libs/potree'
+    potreePath = urlWithoutFilename + '/libs/potree'
     Potree.scriptPath = new URL(potreePath);
     Potree.resourcePath = Potree.scriptPath + '/resources';
 
