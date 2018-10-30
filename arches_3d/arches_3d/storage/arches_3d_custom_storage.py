@@ -3,5 +3,5 @@ from static_compress.mixin import CompressMixin
 from extract_mixin import ExtractMixin
 
 
-class Arches3dCustomStorage(CompressMixin, ExtractMixin, AzureStorage):
+class Arches3dCustomStorage(ExtractMixin, AzureStorage):
     pass
