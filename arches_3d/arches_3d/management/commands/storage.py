@@ -1,6 +1,10 @@
 from django.core.management.base import BaseCommand
 from arches_3d.storage.azure_storage_service import AzureStorageService
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 class Command(BaseCommand):
 
@@ -13,6 +17,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if options['operation'] == 'fix_static_paths':
-            print 'Fixing static file paths with special characters'
+            logger.info('Fixing static file paths with special characters')
             azure_storage_service = AzureStorageService()
             azure_storage_service.fix_blob_paths()

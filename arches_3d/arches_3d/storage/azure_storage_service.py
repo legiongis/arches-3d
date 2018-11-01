@@ -1,6 +1,15 @@
 import os.path
 from azure.storage.common import CloudStorageAccount
+
+import multiprocessing
+from pathos.pools import ProcessPool
+
 from arches.app.models.system_settings import settings
+
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 class AzureStorageService:
     def __init__(self):
@@ -10,17 +19,29 @@ class AzureStorageService:
         self.container_name = 'arches'
 
         self.blobs_that_need_fixing = {
-            'packages/mapbox/': 'packages/@mapbox/', 'packages/turf/': 'packages/@turf/'}
+            'packages/mapbox/': 'packages/@mapbox/',
+            'packages/turf/': 'packages/@turf/'
+        }
 
     def fix_blob_paths(self):
+        num_workers = multiprocessing.cpu_count() - 1
+        logger.debug("Processing blob paths with a process pool of {0} nodes".format(num_workers))
+        pool = ProcessPool(num_workers)
+
         for origin_prefix, target_prefix in self.blobs_that_need_fixing.iteritems():
             blobs_under_prefix = self.block_blob_service.list_blobs(
                 self.container_name, prefix=origin_prefix)
-            for blob in blobs_under_prefix:
-                target_blob_name = self.resolve_target_blob_name(
-                    blob, origin_prefix, target_prefix)
-                if not self.block_blob_service.exists(self.container_name, target_blob_name):
-                    self.copy_blob(blob.name, target_blob_name)
+            arguments = [(origin_prefix, target_prefix, blob) for blob in blobs_under_prefix]
+            pool.map(self._fix_blob_path, arguments)
+
+    def _fix_blob_path(self, arguments):
+        (origin_prefix, target_prefix, blob) = arguments
+        
+        target_blob_name = self.resolve_target_blob_name(
+            blob, origin_prefix, target_prefix)
+
+        if not self.block_blob_service.exists(self.container_name, target_blob_name):
+            self.copy_blob(blob.name, target_blob_name)
 
     def resolve_target_blob_name(self, blob, origin_prefix, target_prefix):
         path_after_prefix = os.path.relpath(blob.name, origin_prefix)
