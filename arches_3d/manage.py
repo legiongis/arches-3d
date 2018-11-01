@@ -25,7 +25,7 @@ if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "arches_3d.settings")
 
     from django.core.management import execute_from_command_line
-    from arches_3d import settings
+    from django.conf import settings
 
     if settings.REMOTE_DEBUG:
         import ptvsd
