@@ -48,6 +48,8 @@ TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'functions', 'templates'))
 TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'widgets', 'templates'))
 TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
+TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.global_settings')
+
 INSTALLED_APPS = ('whitenoise.runserver_nostatic',) + INSTALLED_APPS + ('arches_3d',)
 
 MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware'] + MIDDLEWARE
