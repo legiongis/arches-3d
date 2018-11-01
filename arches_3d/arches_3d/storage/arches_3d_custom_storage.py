@@ -1,6 +1,5 @@
 from storages.backends.azure_storage import AzureStorage
 from django.contrib.staticfiles.storage import StaticFilesStorage
-from static_compress.mixin import CompressMixin
 from extract_mixin import ExtractMixin
 
 import logging
