@@ -35,11 +35,11 @@ define([
 
     let currentUrl = module.uri;
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
-    urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'))
+    urlWithoutFilename = urlWithoutQueryString.substr(0, urlWithoutQueryString.lastIndexOf('/'));
     
     if (!isValidUrl(urlWithoutFilename)){
         if (urlWithoutFilename.startsWith('//')){
-            urlWithoutFilename = location.protocol + urlWithoutFilename
+            urlWithoutFilename = location.protocol + urlWithoutFilename;
         }
         else {
             urlWithoutFilename = location.origin + urlWithoutFilename;
@@ -62,7 +62,7 @@ define([
             button.attr('src', fullscreenImageOn);
         }
         else {
-            button.attr('src', fullscreenImageOff) 
+            button.attr('src', fullscreenImageOff);
         }
     }
 
@@ -80,11 +80,11 @@ define([
 
             let fullScreenToggle = document.createElement('img');
             fullScreenToggle.src = fullscreenImageOff;
-            fullScreenToggle.id = 'fullscreen-button'
+            fullScreenToggle.id = 'fullscreen-button';
             fullScreenToggle.onclick = toggleFullscreen;
             fullScreenToggle.classList.add('potree_button');
 
-            $('#message_listing').append(fullScreenToggle)
+            $('#message_listing').append(fullScreenToggle);
 
             viewer.loadGUI(() => {
                 viewer.setLanguage('en');
