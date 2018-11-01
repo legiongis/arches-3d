@@ -2,7 +2,7 @@ define([
     'underscore',
     'knockout',
     'viewmodels/report',
-    'reports/potree/potree-setup',
+    'potree-setup',
     'arches',
     'knockstrap',
     'bindings/chosen',
