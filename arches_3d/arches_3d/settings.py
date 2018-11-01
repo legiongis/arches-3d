@@ -111,7 +111,7 @@ STATIC_URL = get_optional_env_variable('STATIC_URL') or '/media/'
 STATIC_URL_LOCAL = get_optional_env_variable('STATIC_URL_LOCAL') or '/media/'
 
 DEFAULT_FILE_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorage'
-STATICFILES_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorage'
+STATICFILES_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorageStatic'
 
 AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
