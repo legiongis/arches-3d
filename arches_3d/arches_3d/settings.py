@@ -50,9 +50,8 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
 TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.global_settings')
 
-INSTALLED_APPS = ('whitenoise.runserver_nostatic',) + INSTALLED_APPS + ('arches_3d',)
+INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
 
-MIDDLEWARE = ['whitenoise.middleware.WhiteNoiseMiddleware'] + MIDDLEWARE
 MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
 
 # SECURITY WARNING: keep the secret key used in production secret!
