@@ -61,9 +61,6 @@ USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
 SECRET_KEY = USER_SECRET_KEY or '1-)jb^2^7b=)ck4#)z(sypp3upwjqc8+#&ay0cj5)&wft_r!xa'
 
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ROOT_URLCONF = 'arches_3d.urls'
 
 
