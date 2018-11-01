@@ -13,6 +13,6 @@ class Arches3dCustomStorage(ExtractMixin, AzureStorage):
 
 class Arches3dCustomStorageStatic(StaticFilesStorage, AzureStorage):
     def _save(self, name, content):
-        logger.info("Saving static file {0} to both local storage and Azure").format(name)
+        logger.info("Saving static file {0} to both local storage and Azure".format(name))
         StaticFilesStorage()._save(name, content)
         AzureStorage()._save(name, content)
