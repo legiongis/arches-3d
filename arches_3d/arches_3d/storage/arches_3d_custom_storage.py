@@ -61,7 +61,6 @@ class Arches3dCustomStorageManifestStaticFilesStorage(Arches3dCustomStorageManif
 
 class Arches3dCustomStorageStatic(Arches3dCustomStorageManifestStaticFilesStorage, AzureStorage):
     def _save(self, name, content):
-        logger.info("Saving static file {0} to both local storage and Azure".format(name))
         Arches3dCustomStorageManifestStaticFilesStorage()._save(name, content)
         AzureStorage()._save(name, content)
         return name
