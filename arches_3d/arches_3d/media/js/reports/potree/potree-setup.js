@@ -69,7 +69,6 @@ define([
     return {
         setupPotree: function (sourcePath, pointcloudName) {
 
-            viewer.setEDLEnabled(true);
             viewer.setFOV(60);
             viewer.setPointBudget(1 * 1000 * 1000);
 
