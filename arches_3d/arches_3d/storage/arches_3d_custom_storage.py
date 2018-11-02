@@ -15,3 +15,4 @@ class Arches3dCustomStorageStatic(StaticFilesStorage, AzureStorage):
         logger.info("Saving static file {0} to both local storage and Azure".format(name))
         StaticFilesStorage()._save(name, content)
         AzureStorage()._save(name, content)
+        return name
