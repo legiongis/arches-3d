@@ -26,7 +26,8 @@ class Arches3DCustomStorageHashedFilesMixin(HashedFilesMixin):
         opened = False
         if content is None:
             if not self.exists(filename):
-                raise ValueError("The file '%s' could not be found with %r." % (filename, self))
+                logging.warning("The file '%s' could not be found with %r. Continuing..." % (filename, self))
+                return name
             try:
                 content = self.open(filename)
             except IOError:
