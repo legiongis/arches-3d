@@ -97,7 +97,7 @@ define([
                 let material = pointcloud.material;
                 viewer.scene.addPointCloud(pointcloud);
                 material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
-                material.size = 1;
+                material.size = 0.1;
                 material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
                 material.shape = Potree.PointShape.SQUARE;
                 viewer.fitToScreen();
