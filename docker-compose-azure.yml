@@ -3,7 +3,7 @@ services:
 
     arches:
       image: globaldigitalheritage/arches-3d:${IMAGE_VERSION}
-      restart: always
+      restart: ${RESTART}
       command: run_arches
       volumes:
         - arches-log:/web_root/arches_3d/arches_3d/logs
