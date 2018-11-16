@@ -18,7 +18,8 @@ class ProjectsView(BaseManagerView):
 
             for tile in tiles:
                 if str(tile.nodegroup_id) == 'fb0c163e-d138-11e8-814d-0242ac1a0004':
-                    project.thumbnail_url = tile.data['fb0c1e72-d138-11e8-814d-0242ac1a0004'][0]['url']
+                    if len(tile.data['fb0c1e72-d138-11e8-814d-0242ac1a0004']) > 0:
+                        project.thumbnail_url = tile.data['fb0c1e72-d138-11e8-814d-0242ac1a0004'][0]['url']
                 elif str(tile.nodegroup_id) == 'aee32ff0-af95-11e8-b710-0242ac120005': 
                     project.description = tile.data['aee33842-af95-11e8-b710-0242ac120005'] or ''
 
