@@ -11,6 +11,7 @@
     
     <div>{{ project.displayname }}</div>
     <div>{{ project.resourceinstanceid }}</div>
+    <div>{{ project.description }}</div>
 
     <a href="{% url 'resource_report' resourceid=project.resourceinstanceid %}"><img src="{{ project.thumbnail_url }}"></a>
 
