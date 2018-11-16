@@ -13,16 +13,10 @@ class HeritageSitesView(BaseManagerView):
         sites = Resource.objects.filter(graph_id='fad0563b-b8f8-11e6-84a5-026d961c88e6')
 
         for site in sites:
-            print 'site name: ' + site.displayname
-
             tiles = Tile.objects.filter(resourceinstance=site).order_by('sortorder')
-
             for tile in tiles:
-                print 'nodegroup id: ' + str(tile.nodegroup_id)
-                print 'tile id: ' + str(tile.tileid)
-                print tile.data
-                if str(tile.nodegroup_id) == 'fb0c163e-d138-11e8-814d-0242ac1a0004':
-                    site.thumbnail_url = tile.data['fb0c1e72-d138-11e8-814d-0242ac1a0004'][0]['url']
+                if str(tile.nodegroup_id) == 'a13a9486-d134-11e8-a039-0242ac1a0004':
+                    site.thumbnail_url = tile.data['a13a9cc4-d134-11e8-a039-0242ac1a0004'][0]['url'] or ''
                 elif str(tile.nodegroup_id) == '065b7267-e746-11e6-84a6-026d961c88e6': 
                     if tile.data['065b726b-e746-11e6-84a6-026d961c88e6'] == 'eb3bd719-c473-40b8-bf0a-cdb9ed89aba3':
                         site.primary_description = tile.data['065b726a-e746-11e6-84a6-026d961c88e6'] or ''
