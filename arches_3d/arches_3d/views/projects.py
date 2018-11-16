@@ -11,15 +11,12 @@ class ProjectsView(BaseManagerView):
 
     def get(self, request):
         projects = Resource.objects.filter(graph_id='243f8689-b8f6-11e6-84a5-026d961c88e6')
-        perm = 'read_nodegroup'
-
 
         for project in projects:
 
             tiles = Tile.objects.filter(resourceinstance=project).order_by('sortorder')
 
             for tile in tiles:
-                print 'nodegroup id: ' + str(tile.nodegroup_id)
                 if str(tile.nodegroup_id) == 'fb0c163e-d138-11e8-814d-0242ac1a0004':
                     project.thumbnail_url = tile.data['fb0c1e72-d138-11e8-814d-0242ac1a0004'][0]['url']
                 elif str(tile.nodegroup_id) == 'aee32ff0-af95-11e8-b710-0242ac120005': 
