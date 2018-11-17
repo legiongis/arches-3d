@@ -1,0 +1,20 @@
+{% comment %} {% extends "base-manager.htm" %} {% endcomment %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %} {% trans "Projects" %} {% endblock title %}
+
+{% block main_content %}
+
+
+{% for project in projects %}
+    
+    <div>{{ project.displayname }}</div>
+    <div>{{ project.resourceinstanceid }}</div>
+    <div>{{ project.description }}</div>
+
+    <a href="{% url 'resource_report' resourceid=project.resourceinstanceid %}"><img src="{{ project.thumbnail_url }}"></a>
+
+{% endfor %}
+
+{% endblock main_content %}
