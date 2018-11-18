@@ -66,6 +66,7 @@
 
     {% endblock body %}
 
+    <!-- ko if: report.related_resources.length > 0 -->
     <div class="rp-report-section relative report-related-resources">
         <div class="rp-report-section-title">
             <h4 class="rp-section-title">{% trans 'Related Resources' %}</h4>
@@ -92,6 +93,7 @@
         <!-- /ko -->
         <!-- /ko -->
     </div>
+    <!-- /ko -->
 </div>
 
 
