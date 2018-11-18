@@ -81,6 +81,8 @@
                     <!-- ko foreach: { data: rr.related } -->
                     <dl class="dl-horizontal">
                         <dt><a data-bind="text: $data.displayname, attr: {href: $data.link}"></a></dt>
+                        <a data-bind="attr: {href: $data.link}"><img data-bind="attr: {src: $data.thumbnail_url}"></a>
+
                         <dd data-bind="text: '( ' + $data.relationship + ' )'"></dd>
                     </dl>
                     <!-- /ko -->
