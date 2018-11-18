@@ -6,13 +6,13 @@ from arches.app.utils.exceptions import InvalidNodeNameException, MultipleNodesF
 
 def get_node_values(request):
     resourceid = request.GET.get('resourceid')
-    node_value = request.GET.get('node_value')
+    node_name = request.GET.get('node_name')
 
     resource = Resource.objects.get(pk=resourceid)
     value = ''
 
     try:
-        value = resource.get_node_values(node_value)
+        value = resource.get_node_values(node_name)
     except InvalidNodeNameException:
         pass
     except MultipleNodesFoundException:

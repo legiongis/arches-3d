@@ -78,7 +78,7 @@ define(['arches',
                 _.each(rr.resources, function(resource) {
                     $.get(arches_3d.urls.node_values, {
                             resourceid: resource.instance_id,
-                            node_value: 'Thumbnail Image'
+                            node_name: 'Thumbnail Image'
                         })
                         .done(function (data) {
                             if (data.length > 0){
