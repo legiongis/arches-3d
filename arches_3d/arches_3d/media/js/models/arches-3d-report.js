@@ -1,10 +1,11 @@
 define(['arches',
+    'arches_3d',
     'arches-original-report',
     'knockout',
     'knockout-mapping',
     'underscore',
     'report-templates'
-], function(arches, ReportModel, ko, koMapping, _, reportLookup) {
+], function(arches, arches_3d, ReportModel, ko, koMapping, _, reportLookup) {
     var CustomReportModel = ReportModel.extend({
 
         /**
@@ -75,9 +76,27 @@ define(['arches',
             _.each(this.get('related_resources'), function(rr){
                 var res = {'graph_name': rr.name, 'related':[]};
                 _.each(rr.resources, function(resource) {
-                    _.each(resource.relationships, function(relationship){
-                        res.related.push({'displayname':resource.displayname,'link': arches.urls.resource_report + resource.instance_id, 'relationship': relationship, 'resourceid': resource.instance_id});
-                    });
+                    $.get(arches_3d.urls.node_values, {
+                            resourceid: resource.instance_id,
+                            node_value: 'Thumbnail Image'
+                        })
+                        .done(function (data) {
+                            if (data.length > 0){
+                                resource.thumbnail_url = data[0].url;
+                            }
+                        })
+                        .always(function () {
+                            _.each(resource.relationships, function (relationship) {
+                                res.related.push({
+                                    'displayname': resource.displayname,
+                                    'link': arches.urls.resource_report + resource.instance_id,
+                                    'relationship': relationship,
+                                    'resourceid': resource.instance_id,
+                                    'thumbnail_url': resource.thumbnail_url
+                                });
+                            });
+                        });
+                    
                 });
                 this.sort_related(res.related, 'displayname');
                 this.related_resources.push(res);

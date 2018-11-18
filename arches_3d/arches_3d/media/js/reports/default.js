@@ -2,8 +2,6 @@ define(['knockout', 'viewmodels/report'], function (ko, ReportViewModel) {
 
     $(document).on("click", "#report-body-toggle-button", function() {
         $("#report-body").toggle();
-
-
     })
 
     return ko.components.register('default-report', {
