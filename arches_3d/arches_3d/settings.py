@@ -6,6 +6,7 @@ import inspect
 import os
 import ast
 from django.core.exceptions import ImproperlyConfigured
+from arches import __version__
 
 try:
     from arches.settings import *
@@ -29,6 +30,8 @@ def get_optional_env_variable(var_name):
         return None
 
 
+IMAGE_VERSION = get_optional_env_variable('IMAGE_VERSION') or __version__
+
 MODE = get_env_variable('DJANGO_MODE')  # options are either "PROD" or "DEV"
 DEBUG = ast.literal_eval(get_env_variable('DJANGO_DEBUG'))
 if get_optional_env_variable('DJANGO_REMOTE_DEBUG'):
@@ -48,7 +51,7 @@ TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'functions', 'templates'))
 TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'widgets', 'templates'))
 TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
-TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.global_settings')
+TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.app_settings')
 
 INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
 
