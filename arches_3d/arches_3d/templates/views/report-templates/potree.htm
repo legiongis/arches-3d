@@ -2,11 +2,5 @@
 {% load i18n %}
 
 {% block header %}
-
-<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/potree.css" />
-
-
-<div class="report-media-wrapper">
-    {% include 'views/components/potree/potree-canvas.htm' %}
-</div>
+    {% include 'views/report-templates/potree-header.htm' %}
 {% endblock header %}

@@ -7,6 +7,13 @@ define([
     'knockstrap',
     'bindings/chosen',
 ], function (_, ko, ReportViewModel, potreeSetup, arches) {
+
+    template = 'text!report-templates/potree'
+    viewerOnlyMode = getQueryStringParameter('viewer_only');
+    if (viewerOnlyMode){
+        template = 'text!report-templates/potree-header'
+    }
+    
     return ko.components.register('potree-report', {
         viewModel: function (params) {
             var self = this;
@@ -71,7 +78,12 @@ define([
             );
         },
         template: {
-            require: 'text!report-templates/potree'
+            require: template
         }
     });
 });
+
+function getQueryStringParameter(parameterName){
+    let params = (new URL(document.location)).searchParams;
+    return params.get(parameterName);
+}
