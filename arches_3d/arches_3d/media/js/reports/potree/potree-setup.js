@@ -75,7 +75,7 @@ define([
 
             viewer.setEDLEnabled(false);
             viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
-            viewer.setDescription(``);
+            viewer.setDescription('');
             viewer.loadSettingsFromURL();
 
             let fullScreenToggle = document.createElement('img');
