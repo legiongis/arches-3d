@@ -30,8 +30,9 @@ define([
     'i18next',
     'jstree',
     'potree-official',
-    'laslaz'
-], function (module, arches, $, jqueryUi, proj4, spectrum, perfectScrollbar, three, binaryHeap, tween, d3, ol, i18next, jstree, Potree, laslaz) {
+    'laslaz',
+    'utils/get-query-string-parameter'
+], function (module, arches, $, jqueryUi, proj4, spectrum, perfectScrollbar, three, binaryHeap, tween, d3, ol, i18next, jstree, Potree, laslaz, getQueryStringParameter) {
 
     let currentUrl = module.uri;
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
@@ -102,8 +103,10 @@ define([
                 material.shape = Potree.PointShape.SQUARE;
                 viewer.fitToScreen();
                 
-                // Run fullscreen by default
-                toggleFullscreen();
+                // Run in fullscreen if requested through query string
+                if (getQueryStringParameter('fullscreen').toLowerCase() === "true"){
+                    toggleFullscreen();
+                }
             });
         }
     }

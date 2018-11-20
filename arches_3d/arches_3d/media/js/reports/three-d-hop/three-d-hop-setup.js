@@ -10,7 +10,8 @@ define([
     'trackball_turntable_pan',
     'trackball_pantilt',
     'init',
-], function (spidergl, $, presenter, nexus, ply, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, init) {
+    'utils/get-query-string-parameter'
+], function (spidergl, $, presenter, nexus, ply, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, init, getQueryStringParameter) {
 
     function setScene(source) {
         window.presenter.setScene({
@@ -88,15 +89,13 @@ define([
         setup3DHOP: function (source) {
 
             window.source = source
-
             window.presenter._onEndMeasurement = onEndMeasure;
-
             window.presenter._onEndPickingPoint = onEndPick;
             
-            // Run fullscreen by default
-            toggleFullscreen();
+            // Run in fullscreen if requested through query string
+            if (getQueryStringParameter('fullscreen').toLowerCase() === "true"){
+                toggleFullscreen();
+            }
         }
     }
 });
-
-

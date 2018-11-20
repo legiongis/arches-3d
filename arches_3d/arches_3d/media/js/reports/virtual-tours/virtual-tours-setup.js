@@ -2,7 +2,8 @@ define([
     'module',
     'arches',
     'jquery',
-], function (module, arches, $) {
+    'utils/get-query-string-parameter'
+], function (module, arches, $, getQueryStringParameter) {
 
     let currentUrl = module.uri;
     urlWithoutQueryString = currentUrl.split(/[?#]/)[0];
@@ -33,8 +34,10 @@ define([
             let virtual_tours_render_area = $('#virtual-tours-render-area');
             virtual_tours_render_area.attr('src', sourcePath);
 
-            // Run fullscreen by default
-            toggleFullscreen();
+            // Run in fullscreen if requested through query string
+            if (getQueryStringParameter('fullscreen').toLowerCase() === "true"){
+                toggleFullscreen();
+            }
         }
     }
 
