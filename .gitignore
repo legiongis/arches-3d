@@ -4,3 +4,5 @@ arches_3d/arches_3d/node_modules/
 arches_3d/arches_3d/uploadedfiles/
 arches_3d/arches_3d/settings_local.py
 docker-compose-local2.yml
+*.pyc
+*.log
