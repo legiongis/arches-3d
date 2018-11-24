@@ -26,6 +26,7 @@ services:
         - ELASTICSEARCH_PREFIX=arches_3d
         - DJANGO_MODE=PROD
         - DJANGO_DEBUG=False
+        - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
         - AZURE_ACCOUNT_NAME=${AZURE_ACCOUNT_NAME}
         - AZURE_ACCOUNT_KEY=${AZURE_ACCOUNT_KEY}
         - AZURE_SSL=False
