@@ -6,14 +6,28 @@
 
 {% block main_content %}
 
+<div class="clearfix">
+{% include "partials/sites/mininav.html" %}
+
+<!-- Cube Portfolio Blocks - Content -->
+<div class="cbp" data-controls="#filterControls" data-animation="quicksand" data-x-gap="0" data-y-gap="0"
+    data-media-queries='[
+                     {"width": 1500, "cols": 2},
+                     {"width": 1100, "cols": 2},
+                     {"width": 800, "cols": 2},
+                     {"width": 480, "cols": 2},
+                     {"width": 300, "cols": 2},
+                     {"width": 0, "cols": 1}
+                   ]'>
 
 {% for site in sites %}
-    
-    <div>{{ site.displayname }}</div>
-    <div>{{ site.primary_description }}</div>
-
-    <a href="{% url 'resource_report' resourceid=site.resourceinstanceid %}"><img src="{{ site.thumbnail_url }}"></a>
-
+{% include "partials/sites/site.html" with site=site %}
 {% endfor %}
 
+</div>
+<!-- End Cube Portfolio Blocks - Content -->
+</div>
+<!-- End Cube Portfolio Blocks -->
+</div>
 {% endblock main_content %}
+

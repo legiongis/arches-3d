@@ -36,6 +36,10 @@
 <script src="{% static 'js/unify/components/hs.counter.js' %}"></script>
 <script src="{% static 'js/unify/components/hs.go-to.js' %}"></script>
 
+<!-- Cubeportfolio -->
+<script src="{% static 'vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
+<script src="{% static 'js/unify/components/hs.cubeportfolio.js' %}"></script>
+
 <!-- JS Customization -->
 <script src="{% static 'js/custom.js' %}"></script>
 
@@ -51,7 +55,7 @@
     } else {
       revapi24 = tpj("#rev_slider_24_1").show().revolution({
         sliderType: "standard",
-        jsFileLocation: "../../assets/vendor/revolution-slider/revolution/js/",
+        jsFileLocation: "/media/vendor/revolution-slider/revolution/js/",
         sliderLayout: "fullscreen",
         dottedOverlay: "none",
         delay: 9000,
@@ -119,6 +123,9 @@
 
     // initialization of go to
     $.HSCore.components.HSGoTo.init('.js-go-to');
+
+    // initialization of cubeportfolio
+    $.HSCore.components.HSCubeportfolio.init('.cbp');
   });
 
   $(window).on('load', function () {

@@ -2,15 +2,31 @@
 {% load i18n %}
 {% load staticfiles %}
 
+{% block title %} {% trans "Projects" %} {% endblock title %}
+
 {% block main_content %}
 
+<div class="clearfix">
+    {% include "partials/sites/mininav.html" %}
 
-{% for project in projects %}
-    
-    <div>{{ project.name }}</div>
+    <!-- Cube Portfolio Blocks - Content -->
+    <div class="cbp" data-controls="#filterControls" data-animation="quicksand" data-x-gap="0" data-y-gap="0"
+        data-media-queries='[
+                     {"width": 1500, "cols": 2},
+                     {"width": 1100, "cols": 2},
+                     {"width": 800, "cols": 2},
+                     {"width": 480, "cols": 2},
+                     {"width": 300, "cols": 2},
+                     {"width": 0, "cols": 1}
+                   ]'>
 
-    <a href="{% url 'resource_report' resourceid=project.resourceinstanceid %}"><img src="{{ project.thumbnail_url }}"></a>
+        {% for project in projects %}
+        {% include "partials/sites/project.html" with project=project %}
+        {% endfor %}
 
-{% endfor %}
-
+    </div>
+    <!-- End Cube Portfolio Blocks - Content -->
+</div>
+<!-- End Cube Portfolio Blocks -->
+</div>
 {% endblock main_content %}
