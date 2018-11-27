@@ -17,19 +17,9 @@
 <body>
 <main>
     {% include 'partials/nav.html' %}
-    {% include 'partials/team/header.html' %}
-    {% include 'partials/team/maschner.html' %}
-    {% include 'partials/team/victor.html' %}
-    {% include 'partials/team/jeff.html' %}
-    {% include 'partials/team/bart.html' %}
-    {% include 'partials/team/aurelia.html' %}
-    {% include 'partials/team/myriam.html' %}
-    {% include 'partials/team/mv.html' %}
-    {% include 'partials/team/collado.html' %}
-    {% include 'partials/team/ma.html' %}
-    {% include 'partials/team/michele.html' %}
-    {% include 'partials/team/sci_board.html' %}
-    {% include 'partials/team/board.html' %}
+    {% block main_content %}
+
+    {% endblock main_content %}
     {% include 'partials/footer.html' %}
     {% include 'partials/link_to_top.html' %}
     {% include 'partials/javascript.html' %}

@@ -1,4 +1,4 @@
-{% comment %} {% extends "base-manager.htm" %} {% endcomment %}
+{% extends "base-front.htm" %}
 {% load i18n %}
 {% load staticfiles %}
 
@@ -10,7 +10,6 @@
 {% for site in sites %}
     
     <div>{{ site.displayname }}</div>
-    <div>{{ site.resourceinstanceid }}</div>
     <div>{{ site.primary_description }}</div>
 
     <a href="{% url 'resource_report' resourceid=site.resourceinstanceid %}"><img src="{{ site.thumbnail_url }}"></a>

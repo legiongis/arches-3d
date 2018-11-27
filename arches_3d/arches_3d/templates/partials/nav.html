@@ -85,8 +85,7 @@
 
             {% if user.username != 'anonymous' %}
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
-              <a href="{% url 'auth' %}?next={% url 'home' %}&logout=true" class="nav-link g-py-7 g-px-0">{% trans
-                'Logout' %}</a>
+              <a href="{% url 'auth' %}?next={% url 'home' %}&logout=true" class="nav-link g-py-7 g-px-0">{% trans 'Logout' %}</a>
             </li>
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
               <a href="{% url 'user_profile_manager' %}" class="nav-link g-py-7 g-px-0">{% trans 'User Profile' %}</a>
