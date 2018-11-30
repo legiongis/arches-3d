@@ -28,7 +28,7 @@
     {% block body %}
 
     <div id="report-body-toggle-button"><span style="vertical-align: middle;"><i class="fa fa-plus"></i> Metadata</span></div>
-    <div id="report-body" style="display: none">
+    <div id="report-body" style="display: block">
 
         <!--ko if: hasProvisionalData() && (editorContext === false) -->
         <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report)
@@ -79,12 +79,8 @@
             <div class="rp-report-container-tile">
                 <div class="row rp-report-tile">
                     <!-- ko foreach: { data: rr.related } -->
-                    <dl class="dl-horizontal">
-                        <dt><a data-bind="text: $data.displayname, attr: {href: $data.link}"></a></dt>
-                        <a data-bind="attr: {href: $data.link}"><img data-bind="attr: {src: $data.thumbnail_url}"></a>
-
-                        <dd data-bind="text: '( ' + $data.relationship + ' )'"></dd>
-                    </dl>
+                    <dt><a data-bind="text: $data.displayname, attr: {href: $data.link}"></a></dt>
+                    <a data-bind="attr: {href: $data.link}"><img data-bind="attr: {src: $data.thumbnail_url}"></a>
                     <!-- /ko -->
                 </div>
             </div>
