@@ -104,8 +104,11 @@ define([
                 viewer.fitToScreen();
                 
                 // Run in fullscreen if requested through query string
-                if (getQueryStringParameter('fullscreen').toLowerCase() === "true"){
-                    toggleFullscreen();
+                let fullscreenBool = getQueryStringParameter('fullscreen');
+                if (fullscreenBool){
+                    if (fullscreenBool.toLowerCase() === "true"){
+                        toggleFullscreen();
+                    }
                 }
             });
         }

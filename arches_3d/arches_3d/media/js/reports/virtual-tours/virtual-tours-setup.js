@@ -35,8 +35,11 @@ define([
             virtual_tours_render_area.attr('src', sourcePath);
 
             // Run in fullscreen if requested through query string
-            if (getQueryStringParameter('fullscreen').toLowerCase() === "true"){
-                toggleFullscreen();
+            let fullscreenBool = getQueryStringParameter('fullscreen');
+            if (fullscreenBool){
+                if (fullscreenBool.toLowerCase() === "true"){
+                    toggleFullscreen();
+                }
             }
         }
     }

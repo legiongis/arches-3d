@@ -36,6 +36,20 @@ define([
                 radiusMode: "scene"
             }
         });
+        
+        window.presenter.ui.postDrawEvent();
+    }
+
+    function setSceneOnStartup(){
+        // Run in fullscreen if requested through query string
+        let fullscreenBool = getQueryStringParameter('fullscreen');
+        if (fullscreenBool){
+            if (fullscreenBool.toLowerCase() === "true"){
+                toggleFullscreen();
+                return;
+            }
+        }
+        setScene(window.source);
     }
 
     function toggleFullscreen() {
@@ -52,7 +66,6 @@ define([
         $('#full').toggle();
         $('#full_on').toggle();
         setScene(window.source);
-        window.presenter.ui.postDrawEvent();
     }
 
     window.actionsToolbar = function actionsToolbar(action) {
@@ -84,6 +97,7 @@ define([
         $('#pickpoint-output').html("[ "+x+" , "+y+" , "+z+" ]");
     }
 
+
     return {
 
         setup3DHOP: function (source) {
@@ -92,10 +106,7 @@ define([
             window.presenter._onEndMeasurement = onEndMeasure;
             window.presenter._onEndPickingPoint = onEndPick;
             
-            // Run in fullscreen if requested through query string
-            if (getQueryStringParameter('fullscreen').toLowerCase() === "true"){
-                toggleFullscreen();
-            }
+            setSceneOnStartup();
         }
     }
 });
