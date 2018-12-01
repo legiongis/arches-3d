@@ -1,7 +1,7 @@
 import os
 
 from storages.backends.azure_storage import AzureStorage
-from django.contrib.staticfiles.storage import HashedFilesMixin, ManifestFilesMixin, ManifestStaticFilesStorage
+from django.contrib.staticfiles.storage import HashedFilesMixin, ManifestFilesMixin, ManifestStaticFilesStorage, StaticFilesStorage
 from django.utils.six.moves.urllib.parse import unquote, urlsplit, urlunsplit
 
 from extract_mixin import ExtractMixin
@@ -59,7 +59,7 @@ class Arches3dCustomStorageManifestFilesMixin(Arches3DCustomStorageHashedFilesMi
 class Arches3dCustomStorageManifestStaticFilesStorage(Arches3dCustomStorageManifestFilesMixin, ManifestStaticFilesStorage):
     pass
 
-class Arches3dCustomStorageStatic(Arches3dCustomStorageManifestStaticFilesStorage, AzureStorage):
+class Arches3dCustomStorageStatic(StaticFilesStorage, AzureStorage):
     def _save(self, name, content):
         Arches3dCustomStorageManifestStaticFilesStorage()._save(name, content)
         AzureStorage()._save(name, content)
