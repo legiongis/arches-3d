@@ -33,7 +33,8 @@ define([
             },
             space: {
                 centerMode: "scene",
-                radiusMode: "scene"
+                radiusMode: "scene",
+                sceneLighting : false
             }
         });
         
