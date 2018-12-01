@@ -15,7 +15,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "For e.g. the presentation of this resource on overview pages", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Cover & Thumbnail Image", 
                     "nodegroup_id": "4b9b3314-d12f-11e8-85df-0242ac1a0004", 
                     "sortorder": 1, 
@@ -27,13 +27,13 @@
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
                     "cssclass": null, 
-                    "description": "Describes the title and description of a 3D HOP Resource.", 
+                    "description": "Describes the title of an Information Resource.", 
                     "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "Enter the resource's title and description", 
-                    "is_editable": true, 
+                    "instructions": "Enter the 3D model's title and description", 
+                    "is_editable": false, 
                     "name": "Summary", 
                     "nodegroup_id": "2fe7d85c-d139-11e8-8e63-0242ac1a0004", 
                     "sortorder": 0, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Select a 3D model file and enter its metadata.", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "3D Model File", 
                     "nodegroup_id": "a7fb8cf6-bfed-11e8-a478-0242ac160004", 
                     "sortorder": 2, 
@@ -59,6 +59,50 @@
                 }
             ], 
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "2fe7de24-d139-11e8-8e63-0242ac1a0004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Title", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "39c59ece-f5ae-11e8-95e0-0242ac120004", 
+                    "label": "Title", 
+                    "node_id": "2fe7dffa-d139-11e8-8e63-0242ac1a0004", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "4b9b38a0-d12f-11e8-85df-0242ac1a0004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "200"
+                    }, 
+                    "id": "d4b7973e-f5ae-11e8-be7b-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "4b9b3ae4-d12f-11e8-85df-0242ac1a0004", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "4b9b38a0-d12f-11e8-85df-0242ac1a0004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.2"
+                    }, 
+                    "id": "d4b8e5e4-f5ae-11e8-be7b-0242ac120004", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "4b9b3c7e-d12f-11e8-85df-0242ac1a0004", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
                 {
                     "card_id": "4b9b38a0-d12f-11e8-85df-0242ac1a0004", 
                     "config": {
@@ -70,49 +114,6 @@
                     "label": "Cover Image", 
                     "node_id": "4b9b3314-d12f-11e8-85df-0242ac1a0004", 
                     "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "4b9b38a0-d12f-11e8-85df-0242ac1a0004", 
-                    "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Cover Image (must be exactly 1200 x 800 pixels)", 
-                        "maxFilesize": "1"
-                    }, 
-                    "id": "4b9b3d82-d12f-11e8-85df-0242ac1a0004", 
-                    "label": "Cover Image (must be exactly 1200 x 800 pixels)", 
-                    "node_id": "4b9b3ae4-d12f-11e8-85df-0242ac1a0004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
-                    "config": {
-                        "defaultValue": "", 
-                        "label": "Measurement Unit", 
-                        "options": [], 
-                        "placeholder": "Select an option"
-                    }, 
-                    "id": "a7fba358-bfed-11e8-a478-0242ac160004", 
-                    "label": "Measurement Unit", 
-                    "node_id": "a7fb9de0-bfed-11e8-a478-0242ac160004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000002"
-                }, 
-                {
-                    "card_id": "4b9b38a0-d12f-11e8-85df-0242ac1a0004", 
-                    "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
-                        "maxFilesize": "0.2"
-                    }, 
-                    "id": "4b9b3e4a-d12f-11e8-85df-0242ac1a0004", 
-                    "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
-                    "node_id": "4b9b3c7e-d12f-11e8-85df-0242ac1a0004", 
-                    "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
@@ -130,46 +131,6 @@
                     "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000012"
-                }, 
-                {
-                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
-                    "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
-                    "id": "a7fba01a-bfed-11e8-a478-0242ac160004", 
-                    "label": "Information Carrier", 
-                    "node_id": "a7fb8cf6-bfed-11e8-a478-0242ac160004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "a7fb9494-bfed-11e8-a478-0242ac160004", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "3D HOP Model File", 
-                        "maxFilesize": "100000"
-                    }, 
-                    "id": "a7fba452-bfed-11e8-a478-0242ac160004", 
-                    "label": "3D HOP Model File", 
-                    "node_id": "a7fb9b60-bfed-11e8-a478-0242ac160004", 
-                    "sortorder": 2, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "2fe7de24-d139-11e8-8e63-0242ac1a0004", 
-                    "config": {
-                        "defaultValue": "", 
-                        "label": "Title", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "405f6718-d139-11e8-a3bd-0242ac1a0004", 
-                    "label": "Title", 
-                    "node_id": "2fe7dffa-d139-11e8-8e63-0242ac1a0004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
                 {
                     "card_id": "2fe7de24-d139-11e8-8e63-0242ac1a0004", 
@@ -313,7 +274,7 @@
             ], 
             "graphid": "36bcaff4-b82f-11e8-8598-0242ac120004", 
             "iconclass": "fa fa-codepen", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -522,6 +483,8 @@
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
+                "601c830e-d780-11e8-918f-0242ac120004", 
+                "6ba5a68c-f58b-11e8-a354-0242ac120004", 
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
                 "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
@@ -533,8 +496,7 @@
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
                 "ddf1c942-d145-11e8-897e-0242ac1a0004", 
                 "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
-                "601c830e-d780-11e8-918f-0242ac120004"
+                "2995daea-d6d3-11e8-9eb1-0242ac150004"
             ], 
             "resource_2_resource_constraints": [], 
             "root": {
@@ -561,6 +523,6 @@
         "db": "PostgreSQL 9.6.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 6.4.0) 6.4.0, 64-bit", 
         "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
         "os": "Linux", 
-        "os version": "4.9.93-linuxkit-aufs"
+        "os version": "4.9.125-linuxkit"
     }
 }
