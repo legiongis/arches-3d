@@ -15,7 +15,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the information resource's title anddescription", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Summary", 
                     "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
                     "sortorder": 0, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the URL of the Sketchfab model as it is displayed in the browser's URL bar", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "3D Model File", 
                     "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "sortorder": 2, 
@@ -213,7 +213,7 @@
             ], 
             "graphid": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
             "iconclass": "fa fa-cube", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -418,7 +418,7 @@
                 "sortorder": 0
             }, 
             "subtitle": "Describes a model specifically purposed for the Sketchfab viewer", 
-            "template_id": "50000000-0000-0000-0000-000000000004", 
+            "template_id": "60000000-0000-0000-0000-000000000007", 
             "version": ""
         }
     ], 
