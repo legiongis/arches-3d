@@ -14,8 +14,8 @@
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "Enter the information resource's title anddescription", 
-                    "is_editable": false, 
+                    "instructions": "Enter the Sketchfab model's title and description", 
+                    "is_editable": true, 
                     "name": "Summary", 
                     "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
                     "sortorder": 0, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the URL of the Sketchfab model as it is displayed in the browser's URL bar", 
-                    "is_editable": false, 
+                    "is_editable": true, 
                     "name": "3D Model File", 
                     "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "sortorder": 2, 
@@ -101,6 +101,22 @@
                     "id": "2d8e724e-f58f-11e8-8bea-0242ac120004", 
                     "label": "Sketchfab URL", 
                     "node_id": "6ba5c75c-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "6ba5bb72-f58b-11e8-a354-0242ac120004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Title", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "eacb7726-f5ad-11e8-9707-0242ac120004", 
+                    "label": "Title", 
+                    "node_id": "6ba5cbe4-f58b-11e8-a354-0242ac120004", 
                     "sortorder": null, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
@@ -213,7 +229,7 @@
             ], 
             "graphid": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
             "iconclass": "fa fa-cube", 
-            "is_editable": false, 
+            "is_editable": true, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -312,12 +328,12 @@
                     "isrequired": true, 
                     "issearchable": true, 
                     "istopnode": false, 
-                    "name": "3D Model File", 
+                    "name": "Sketchfab Model", 
                     "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "nodeid": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
-                    "sortorder": 3
+                    "sortorder": 0
                 }, 
                 {
                     "config": null, 
@@ -387,6 +403,7 @@
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
                 "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                "32a83794-f60f-11e8-8d50-0242ac120004", 
                 "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
                 "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
