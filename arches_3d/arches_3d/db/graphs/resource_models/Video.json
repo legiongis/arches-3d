@@ -33,7 +33,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the video's title and description", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Summary", 
                     "nodegroup_id": "32a83b04-f60f-11e8-8d50-0242ac120004", 
                     "sortorder": 0, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the URL of the video as it is displayed in the browser's URL bar", 
-                    "is_editable": true, 
+                    "is_editable": false, 
                     "name": "Video", 
                     "nodegroup_id": "32a84ee6-f60f-11e8-8d50-0242ac120004", 
                     "sortorder": 2, 
@@ -72,6 +72,22 @@
                     "label": "Title", 
                     "node_id": "32a876be-f60f-11e8-8d50-0242ac120004", 
                     "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "32a8556c-f60f-11e8-8d50-0242ac120004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Video URL", 
+                        "maxLength": null, 
+                        "placeholder": "Not the Embed text", 
+                        "width": "100%"
+                    }, 
+                    "id": "32a87a24-f60f-11e8-8d50-0242ac120004", 
+                    "label": "Video URL", 
+                    "node_id": "32a86f84-f60f-11e8-8d50-0242ac120004", 
+                    "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
@@ -104,22 +120,6 @@
                     "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000005"
-                }, 
-                {
-                    "card_id": "32a8556c-f60f-11e8-8d50-0242ac120004", 
-                    "config": {
-                        "defaultValue": "", 
-                        "label": "Video URL", 
-                        "maxLength": null, 
-                        "placeholder": "Not the Embed text", 
-                        "width": "100%"
-                    }, 
-                    "id": "32a87a24-f60f-11e8-8d50-0242ac120004", 
-                    "label": "Video URL", 
-                    "node_id": "32a86f84-f60f-11e8-8d50-0242ac120004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
                 {
                     "card_id": "32a85e36-f60f-11e8-8d50-0242ac120004", 
@@ -281,7 +281,7 @@
             ], 
             "graphid": "32a83794-f60f-11e8-8d50-0242ac120004", 
             "iconclass": "fa fa-video-camera", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -473,13 +473,13 @@
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
                 "32a83794-f60f-11e8-8d50-0242ac120004", 
-                "32a83794-f60f-11e8-8d50-0242ac120004", 
                 "ddf1c942-d145-11e8-897e-0242ac1a0004", 
                 "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
-                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
                 "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
+                "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
                 "601c830e-d780-11e8-918f-0242ac120004", 
+                "32a83794-f60f-11e8-8d50-0242ac120004", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
                 "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
                 "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
@@ -505,7 +505,7 @@
                 "sortorder": 0
             }, 
             "subtitle": "Describes a model specifically purposed for video", 
-            "template_id": "60000000-0000-0000-0000-000000000007", 
+            "template_id": "70000000-0000-0000-0000-000000000007", 
             "version": ""
         }
     ], 
