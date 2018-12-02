@@ -13,7 +13,6 @@ class HeritageSitesView(BaseManagerView):
 
     def get(self, request):
         sites = Resource.objects.filter(graph_id='fad0563b-b8f8-11e6-84a5-026d961c88e6')
-        grouped_sites = defaultdict(list)
 
         for site in sites:
             tiles = Tile.objects.filter(resourceinstance=site).order_by('sortorder')
@@ -26,10 +25,5 @@ class HeritageSitesView(BaseManagerView):
                         site.short_description = tile.data['065b726a-e746-11e6-84a6-026d961c88e6'] or ''
                 elif str(tile.nodegroup_id) == '709e4cf8-b12e-11e8-81d7-0242ac140004':
                     site.country = models.Value.objects.get(pk=tile.data['709e5d74-b12e-11e8-81d7-0242ac140004']).value
-            
-            if hasattr(site, 'country'):
-                grouped_sites[site.country].append(site)
-            else: 
-                grouped_sites['Other'].append(site)
 
-        return render(request, 'views/heritage-sites.htm', { 'sites': sites, 'grouped_sites': dict(grouped_sites) })
+        return render(request, 'views/heritage-sites.htm', { 'sites': sites })
