@@ -5,24 +5,6 @@
             "cards": [
                 {
                     "active": true, 
-                    "cardid": "6ba5bb72-f58b-11e8-a354-0242ac120004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Describes the title of an Information Resource.", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Enter the Sketchfab model's title and description", 
-                    "is_editable": true, 
-                    "name": "Summary", 
-                    "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
-                    "sortorder": 0, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
                     "cardid": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -41,6 +23,24 @@
                 }, 
                 {
                     "active": true, 
+                    "cardid": "6ba5bb72-f58b-11e8-a354-0242ac120004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Describes the title of an Information Resource.", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Enter the Sketchfab model's title and description", 
+                    "is_editable": true, 
+                    "name": "Summary", 
+                    "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
                     "cardid": "6ba5c3e2-f58b-11e8-a354-0242ac120004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -52,7 +52,7 @@
                     "helptitle": null, 
                     "instructions": "Enter the URL of the Sketchfab model as it is displayed in the browser's URL bar", 
                     "is_editable": true, 
-                    "name": "3D Model File", 
+                    "name": "Sketchfab Model", 
                     "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "sortorder": 2, 
                     "visible": true
@@ -120,6 +120,34 @@
                     "sortorder": null, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "096601d4-f611-11e8-bdb1-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "6ba5c90a-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.2"
+                    }, 
+                    "id": "0967d34c-f611-11e8-bdb1-0242ac120004", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "6ba5cea0-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }
             ], 
             "color": "rgba(27,85,153,0.86)", 
@@ -269,7 +297,7 @@
                     "nodeid": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of", 
-                    "sortorder": 2
+                    "sortorder": 1
                 }, 
                 {
                     "config": null, 
@@ -333,7 +361,7 @@
                     "nodeid": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
-                    "sortorder": 0
+                    "sortorder": 2
                 }, 
                 {
                     "config": null, 

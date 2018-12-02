@@ -80,7 +80,7 @@
                     "config": {
                         "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
                         "label": "Cover Image", 
-                        "maxFilesize": "200"
+                        "maxFilesize": "2"
                     }, 
                     "id": "d4b7973e-f5ae-11e8-be7b-0242ac120004", 
                     "label": "Cover Image", 
@@ -486,6 +486,7 @@
                 "601c830e-d780-11e8-918f-0242ac120004", 
                 "6ba5a68c-f58b-11e8-a354-0242ac120004", 
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "32a83794-f60f-11e8-8d50-0242ac120004", 
                 "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
                 "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
