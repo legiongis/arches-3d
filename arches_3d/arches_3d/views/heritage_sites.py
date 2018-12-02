@@ -25,5 +25,11 @@ class HeritageSitesView(BaseManagerView):
                         site.short_description = tile.data['065b726a-e746-11e6-84a6-026d961c88e6'] or ''
                 elif str(tile.nodegroup_id) == '709e4cf8-b12e-11e8-81d7-0242ac140004':
                     site.country = models.Value.objects.get(pk=tile.data['709e5d74-b12e-11e8-81d7-0242ac140004']).value
+            if hasattr(site, 'country'):
+                site.css_safe_country = site.country.replace(' ','-')
+            else: 
+                site.css_safe_country = 'other'
+                site.country = 'Other'
+ 
 
         return render(request, 'views/heritage-sites.htm', { 'sites': sites })

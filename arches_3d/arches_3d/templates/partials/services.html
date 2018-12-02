@@ -7,10 +7,9 @@
   <!-- Heading -->
   <div class="row justify-content-center text-center g-mb-50" id="data">
     <div class="col-lg-9">
-      <h2 class="h3 g-color-black g-font-weight-600 text-uppercase mb-2">Our Services</h2>
+      <h2 class="h3 g-color-black g-font-weight-600 text-uppercase mb-2">Data</h2>
       <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
-      <p class="lead mb-0">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between
-        sophistication and simplicity.</p>
+      <p class="lead mb-0">Here you can find links to our data, broken up into relevant categories.</p>
     </div>
   </div>
   <!-- End Heading -->
@@ -26,9 +25,9 @@
         <p class="g-color-gray-dark-v4">Start here for a global overview of the various projects we have worked on.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"243f8689-b8f6-11e6-84a5-026d961c88e6"%2C"name"%3A"Project"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' target="_blank">{% trans "Projects" %}</a></li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"fad0563b-b8f8-11e6-84a5-026d961c88e6"%2C"name"%3A"Heritage%20Site"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' target="_blank">{% trans "Heritage Sites" %}</a></li>
-          <li class="g-py-8"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Heritage Objects" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "projects" %}'>{% trans "Projects" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "sites" %}'>{% trans "Heritage Sites" %}</a></li>
+          <li class="g-py-8"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Heritage Objects" %}</a></li>
         </ul>
       </div>
       <!-- End Icon Blocks -->
@@ -43,9 +42,9 @@
         <p class="g-color-gray-dark-v4">Access 3D data like meshed models and point clouds.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Point Clouds" %}</a></li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Meshed Models" %}</a></li>
-          <li class="g-py-8"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Raw 3D Data" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Point Clouds" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Meshed Models" %}</a></li>
+          <li class="g-py-8"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Raw 3D Data" %}</a></li>
         </ul>
       </div>
       <!-- End Icon Blocks -->
@@ -60,10 +59,10 @@
         <p class="g-color-gray-dark-v4">Photographs, orthophotos, videos, and other related material.</p>
         <div class="d-inline-block g-width-40 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
         <ul class="list-unstyled g-px-30 g-mb-0">
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"ddf1c942-d145-11e8-897e-0242ac1a0004"%2C"name"%3A"Virtual%20Tours"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' target="_blank">{% trans "Virtual Tours" %}</a></li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Orthophotos" %}</a></li>
-          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Photos & Images" %}</a></li>
-          <li class="g-py-8"><a href='{% url "search_home" %}?no_filters=true&page=1' target="_blank">{% trans "Videos" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?typeFilter=%5B%7B"graphid"%3A"ddf1c942-d145-11e8-897e-0242ac1a0004"%2C"name"%3A"Virtual%20Tours"%2C"inverted"%3Afalse%7D%5D&no_filters=false&page=1' >{% trans "Virtual Tours" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Orthophotos" %}</a></li>
+          <li class="g-brd-bottom g-brd-gray-light-v3 g-py-10"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Photos & Images" %}</a></li>
+          <li class="g-py-8"><a href='{% url "search_home" %}?no_filters=true&page=1' >{% trans "Videos" %}</a></li>
         </ul>
       </div>
       <!-- End Icon Blocks -->
