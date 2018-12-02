@@ -17,7 +17,7 @@ define([
 
     function getEmbedUrlForVideoPlayerType(videoUrl, videoPlayerType){
         if (videoPlayerType === "YouTube"){
-            return '//www.youtube.com/embed/' + getVideoIdFromYoutubeUrl(videoUrl);
+            return '//www.youtube.com/embed/' + getVideoIdFromYoutubeUrl(videoUrl) +'?modestbranding=1&rel=0';
         }
     }
 
