@@ -25,7 +25,5 @@ displayData = function (data) {
 };
 
 $(document).on('ready', function () {
-  if ($('#gallery').length != 0) {
-    return getUrl('https://api.sketchfab.com/v3/models?user=GlobalDigitalHeritage&count=6&sort_by=-publishedAt');
-  };
+  getUrl('https://api.sketchfab.com/v3/models?user=GlobalDigitalHeritage&count=6&sort_by=-publishedAt');
 });
