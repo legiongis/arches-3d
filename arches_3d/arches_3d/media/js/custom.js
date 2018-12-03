@@ -26,7 +26,8 @@ displayData = function (data) {
 };
 
 ready = function () {
-  if ($('#gallery').length) {
+  console.log('checking to see if #gallery is there');
+  if ($('#gallery').length != 0) {
     console.log('loading sketchfab gallery...');
     return getUrl('https://api.sketchfab.com/v3/models?user=GlobalDigitalHeritage&count=6&sort_by=-publishedAt');
   } else {
@@ -35,4 +36,3 @@ ready = function () {
 };
 
 $(document).ready(ready);
-$(document).on('page:load', ready);
