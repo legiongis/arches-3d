@@ -21,3 +21,13 @@ def equipment(request):
         'copyright_text': settings.COPYRIGHT_TEXT,
         'copyright_year': settings.COPYRIGHT_YEAR
     })
+
+def news(request):
+    return render(request, 'news.htm')
+
+def publications(request):
+    return render(request, 'publications.htm')
+
+def labs(request):
+    return render(request, 'labs.htm')
+

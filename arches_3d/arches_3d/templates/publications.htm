@@ -1,0 +1,52 @@
+{% load static %}
+{% load template_tags %}
+{% load i18n %}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <title>{{app_title}}</title>
+  {% include 'partials/meta.html' %}
+  <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
+  {% include 'partials/css.html' %}
+</head>
+
+<body>
+  <main>
+    {% include 'partials/nav.html' %}
+    {% include 'partials/publications/header.html' %}
+    <section class="container g-pt-100 g-pb-70">
+    <h3>Publications and presentations by GDH team members on digital heritage documentation</h3>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+            aria-controls="nav-home" aria-selected="true">Since 2016</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+            aria-controls="nav-profile" aria-selected="false">Before 2016</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+            aria-controls="nav-contact" aria-selected="false">Conference Presentations</a>
+        </div>
+      </nav>
+      <div class="tab-content g-pt-30" id="nav-tabContent">
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          {% include 'partials/publications/post.html' %}
+        </div>
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          {% include 'partials/publications/pre.html' %}
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          {% include 'partials/publications/conference.html' %}
+        </div>
+      </div>
+    </section>
+    {% include 'partials/footer.html' %}
+    {% include 'partials/link_to_top.html' %}
+    {% include 'partials/javascript.html' %}
+  </main>
+</body>
+
+</html>
