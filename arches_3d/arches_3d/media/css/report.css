@@ -35,34 +35,29 @@
 .rp-report-related-resource-item {
     display: inline-block;
     position: relative;
-    margin: 5px;
+    border-radius: 5px;
 }
 
 .rp-report-related-resource-item dt {
     position: absolute;
-    bottom: 6px;
-    left: 8px;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    background: rgba(19, 20, 37, 0.61);
+    border-radius: 5px;
 }
 
 .rp-report-related-resource-item dt a {
+    display: inherit;
     color: white;
     font-weight: 500;
-    display: inline-block;
     max-width: 160px;
     padding: 3px;
-    border-radius: 5px;
-    background: rgba(25, 25, 25, .5);
 }
 
 .report-related-resource-thumbnail {
     width: 200px;
     height: 200px;
+    border: 1px solid rgba(46, 89, 132, 1);
     border-radius: 5px;
-}
-
-@media (min-width: 1366px) {
-    .report-related-resources .rp-card-section {
-        margin-left: 0px;
-        padding: 0px;
-    }
 }

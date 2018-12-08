@@ -32,17 +32,15 @@
         <div class="rp-report-section-title">
             <h4 class="rp-section-title">{% trans 'Related Resources' %}</h4>
         </div>
-        <!-- ko foreach: { data: report.related_resources, as: 'rr' } -->
-        <!-- ko if: rr.related.length > 0 -->
         <div class="rp-card-section">
-            <h5 class="rp-tile-title">
-                <span class="rp-tile-title-float" data-bind="text:rr.graph_name"></span>
-            </h5>
             <div class="rp-report-container-tile">
                 <div class="row rp-report-tile">
+                <!-- ko foreach: { data: report.related_resources, as: 'rr' } -->
+                <!-- ko if: rr.related.length > 0 -->
                     <!-- ko foreach: { data: rr.related } -->
                     <div class="rp-report-related-resource-item">
                         <dt>
+                            <a data-bind="text:rr.graph_name" style="font-weight: bold"> </a>
                             <a data-bind="text: $data.displayname, attr: {href: $data.link}"></a>
                         </dt>
                         <a data-bind="attr: {href: $data.link}">
@@ -50,11 +48,11 @@
                         </a>    
                     </div>
                     <!-- /ko -->
+                <!-- /ko -->
+                <!-- /ko -->
                 </div>
             </div>
         </div>
-        <!-- /ko -->
-        <!-- /ko -->
     </div>
     <!-- /Related Resources -->
 
