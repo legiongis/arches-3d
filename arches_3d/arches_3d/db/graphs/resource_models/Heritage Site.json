@@ -5,24 +5,6 @@
             "cards": [
                 {
                     "active": true, 
-                    "cardid": "709e56ee-b12e-11e8-81d7-0242ac140004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Enter the cadastral reference number.", 
-                    "is_editable": true, 
-                    "name": "Cadastral Reference", 
-                    "nodegroup_id": "709e5126-b12e-11e8-81d7-0242ac140004", 
-                    "sortorder": 3, 
-                    "visible": false
-                }, 
-                {
-                    "active": true, 
                     "cardid": "b930e8e2-e744-11e6-84a6-026d961c88e6", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -73,6 +55,24 @@
                     "name": "Cultural Period", 
                     "nodegroup_id": "d67a261c-b130-11e8-99c0-0242ac140004", 
                     "sortorder": 3, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "709e3eac-b12e-11e8-81d7-0242ac140004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Define the spatial location.", 
+                    "is_editable": true, 
+                    "name": "Spatial Location", 
+                    "nodegroup_id": "709e356a-b12e-11e8-81d7-0242ac140004", 
+                    "sortorder": 0, 
                     "visible": true
                 }, 
                 {
@@ -203,24 +203,6 @@
                 }, 
                 {
                     "active": true, 
-                    "cardid": "709e4fb4-b12e-11e8-81d7-0242ac140004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Represents a single node in a graph", 
-                    "graph_id": "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Select the administrative/governmental subdivision name and type.", 
-                    "is_editable": false, 
-                    "name": "Administrative Subdivision", 
-                    "nodegroup_id": "709e4cf8-b12e-11e8-81d7-0242ac140004", 
-                    "sortorder": 1, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
                     "cardid": "709e469a-b12e-11e8-81d7-0242ac140004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -253,6 +235,24 @@
                     "name": "Address", 
                     "nodegroup_id": "709e487a-b12e-11e8-81d7-0242ac140004", 
                     "sortorder": 2, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "709e4fb4-b12e-11e8-81d7-0242ac140004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Select the administrative/governmental subdivision name and type.", 
+                    "is_editable": false, 
+                    "name": "Administrative Subdivision", 
+                    "nodegroup_id": "709e4cf8-b12e-11e8-81d7-0242ac140004", 
+                    "sortorder": 1, 
                     "visible": true
                 }, 
                 {
@@ -311,7 +311,7 @@
                 }, 
                 {
                     "active": true, 
-                    "cardid": "709e3eac-b12e-11e8-81d7-0242ac140004", 
+                    "cardid": "709e56ee-b12e-11e8-81d7-0242ac140004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
                     "cssclass": null, 
@@ -320,12 +320,12 @@
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "Define the spatial location.", 
+                    "instructions": "Enter the cadastral reference number.", 
                     "is_editable": true, 
-                    "name": "Spatial Location", 
-                    "nodegroup_id": "709e356a-b12e-11e8-81d7-0242ac140004", 
-                    "sortorder": 0, 
-                    "visible": true
+                    "name": "Cadastral Reference", 
+                    "nodegroup_id": "709e5126-b12e-11e8-81d7-0242ac140004", 
+                    "sortorder": 3, 
+                    "visible": false
                 }
             ], 
             "cards_x_nodes_x_widgets": [
@@ -423,19 +423,18 @@
                     "widget_id": "adfd15ce-dbab-11e7-86d1-0fcf08612b27"
                 }, 
                 {
-                    "card_id": "9d3b97ab-e744-11e6-84a6-026d961c88e6", 
+                    "card_id": "a13a992c-d134-11e8-a039-0242ac1a0004", 
                     "config": {
-                        "defaultValue": "", 
-                        "label": "Resource Type Classification", 
-                        "options": [], 
-                        "placeholder": "Select an option"
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.2"
                     }, 
-                    "id": "9352dcc4-b1be-11e8-a7ec-0242ac130002", 
-                    "label": "Resource Type Classification", 
-                    "node_id": "9d3b97a9-e744-11e6-84a6-026d961c88e6", 
-                    "sortorder": null, 
+                    "id": "9f45d88c-f611-11e8-9bd4-0242ac120004", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "a13a9cc4-d134-11e8-a039-0242ac1a0004", 
+                    "sortorder": 1, 
                     "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
                     "card_id": "709e4fb4-b12e-11e8-81d7-0242ac140004", 
@@ -483,6 +482,20 @@
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 }, 
                 {
+                    "card_id": "a13a992c-d134-11e8-a039-0242ac1a0004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "200"
+                    }, 
+                    "id": "9f47c638-f611-11e8-9bd4-0242ac120004", 
+                    "label": "Cover Image", 
+                    "node_id": "a13a9b16-d134-11e8-a039-0242ac1a0004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
                     "card_id": "709e4b54-b12e-11e8-81d7-0242ac140004", 
                     "config": {
                         "defaultValue": "", 
@@ -513,32 +526,19 @@
                     "widget_id": "10000000-0000-0000-0000-000000000002"
                 }, 
                 {
-                    "card_id": "a13a992c-d134-11e8-a039-0242ac1a0004", 
+                    "card_id": "9d3b97ab-e744-11e6-84a6-026d961c88e6", 
                     "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Cover Image", 
-                        "maxFilesize": "200"
+                        "defaultValue": "", 
+                        "label": "Resource Type Classification", 
+                        "options": [], 
+                        "placeholder": "Select an option"
                     }, 
-                    "id": "9f47c638-f611-11e8-9bd4-0242ac120004", 
-                    "label": "Cover Image", 
-                    "node_id": "a13a9b16-d134-11e8-a039-0242ac1a0004", 
-                    "sortorder": 0, 
+                    "id": "9352dcc4-b1be-11e8-a7ec-0242ac130002", 
+                    "label": "Resource Type Classification", 
+                    "node_id": "9d3b97a9-e744-11e6-84a6-026d961c88e6", 
+                    "sortorder": null, 
                     "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "a13a992c-d134-11e8-a039-0242ac1a0004", 
-                    "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Thumbnail Image", 
-                        "maxFilesize": "0.2"
-                    }, 
-                    "id": "9f45d88c-f611-11e8-9bd4-0242ac120004", 
-                    "label": "Thumbnail Image", 
-                    "node_id": "a13a9cc4-d134-11e8-a039-0242ac1a0004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
                 }, 
                 {
                     "card_id": "d67a2c52-b130-11e8-99c0-0242ac140004", 
@@ -678,7 +678,9 @@
                 "mapControlsHidden": false, 
                 "maxZoom": 20, 
                 "minZoom": 0, 
-                "nodes": [], 
+                "nodes": [
+                    "a13a9b16-d134-11e8-a039-0242ac1a0004"
+                ], 
                 "overlayConfigs": [], 
                 "overlayOpacity": 0, 
                 "pitch": 0, 
@@ -2744,11 +2746,21 @@
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
-                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
+                "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
+                "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
                 "ddf1c942-d145-11e8-897e-0242ac1a0004", 
-                "601c830e-d780-11e8-918f-0242ac120004", 
-                "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+                "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
+                "99417385-b8fa-11e6-84a5-026d961c88e6", 
+                "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
+                "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
+                "64ae35a0-2b53-11e7-9130-0242ac140004", 
+                "3854b1f2-14a9-11e7-b06e-0242ac150005", 
                 "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "243f8689-b8f6-11e6-84a5-026d961c88e6", 
+                "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
+                "601c830e-d780-11e8-918f-0242ac120004", 
                 "32a83794-f60f-11e8-8d50-0242ac120004"
             ], 
             "resource_2_resource_constraints": [], 
@@ -2768,7 +2780,7 @@
                 "sortorder": 0
             }, 
             "subtitle": "Describes heritage sites, e.g. archaeological and historical areas and structures", 
-            "template_id": "50000000-0000-0000-0000-000000000002", 
+            "template_id": "50000000-0000-0000-0000-000000000003", 
             "version": ""
         }
     ], 
