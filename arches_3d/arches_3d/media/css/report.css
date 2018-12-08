@@ -27,9 +27,15 @@
     margin: 0 auto;
 }
 
+.report-related-resources .rp-card-section {
+    display: inline-block;
+    position: relative;
+}
+
 .rp-report-related-resource-item {
     display: inline-block;
     position: relative;
+    margin: 5px;
 }
 
 .rp-report-related-resource-item dt {
@@ -52,4 +58,11 @@
     width: 200px;
     height: 200px;
     border-radius: 5px;
+}
+
+@media (min-width: 1366px) {
+    .report-related-resources .rp-card-section {
+        margin-left: 0px;
+        padding: 0px;
+    }
 }
