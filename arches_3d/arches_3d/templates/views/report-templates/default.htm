@@ -28,7 +28,7 @@
     {% block body %}
 
     <!-- Related Resources -->
-    <div class="rp-report-section relative report-related-resources">
+    <div id="report-related-resources-section" class="rp-report-section relative report-related-resources">
         <div class="rp-report-section-title">
             <h4 class="rp-section-title">{% trans 'Related Resources' %}</h4>
         </div>
@@ -40,7 +40,7 @@
                     <!-- ko foreach: { data: rr.related } -->
                     <div class="rp-report-related-resource-item">
                         <dt>
-                            <a data-bind="text:rr.graph_name" style="font-weight: bold"> </a>
+                            <a data-bind="text:rr.graph_name, attr: {href: $data.link}" style="font-weight: bold"> </a>
                             <a data-bind="text: $data.displayname, attr: {href: $data.link}"></a>
                         </dt>
                         <a data-bind="attr: {href: $data.link}">
