@@ -41,8 +41,14 @@
             <div class="rp-report-container-tile">
                 <div class="row rp-report-tile">
                     <!-- ko foreach: { data: rr.related } -->
-                    <dt><a data-bind="text: $data.displayname, attr: {href: $data.link}"></a></dt>
-                    <a data-bind="attr: {href: $data.link}"><img data-bind="attr: {src: $data.thumbnail_url}"></a>
+                    <div class="rp-report-related-resource-item">
+                        <dt>
+                            <a data-bind="text: $data.displayname, attr: {href: $data.link}"></a>
+                        </dt>
+                        <a data-bind="attr: {href: $data.link}">
+                            <img class="report-related-resource-thumbnail" data-bind="attr: {src: $data.thumbnail_url}">
+                        </a>    
+                    </div>
                     <!-- /ko -->
                 </div>
             </div>
