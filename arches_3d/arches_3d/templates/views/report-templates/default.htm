@@ -27,45 +27,7 @@
 
     {% block body %}
 
-    <div id="report-body-toggle-button"><span style="vertical-align: middle;"><i class="fa fa-plus"></i> Metadata</span></div>
-    <div id="report-body" style="display: block">
-
-        <!--ko if: hasProvisionalData() && (editorContext === false) -->
-        <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report)
-            that are pending review' %}
-        </div>
-        <!--/ko-->
-        <!--ko if: hasProvisionalData() && (editorContext === true && report.userisreviewer === true) -->
-        <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report)
-            that are pending review' %}
-        </div>
-        <!--/ko-->
-        <!--ko if: hasProvisionalData() && (editorContext === true && report.userisreviewer === false) -->
-        <div class="report-provisional-flag">{% trans 'This resource has provisional edits that are pending review' %}</div>
-        <!--/ko-->
-
-        <div class="rp-report-section relative rp-report-section-root">
-            <div class="rp-report-section-title">
-                <!-- ko foreach: { data: report.cards, as: 'card' } -->
-                <div class="rp-card-section">
-                    <!-- ko component: {
-                        name: card.model.cardComponentLookup[card.model.component_id()].componentname,
-                        params: {
-                            state: 'report',
-                            preview: $parent.report.preview,
-                            card: card
-                        }
-                    } --> <!-- /ko -->
-                </div>
-                <!-- /ko -->
-            </div>
-        </div>
-
-    </div>
-
-
-    {% endblock body %}
-
+    <!-- Related Resources -->
     <div class="rp-report-section relative report-related-resources">
         <div class="rp-report-section-title">
             <h4 class="rp-section-title">{% trans 'Related Resources' %}</h4>
@@ -88,6 +50,56 @@
         <!-- /ko -->
         <!-- /ko -->
     </div>
+    <!-- /Related Resources -->
+
+
+    <!-- Metadata -->
+    <div class="report-metadata-section">
+        <button id="report-body-toggle-button" class="btn btn-primary">
+            <span style="vertical-align: middle;">
+                <i id="report-body-toggle-button-icon" class="fa fa-plus"></i> Metadata
+            </span>
+        </button>
+        <div id="report-body" style="display: none">
+
+            <!--ko if: hasProvisionalData() && (editorContext === false) -->
+            <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report)
+                that are pending review' %}
+            </div>
+            <!--/ko-->
+            <!--ko if: hasProvisionalData() && (editorContext === true && report.userisreviewer === true) -->
+            <div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report)
+                that are pending review' %}
+            </div>
+            <!--/ko-->
+            <!--ko if: hasProvisionalData() && (editorContext === true && report.userisreviewer === false) -->
+            <div class="report-provisional-flag">{% trans 'This resource has provisional edits that are pending review' %}</div>
+            <!--/ko-->
+
+            <div class="rp-report-section relative rp-report-section-root">
+                <div class="rp-report-section-title">
+                    <!-- ko foreach: { data: report.cards, as: 'card' } -->
+                    <div class="rp-card-section">
+                        <!-- ko component: {
+                            name: card.model.cardComponentLookup[card.model.component_id()].componentname,
+                            params: {
+                                state: 'report',
+                                preview: $parent.report.preview,
+                                card: card
+                            }
+                        } --> <!-- /ko -->
+                    </div>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Metadata -->
+
+
+    {% endblock body %}
+
+
 </div>
 
 
