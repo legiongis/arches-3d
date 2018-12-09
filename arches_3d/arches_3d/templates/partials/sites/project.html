@@ -1,6 +1,6 @@
 <div class="cbp-item {{ project.css_safe_country|lower }}">
   <div class="u-block-hover g-parent">
-    <a href="{% url 'resource_report' resourceid=project.resourceinstanceid %">
+    <a href="{% url 'resource_report' resourceid=project.resourceinstanceid %}">
       <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out"
         src="{{ project.thumbnail_url }}" alt="{{ project.displayname }}">
     </a>
