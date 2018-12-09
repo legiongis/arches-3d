@@ -20,11 +20,10 @@ class HeritageSitesView(BaseManagerView):
                 if str(tile.nodegroup_id) == 'a13a9486-d134-11e8-a039-0242ac1a0004':
                     if len(tile.data['a13a9cc4-d134-11e8-a039-0242ac1a0004']) > 0:
                         site.thumbnail_url = tile.data['a13a9cc4-d134-11e8-a039-0242ac1a0004'][0]['url'] or ''
-                elif str(tile.nodegroup_id) == '065b7267-e746-11e6-84a6-026d961c88e6': 
-                    if tile.data['065b726b-e746-11e6-84a6-026d961c88e6'] == 'b7ab431e-6967-43b7-b132-78d25ce6b480':
-                        site.short_description = tile.data['065b726a-e746-11e6-84a6-026d961c88e6'] or ''
+
                 elif str(tile.nodegroup_id) == '709e4cf8-b12e-11e8-81d7-0242ac140004':
                     site.country = models.Value.objects.get(pk=tile.data['709e5d74-b12e-11e8-81d7-0242ac140004']).value
+
             if hasattr(site, 'country'):
                 site.css_safe_country = site.country.replace(' ','-')
             else: 
