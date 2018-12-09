@@ -24,10 +24,13 @@ class ProjectsView(BaseManagerView):
                 elif str(tile.nodegroup_id) == 'aee32ff0-af95-11e8-b710-0242ac120005': 
                     project.description = tile.data['aee33842-af95-11e8-b710-0242ac120005'] or ''
 
-                if hasattr(project, 'country'):
-                    project.css_safe_country = project.country.replace(' ','-')
-                else: 
-                    project.css_safe_country = 'other'
-                    project.country = 'Other'
+                elif str(tile.nodegroup_id) == '358f3142-b113-11e8-8513-0242ac140005':
+                    project.country = models.Value.objects.get(pk=tile.data['358f49de-b113-11e8-8513-0242ac140005']).value
 
-        return render(request, 'views/projects.htm', { 'projects': projects })
+            if hasattr(project, 'country'):
+                project.css_safe_country = project.country.replace(' ','-')
+            else: 
+                project.css_safe_country = 'other'
+                project.country = 'Other'
+
+        return render(request, 'views/projects.htm', { 'projects': projects }) 
