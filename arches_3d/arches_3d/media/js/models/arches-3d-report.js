@@ -73,19 +73,27 @@ define(['arches',
                     return 0;
                 });
             };
+            
             _.each(this.get('related_resources'), function(rr){
+                
                 var res = {'graph_name': rr.name, 'related':[]};
+                
                 _.each(rr.resources, function(resource) {
-                    $.get(arches_3d.urls.node_values, {
+                    
+                    $.ajax({
+                        type: 'GET',
+                        url: arches_3d.urls.node_values,
+                        async: false,
+                        data: {
                             resourceid: resource.instance_id,
                             node_name: 'Thumbnail Image'
-                        })
-                        .done(function (data) {
-                            if (data.length > 0){
-                                resource.thumbnail_url = data[0].url;
+                        },
+                        success: function(response){
+
+                            if (response.length > 0){
+                                resource.thumbnail_url = response[0].url;
                             }
-                        })
-                        .always(function () {
+
                             _.each(resource.relationships, function (relationship) {
                                 res.related.push({
                                     'displayname': resource.displayname,
@@ -95,11 +103,13 @@ define(['arches',
                                     'thumbnail_url': resource.thumbnail_url
                                 });
                             });
-                        });
-                    
+                        }
+                    });
                 });
+
                 this.sort_related(res.related, 'displayname');
                 this.related_resources.push(res);
+                
             }, this);
 
             this.sort_related(this.related_resources, 'graph_name');
