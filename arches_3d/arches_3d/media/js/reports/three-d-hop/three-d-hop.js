@@ -7,6 +7,21 @@ define([
     'knockstrap',
     'bindings/chosen'
 ], function (_, ko, ReportViewModel, arches, threeDHopSetup) {
+
+        function getValue(valueid){
+            var val;
+            $.ajax({
+                type: 'GET',
+                url: arches.urls.concept_value,
+                data: { valueid: valueid },
+                async: false,
+                success: function(response){
+                    val = response.value;
+                }
+            });
+            return val;
+        }
+
         return ko.components.register('three-d-hop-report', {
         viewModel: function (params) {
             var self = this;
@@ -17,9 +32,13 @@ define([
 
             if (self.report.get('tiles')) {
                 var threeDHopFiles = [];
+                var config = {}
                 self.report.get('tiles').forEach(function (tile) {
-                    _.each(tile.data, function (val) {
-                        if (Array.isArray(val)) {
+                    _.each(tile.data, function (val, key) {
+                        if (key === 'a06ca0f2-1109-11e9-8b03-0242ac140004'){
+                            config.trackballType = getValue(val);
+                        }
+                        else if (Array.isArray(val)) {
                             val.forEach(function (item) {
 
                                 if (item.status &&
@@ -37,9 +56,7 @@ define([
                 }, self);
 
                 if (threeDHopFiles.length > 0) {
-                    let config = {
-                        source: threeDHopFiles[0].src
-                    };
+                    config.source = threeDHopFiles[0].src;
                     self.threeDHopFiles(threeDHopFiles);
                     window.presenter = new Presenter("draw-canvas");
                     init3dhop();
