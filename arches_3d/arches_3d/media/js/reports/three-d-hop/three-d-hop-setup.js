@@ -13,11 +13,11 @@ define([
     'utils/get-query-string-parameter'
 ], function (spidergl, $, presenter, nexus, ply, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, init, getQueryStringParameter) {
 
-    function setScene(source) {
+    function setScene(config) {
         window.presenter.setScene({
             meshes: {
                 // The path in which the model to be loaded in the viewer is stored
-                "mesh1": { url: source }
+                "mesh1": { url: config.source }
             },
             modelInstances: {
                 "Inst1": {
@@ -50,7 +50,7 @@ define([
                 return;
             }
         }
-        setScene(window.source);
+        setScene(window.config);
     }
 
     function toggleFullscreen() {
@@ -66,7 +66,7 @@ define([
 
         $('#full').toggle();
         $('#full_on').toggle();
-        setScene(window.source);
+        setScene(window.config);
     }
 
     window.actionsToolbar = function actionsToolbar(action) {
@@ -101,9 +101,9 @@ define([
 
     return {
 
-        setup3DHOP: function (source) {
+        setup3DHOP: function (config) {
 
-            window.source = source
+            window.config = config
             window.presenter._onEndMeasurement = onEndMeasure;
             window.presenter._onEndPickingPoint = onEndPick;
             

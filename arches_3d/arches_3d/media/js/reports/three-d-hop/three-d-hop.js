@@ -37,11 +37,13 @@ define([
                 }, self);
 
                 if (threeDHopFiles.length > 0) {
+                    let config = {
+                        source: threeDHopFiles[0].src
+                    };
                     self.threeDHopFiles(threeDHopFiles);
-                    var filepath = threeDHopFiles[0].src;
                     window.presenter = new Presenter("draw-canvas");
                     init3dhop();
-                    threeDHopSetup.setup3DHOP(filepath);
+                    threeDHopSetup.setup3DHOP(config);
                     sectiontoolInit();
                 }
             }
