@@ -204,6 +204,13 @@ CACHES = {
 # Identify the usernames and duration (seconds) for which you want to cache the time wheel
 CACHE_BY_USER = {'anonymous': 3600 * 24}
 
+# If True, users can make edits to graphs that are locked
+# (generally because they have resource intances saved against them)
+# Changing this setting to True and making graph modifications may result in
+# disagreement between your Resource Models and Resource Instances potentially
+# causing your application to break.
+OVERRIDE_RESOURCE_MODEL_LOCK = True
+
 APP_TITLE = 'Arches 3D | Global Digital Heritage'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = '2018'
