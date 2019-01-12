@@ -5,3 +5,7 @@
 .nounderline {
   text-decoration: none !important;
 }
+
+.sponsor {
+  max-height: 165px !important;
+}
