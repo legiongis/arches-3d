@@ -204,7 +204,7 @@ CACHES = {
 # Identify the usernames and duration (seconds) for which you want to cache the time wheel
 CACHE_BY_USER = {'anonymous': 3600 * 24}
 
-APP_TITLE = 'Arches 3D | Global Digital Heritage'
+APP_TITLE = 'Global Digital Heritage'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = '2018'
 
