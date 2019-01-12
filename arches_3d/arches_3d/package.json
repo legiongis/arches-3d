@@ -48,13 +48,14 @@
         "moment": ">=2.10.5",
         "nouislider": "11.0.3",
         "nvd3": "^1.8.5",
+        "pannellum": "2.4.1",
         "proj4": "^2.3.15",
         "requirejs": "~2.3.2",
         "requirejs-plugins": "1.0.2",
         "requirejs-text": "2.0.12",
         "select2": "3.5.1",
+        "three-d-hop": "cnr-isti-vclab/3DHOP#4.2",
         "underscore": "1.9.1",
-        "uuidjs": "^3.3.0",
-        "three-d-hop": "cnr-isti-vclab/3DHOP#4.2"
+        "uuidjs": "^3.3.0"
     }
 }
