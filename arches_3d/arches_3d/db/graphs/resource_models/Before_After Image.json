@@ -5,20 +5,20 @@
             "cards": [
                 {
                     "active": true, 
-                    "cardid": "7800c1d6-1661-11e9-bf95-0242ac140004", 
+                    "cardid": "7800cfaa-1661-11e9-bf95-0242ac140004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
                     "cssclass": null, 
-                    "description": "Stores a file and a thumbnail representing that file", 
+                    "description": "Describes the title of an Information Resource.", 
                     "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "Select Before and After images and a thumbnail representing the combination of those two.  Thumbnails must be exactly 400 x 400 pixels", 
-                    "is_editable": true, 
-                    "name": "360 Image & Thumbnail", 
-                    "nodegroup_id": "7800b9ac-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 1, 
+                    "instructions": "Enter the image's title, description and creation date.", 
+                    "is_editable": false, 
+                    "name": "Summary", 
+                    "nodegroup_id": "7800c618-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 0, 
                     "visible": true
                 }, 
                 {
@@ -41,60 +41,6 @@
                 }, 
                 {
                     "active": true, 
-                    "cardid": "7800f192-1661-11e9-bf95-0242ac140004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "An informative word used for resource information retrieval that indicates the content of a resource.\n\nRelates to resources via P2.", 
-                    "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Select keywords associated with the resource.", 
-                    "is_editable": true, 
-                    "name": "Keyword", 
-                    "nodegroup_id": "7800ec92-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 7, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "7800cfaa-1661-11e9-bf95-0242ac140004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Describes the title of an Information Resource.", 
-                    "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Enter the image's title, description and creation date.", 
-                    "is_editable": true, 
-                    "name": "Summary", 
-                    "nodegroup_id": "7800c618-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 0, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "7800e896-1661-11e9-bf95-0242ac140004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Used to define legal privileges associated with an Information Resource.", 
-                    "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Describe the copyright for the information resource.", 
-                    "is_editable": true, 
-                    "name": "Information Resource Copyright", 
-                    "nodegroup_id": "7800e35a-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 5, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
                     "cardid": "7800dff4-1661-11e9-bf95-0242ac140004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -109,6 +55,24 @@
                     "name": "Place", 
                     "nodegroup_id": "7800d7fc-1661-11e9-bf95-0242ac140004", 
                     "sortorder": 3, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "7800f192-1661-11e9-bf95-0242ac140004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "An informative word used for resource information retrieval that indicates the content of a resource.\n\nRelates to resources via P2.", 
+                    "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Select keywords associated with the resource.", 
+                    "is_editable": true, 
+                    "name": "Keyword", 
+                    "nodegroup_id": "7800ec92-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 7, 
                     "visible": true
                 }, 
                 {
@@ -128,42 +92,70 @@
                     "nodegroup_id": "7800f728-1661-11e9-bf95-0242ac140004", 
                     "sortorder": 4, 
                     "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "7800c1d6-1661-11e9-bf95-0242ac140004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Stores a file and a thumbnail representing that file", 
+                    "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Select Before and After images and a thumbnail representing the combination of those two.  Thumbnails must be exactly 400 x 400 pixels", 
+                    "is_editable": false, 
+                    "name": "360 Image & Thumbnail", 
+                    "nodegroup_id": "7800b9ac-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 1, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "7800e896-1661-11e9-bf95-0242ac140004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Used to define legal privileges associated with an Information Resource.", 
+                    "graph_id": "78007b18-1661-11e9-bf95-0242ac140004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Describe the copyright for the information resource.", 
+                    "is_editable": true, 
+                    "name": "Information Resource Copyright", 
+                    "nodegroup_id": "7800e35a-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 5, 
+                    "visible": true
                 }
             ], 
             "cards_x_nodes_x_widgets": [
                 {
-                    "card_id": "7800cfaa-1661-11e9-bf95-0242ac140004", 
-                    "config": {
-                        "dateFormat": "YYYY-MM-DD", 
-                        "defaultValue": "", 
-                        "label": "Date of Creation", 
-                        "maxDate": false, 
-                        "minDate": false, 
-                        "placeholder": "Enter date", 
-                        "viewMode": "days"
-                    }, 
-                    "id": "78014106-1661-11e9-bf95-0242ac140004", 
-                    "label": "Date of Creation", 
-                    "node_id": "78011afa-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 2, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000004"
-                }, 
-                {
-                    "card_id": "7800fdb8-1661-11e9-bf95-0242ac140004", 
+                    "card_id": "7800dff4-1661-11e9-bf95-0242ac140004", 
                     "config": {
                         "defaultValue": "", 
-                        "label": "External XRef", 
+                        "label": "Place Description", 
                         "maxLength": null, 
                         "placeholder": "Enter text", 
                         "width": "100%"
                     }, 
-                    "id": "78013cd8-1661-11e9-bf95-0242ac140004", 
-                    "label": "External XRef", 
-                    "node_id": "78011528-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": null, 
+                    "id": "78014638-1661-11e9-bf95-0242ac140004", 
+                    "label": "Place Description", 
+                    "node_id": "7801121c-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 1, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "7800c1d6-1661-11e9-bf95-0242ac140004", 
+                    "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
+                    "id": "78013b66-1661-11e9-bf95-0242ac140004", 
+                    "label": "Information Carrier", 
+                    "node_id": "7800b9ac-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
                     "card_id": "7800fdb8-1661-11e9-bf95-0242ac140004", 
@@ -182,32 +174,6 @@
                 }, 
                 {
                     "card_id": "7800c1d6-1661-11e9-bf95-0242ac140004", 
-                    "config": "{\"maxFilesize\":\"200\",\"acceptedFiles\":\"\",\"label\":\"Information Carrier\"}", 
-                    "id": "78013b66-1661-11e9-bf95-0242ac140004", 
-                    "label": "Information Carrier", 
-                    "node_id": "7800b9ac-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "7800cfaa-1661-11e9-bf95-0242ac140004", 
-                    "config": {
-                        "defaultValue": "", 
-                        "label": "Title", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "780147be-1661-11e9-bf95-0242ac140004", 
-                    "label": "Title", 
-                    "node_id": "78012b6c-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                }, 
-                {
-                    "card_id": "7800c1d6-1661-11e9-bf95-0242ac140004", 
                     "config": {
                         "acceptedFiles": "image/*", 
                         "label": "Image Before", 
@@ -221,20 +187,19 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }, 
                 {
-                    "card_id": "7800fdb8-1661-11e9-bf95-0242ac140004", 
+                    "card_id": "7800e896-1661-11e9-bf95-0242ac140004", 
                     "config": {
                         "defaultValue": "", 
-                        "label": "Description", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
+                        "label": "Copyright Type", 
+                        "options": [], 
+                        "placeholder": "Select an option"
                     }, 
-                    "id": "78013f9e-1661-11e9-bf95-0242ac140004", 
-                    "label": "Description", 
-                    "node_id": "78012554-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": null, 
+                    "id": "78013e36-1661-11e9-bf95-0242ac140004", 
+                    "label": "Copyright Type", 
+                    "node_id": "7801020e-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 0, 
                     "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                    "widget_id": "10000000-0000-0000-0000-000000000012"
                 }, 
                 {
                     "card_id": "7800cfaa-1661-11e9-bf95-0242ac140004", 
@@ -249,6 +214,22 @@
                     "label": "Description", 
                     "node_id": "780105a6-1661-11e9-bf95-0242ac140004", 
                     "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "7800cfaa-1661-11e9-bf95-0242ac140004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Title", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "780147be-1661-11e9-bf95-0242ac140004", 
+                    "label": "Title", 
+                    "node_id": "78012b6c-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
@@ -271,18 +252,34 @@
                     "widget_id": "10000000-0000-0000-0000-000000000004"
                 }, 
                 {
-                    "card_id": "7800dff4-1661-11e9-bf95-0242ac140004", 
+                    "card_id": "7800fdb8-1661-11e9-bf95-0242ac140004", 
                     "config": {
                         "defaultValue": "", 
-                        "label": "Place Description", 
+                        "label": "Description", 
                         "maxLength": null, 
                         "placeholder": "Enter text", 
                         "width": "100%"
                     }, 
-                    "id": "78014638-1661-11e9-bf95-0242ac140004", 
-                    "label": "Place Description", 
-                    "node_id": "7801121c-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 1, 
+                    "id": "78013f9e-1661-11e9-bf95-0242ac140004", 
+                    "label": "Description", 
+                    "node_id": "78012554-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": null, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "7800fdb8-1661-11e9-bf95-0242ac140004", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "External XRef", 
+                        "maxLength": null, 
+                        "placeholder": "Enter text", 
+                        "width": "100%"
+                    }, 
+                    "id": "78013cd8-1661-11e9-bf95-0242ac140004", 
+                    "label": "External XRef", 
+                    "node_id": "78011528-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": null, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
@@ -303,19 +300,22 @@
                     "widget_id": "10000000-0000-0000-0000-000000000001"
                 }, 
                 {
-                    "card_id": "7800e896-1661-11e9-bf95-0242ac140004", 
+                    "card_id": "7800cfaa-1661-11e9-bf95-0242ac140004", 
                     "config": {
+                        "dateFormat": "YYYY-MM-DD", 
                         "defaultValue": "", 
-                        "label": "Copyright Type", 
-                        "options": [], 
-                        "placeholder": "Select an option"
+                        "label": "Date of Creation", 
+                        "maxDate": false, 
+                        "minDate": false, 
+                        "placeholder": "Enter date", 
+                        "viewMode": "days"
                     }, 
-                    "id": "78013e36-1661-11e9-bf95-0242ac140004", 
-                    "label": "Copyright Type", 
-                    "node_id": "7801020e-1661-11e9-bf95-0242ac140004", 
-                    "sortorder": 0, 
+                    "id": "78014106-1661-11e9-bf95-0242ac140004", 
+                    "label": "Date of Creation", 
+                    "node_id": "78011afa-1661-11e9-bf95-0242ac140004", 
+                    "sortorder": 2, 
                     "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000012"
+                    "widget_id": "10000000-0000-0000-0000-000000000004"
                 }, 
                 {
                     "card_id": "7800c1d6-1661-11e9-bf95-0242ac140004", 
@@ -346,7 +346,7 @@
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }
             ], 
-            "color": "#d4936f", 
+            "color": "#d46f9f", 
             "config": {
                 "nodes": [
                     "780108d0-1661-11e9-bf95-0242ac140004", 
@@ -598,7 +598,7 @@
             ], 
             "graphid": "78007b18-1661-11e9-bf95-0242ac140004", 
             "iconclass": "fa fa-bullseye", 
-            "is_editable": true, 
+            "is_editable": false, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -1118,7 +1118,7 @@
                 "sortorder": 0
             }, 
             "subtitle": "Model for storing Before/After images.", 
-            "template_id": "50000000-0000-0000-0000-000000000003", 
+            "template_id": "70000000-0000-0000-0000-000000000009", 
             "version": ""
         }
     ], 
