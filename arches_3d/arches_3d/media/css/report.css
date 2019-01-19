@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.report-render-area-no-height {
+    width: 100%;
+}
+
 .fullscreen-button {
     margin: 8px 8px;
     background: none;
