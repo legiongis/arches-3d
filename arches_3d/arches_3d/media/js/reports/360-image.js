@@ -4,7 +4,9 @@ define([
     'knockout-mapping',
     'viewmodels/report',
     'arches',
-    'pannellum'
+    'pannellum',
+    'knockstrap',
+    'bindings/chosen'
 ], function(_, ko, koMapping, ReportViewModel, arches) {
     return ko.components.register('360-image-report', {
         viewModel: function(params) {
@@ -51,6 +53,22 @@ define([
                     "autoLoad": true
                 })
             }
+
+            var widgets = [];
+            var getCardWidgets = function(card) {
+                widgets = widgets.concat(card.model.get('widgets')());
+                card.cards().forEach(function(card) {
+                    getCardWidgets(card);
+                });
+            };
+            ko.unwrap(self.report.cards).forEach(getCardWidgets);
+            this.nodeOptions = ko.observableArray(
+                widgets.map(function(widget) {
+                    return widget.node;
+                }).filter(function(node) {
+                    return ko.unwrap(node.datatype) === 'file-list';
+                })
+            );
         },
         template: {
             require: 'text!report-templates/three-sixty-image'
