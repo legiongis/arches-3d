@@ -5,11 +5,12 @@ define([
     'knockout-mapping',
     'viewmodels/report',
     'arches',
+    'imagesloaded',
     'twentytwenty',
     'twentytwenty-move',
     'knockstrap',
     'bindings/chosen'
-], function(_, $, ko, koMapping, ReportViewModel, arches) {
+], function(_, $, ko, koMapping, ReportViewModel, arches, imagesLoaded) {
     return ko.components.register('before-after-image-report', {
         viewModel: function(params) {
             var self = this;
@@ -71,7 +72,9 @@ define([
                 $('#after-image').attr('src', afterImage.src);
                 $('#after-image').attr('alt', afterImage.alt);
 
-                // $('#before-after-image-container').twentytwenty();
+                imagesLoaded('#before-after-image-container', function() {
+                    $('#before-after-image-container').twentytwenty();
+                });
             }
             
             var widgets = [];
@@ -94,11 +97,4 @@ define([
             require: 'text!report-templates/before-after-image'
         }
     });
-});
-
-
-$(document).on('load', function(){
-    console.log('window');
-    $('#before-after-image-container').twentytwenty();
-    $(window).trigger("resize");
 });
