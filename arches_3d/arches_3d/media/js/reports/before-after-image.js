@@ -72,9 +72,15 @@ define([
                 $('#after-image').attr('src', afterImage.src);
                 $('#after-image').attr('alt', afterImage.alt);
 
-                imagesLoaded('#before-after-image-container', function() {
-                    $('#before-after-image-container').twentytwenty();
-                });
+                $('#before-after-image-container')
+                    .imagesLoaded()
+                    .progress(function () {
+                        $('.loading-mask').css("display", "block")
+                    })
+                    .done(function () {
+                        $('.loading-mask').css("display", "none")
+                        $('#before-after-image-container').twentytwenty();
+                    });
             }
             
             var widgets = [];
