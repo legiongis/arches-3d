@@ -10,19 +10,48 @@ define([
     'twentytwenty-move',
     'knockstrap',
     'bindings/chosen'
-], function(_, $, ko, koMapping, ReportViewModel, arches, imagesLoaded) {
+], function(_, $, ko, koMapping, ReportViewModel, arches) {
+
+    function displayThrobber() {
+        $('.loading-mask').css("display", "block");
+    }
+    
+    function hideThrobber() {
+        $('.loading-mask').css("display", "none");
+    }
+    
+    function setBeforeAfterLabels(beforeLabel, afterLabel) {
+        $('.twentytwenty-before-label').attr('data-content', beforeLabel);
+        $('.twentytwenty-after-label').attr('data-content', afterLabel);
+    }
+    
     return ko.components.register('before-after-image-report', {
         viewModel: function(params) {
             var self = this;
             params.configKeys = ['nodes'];
             ReportViewModel.apply(this, [params]);
 
+            var beforeLabel = "";
+            var afterLabel = "";
+
             self.imgs = ko.computed(function() {
                 var imgs = [];
                 var nodes = self.nodes();
+
                 self.tiles().forEach(function(tile) {
                     _.each(tile.data, function(val, key) {
+
                         val = koMapping.toJS(val);
+
+                        if (key === "2d908f60-1c0f-11e9-9ce8-0242ac120004"){
+                            afterLabel = val;
+                            return;
+                        }
+
+                        if (key === "10443880-1c0f-11e9-9ce8-0242ac120004") {
+                            beforeLabel = val;
+                        }
+
                         if (Array.isArray(val)) {
                             val.forEach(function(item) {
                                 if (item.status &&
@@ -46,6 +75,7 @@ define([
                                     imgs.push(img);
                                 }
                             });
+                            return;
                         }
                     }, self);
                 }, self);
@@ -75,11 +105,13 @@ define([
                 $('#before-after-image-container')
                     .imagesLoaded()
                     .progress(function () {
-                        $('.loading-mask').css("display", "block")
+                        displayThrobber();
                     })
                     .done(function () {
-                        $('.loading-mask').css("display", "none")
+                        hideThrobber();
                         $('#before-after-image-container').twentytwenty();
+
+                        setBeforeAfterLabels(beforeLabel, afterLabel);
                     });
             }
             
