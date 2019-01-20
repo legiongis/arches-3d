@@ -12,6 +12,20 @@ define([
     'bindings/chosen'
 ], function(_, $, ko, koMapping, ReportViewModel, arches) {
 
+    function getValue(valueid){
+        var val;
+        $.ajax({
+            type: 'GET',
+            url: arches.urls.concept_value,
+            data: { valueid: valueid },
+            async: false,
+            success: function(response){
+                val = response.value;
+            }
+        });
+        return val;
+    }
+
     function displayThrobber() {
         $('.loading-mask').css("display", "block");
     }
@@ -26,8 +40,11 @@ define([
             params.configKeys = ['nodes'];
             ReportViewModel.apply(this, [params]);
 
-            var beforeLabel = "";
-            var afterLabel = "";
+            var defaultOffsetPct;
+            var orientation;
+            var beforeLabel;
+            var afterLabel;
+            var noOverlay;
 
             self.imgs = ko.computed(function() {
                 var imgs = [];
@@ -38,13 +55,29 @@ define([
 
                         val = koMapping.toJS(val);
 
-                        if (key === "2d908f60-1c0f-11e9-9ce8-0242ac120004"){
+                        if (key === "2d3a1734-1cb4-11e9-869d-0242ac140002") {
+                            defaultOffsetPct = val;
+                            return;
+                        }
+
+                        if (key === "5f0c5b12-1cb1-11e9-88c3-0242ac140002") {
+                            orientation = getValue(val);
+                            return;
+                        }
+
+                        if (key === "2d908f60-1c0f-11e9-9ce8-0242ac120004") {
                             afterLabel = val;
                             return;
                         }
 
                         if (key === "10443880-1c0f-11e9-9ce8-0242ac120004") {
                             beforeLabel = val;
+                            return;
+                        }
+
+                        if (key === "9516a19c-1cb4-11e9-b140-0242ac140002") {
+                            noOverlay = val;
+                            return;
                         }
 
                         if (Array.isArray(val)) {
@@ -105,8 +138,11 @@ define([
                     .done(function () {
                         hideThrobber();
                         $('#before-after-image-container').twentytwenty({
+                            default_offset_pct: defaultOffsetPct,
+                            orientation: orientation.toLowerCase(),
                             before_label: beforeLabel,
-                            after_label: afterLabel
+                            after_label: afterLabel,
+                            no_overlay: noOverlay
                         });
 
                         $(window).resize();
