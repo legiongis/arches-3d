@@ -20,11 +20,6 @@ define([
         $('.loading-mask').css("display", "none");
     }
     
-    function setBeforeAfterLabels(beforeLabel, afterLabel) {
-        $('.twentytwenty-before-label').attr('data-content', beforeLabel);
-        $('.twentytwenty-after-label').attr('data-content', afterLabel);
-    }
-    
     return ko.components.register('before-after-image-report', {
         viewModel: function(params) {
             var self = this;
@@ -109,7 +104,10 @@ define([
                     })
                     .done(function () {
                         hideThrobber();
-                        $('#before-after-image-container').twentytwenty();
+                        $('#before-after-image-container').twentytwenty({
+                            before_label: beforeLabel,
+                            after_label: afterLabel
+                        });
 
                         setBeforeAfterLabels(beforeLabel, afterLabel);
                     });
