@@ -1,6 +1,11 @@
 .twentytwenty-container {
-    max-height: 85vh;
     margin: 0 auto;
+}
+
+.twentytwenty-container img {
+    width: 100%;
+}
+
 .twentytwenty-overlay {
     background: none !important;
 }
