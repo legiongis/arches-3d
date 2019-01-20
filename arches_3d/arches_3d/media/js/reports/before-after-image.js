@@ -109,7 +109,7 @@ define([
                             after_label: afterLabel
                         });
 
-                        setBeforeAfterLabels(beforeLabel, afterLabel);
+                        $(window).resize();
                     });
             }
             
