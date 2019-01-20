@@ -416,11 +416,11 @@
                 {
                     "card_id": "7800c1d6-1661-11e9-bf95-0242ac140004", 
                     "config": {
-                        "defaultValue": true, 
-                        "label": "Show Overlay"
+                        "defaultValue": false, 
+                        "label": "Hide Overlay"
                     }, 
                     "id": "e0f13a50-1cb4-11e9-ab33-0242ac140002", 
-                    "label": "Show Overlay", 
+                    "label": "Hide Overlay", 
                     "node_id": "9516a19c-1cb4-11e9-b140-0242ac140002", 
                     "sortorder": 7, 
                     "visible": true, 
@@ -1186,7 +1186,7 @@
                     "isrequired": true, 
                     "issearchable": true, 
                     "istopnode": false, 
-                    "name": "Show Overlay", 
+                    "name": "Hide Overlay", 
                     "nodegroup_id": "7800b9ac-1661-11e9-bf95-0242ac140004", 
                     "nodeid": "9516a19c-1cb4-11e9-b140-0242ac140002", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
