@@ -1,4 +1,4 @@
-FROM globaldigitalheritage/arches:4.3.3.0
+FROM globaldigitalheritage/arches:4.3.3.1
 
 ENV APP_DIR=${WEB_ROOT}/arches_3d/arches_3d
 ENV YARN_DIR=${APP_DIR}
