@@ -211,7 +211,7 @@ CACHE_BY_USER = {'anonymous': 3600 * 24}
 # causing your application to break.
 OVERRIDE_RESOURCE_MODEL_LOCK = True
 
-APP_TITLE = 'Arches 3D | Global Digital Heritage'
+APP_TITLE = 'Global Digital Heritage'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = '2018'
 
