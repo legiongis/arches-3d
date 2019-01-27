@@ -5,6 +5,8 @@ Django settings for arches_3d project.
 import inspect
 import os
 import ast
+import datetime
+
 from django.core.exceptions import ImproperlyConfigured
 from arches import __version__
 
@@ -213,7 +215,7 @@ OVERRIDE_RESOURCE_MODEL_LOCK = True
 
 APP_TITLE = 'Global Digital Heritage'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
-COPYRIGHT_YEAR = '2018'
+COPYRIGHT_YEAR = datetime.datetime.now().year
 
 try:
     from package_settings import *
