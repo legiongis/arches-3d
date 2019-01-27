@@ -35,9 +35,13 @@ define([
                 var config = {}
                 self.report.get('tiles').forEach(function (tile) {
                     _.each(tile.data, function (val, key) {
+
+                        // TrackballType
                         if (key === 'a06ca0f2-1109-11e9-8b03-0242ac140004'){
                             config.trackballType = getValue(val);
                         }
+
+                        // 3D model file
                         else if (Array.isArray(val)) {
                             val.forEach(function (item) {
 
