@@ -14,36 +14,13 @@ define([
 ], function (spidergl, $, presenter, nexus, ply, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, init, getQueryStringParameter) {
 
     function setScene(config) {
-        window.presenter.setScene({
-            meshes: {
-                // The path in which the model to be loaded in the viewer is stored
-                "mesh1": { url: config.source }
-            },
-            modelInstances: {
-                "Inst1": {
-                    mesh: "mesh1"
-                }
-            },
-            trackball: {
-                type: SphereTrackball,
-                trackOptions: {
-                    startDistance: 2,
-                    minMaxDist: [0.01, 5.0]
-                }
-            },
-            space: {
-                centerMode: "scene",
-                radiusMode: "scene",
-                sceneLighting : false
-            }
-        });
-        
+        window.presenter.setScene(config);
         window.presenter.ui.postDrawEvent();
     }
 
     function setConfigDefaults(config){
-        if (config.trackballType === undefined){
-            config.trackballType = 'SphereTrackball'
+        if (config.trackball.type === undefined){
+            config.trackball.type = 'SphereTrackball'
         }
     }
 
