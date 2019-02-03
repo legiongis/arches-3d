@@ -23,6 +23,24 @@
                 }, 
                 {
                     "active": true, 
+                    "cardid": "8065df84-26ef-11e9-b29f-0242ac170002", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "MinMaxTheta", 
+                    "nodegroup_id": "05d3e114-26e8-11e9-b4cd-0242ac170002", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
                     "cardid": "08f16bda-26ef-11e9-9e1e-0242ac170002", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -113,6 +131,24 @@
                 }, 
                 {
                     "active": true, 
+                    "cardid": "2fe7de24-d139-11e8-8e63-0242ac1a0004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Describes the title and description of a 3D HOP Resource.", 
+                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Enter the resource's title and description", 
+                    "is_editable": true, 
+                    "name": "Summary", 
+                    "nodegroup_id": "2fe7d85c-d139-11e8-8e63-0242ac1a0004", 
+                    "sortorder": 0, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
                     "cardid": "c26a2a2a-226c-11e9-ab9d-0242ac170002", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -126,42 +162,6 @@
                     "is_editable": true, 
                     "name": "3D HOP Configuration", 
                     "nodegroup_id": "c268941c-226c-11e9-ab9d-0242ac170002", 
-                    "sortorder": null, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "84a46aa2-26ef-11e9-8bd2-0242ac170002", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": null, 
-                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "is_editable": true, 
-                    "name": "MinMaxPanX", 
-                    "nodegroup_id": "39d0ec78-26e8-11e9-8bd2-0242ac170002", 
-                    "sortorder": null, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "8065df84-26ef-11e9-b29f-0242ac170002", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": null, 
-                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": null, 
-                    "is_editable": true, 
-                    "name": "MinMaxTheta", 
-                    "nodegroup_id": "05d3e114-26e8-11e9-b4cd-0242ac170002", 
                     "sortorder": null, 
                     "visible": true
                 }, 
@@ -185,6 +185,24 @@
                 }, 
                 {
                     "active": true, 
+                    "cardid": "84a46aa2-26ef-11e9-8bd2-0242ac170002", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": null, 
+                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "MinMaxPanX", 
+                    "nodegroup_id": "39d0ec78-26e8-11e9-8bd2-0242ac170002", 
+                    "sortorder": null, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
                     "cardid": "9400e222-2277-11e9-9e1e-0242ac170002", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -199,24 +217,6 @@
                     "name": "Trackball Settings", 
                     "nodegroup_id": "57245474-226d-11e9-b29f-0242ac170002", 
                     "sortorder": null, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "2fe7de24-d139-11e8-8e63-0242ac1a0004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Describes the title and description of a 3D HOP Resource.", 
-                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Enter the resource's title and description", 
-                    "is_editable": true, 
-                    "name": "Summary", 
-                    "nodegroup_id": "2fe7d85c-d139-11e8-8e63-0242ac1a0004", 
-                    "sortorder": 0, 
                     "visible": true
                 }
             ], 
@@ -941,6 +941,19 @@
                     "widget_id": "10000000-0000-0000-0000-000000000008"
                 }, 
                 {
+                    "card_id": "97d9460a-2277-11e9-b7c2-0242ac170002", 
+                    "config": {
+                        "defaultValue": false, 
+                        "label": "Scene Lighting"
+                    }, 
+                    "id": "2217d226-27ca-11e9-b4cd-0242ac170002", 
+                    "label": "Scene Lighting", 
+                    "node_id": "d316cfe2-27c9-11e9-8639-0242ac170002", 
+                    "sortorder": 12, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000006"
+                }, 
+                {
                     "card_id": "c26a2a2a-226c-11e9-ab9d-0242ac170002", 
                     "config": {
                         "defaultValue": "", 
@@ -1292,6 +1305,15 @@
                     "name": null, 
                     "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P41_classified", 
                     "rangenode_id": "84e92ef0-26e8-11e9-b4cd-0242ac170002"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "4ba31490-2273-11e9-b29f-0242ac170002", 
+                    "edgeid": "d316d3de-27c9-11e9-8639-0242ac170002", 
+                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.ics.forth.gr/isl/CRMdig/L54_is_same-as", 
+                    "rangenode_id": "d316cfe2-27c9-11e9-8639-0242ac170002"
                 }, 
                 {
                     "description": null, 
@@ -1720,7 +1742,7 @@
                     "nodeid": "2be50842-2274-11e9-ab9d-0242ac170002", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP3_Reference_Space", 
                     "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54_is_same-as", 
-                    "sortorder": 0
+                    "sortorder": 1
                 }, 
                 {
                     "config": null, 
@@ -1740,7 +1762,7 @@
                 }, 
                 {
                     "config": {
-                        "rdmCollection": "db145776-c964-46fa-ae88-b6371d2ae69b"
+                        "rdmCollection": "c98615ac-53e8-4043-a56b-a5a0a920244c"
                     }, 
                     "datatype": "concept", 
                     "description": null, 
@@ -1749,12 +1771,12 @@
                     "isrequired": false, 
                     "issearchable": false, 
                     "istopnode": false, 
-                    "name": "Center Mode", 
+                    "name": "Radius Mode", 
                     "nodegroup_id": "4ba31490-2273-11e9-b29f-0242ac170002", 
-                    "nodeid": "af717052-2273-11e9-b4cd-0242ac170002", 
+                    "nodeid": "d3843830-2273-11e9-b7c2-0242ac170002", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP3_Reference_Space", 
-                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54i_is_same-as", 
-                    "sortorder": 0
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54_is_same-as", 
+                    "sortorder": 2
                 }, 
                 {
                     "config": null, 
@@ -1854,7 +1876,7 @@
                 }, 
                 {
                     "config": {
-                        "rdmCollection": "c98615ac-53e8-4043-a56b-a5a0a920244c"
+                        "rdmCollection": "db145776-c964-46fa-ae88-b6371d2ae69b"
                     }, 
                     "datatype": "concept", 
                     "description": null, 
@@ -1863,12 +1885,12 @@
                     "isrequired": false, 
                     "issearchable": false, 
                     "istopnode": false, 
-                    "name": "Radius Mode", 
+                    "name": "Center Mode", 
                     "nodegroup_id": "4ba31490-2273-11e9-b29f-0242ac170002", 
-                    "nodeid": "d3843830-2273-11e9-b7c2-0242ac170002", 
+                    "nodeid": "af717052-2273-11e9-b4cd-0242ac170002", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP3_Reference_Space", 
-                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54_is_same-as", 
-                    "sortorder": 2
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54i_is_same-as", 
+                    "sortorder": 0
                 }, 
                 {
                     "config": null, 
@@ -2108,6 +2130,25 @@
                     "nodeid": "84e92ef0-26e8-11e9-b4cd-0242ac170002", 
                     "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP3_Reference_Space", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P41_classified", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": {
+                        "falseLabel": "Off", 
+                        "trueLabel": "On"
+                    }, 
+                    "datatype": "boolean", 
+                    "description": null, 
+                    "graph_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": false, 
+                    "istopnode": false, 
+                    "name": "Scene Lighting", 
+                    "nodegroup_id": "4ba31490-2273-11e9-b29f-0242ac170002", 
+                    "nodeid": "d316cfe2-27c9-11e9-8639-0242ac170002", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMgeo/SP3_Reference_Space", 
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L54_is_same-as", 
                     "sortorder": 0
                 }, 
                 {
