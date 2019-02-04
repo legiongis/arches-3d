@@ -34,8 +34,8 @@ def get_optional_env_variable(var_name):
 
 IMAGE_VERSION = get_optional_env_variable('IMAGE_VERSION') or __version__
 
-MODE = get_env_variable('DJANGO_MODE')  # options are either "PROD" or "DEV"
-DEBUG = ast.literal_eval(get_env_variable('DJANGO_DEBUG'))
+MODE = "DEV"
+DEBUG = False
 if get_optional_env_variable('DJANGO_REMOTE_DEBUG'):
     REMOTE_DEBUG = ast.literal_eval(get_optional_env_variable('DJANGO_REMOTE_DEBUG'))
 else:
@@ -59,24 +59,14 @@ INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
 
 MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
 
-# SECURITY WARNING: keep the secret key used in production secret!
-USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = USER_SECRET_KEY or '1-)jb^2^7b=)ck4#)z(sypp3upwjqc8+#&ay0cj5)&wft_r!xa'
+SECRET_KEY = "XXXX"
 
 
 ROOT_URLCONF = 'arches_3d.urls'
 
-
-ELASTICSEARCH_HTTP_PORT = get_env_variable('ESPORT')
-ELASTICSEARCH_HOSTS = [
-    { 'host': get_env_variable('ESHOST'), 'port': ELASTICSEARCH_HTTP_PORT }
-]
-
 # a prefix to append to all elasticsearch indexes, note: must be lower case
-USER_ELASTICSEARCH_PREFIX = get_optional_env_variable('ELASTICSEARCH_PREFIX')
-if USER_ELASTICSEARCH_PREFIX:
-    ELASTICSEARCH_PREFIX = USER_ELASTICSEARCH_PREFIX
+ELASTICSEARCH_PREFIX = "arches3d"
 
 
 DATABASES = {
@@ -86,11 +76,11 @@ DATABASES = {
         "CONN_MAX_AGE": 0,
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         "OPTIONS": {},
-        'NAME': get_env_variable('PGDBNAME'),
-        'USER': get_env_variable('PGUSERNAME'),
-        'PASSWORD': get_env_variable('PGPASSWORD'),
-        'HOST': get_env_variable('PGHOST'),
-        'PORT': get_env_variable('PGPORT'),
+        'NAME': "arches_3d",
+        'USER': "XXXX",
+        'PASSWORD': "XXXX",
+        'HOST': "localhost",
+        'PORT': "5432",
         'POSTGIS_TEMPLATE': 'template_postgis_20',
         "TEST": {
             "CHARSET": None,
@@ -102,9 +92,9 @@ DATABASES = {
     }
 }
 
-COUCHDB_URL = 'http://{}:{}@{}:{}'.format(get_env_variable('COUCHDB_USER'), get_env_variable('COUCHDB_PASS'),get_env_variable('COUCHDB_HOST'), get_env_variable('COUCHDB_PORT')) # defaults to localhost:5984
+# COUCHDB_URL = 'http://{}:{}@{}:{}'.format(get_env_variable('COUCHDB_USER'), get_env_variable('COUCHDB_PASS'),get_env_variable('COUCHDB_HOST'), get_env_variable('COUCHDB_PORT')) # defaults to localhost:5984
 
-ALLOWED_HOSTS = get_env_variable('DOMAIN_NAMES').split()
+# ALLOWED_HOSTS = get_env_variable('DOMAIN_NAMES').split()
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'arches_3d.wsgi.application'
@@ -114,18 +104,18 @@ STATIC_ROOT = '/static_root'
 STATIC_URL = get_optional_env_variable('STATIC_URL') or '/media/'
 STATIC_URL_LOCAL = get_optional_env_variable('STATIC_URL_LOCAL') or '/media/'
 
-DEFAULT_FILE_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorage'
-STATICFILES_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorageStatic'
+# DEFAULT_FILE_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorage'
+# STATICFILES_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorageStatic'
 
-AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
-AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
-AZURE_CONTAINER = get_optional_env_variable('AZURE_CONTAINER') or 'arches'
-AZURE_SSL = get_optional_env_variable('AZURE_SSL') or False
-AZURE_UPLOAD_MAX_CONN = get_optional_env_variable('AZURE_UPLOAD_MAX_CONN') or 2
-AZURE_CONNECTION_TIMEOUT_SECS = get_optional_env_variable('AZURE_CONNECTION_TIMEOUT_SECS') or 99999
-AZURE_BLOB_MAX_MEMORY_SIZE = get_optional_env_variable('AZURE_BLOB_MAX_MEMORY_SIZE') or 2*1024*1024
-AZURE_URL_EXPIRATION_SECS = get_optional_env_variable('AZURE_URL_EXPIRATION_SECS') or None
-AZURE_OVERWRITE_FILES = get_optional_env_variable('AZURE_OVERWRITE_FILES') or False
+# AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
+# AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
+# AZURE_CONTAINER = get_optional_env_variable('AZURE_CONTAINER') or 'arches'
+# AZURE_SSL = get_optional_env_variable('AZURE_SSL') or False
+# AZURE_UPLOAD_MAX_CONN = get_optional_env_variable('AZURE_UPLOAD_MAX_CONN') or 2
+# AZURE_CONNECTION_TIMEOUT_SECS = get_optional_env_variable('AZURE_CONNECTION_TIMEOUT_SECS') or 99999
+# AZURE_BLOB_MAX_MEMORY_SIZE = get_optional_env_variable('AZURE_BLOB_MAX_MEMORY_SIZE') or 2*1024*1024
+# AZURE_URL_EXPIRATION_SECS = get_optional_env_variable('AZURE_URL_EXPIRATION_SECS') or None
+# AZURE_OVERWRITE_FILES = get_optional_env_variable('AZURE_OVERWRITE_FILES') or False
 
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
