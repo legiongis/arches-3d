@@ -6,3 +6,4 @@ docker-compose-local2.yml
 *.pyc
 *.log
 arches_3d/arches_3d/tileserver/cache/
+node_modules/
