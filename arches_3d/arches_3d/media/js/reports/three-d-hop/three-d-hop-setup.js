@@ -18,12 +18,6 @@ define([
         window.presenter.ui.postDrawEvent();
     }
 
-    function setConfigDefaults(config){
-        if (config.trackball.type === undefined){
-            config.trackball.type = 'SphereTrackball'
-        }
-    }
-
     function setSceneOnStartup(){
         // Run in fullscreen if requested through query string
         let fullscreenBool = getQueryStringParameter('fullscreen');
@@ -85,8 +79,6 @@ define([
     return {
 
         setup3DHOP: function (config) {
-
-            setConfigDefaults(config);
 
             window.config = config
             window.presenter._onEndMeasurement = onEndMeasure;
