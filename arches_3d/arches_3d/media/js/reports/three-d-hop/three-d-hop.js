@@ -66,6 +66,18 @@ define([
             return string.replace('.', '-');
         }
 
+        function cleanEmptyProperties(object) {
+            Object.keys(object).forEach(function(key){
+                const property = object[key];
+                if (property && typeof property === 'object') {
+                    cleanEmptyProperties(property);
+                }
+                else if (property == null || property === "") {
+                    delete object[key];
+                }
+            })
+        }
+
         return ko.components.register('three-d-hop-report', {
         viewModel: function (params) {
             var self = this;
@@ -307,6 +319,9 @@ define([
 
                     }, self);
                 }, self);
+
+
+                cleanEmptyProperties(config);
 
                 if (config.meshes) {
                     var threeDHopFileCount = Object.keys(config.meshes).length;
