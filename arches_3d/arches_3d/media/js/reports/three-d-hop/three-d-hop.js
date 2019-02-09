@@ -72,11 +72,10 @@ define([
             params.configKeys = ['nodes'];
             ReportViewModel.apply(this, [params]);
 
-            self.threeDHopFiles = ko.observableArray([]);
+            self.threeDHopFileCount = ko.observable(0);
 
             if (self.report.get('tiles')) {
-                var threeDHopFiles = [];
-                var config = {}
+                let config = {}
                 self.report.get('tiles').forEach(function (tile) {
                     _.each(tile.data, function (val, key) {
 
@@ -92,11 +91,6 @@ define([
                                     item.status === 'uploaded' &&
                                     (item.name.split('.').pop() == 'ply' || item.name.split('.').pop() == 'nxs')
                                 ) {
-                                    threeDHopFiles.push({
-                                        src: item.url,
-                                        alt: item.name
-                                    });
-
                                     var mesh = { url: item.url };
                                     var meshName = removeDotsFromString(item.name);
                                     addProperty(config, `meshes.${meshName}`, mesh)
@@ -314,13 +308,15 @@ define([
                     }, self);
                 }, self);
 
-                if (threeDHopFiles.length > 0) {
-                    config.source = threeDHopFiles[0].src;
-                    self.threeDHopFiles(threeDHopFiles);
-                    window.presenter = new Presenter("draw-canvas");
-                    init3dhop();
-                    threeDHopSetup.setup3DHOP(config);
-                    sectiontoolInit();
+                if (config.meshes) {
+                    var threeDHopFileCount = Object.keys(config.meshes).length;
+                    if (threeDHopFileCount > 0){
+                        self.threeDHopFileCount(threeDHopFileCount);
+                        window.presenter = new Presenter("draw-canvas");
+                        init3dhop();
+                        threeDHopSetup.setup3DHOP(config);
+                        sectiontoolInit();
+                    }
                 }
             }
 
