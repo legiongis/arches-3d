@@ -67,13 +67,19 @@ define([
         }
 
         function cleanEmptyProperties(object) {
-            Object.keys(object).forEach(function(key){
-                const property = object[key];
+            let parent = object;
+            Object.keys(parent).forEach(function(key){
+                const property = parent[key];
                 if (property && typeof property === 'object') {
                     cleanEmptyProperties(property);
                 }
-                else if (property == null || property === "") {
-                    delete object[key];
+                if (property == null || property === "" || (Array.isArray(property) && property.length === 0)) {
+                    if (Array.isArray(parent)) {
+                        parent.splice(parent[key], 1);
+                    }
+                    else {
+                        delete parent[key];
+                    }
                 }
             })
         }
