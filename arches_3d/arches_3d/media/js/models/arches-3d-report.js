@@ -103,6 +103,9 @@ define(['arches',
                                     'thumbnail_url': resource.thumbnail_url
                                 });
                             });
+                        },
+                        error: function(response){
+                            console.log(response);
                         }
                     });
                 });
