@@ -168,6 +168,18 @@ define([
                             return;
                         }
 
+                        // Start Angle X
+                        if (key === '66227432-379f-11e9-aa45-0242ac1d0002'){
+                            addProperty(config, 'trackball.trackOptions.startAngleX', val);
+                            return;
+                        }
+
+                        // Start Angle Y
+                        if (key === 'a6e8ab62-379f-11e9-ab15-0242ac1d0002'){
+                            addProperty(config, 'trackball.trackOptions.startAngleY', val);
+                            return;
+                        }
+                                                
                         // Min Dist
                         if (key === '43195b86-26e7-11e9-b29f-0242ac170002'){
                             addProperty(config, 'trackball.trackOptions.minMaxDist', val, 0);
@@ -240,6 +252,29 @@ define([
                             return;
                         }
 
+                        // Min Angle X
+                        if (key === 'e8e22836-379f-11e9-bd96-0242ac1d0002'){
+                            addProperty(config, 'trackball.trackOptions.minMaxAngleX', val, 0);
+                            return;
+                        }
+                        
+                        // Max Angle X
+                        if (key === 'f7f8fd72-379f-11e9-bdc8-0242ac1d0002'){
+                            addProperty(config, 'trackball.trackOptions.minMaxAngleX', val, 1);
+                            return;
+                        }
+                        
+                        // Min Angle Y
+                        if (key === '24c2900c-37a0-11e9-a987-0242ac1d0002'){
+                            addProperty(config, 'trackball.trackOptions.minMaxAngleY', val, 0);
+                            return;
+                        }
+                        
+                        // Max Angle Y
+                        if (key === '37610f5e-37a0-11e9-bdc8-0242ac1d0002'){
+                            addProperty(config, 'trackball.trackOptions.minMaxAngleY', val, 1);
+                            return;
+                        }
 
                         // //Space
 
