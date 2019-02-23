@@ -211,7 +211,9 @@ CACHE_BY_USER = {'anonymous': 3600 * 24}
 # Changing this setting to True and making graph modifications may result in
 # disagreement between your Resource Models and Resource Instances potentially
 # causing your application to break.
-OVERRIDE_RESOURCE_MODEL_LOCK = get_optional_env_variable('OVERRIDE_RESOURCE_MODEL_LOCK') or False
+override_resource_model_lock_user = get_optional_env_variable('OVERRIDE_RESOURCE_MODEL_LOCK')
+if override_resource_model_lock_user:
+    OVERRIDE_RESOURCE_MODEL_LOCK = True
 
 APP_TITLE = 'Global Digital Heritage'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
