@@ -1,7 +1,8 @@
 
 define([
-    'spidergl',
+    'utils/get-query-string-parameter',
     'jquery',
+    'spidergl',
     'presenter',
     'nexus',
     'ply',
@@ -9,9 +10,8 @@ define([
     'trackball_turntable',
     'trackball_turntable_pan',
     'trackball_pantilt',
-    'init',
-    'utils/get-query-string-parameter'
-], function (spidergl, $, presenter, nexus, ply, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt, init, getQueryStringParameter) {
+    'init'
+], function (getQueryStringParameter, $) {
 
     function setScene(config) {
         window.presenter.setScene(config);

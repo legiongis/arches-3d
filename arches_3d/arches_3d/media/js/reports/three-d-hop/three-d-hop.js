@@ -10,7 +10,7 @@ define([
     'trackball_pantilt',
     'knockstrap',
     'bindings/chosen'
-], function (_, ko, ReportViewModel, arches, threeDHopSetup, trackball_sphere, trackball_turntable, trackball_turntable_pan, trackball_pantilt) {
+], function (_, ko, ReportViewModel, arches, threeDHopSetup) {
 
         function getConceptValue(valueid){
             var val;
