@@ -36,14 +36,18 @@ define([
         $('#draw-canvas').toggleClass('fullscreen');
         $('#toolbar').toggleClass('fullscreen');
 
-        $(document).ready(function(){
-            resizeCanvas($('#3dhop').parent().width(),$('#3dhop').parent().height());
-            window.presenter._resizable = true;
-        })
+        resize3DHopCanvas();
 
         $('#full').toggle();
         $('#full_on').toggle();
         setScene(config);
+    }
+
+    function resize3DHopCanvas() {
+        $(document).ready(function () {
+            resizeCanvas($('#3dhop').parent().width(), $('#3dhop').parent().height());
+            window.presenter._resizable = true;
+        });
     }
 
     function initActionsToolbar(config){
@@ -81,6 +85,7 @@ define([
 
         setup3DHOP: function (config) {
 
+            resize3DHopCanvas();
             window.presenter._onEndMeasurement = onEndMeasure;
             window.presenter._onEndPickingPoint = onEndPick;
             
