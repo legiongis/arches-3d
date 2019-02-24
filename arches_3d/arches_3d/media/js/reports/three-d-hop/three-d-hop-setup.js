@@ -15,7 +15,6 @@ define([
 
     function setScene(config) {
         window.presenter.setScene(config);
-        window.presenter.ui.postDrawEvent();
     }
 
     function setSceneOnStartup(config){
@@ -23,7 +22,7 @@ define([
         let fullscreenBool = getQueryStringParameter('fullscreen');
         if (fullscreenBool){
             if (fullscreenBool.toLowerCase() === "true"){
-                toggleFullscreen();
+                toggleFullscreen(config);
                 return;
             }
         }
@@ -85,12 +84,19 @@ define([
 
         setup3DHOP: function (config) {
 
+            window.presenter = new Presenter("draw-canvas");
+
+            init3dhop();
             resize3DHopCanvas();
+
             window.presenter._onEndMeasurement = onEndMeasure;
             window.presenter._onEndPickingPoint = onEndPick;
             
-            initActionsToolbar(config);
             setSceneOnStartup(config);
+            
+            initActionsToolbar(config);
+            sectiontoolInit();
         }
     }
 });
+

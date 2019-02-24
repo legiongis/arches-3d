@@ -368,10 +368,7 @@ define([
                     var threeDHopFileCount = Object.keys(config.meshes).length;
                     if (threeDHopFileCount > 0){
                         self.threeDHopFileCount(threeDHopFileCount);
-                        window.presenter = new Presenter("draw-canvas");
-                        init3dhop();
                         threeDHopSetup.setup3DHOP(config);
-                        sectiontoolInit();
                     }
                 }
             }
