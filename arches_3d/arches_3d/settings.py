@@ -55,9 +55,12 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
 TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.app_settings')
 
-INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
+INSTALLED_APPS = INSTALLED_APPS + ('arches_3d', 'debug_toolbar')
 
 MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
+MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+
+INTERNAL_IPS = INTERNAL_IPS + ('172.22.0.1',)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 USER_SECRET_KEY = get_optional_env_variable('DJANGO_SECRET_KEY')
