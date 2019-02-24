@@ -18,7 +18,7 @@ define([
         window.presenter.ui.postDrawEvent();
     }
 
-    function setSceneOnStartup(){
+    function setSceneOnStartup(config){
         // Run in fullscreen if requested through query string
         let fullscreenBool = getQueryStringParameter('fullscreen');
         if (fullscreenBool){
@@ -27,10 +27,10 @@ define([
                 return;
             }
         }
-        setScene(window.config);
+        setScene(config);
     }
 
-    function toggleFullscreen() {
+    function toggleFullscreen(config) {
         $('#tdhop_render_area').toggleClass('fullscreen');
         $('#3dhop').toggleClass('fullscreen');
         $('#draw-canvas').toggleClass('fullscreen');
@@ -43,23 +43,24 @@ define([
 
         $('#full').toggle();
         $('#full_on').toggle();
-        setScene(window.config);
+        setScene(config);
     }
 
-    window.actionsToolbar = function actionsToolbar(action) {
-        if (action == 'home') window.presenter.resetTrackball();
-        else if (action == 'zoomin') window.presenter.zoomIn();
-        else if (action == 'zoomout') window.presenter.zoomOut();
-	    else if (action=='lighting' || action=='lighting_off') { window.presenter.enableSceneLighting(!window.presenter.isSceneLightingEnabled()); lightingSwitch(); }
-        else if (action == 'light' || action == 'light_on') { window.presenter.enableLightTrackball(!window.presenter.isLightTrackballEnabled()); lightSwitch(); }
-        else if (action=='perspective' || action=='orthographic') { window.presenter.toggleCameraType(); cameraSwitch(); }
-        else if (action=='color' || action=='color_on') { window.presenter.toggleInstanceSolidColor(HOP_ALL, true); colorSwitch(); }
-        else if (action=='measure' || action=='measure_on') { window.presenter.enableMeasurementTool(!window.presenter.isMeasurementToolEnabled()); measureSwitch(); }
-        else if (action=='pick' || action=='pick_on') { window.presenter.enablePickpointMode(!window.presenter.isPickpointModeEnabled()); pickpointSwitch(); }
-        else if (action == 'sections' || action == 'sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
-        else if (action == 'full' || action == 'full_on') toggleFullscreen();
+    function initActionsToolbar(config){
+        window.actionsToolbar = function actionsToolbar(action) {
+            if (action == 'home') window.presenter.resetTrackball();
+            else if (action == 'zoomin') window.presenter.zoomIn();
+            else if (action == 'zoomout') window.presenter.zoomOut();
+            else if (action=='lighting' || action=='lighting_off') { window.presenter.enableSceneLighting(!window.presenter.isSceneLightingEnabled()); lightingSwitch(); }
+            else if (action == 'light' || action == 'light_on') { window.presenter.enableLightTrackball(!window.presenter.isLightTrackballEnabled()); lightSwitch(); }
+            else if (action=='perspective' || action=='orthographic') { window.presenter.toggleCameraType(); cameraSwitch(); }
+            else if (action=='color' || action=='color_on') { window.presenter.toggleInstanceSolidColor(HOP_ALL, true); colorSwitch(); }
+            else if (action=='measure' || action=='measure_on') { window.presenter.enableMeasurementTool(!window.presenter.isMeasurementToolEnabled()); measureSwitch(); }
+            else if (action=='pick' || action=='pick_on') { window.presenter.enablePickpointMode(!window.presenter.isPickpointModeEnabled()); pickpointSwitch(); }
+            else if (action == 'sections' || action == 'sections_on') { sectiontoolReset(); sectiontoolSwitch(); }
+            else if (action == 'full' || action == 'full_on') toggleFullscreen(config);
+        }
     }
-
 
     function onEndMeasure(measure) {
         // measure.toFixed(2) sets the number of decimals when displaying the measure
@@ -80,11 +81,11 @@ define([
 
         setup3DHOP: function (config) {
 
-            window.config = config
             window.presenter._onEndMeasurement = onEndMeasure;
             window.presenter._onEndPickingPoint = onEndPick;
             
-            setSceneOnStartup();
+            initActionsToolbar(config);
+            setSceneOnStartup(config);
         }
     }
 });
