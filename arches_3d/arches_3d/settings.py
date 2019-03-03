@@ -55,7 +55,7 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
 TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.app_settings')
 
-INSTALLED_APPS = INSTALLED_APPS + ('arches_3d', 'debug_toolbar')
+INSTALLED_APPS = INSTALLED_APPS + ('arches_3d', 'debug_toolbar', 'compressor')
 
 MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
 MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
@@ -119,6 +119,12 @@ STATIC_URL_LOCAL = get_optional_env_variable('STATIC_URL_LOCAL') or '/media/'
 
 DEFAULT_FILE_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorage'
 STATICFILES_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorageStatic'
+
+STATICFILES_FINDERS = STATICFILES_FINDERS + ('compressor.finders.CompressorFinder',)
+
+COMPRESS_ENABLED = True
+COMPRESS_URL = STATIC_URL
+COMPRESS_STORAGE = STATICFILES_STORAGE
 
 AZURE_ACCOUNT_NAME = get_env_variable('AZURE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = get_env_variable('AZURE_ACCOUNT_KEY')
