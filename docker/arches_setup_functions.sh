@@ -96,5 +96,7 @@ fix_static_paths() {
     python manage.py storage fix_static_paths
 }
 
-
+compress_static_files() {
+	python manage.py compress
+}
 

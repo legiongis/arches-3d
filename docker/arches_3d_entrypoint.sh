@@ -14,3 +14,5 @@ if [[ -z ${GUNICORN_WORKERS} ]]; then
     export GUNICORN_WORKERS=$((${CPUS}*2+1))
     echo "Setting gunicorn workers to: ${GUNICORN_WORKERS}"
 fi
+
+compress_static_files
