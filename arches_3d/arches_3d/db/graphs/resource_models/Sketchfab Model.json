@@ -5,42 +5,6 @@
             "cards": [
                 {
                     "active": true, 
-                    "cardid": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "For e.g. the presentation of this resource on overview pages", 
-                    "is_editable": true, 
-                    "name": "Cover & Thumbnail Image", 
-                    "nodegroup_id": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
-                    "sortorder": 1, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
-                    "cardid": "6ba5bb72-f58b-11e8-a354-0242ac120004", 
-                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
-                    "config": null, 
-                    "cssclass": null, 
-                    "description": "Describes the title of an Information Resource.", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "helpenabled": false, 
-                    "helptext": null, 
-                    "helptitle": null, 
-                    "instructions": "Enter the Sketchfab model's title and description", 
-                    "is_editable": true, 
-                    "name": "Summary", 
-                    "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
-                    "sortorder": 0, 
-                    "visible": true
-                }, 
-                {
-                    "active": true, 
                     "cardid": "6ba5c3e2-f58b-11e8-a354-0242ac120004", 
                     "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
                     "config": null, 
@@ -56,9 +20,73 @@
                     "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
                     "sortorder": 2, 
                     "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "6ba5bb72-f58b-11e8-a354-0242ac120004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "Describes the title of an Information Resource.", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "Enter the information resource's title anddescription", 
+                    "is_editable": true, 
+                    "name": "Summary", 
+                    "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true
+                }, 
+                {
+                    "active": true, 
+                    "cardid": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": "For e.g. the presentation of this resource on overview pages. Cover Images must be exactly 1200 x 800 pixels. Thumbnail Images must be exactly 400 x 400 pixels.", 
+                    "is_editable": true, 
+                    "name": "Cover & Thumbnail Image", 
+                    "nodegroup_id": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true
                 }
             ], 
             "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "d1317e10-f610-11e8-956b-0242c0a83002", 
+                    "label": "Cover Image", 
+                    "node_id": "6ba5c90a-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
+                    "config": {
+                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
+                        "label": "Thumbnail Image", 
+                        "maxFilesize": "0.2"
+                    }, 
+                    "id": "d1344866-f610-11e8-956b-0242c0a83002", 
+                    "label": "Thumbnail Image", 
+                    "node_id": "6ba5cea0-f58b-11e8-a354-0242ac120004", 
+                    "sortorder": 1, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
                 {
                     "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
                     "config": {
@@ -104,50 +132,6 @@
                     "sortorder": null, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000001"
-                }, 
-                {
-                    "card_id": "6ba5bb72-f58b-11e8-a354-0242ac120004", 
-                    "config": {
-                        "defaultValue": "", 
-                        "label": "Title", 
-                        "maxLength": null, 
-                        "placeholder": "Enter text", 
-                        "width": "100%"
-                    }, 
-                    "id": "eacb7726-f5ad-11e8-9707-0242ac120004", 
-                    "label": "Title", 
-                    "node_id": "6ba5cbe4-f58b-11e8-a354-0242ac120004", 
-                    "sortorder": null, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000001"
-                }, 
-                {
-                    "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
-                    "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Cover Image", 
-                        "maxFilesize": "2"
-                    }, 
-                    "id": "096601d4-f611-11e8-bdb1-0242ac120004", 
-                    "label": "Cover Image", 
-                    "node_id": "6ba5c90a-f58b-11e8-a354-0242ac120004", 
-                    "sortorder": 0, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "6ba5b38e-f58b-11e8-a354-0242ac120004", 
-                    "config": {
-                        "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Thumbnail Image", 
-                        "maxFilesize": "0.2"
-                    }, 
-                    "id": "0967d34c-f611-11e8-bdb1-0242ac120004", 
-                    "label": "Thumbnail Image", 
-                    "node_id": "6ba5cea0-f58b-11e8-a354-0242ac120004", 
-                    "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
                 }
             ], 
             "color": "rgba(27,85,153,0.86)", 
@@ -160,6 +144,33 @@
             "deploymentfile": null, 
             "description": "Describes a model specifically purposed for the Sketchfab viewer", 
             "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "6ba5d166-f58b-11e8-a354-0242ac120004", 
+                    "edgeid": "6ba5f100-f58b-11e8-a354-0242ac120004", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of", 
+                    "rangenode_id": "6ba5aa06-f58b-11e8-a354-0242ac120004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "6ba5d166-f58b-11e8-a354-0242ac120004", 
+                    "edgeid": "6ba5eee4-f58b-11e8-a354-0242ac120004", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
+                    "rangenode_id": "6ba5b776-f58b-11e8-a354-0242ac120004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
+                    "edgeid": "6ba5e93a-f58b-11e8-a354-0242ac120004", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P138_represents", 
+                    "rangenode_id": "6ba5c90a-f58b-11e8-a354-0242ac120004"
+                }, 
                 {
                     "description": null, 
                     "domainnode_id": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
@@ -180,33 +191,6 @@
                 }, 
                 {
                     "description": null, 
-                    "domainnode_id": "6ba5d166-f58b-11e8-a354-0242ac120004", 
-                    "edgeid": "6ba5e7a0-f58b-11e8-a354-0242ac120004", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
-                    "rangenode_id": "6ba5bf96-f58b-11e8-a354-0242ac120004"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
-                    "edgeid": "6ba5e93a-f58b-11e8-a354-0242ac120004", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P138_represents", 
-                    "rangenode_id": "6ba5c90a-f58b-11e8-a354-0242ac120004"
-                }, 
-                {
-                    "description": null, 
-                    "domainnode_id": "6ba5d166-f58b-11e8-a354-0242ac120004", 
-                    "edgeid": "6ba5f100-f58b-11e8-a354-0242ac120004", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of", 
-                    "rangenode_id": "6ba5aa06-f58b-11e8-a354-0242ac120004"
-                }, 
-                {
-                    "description": null, 
                     "domainnode_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
                     "edgeid": "6ba5f20e-f58b-11e8-a354-0242ac120004", 
                     "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
@@ -216,21 +200,21 @@
                 }, 
                 {
                     "description": null, 
-                    "domainnode_id": "6ba5d166-f58b-11e8-a354-0242ac120004", 
-                    "edgeid": "6ba5eee4-f58b-11e8-a354-0242ac120004", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "name": null, 
-                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
-                    "rangenode_id": "6ba5b776-f58b-11e8-a354-0242ac120004"
-                }, 
-                {
-                    "description": null, 
                     "domainnode_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
                     "edgeid": "6ba5edcc-f58b-11e8-a354-0242ac120004", 
                     "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
                     "name": null, 
                     "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note", 
                     "rangenode_id": "6ba5cd38-f58b-11e8-a354-0242ac120004"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "6ba5d166-f58b-11e8-a354-0242ac120004", 
+                    "edgeid": "6ba5e7a0-f58b-11e8-a354-0242ac120004", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
+                    "rangenode_id": "6ba5bf96-f58b-11e8-a354-0242ac120004"
                 }
             ], 
             "functions_x_graphs": [
@@ -252,7 +236,7 @@
                     }, 
                     "function_id": "60000000-0000-0000-0000-000000000001", 
                     "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "id": "6bd680ea-f58b-11e8-a354-0242ac120004"
+                    "id": "84504f0a-f597-11e8-913b-0242c0a81005"
                 }
             ], 
             "graphid": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
@@ -292,12 +276,28 @@
                     "isrequired": true, 
                     "issearchable": true, 
                     "istopnode": false, 
-                    "name": "Cover & Thumbnail Image", 
+                    "name": "Images", 
                     "nodegroup_id": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
                     "nodeid": "6ba5aa06-f58b-11e8-a354-0242ac120004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of", 
-                    "sortorder": 1
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "is_collector": true, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "3D Model File", 
+                    "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
+                    "nodeid": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
+                    "sortorder": 2
                 }, 
                 {
                     "config": null, 
@@ -317,11 +317,27 @@
                 }, 
                 {
                     "config": null, 
-                    "datatype": "file-list", 
+                    "datatype": "string", 
                     "description": null, 
                     "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
                     "is_collector": false, 
                     "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Sketchfab URL", 
+                    "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
+                    "nodeid": "6ba5c75c-f58b-11e8-a354-0242ac120004", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D13_Digital_Information_Carrier", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P62_depicts", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "file-list", 
+                    "description": null, 
+                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
+                    "is_collector": false, 
+                    "isrequired": false, 
                     "issearchable": true, 
                     "istopnode": false, 
                     "name": "Cover Image", 
@@ -352,31 +368,15 @@
                     "datatype": "semantic", 
                     "description": "", 
                     "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "is_collector": true, 
-                    "isrequired": true, 
-                    "issearchable": true, 
-                    "istopnode": false, 
-                    "name": "Sketchfab Model", 
-                    "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
-                    "nodeid": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
-                    "sortorder": 2
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "is_collector": true, 
+                    "is_collector": false, 
                     "isrequired": false, 
                     "issearchable": true, 
-                    "istopnode": false, 
-                    "name": "Summary", 
-                    "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
-                    "nodeid": "6ba5b776-f58b-11e8-a354-0242ac120004", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
+                    "istopnode": true, 
+                    "name": "Sketchfab Model", 
+                    "nodegroup_id": null, 
+                    "nodeid": "6ba5d166-f58b-11e8-a354-0242ac120004", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object", 
+                    "parentproperty": "", 
                     "sortorder": 0
                 }, 
                 {
@@ -397,54 +397,40 @@
                 }, 
                 {
                     "config": null, 
-                    "datatype": "string", 
-                    "description": null, 
-                    "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "is_collector": false, 
-                    "isrequired": true, 
-                    "issearchable": true, 
-                    "istopnode": false, 
-                    "name": "Sketchfab URL", 
-                    "nodegroup_id": "6ba5bf96-f58b-11e8-a354-0242ac120004", 
-                    "nodeid": "6ba5c75c-f58b-11e8-a354-0242ac120004", 
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D13_Digital_Information_Carrier", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P62_depicts", 
-                    "sortorder": 0
-                }, 
-                {
-                    "config": null, 
                     "datatype": "semantic", 
                     "description": "", 
                     "graph_id": "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                    "is_collector": false, 
+                    "is_collector": true, 
                     "isrequired": false, 
                     "issearchable": true, 
-                    "istopnode": true, 
-                    "name": "Sketchfab Model", 
-                    "nodegroup_id": null, 
-                    "nodeid": "6ba5d166-f58b-11e8-a354-0242ac120004", 
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object", 
-                    "parentproperty": "", 
+                    "istopnode": false, 
+                    "name": "Summary", 
+                    "nodegroup_id": "6ba5b776-f58b-11e8-a354-0242ac120004", 
+                    "nodeid": "6ba5b776-f58b-11e8-a354-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
                     "sortorder": 0
                 }
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
+                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
                 "6ba5a68c-f58b-11e8-a354-0242ac120004", 
                 "32a83794-f60f-11e8-8d50-0242ac120004", 
-                "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
-                "99417385-b8fa-11e6-84a5-026d961c88e6", 
-                "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
-                "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
-                "64ae35a0-2b53-11e7-9130-0242ac140004", 
-                "3854b1f2-14a9-11e7-b06e-0242ac150005", 
-                "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "98cd6ca6-1649-11e9-96d3-0242ac140004", 
                 "fad0563b-b8f8-11e6-84a5-026d961c88e6", 
-                "ddf1c942-d145-11e8-897e-0242ac1a0004", 
                 "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                "6ba5a68c-f58b-11e8-a354-0242ac120004", 
-                "2995daea-d6d3-11e8-9eb1-0242ac150004", 
-                "601c830e-d780-11e8-918f-0242ac120004"
+                "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "78007b18-1661-11e9-bf95-0242ac140004", 
+                "99417385-b8fa-11e6-84a5-026d961c88e6", 
+                "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
+                "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
+                "ddf1c942-d145-11e8-897e-0242ac1a0004", 
+                "3854b1f2-14a9-11e7-b06e-0242ac150005", 
+                "64ae35a0-2b53-11e7-9130-0242ac140004", 
+                "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
+                "601c830e-d780-11e8-918f-0242ac120004", 
+                "6ba5a68c-f58b-11e8-a354-0242ac120004"
             ], 
             "resource_2_resource_constraints": [], 
             "root": {
@@ -468,9 +454,9 @@
         }
     ], 
     "metadata": {
-        "db": "PostgreSQL 9.6.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 6.4.0) 6.4.0, 64-bit", 
+        "db": "PostgreSQL 9.6.10, compiled by Visual C++ build 1800, 64-bit", 
         "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
         "os": "Linux", 
-        "os version": "4.9.125-linuxkit"
+        "os version": "4.15.0-1036-azure"
     }
 }
