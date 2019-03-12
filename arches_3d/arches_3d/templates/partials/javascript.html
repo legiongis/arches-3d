@@ -1,9 +1,12 @@
 {% load static %}
+{% load compress %}
+
+{% compress js %}
 <!-- JS Global Compulsory -->
-<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-<script src="{% static 'vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
+<script src="{% static 'packages/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'packages/jquery-migrate/dist/jquery-migrate.min.js' %}"></script>
 <script src="{% static 'vendor/popper.min.js' %}"></script>
-<script src="{% static 'vendor/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'packages/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
 <!-- JS Implementing Plugins -->
 <script src="{% static 'vendor/appear.js' %}"></script>
@@ -42,6 +45,7 @@
 
 <!-- JS Customization -->
 <script src="{% static 'js/custom.js' %}"></script>
+
 
 <!-- JS Plugins Init. -->
 <script>
@@ -158,3 +162,4 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
+{% endcompress %}

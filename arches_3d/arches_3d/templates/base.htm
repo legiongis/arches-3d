@@ -17,6 +17,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 {% load staticfiles %}
 {% load i18n %}
+{% load compress %}
 
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -39,7 +40,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
 
     {% block css %}
+        {% compress css %}
         <link href="{% static 'css/arches.css' %}" rel="stylesheet">
+        {% endcompress %}
     {% endblock css%}
 
 </head>
@@ -54,7 +57,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 </body>
 
 {% block javascript %}
+
+    {% compress js %}
     <script src="{{ STATIC_URL }}packages/requirejs/require.js"></script>
+    {% endcompress %}
 
     {% block pre_require_js %}
     {% endblock pre_require_js %}

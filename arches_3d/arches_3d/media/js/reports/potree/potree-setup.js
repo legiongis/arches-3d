@@ -71,10 +71,11 @@ define([
         setupPotree: function (sourcePath, pointcloudName) {
 
             viewer.setFOV(60);
-            viewer.setPointBudget(1 * 1000 * 1000);
+            viewer.setPointBudget(10000000);
+            viewer.useHQ = true;
 
             viewer.setEDLEnabled(false);
-            viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
+            viewer.setBackground('gradient'); // ["skybox", "gradient", "black", "white"];
             viewer.setDescription('');
             viewer.loadSettingsFromURL();
 

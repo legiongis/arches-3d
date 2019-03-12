@@ -55,9 +55,12 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 
 TEMPLATES[0]['OPTIONS']['context_processors'].append('arches_3d.utils.context_processors.app_settings')
 
-INSTALLED_APPS = INSTALLED_APPS + ('arches_3d',)
+INSTALLED_APPS = INSTALLED_APPS + ('arches_3d', 'debug_toolbar', 'compressor')
 
 MIDDLEWARE.remove('django.middleware.clickjacking.XFrameOptionsMiddleware')
+MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+
+INTERNAL_IPS = INTERNAL_IPS + ('172.22.0.1',)
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "XXXX"
@@ -116,7 +119,6 @@ STATIC_URL_LOCAL = get_optional_env_variable('STATIC_URL_LOCAL') or '/media/'
 # AZURE_BLOB_MAX_MEMORY_SIZE = get_optional_env_variable('AZURE_BLOB_MAX_MEMORY_SIZE') or 2*1024*1024
 # AZURE_URL_EXPIRATION_SECS = get_optional_env_variable('AZURE_URL_EXPIRATION_SECS') or None
 # AZURE_OVERWRITE_FILES = get_optional_env_variable('AZURE_OVERWRITE_FILES') or False
-
 
 RESOURCE_IMPORT_LOG = os.path.join(APP_ROOT, 'logs', 'resource_import.log')
 
@@ -201,6 +203,7 @@ CACHE_BY_USER = {'anonymous': 3600 * 24}
 # Changing this setting to True and making graph modifications may result in
 # disagreement between your Resource Models and Resource Instances potentially
 # causing your application to break.
+# if get_optional_env_variable('OVERRIDE_RESOURCE_MODEL_LOCK'):
 OVERRIDE_RESOURCE_MODEL_LOCK = True
 
 APP_TITLE = 'Global Digital Heritage'
