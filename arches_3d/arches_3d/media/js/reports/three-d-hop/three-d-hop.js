@@ -84,6 +84,10 @@ define([
             })
         }
 
+        function getExtension(path) {
+            return path.split('.').pop();
+        }
+
         return ko.components.register('three-d-hop-report', {
         viewModel: function (params) {
             var self = this;
@@ -105,9 +109,11 @@ define([
                         if (Array.isArray(val)) {
                             val.forEach(function (item) {
 
+                                var fileExtension = getExtension(item.name);
+
                                 if (item.status &&
                                     item.status === 'uploaded' &&
-                                    (item.name.split('.').pop() == 'ply' || item.name.split('.').pop() == 'nxs')
+                                    (fileExtension == 'ply' || fileExtension == 'nxs')
                                 ) {
                                     var mesh = { url: item.url };
                                     var meshName = removeDotsFromString(item.name);
