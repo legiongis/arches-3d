@@ -14,8 +14,8 @@
                     "helpenabled": false, 
                     "helptext": null, 
                     "helptitle": null, 
-                    "instructions": "For e.g. the presentation of this resource on overview pages", 
-                    "is_editable": false, 
+                    "instructions": "For e.g. the presentation of this resource on overview pages. Cover Images must be exactly 1200 x 800 pixels. Thumbnail Images must be exactly 400 x 400 pixels.", 
+                    "is_editable": true, 
                     "name": "Cover & Thumbnail Image", 
                     "nodegroup_id": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
                     "sortorder": 1, 
@@ -33,7 +33,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Enter the resource's title and description", 
-                    "is_editable": false, 
+                    "is_editable": true, 
                     "name": "Summary", 
                     "nodegroup_id": "ae3c907c-d138-11e8-8f5d-0242ac1a0004", 
                     "sortorder": 0, 
@@ -51,7 +51,7 @@
                     "helptext": null, 
                     "helptitle": null, 
                     "instructions": "Select a zipped pointcloud package and enter its metadata.", 
-                    "is_editable": false, 
+                    "is_editable": true, 
                     "name": "Pointcloud File", 
                     "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
                     "sortorder": 2, 
@@ -148,12 +148,26 @@
                 {
                     "card_id": "88d61e30-d137-11e8-a8a0-0242ac1a0004", 
                     "config": {
+                        "acceptedFiles": "", 
+                        "label": "Cover Image", 
+                        "maxFilesize": "2"
+                    }, 
+                    "id": "88d628b2-d137-11e8-a8a0-0242ac1a0004", 
+                    "label": "Cover Image", 
+                    "node_id": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
+                    "sortorder": 0, 
+                    "visible": true, 
+                    "widget_id": "10000000-0000-0000-0000-000000000019"
+                }, 
+                {
+                    "card_id": "88d61e30-d137-11e8-a8a0-0242ac1a0004", 
+                    "config": {
                         "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Cover Image (must be exactly 1200 x 800 pixels)", 
+                        "label": "Cover Image", 
                         "maxFilesize": "1"
                     }, 
                     "id": "88d62736-d137-11e8-a8a0-0242ac1a0004", 
-                    "label": "Cover Image (must be exactly 1200 x 800 pixels)", 
+                    "label": "Cover Image", 
                     "node_id": "88d61fde-d137-11e8-a8a0-0242ac1a0004", 
                     "sortorder": 0, 
                     "visible": true, 
@@ -163,27 +177,13 @@
                     "card_id": "88d61e30-d137-11e8-a8a0-0242ac1a0004", 
                     "config": {
                         "acceptedFiles": ".png,.jpeg,.jpg,.svg", 
-                        "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
+                        "label": "Thumbnail Image", 
                         "maxFilesize": "0.2"
                     }, 
                     "id": "88d627fe-d137-11e8-a8a0-0242ac1a0004", 
-                    "label": "Thumbnail Image (must be exactly 400 x 400 pixels)", 
+                    "label": "Thumbnail Image", 
                     "node_id": "88d62600-d137-11e8-a8a0-0242ac1a0004", 
                     "sortorder": 1, 
-                    "visible": true, 
-                    "widget_id": "10000000-0000-0000-0000-000000000019"
-                }, 
-                {
-                    "card_id": "88d61e30-d137-11e8-a8a0-0242ac1a0004", 
-                    "config": {
-                        "acceptedFiles": "", 
-                        "label": "Cover Image", 
-                        "maxFilesize": "2"
-                    }, 
-                    "id": "88d628b2-d137-11e8-a8a0-0242ac1a0004", 
-                    "label": "Cover Image", 
-                    "node_id": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
-                    "sortorder": 0, 
                     "visible": true, 
                     "widget_id": "10000000-0000-0000-0000-000000000019"
                 }
@@ -313,7 +313,7 @@
             ], 
             "graphid": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
             "iconclass": "fa fa-cubes", 
-            "is_editable": false, 
+            "is_editable": true, 
             "isactive": true, 
             "isresource": true, 
             "jsonldcontext": null, 
@@ -356,21 +356,19 @@
                     "sortorder": 0
                 }, 
                 {
-                    "config": {
-                        "rdmCollection": "fb19992e-25a5-4512-a9d5-9f214248bfc0"
-                    }, 
-                    "datatype": "concept", 
-                    "description": null, 
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
                     "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
                     "is_collector": false, 
-                    "isrequired": true, 
+                    "isrequired": false, 
                     "issearchable": true, 
-                    "istopnode": false, 
-                    "name": "Measurement Unit", 
-                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
-                    "nodeid": "9b5964ae-c0f2-11e8-9c8c-0242ac120004", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "istopnode": true, 
+                    "name": "Potree Pointcloud", 
+                    "nodegroup_id": null, 
+                    "nodeid": "9b595b6c-c0f2-11e8-9c8c-0242ac120004", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object", 
+                    "parentproperty": "", 
                     "sortorder": 0
                 }, 
                 {
@@ -387,22 +385,6 @@
                     "nodeid": "ae3c907c-d138-11e8-8f5d-0242ac1a0004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation", 
                     "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of", 
-                    "sortorder": 0
-                }, 
-                {
-                    "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
-                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                    "is_collector": true, 
-                    "isrequired": true, 
-                    "issearchable": true, 
-                    "istopnode": false, 
-                    "name": "3D Model File", 
-                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
-                    "nodeid": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
                     "sortorder": 0
                 }, 
                 {
@@ -432,11 +414,27 @@
                     "isrequired": true, 
                     "issearchable": true, 
                     "istopnode": false, 
-                    "name": "Cover Image", 
-                    "nodegroup_id": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
-                    "nodeid": "88d61fde-d137-11e8-a8a0-0242ac1a0004", 
-                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P138_represents", 
+                    "name": "3D Pointcloud Zip File", 
+                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
+                    "nodeid": "9b59568a-c0f2-11e8-9c8c-0242ac120004", 
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D13_Digital_Information_Carrier", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P62_depicts", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+                    "is_collector": true, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "3D Model File", 
+                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
+                    "nodeid": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about", 
                     "sortorder": 0
                 }, 
                 {
@@ -457,22 +455,6 @@
                 }, 
                 {
                     "config": null, 
-                    "datatype": "file-list", 
-                    "description": null, 
-                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
-                    "is_collector": false, 
-                    "isrequired": true, 
-                    "issearchable": true, 
-                    "istopnode": false, 
-                    "name": "3D Pointcloud Zip File", 
-                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
-                    "nodeid": "9b59568a-c0f2-11e8-9c8c-0242ac120004", 
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D13_Digital_Information_Carrier", 
-                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P62_depicts", 
-                    "sortorder": 0
-                }, 
-                {
-                    "config": null, 
                     "datatype": "semantic", 
                     "description": "", 
                     "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
@@ -480,7 +462,7 @@
                     "isrequired": true, 
                     "issearchable": true, 
                     "istopnode": false, 
-                    "name": "Cover & Thumbnail Image", 
+                    "name": "Images", 
                     "nodegroup_id": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
                     "nodeid": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
                     "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
@@ -488,19 +470,37 @@
                     "sortorder": 0
                 }, 
                 {
+                    "config": {
+                        "rdmCollection": "fb19992e-25a5-4512-a9d5-9f214248bfc0"
+                    }, 
+                    "datatype": "concept", 
+                    "description": null, 
+                    "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+                    "is_collector": false, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Measurement Unit", 
+                    "nodegroup_id": "9b594104-c0f2-11e8-9c8c-0242ac120004", 
+                    "nodeid": "9b5964ae-c0f2-11e8-9c8c-0242ac120004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "sortorder": 0
+                }, 
+                {
                     "config": null, 
-                    "datatype": "semantic", 
-                    "description": "", 
+                    "datatype": "file-list", 
+                    "description": null, 
                     "graph_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
                     "is_collector": false, 
                     "isrequired": false, 
                     "issearchable": true, 
-                    "istopnode": true, 
-                    "name": "Potree Pointcloud", 
-                    "nodegroup_id": null, 
-                    "nodeid": "9b595b6c-c0f2-11e8-9c8c-0242ac120004", 
-                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object", 
-                    "parentproperty": "", 
+                    "istopnode": false, 
+                    "name": "Cover Image", 
+                    "nodegroup_id": "88d61ac0-d137-11e8-a8a0-0242ac1a0004", 
+                    "nodeid": "88d61fde-d137-11e8-a8a0-0242ac1a0004", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E38_Image", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P138_represents", 
                     "sortorder": 0
                 }, 
                 {
@@ -522,7 +522,10 @@
             ], 
             "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
             "relatable_resource_model_ids": [
+                "98cd6ca6-1649-11e9-96d3-0242ac140004", 
                 "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+                "36bcaff4-b82f-11e8-8598-0242ac120004", 
+                "78007b18-1661-11e9-bf95-0242ac140004", 
                 "99417385-b8fa-11e6-84a5-026d961c88e6", 
                 "3caf329f-b8f7-11e6-84a5-026d961c88e6", 
                 "64ae35a0-2b53-11e7-9130-0242ac140004", 
@@ -531,7 +534,6 @@
                 "ccbd1537-ac5e-11e6-84a5-026d961c88e6", 
                 "9b591814-c0f2-11e8-9c8c-0242ac120004", 
                 "3854b1f2-14a9-11e7-b06e-0242ac150005", 
-                "36bcaff4-b82f-11e8-8598-0242ac120004", 
                 "f5624ce7-b66c-11e6-84a5-026d961c88e6", 
                 "6ba5a68c-f58b-11e8-a354-0242ac120004", 
                 "32a83794-f60f-11e8-8d50-0242ac120004"
@@ -561,6 +563,6 @@
         "db": "PostgreSQL 9.6.10, compiled by Visual C++ build 1800, 64-bit", 
         "git hash": "fatal: Not a git repository (or any of the parent directories): .git", 
         "os": "Linux", 
-        "os version": "4.15.0-1031-azure"
+        "os version": "4.15.0-1036-azure"
     }
 }
