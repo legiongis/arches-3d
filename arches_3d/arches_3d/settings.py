@@ -106,9 +106,10 @@ SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_S
 WSGI_APPLICATION = 'arches_3d.wsgi.application'
 
 
-STATIC_ROOT = '/static_root'
-STATIC_URL = get_optional_env_variable('STATIC_URL') or '/media/'
+# STATIC_ROOT = '/static_root'
+# STATIC_URL = get_optional_env_variable('STATIC_URL') or '/media/'
 STATIC_URL_LOCAL = get_optional_env_variable('STATIC_URL_LOCAL') or '/media/'
+STATIC_URL_LOCAL = STATIC_URL
 
 # DEFAULT_FILE_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorage'
 # STATICFILES_STORAGE = 'arches_3d.storage.arches_3d_custom_storage.Arches3dCustomStorageStatic'
