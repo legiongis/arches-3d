@@ -1,0 +1,57 @@
+{
+    "resource_model_id": "9b591814-c0f2-11e8-9c8c-0242ac120004", 
+    "resource_model_name": "Potree Pointcloud", 
+    "nodes": [
+        {
+            "arches_nodeid": "9b59568a-c0f2-11e8-9c8c-0242ac120004", 
+            "arches_node_name": "3D Pointcloud Zip File", 
+            "file_field_name": "zipfilepath", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "88d61fde-d137-11e8-a8a0-0242ac1a0004", 
+            "arches_node_name": "Cover Image", 
+            "file_field_name": "", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ae3c9950-d138-11e8-8f5d-0242ac1a0004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "9b5964ae-c0f2-11e8-9c8c-0242ac120004", 
+            "arches_node_name": "Measurement Unit", 
+            "file_field_name": "unit", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "9b5967ba-c0f2-11e8-9c8c-0242ac120004", 
+            "arches_node_name": "Original File Format Type", 
+            "file_field_name": "original_format", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "88d62600-d137-11e8-a8a0-0242ac1a0004", 
+            "arches_node_name": "Thumbnail Image", 
+            "file_field_name": "", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ae3c97d4-d138-11e8-8f5d-0242ac1a0004", 
+            "arches_node_name": "Title", 
+            "file_field_name": "title", 
+            "data_type": "string", 
+            "export": false
+        }
+    ]
+}

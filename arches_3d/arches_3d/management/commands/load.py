@@ -23,6 +23,8 @@ class Command(BaseCommand):
             self.load_reference_data()
             call_command('packages',operation="import_graphs")
             self.switch_basemap_layer()
+            call_command('packages',operation="import_business_data",
+                            overwrite="overwrite",bulk=True)
 
     def load_reference_data(self):
         thesauri = os.path.join(settings.APP_ROOT,"db","schemes","thesauri")
