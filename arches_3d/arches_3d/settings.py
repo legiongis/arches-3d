@@ -43,6 +43,7 @@ else:
 
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 STATICFILES_DIRS = (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
+STATICFILES_FINDERS += ("compressor.finders.CompressorFinder",)
 
 RESOURCE_GRAPH_LOCATIONS = (
     os.path.join(APP_ROOT, 'db', 'graphs', 'branches'), os.path.join(APP_ROOT, 'db', 'graphs', 'resource_models'))
