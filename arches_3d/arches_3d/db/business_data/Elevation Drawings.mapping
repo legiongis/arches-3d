@@ -1,0 +1,136 @@
+{
+    "resource_model_id": "601c830e-d780-11e8-918f-0242ac120004", 
+    "resource_model_name": "Plan / Elevation Drawings", 
+    "nodes": [
+        {
+            "arches_nodeid": "601c9aa6-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Copyright Description", 
+            "file_field_name": "Copyright Description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d16e8-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Copyright Type", 
+            "file_field_name": "Copyright Type", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d32cc-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Date of Creation", 
+            "file_field_name": "Date of Creation", 
+            "data_type": "date", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d3d58-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Date of Publication", 
+            "file_field_name": "Date of Publication", 
+            "data_type": "date", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d2aca-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "Description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d10a8-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "Description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d3952-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "Description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d46d6-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "External Identifier Type", 
+            "file_field_name": "External Identifier Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d09e6-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "External Identifier Type", 
+            "file_field_name": "External Identifier Type", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601cf078-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "External XRef", 
+            "file_field_name": "External XRef", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d13d2-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "External XRef", 
+            "file_field_name": "External XRef", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d0d7e-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Geometry Qualifier", 
+            "file_field_name": "Geometry Qualifier", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "cbf64694-eb46-11e8-af25-0242ac160004", 
+            "arches_node_name": "Image", 
+            "file_field_name": "Image", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601cad2a-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Keyword", 
+            "file_field_name": "Keyword", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d19ea-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Place Description", 
+            "file_field_name": "Place Description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d21ce-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Spatial Coordinates Geometry", 
+            "file_field_name": "Spatial Coordinates Geometry", 
+            "data_type": "geojson-feature-collection", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "cbf6434c-eb46-11e8-af25-0242ac160004", 
+            "arches_node_name": "Thumbnail", 
+            "file_field_name": "Thumbnail", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "601d1bde-d780-11e8-918f-0242ac120004", 
+            "arches_node_name": "Title", 
+            "file_field_name": "Title", 
+            "data_type": "string", 
+            "export": false
+        }
+    ]
+}

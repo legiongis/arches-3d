@@ -1,39 +1,39 @@
 {
     "resource_model_id": "36bcaff4-b82f-11e8-8598-0242ac120004", 
-    "resource_model_name": "3D HOP Model", 
+    "resource_model_name": "3D Rock Art Panel", 
     "nodes": [
         {
             "arches_nodeid": "a7fb9b60-bfed-11e8-a478-0242ac160004", 
             "arches_node_name": "3D Model File", 
-            "file_field_name": "filepath", 
+            "file_field_name": "3D Model File", 
             "data_type": "file-list", 
             "export": false
         }, 
         {
             "arches_nodeid": "da582a92-2276-11e9-b4cd-0242ac170002", 
             "arches_node_name": "Camera Far", 
-            "file_field_name": "", 
+            "file_field_name": "Camera Far", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "758debf6-2276-11e9-9e1e-0242ac170002", 
             "arches_node_name": "Camera FOV", 
-            "file_field_name": "", 
+            "file_field_name": "Camera FOV", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "cb30e982-2276-11e9-ad1e-0242ac170002", 
             "arches_node_name": "Camera Near", 
-            "file_field_name": "", 
+            "file_field_name": "Camera Near", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "0b40d042-2276-11e9-8bd2-0242ac170002", 
             "arches_node_name": "Camera Type", 
-            "file_field_name": "", 
+            "file_field_name": "Camera Type", 
             "data_type": "concept", 
             "concept_export_value": "label", 
             "export": false
@@ -41,7 +41,7 @@
         {
             "arches_nodeid": "af717052-2273-11e9-b4cd-0242ac170002", 
             "arches_node_name": "Center Mode", 
-            "file_field_name": "", 
+            "file_field_name": "Center Mode", 
             "data_type": "concept", 
             "concept_export_value": "label", 
             "export": false
@@ -49,56 +49,63 @@
         {
             "arches_nodeid": "2fe7e608-d139-11e8-8e63-0242ac1a0004", 
             "arches_node_name": "Description", 
-            "file_field_name": "description", 
+            "file_field_name": "Description", 
             "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "3aa95be1-6b89-11e9-bfbf-94659cf754d0", 
+            "arches_node_name": "Drawings", 
+            "file_field_name": "Drawings", 
+            "data_type": "resource-instance-list", 
             "export": false
         }, 
         {
             "arches_nodeid": "4badaf1c-2274-11e9-ad1e-0242ac170002", 
             "arches_node_name": "Explicit Center X", 
-            "file_field_name": "", 
+            "file_field_name": "Explicit Center X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "41e3ad9c-2274-11e9-ad1e-0242ac170002", 
             "arches_node_name": "Explicit Center Y", 
-            "file_field_name": "", 
+            "file_field_name": "Explicit Center Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "cc736a92-2274-11e9-b29f-0242ac170002", 
             "arches_node_name": "Explicit Center Z", 
-            "file_field_name": "", 
+            "file_field_name": "Explicit Center Z", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "1553379c-2275-11e9-9e1e-0242ac170002", 
             "arches_node_name": "Explicit Radius X", 
-            "file_field_name": "", 
+            "file_field_name": "Explicit Radius X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "8954efdc-2275-11e9-b7c2-0242ac170002", 
             "arches_node_name": "Explicit Radius Y", 
-            "file_field_name": "", 
+            "file_field_name": "Explicit Radius Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "97d7004a-2275-11e9-8bd2-0242ac170002", 
             "arches_node_name": "Explicit Radius Z", 
-            "file_field_name": "", 
+            "file_field_name": "Explicit Radius Z", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "a7fb9944-bfed-11e8-a478-0242ac160004", 
             "arches_node_name": "File Format Type", 
-            "file_field_name": "format", 
+            "file_field_name": "File Format Type", 
             "data_type": "concept-list", 
             "concept_export_value": "label", 
             "export": false
@@ -106,63 +113,63 @@
         {
             "arches_nodeid": "f7f8fd72-379f-11e9-bdc8-0242ac1d0002", 
             "arches_node_name": "Max Angle X", 
-            "file_field_name": "", 
+            "file_field_name": "Max Angle X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "37610f5e-37a0-11e9-bdc8-0242ac1d0002", 
             "arches_node_name": "Max Angle Y", 
-            "file_field_name": "", 
+            "file_field_name": "Max Angle Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "67f05c8e-26e7-11e9-8639-0242ac170002", 
             "arches_node_name": "Max Dist", 
-            "file_field_name": "", 
+            "file_field_name": "Max Dist", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "5ca61af2-26e8-11e9-8639-0242ac170002", 
             "arches_node_name": "Max Pan X", 
-            "file_field_name": "", 
+            "file_field_name": "Max Pan X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "8b10fdf8-26ed-11e9-8c52-0242ac170002", 
             "arches_node_name": "Max Pan Y", 
-            "file_field_name": "", 
+            "file_field_name": "Max Pan Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "c00d79f0-26ed-11e9-b29f-0242ac170002", 
             "arches_node_name": "Max Pan Z", 
-            "file_field_name": "", 
+            "file_field_name": "Max Pan Z", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "b18eb494-26e7-11e9-b4cd-0242ac170002", 
             "arches_node_name": "Max Phi", 
-            "file_field_name": "", 
+            "file_field_name": "Max Phi", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "2d7ebcb6-26e8-11e9-8639-0242ac170002", 
             "arches_node_name": "Max Theta", 
-            "file_field_name": "", 
+            "file_field_name": "Max Theta", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "a7fb9de0-bfed-11e8-a478-0242ac160004", 
             "arches_node_name": "Measurement Unit", 
-            "file_field_name": "unit", 
+            "file_field_name": "Measurement Unit", 
             "data_type": "concept", 
             "concept_export_value": "label", 
             "export": false
@@ -170,63 +177,70 @@
         {
             "arches_nodeid": "e8e22836-379f-11e9-bd96-0242ac1d0002", 
             "arches_node_name": "Min Angle X", 
-            "file_field_name": "", 
+            "file_field_name": "Min Angle X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "24c2900c-37a0-11e9-a987-0242ac1d0002", 
             "arches_node_name": "Min Angle Y", 
-            "file_field_name": "", 
+            "file_field_name": "Min Angle Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "43195b86-26e7-11e9-b29f-0242ac170002", 
             "arches_node_name": "Min Dist", 
-            "file_field_name": "", 
+            "file_field_name": "Min Dist", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "49977ba4-26e8-11e9-ad1e-0242ac170002", 
             "arches_node_name": "Min Pan X", 
-            "file_field_name": "", 
+            "file_field_name": "Min Pan X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "743bc66c-26ed-11e9-8639-0242ac170002", 
             "arches_node_name": "Min Pan Y", 
-            "file_field_name": "", 
+            "file_field_name": "Min Pan Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "b1d2d47a-26ed-11e9-8c52-0242ac170002", 
             "arches_node_name": "Min Pan Z", 
-            "file_field_name": "", 
+            "file_field_name": "Min Pan Z", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "97b84d6e-26e7-11e9-ab9d-0242ac170002", 
             "arches_node_name": "Min Phi", 
-            "file_field_name": "", 
+            "file_field_name": "Min Phi", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "1c873974-26e8-11e9-8bd2-0242ac170002", 
             "arches_node_name": "Min Theta", 
-            "file_field_name": "", 
+            "file_field_name": "Min Theta", 
             "data_type": "number", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "fb6e561e-6b87-11e9-b93e-94659cf754d0", 
+            "arches_node_name": "Photographs", 
+            "file_field_name": "Photographs", 
+            "data_type": "resource-instance-list", 
             "export": false
         }, 
         {
             "arches_nodeid": "d3843830-2273-11e9-b7c2-0242ac170002", 
             "arches_node_name": "Radius Mode", 
-            "file_field_name": "", 
+            "file_field_name": "Radius Mode", 
             "data_type": "concept", 
             "concept_export_value": "label", 
             "export": false
@@ -234,84 +248,84 @@
         {
             "arches_nodeid": "d316cfe2-27c9-11e9-8639-0242ac170002", 
             "arches_node_name": "Scene Lighting", 
-            "file_field_name": "", 
+            "file_field_name": "Scene Lighting", 
             "data_type": "boolean", 
             "export": false
         }, 
         {
             "arches_nodeid": "66227432-379f-11e9-aa45-0242ac1d0002", 
             "arches_node_name": "Start Angle X", 
-            "file_field_name": "", 
+            "file_field_name": "Start Angle X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "a6e8ab62-379f-11e9-ab15-0242ac1d0002", 
             "arches_node_name": "Start Angle Y", 
-            "file_field_name": "", 
+            "file_field_name": "Start Angle Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "84a2c6fa-226e-11e9-b4cd-0242ac170002", 
             "arches_node_name": "Start Distance", 
-            "file_field_name": "", 
+            "file_field_name": "Start Distance", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "92d84f1a-226e-11e9-8639-0242ac170002", 
             "arches_node_name": "Start Pan X", 
-            "file_field_name": "", 
+            "file_field_name": "Start Pan X", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "a4030654-226e-11e9-b29f-0242ac170002", 
             "arches_node_name": "Start Pan Y", 
-            "file_field_name": "", 
+            "file_field_name": "Start Pan Y", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "b772a67c-226e-11e9-ab9d-0242ac170002", 
             "arches_node_name": "Start Pan Z", 
-            "file_field_name": "", 
+            "file_field_name": "Start Pan Z", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "4fef73c2-226e-11e9-9e1e-0242ac170002", 
             "arches_node_name": "Start Phi", 
-            "file_field_name": "", 
+            "file_field_name": "Start Phi", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "77472ef6-226e-11e9-8bd2-0242ac170002", 
             "arches_node_name": "Start Theta", 
-            "file_field_name": "", 
+            "file_field_name": "Start Theta", 
             "data_type": "number", 
             "export": false
         }, 
         {
             "arches_nodeid": "4b9b3c7e-d12f-11e8-85df-0242ac1a0004", 
             "arches_node_name": "Thumbnail Image", 
-            "file_field_name": "preview", 
+            "file_field_name": "Thumbnail Image", 
             "data_type": "file-list", 
             "export": false
         }, 
         {
             "arches_nodeid": "2fe7dffa-d139-11e8-8e63-0242ac1a0004", 
             "arches_node_name": "Title", 
-            "file_field_name": "title", 
+            "file_field_name": "Title", 
             "data_type": "string", 
             "export": false
         }, 
         {
             "arches_nodeid": "1123258a-226e-11e9-8639-0242ac170002", 
             "arches_node_name": "Trackball Type", 
-            "file_field_name": "", 
+            "file_field_name": "Trackball Type", 
             "data_type": "concept", 
             "concept_export_value": "label", 
             "export": false

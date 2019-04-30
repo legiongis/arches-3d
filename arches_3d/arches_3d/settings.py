@@ -48,8 +48,11 @@ RESOURCE_GRAPH_LOCATIONS = (
     os.path.join(APP_ROOT, 'db', 'graphs', 'branches'), os.path.join(APP_ROOT, 'db', 'graphs', 'resource_models'))
 
 BUSINESS_DATA_FILES = (
+    os.path.join(APP_ROOT, 'db', 'business_data', 'img_resources.csv'),
+    os.path.join(APP_ROOT, 'db', 'business_data', 'Elevation Drawings.csv'),
     os.path.join(APP_ROOT, 'db', 'business_data', 'pts_resources.csv'),
-    os.path.join(APP_ROOT, 'db', 'business_data', 'ply_resources.csv'),
+    os.path.join(APP_ROOT, 'db', 'business_data', '3D Rock Art Panel.csv'),
+    
 )
 
 DATATYPE_LOCATIONS.append('arches_3d.datatypes')

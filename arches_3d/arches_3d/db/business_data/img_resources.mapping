@@ -1,0 +1,136 @@
+{
+    "resource_model_id": "2995daea-d6d3-11e8-9eb1-0242ac150004", 
+    "resource_model_name": "Image", 
+    "nodes": [
+        {
+            "arches_nodeid": "29965f38-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Copyright Description", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "2996c25c-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Copyright Type", 
+            "file_field_name": "", 
+            "data_type": "concept-list", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "bbcdfc7c-d6d7-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Date of Creation", 
+            "file_field_name": "", 
+            "data_type": "date", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "6486c912-d6dc-11e8-a86c-0242ac150004", 
+            "arches_node_name": "Date of Publication", 
+            "file_field_name": "", 
+            "data_type": "date", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "d571d526-d6dd-11e8-a86c-0242ac150004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ac21407c-d6dc-11e8-a86c-0242ac150004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "53d4c310-d6d4-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "299695fc-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "External Identifier Type", 
+            "file_field_name": "", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "2d9efd10-d6dd-11e8-a86c-0242ac150004", 
+            "arches_node_name": "External Identifier Type", 
+            "file_field_name": "", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "2996150a-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "External XRef", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "492674d8-d6dc-11e8-a86c-0242ac150004", 
+            "arches_node_name": "External XRef", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "2996b1d6-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Geometry Qualifier", 
+            "file_field_name": "", 
+            "data_type": "concept", 
+            "concept_export_value": "label", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "982e332a-eb4c-11e8-b8b6-0242ac160004", 
+            "arches_node_name": "Image", 
+            "file_field_name": "filename", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "2996563c-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Keyword", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "29969f7a-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Place Description", 
+            "file_field_name": "", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "29969ade-d6d3-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Spatial Coordinates Geometry", 
+            "file_field_name": "", 
+            "data_type": "geojson-feature-collection", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "982e3190-eb4c-11e8-b8b6-0242ac160004", 
+            "arches_node_name": "Thumbnail", 
+            "file_field_name": "thumbnail", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "53d4c040-d6d4-11e8-9eb1-0242ac150004", 
+            "arches_node_name": "Title", 
+            "file_field_name": "title", 
+            "data_type": "string", 
+            "export": false
+        }
+    ]
+}
