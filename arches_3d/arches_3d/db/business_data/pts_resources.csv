@@ -1,0 +1,4 @@
+ResourceID,title,description,zipfilepath,original_format,unit
+000000cb-bec0-4e76-8b26-7b7728417493,Paiute Rocks - Full Site,this is the description for Paiute Rocks pointcloud,Paiute-Rocks.zip,PTS,Centimeter
+000030cb-bec0-4e76-8b26-7b7728417493,Crescent City - Full Site,this is the description for Crescent City pointcloud,Crescent-City.zip,PTS,Centimeter
+000034cb-bec0-4e76-8b26-7b7728417493,Red Pigment - Full Site,this is the description for Red Pigment pointcloud,Red-Pigment.zip,PTS,Centimeter

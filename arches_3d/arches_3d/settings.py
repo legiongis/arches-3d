@@ -48,6 +48,11 @@ STATICFILES_FINDERS += ("compressor.finders.CompressorFinder",)
 RESOURCE_GRAPH_LOCATIONS = (
     os.path.join(APP_ROOT, 'db', 'graphs', 'branches'), os.path.join(APP_ROOT, 'db', 'graphs', 'resource_models'))
 
+BUSINESS_DATA_FILES = (
+    os.path.join(APP_ROOT, 'db', 'business_data', 'pts_resources.csv'),
+    os.path.join(APP_ROOT, 'db', 'business_data', 'ply_resources.csv'),
+)
+
 DATATYPE_LOCATIONS.append('arches_3d.datatypes')
 FUNCTION_LOCATIONS.append('arches_3d.functions')
 TEMPLATES[0]['DIRS'].append(os.path.join(APP_ROOT, 'functions', 'templates'))
