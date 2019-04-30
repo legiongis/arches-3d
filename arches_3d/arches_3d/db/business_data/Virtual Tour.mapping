@@ -1,0 +1,41 @@
+{
+    "resource_model_id": "ddf1c942-d145-11e8-897e-0242ac1a0004", 
+    "resource_model_name": "Virtual Tour", 
+    "nodes": [
+        {
+            "arches_nodeid": "ddf1e9a4-d145-11e8-897e-0242ac1a0004", 
+            "arches_node_name": "Cover Image", 
+            "file_field_name": "Cover Image", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ddf1e3c8-d145-11e8-897e-0242ac1a0004", 
+            "arches_node_name": "Description", 
+            "file_field_name": "Description", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ddf1e878-d145-11e8-897e-0242ac1a0004", 
+            "arches_node_name": "Thumbnail Image", 
+            "file_field_name": "Thumbnail Image", 
+            "data_type": "file-list", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ddf1e0ee-d145-11e8-897e-0242ac1a0004", 
+            "arches_node_name": "Title", 
+            "file_field_name": "Title", 
+            "data_type": "string", 
+            "export": false
+        }, 
+        {
+            "arches_nodeid": "ddf1e74c-d145-11e8-897e-0242ac1a0004", 
+            "arches_node_name": "Virtual Tours Zip File", 
+            "file_field_name": "Virtual Tours Zip File", 
+            "data_type": "file-list", 
+            "export": false
+        }
+    ]
+}
