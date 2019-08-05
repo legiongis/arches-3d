@@ -155,7 +155,7 @@
 .g-bg-primary-gradient-opacity-v1,
 .g-bg-primary-gradient-opacity-v1--after::after {
   background-repeat: repeat-x;
-  background-image: linear-gradient(150deg, #72c02c, rgba(51, 152, 220, 0.7)); }
+  background-image: linear-gradient(150deg, #a4d65e, rgba(51, 152, 220, 0.7)); }
 
 /* Gray Gradient */
 .g-bg-gray-gradient-opacity-v1,
@@ -278,26 +278,26 @@
 
 /* Primary Colors */
 .g-bg-primary {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .g-bg-primary--hover:hover {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .u-block-hover:hover .g-bg-primary--hover {
-  background-color: #72c02c; }
+  background-color: #a4d65e; }
 
 .g-parent:hover .g-bg-primary--parent-hover {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .g-bg-primary--active.active,
 .active .g-bg-primary--active {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .g-parent.active .g-bg-primary--parent-active {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .g-bg-primary--before::before, .g-bg-primary--after::after {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .g-bg-primary-dark-v1 {
   background-color: #6db82a !important; }
@@ -657,13 +657,13 @@
 
 /* Color Green */
 .g-bg-green {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 .g-bg-green-opacity-0_1 {
   background-color: rgba(114, 192, 44, 0.1) !important; }
 
 .g-bg-green--hover:hover {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 /* Color Blue */
 .g-bg-blue {
@@ -925,7 +925,7 @@
   Background Colors Extended
 ------------------------------------*/
 .js-header-change-moment .g-bg-primary--scrolling {
-  background-color: #72c02c !important; }
+  background-color: #a4d65e !important; }
 
 /*------------------------------------
   Social Background Colors
@@ -1128,19 +1128,19 @@
 
 /* Primary Colors */
 .g-fill-primary {
-  fill: #72c02c !important; }
+  fill: #a4d65e !important; }
 
 .g-fill-primary path,
 .g-fill-primary polygon {
-  fill: #72c02c !important; }
+  fill: #a4d65e !important; }
 
 .g-fill-primary--hover:hover path,
 .g-fill-primary--hover:hover polygon {
-  fill: #72c02c !important; }
+  fill: #a4d65e !important; }
 
 *:hover > * > .g-fill-primary--hover-parent svg path,
 *:hover > * > .g-fill-primary--hover-parent svg polygon {
-  fill: #72c02c !important; }
+  fill: #a4d65e !important; }
 
 .g-fill-white {
   fill: #fff !important; }
@@ -1840,23 +1840,23 @@
 ------------------------------------*/
 /* Primary Colors */
 .g-brd-primary {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 .g-brd-primary--before::before {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 .g-brd-primary--before--active.active::before {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 .g-brd-primary--hover:hover, .g-brd-primary--active.active {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 .g-brd-primary--active.active,
 .active .g-brd-primary--active {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 *:hover > .g-brd-primary--hover-parent {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 .g-brd-primary-opacity-0_3 {
   border-color: rgba(114, 192, 44, 0.3) !important; }
@@ -1895,7 +1895,7 @@
   border-color: #599722 !important; }
 
 .g-brd-bottom-primary--hover:hover {
-  border-bottom-color: #72c02c !important; }
+  border-bottom-color: #a4d65e !important; }
 
 /* Main Colors */
 .g-brd-main {
@@ -2107,13 +2107,13 @@
 ------------------------------------*/
 /* Color Green */
 .g-brd-green {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 .g-brd-green--hover:hover, .g-brd-green--active.active {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 *:hover > .g-brd-green--hover-parent {
-  border-color: #72c02c !important; }
+  border-color: #a4d65e !important; }
 
 /* Color Blue */
 .g-brd-blue {
@@ -2312,28 +2312,28 @@
 
 /* Primary Colors */
 .g-brd-primary-top {
-  border-top-color: #72c02c !important; }
+  border-top-color: #a4d65e !important; }
 
 .g-brd-primary-top--before::before {
-  border-top-color: #72c02c !important; }
+  border-top-color: #a4d65e !important; }
 
 .g-brd-primary-bottom {
-  border-bottom-color: #72c02c !important; }
+  border-bottom-color: #a4d65e !important; }
 
 .g-brd-primary-bottom--before:before {
-  border-bottom-color: #72c02c !important; }
+  border-bottom-color: #a4d65e !important; }
 
 .g-brd-primary-left {
-  border-left-color: #72c02c !important; }
+  border-left-color: #a4d65e !important; }
 
 .g-brd-primary-left--before:before {
-  border-left-color: #72c02c !important; }
+  border-left-color: #a4d65e !important; }
 
 .g-brd-primary-right {
-  border-right-color: #72c02c !important; }
+  border-right-color: #a4d65e !important; }
 
 .g-brd-primary-right--before:before {
-  border-right-color: #72c02c !important; }
+  border-right-color: #a4d65e !important; }
 
 .g-brd-primary-opacity-0_3-top {
   border-top-color: rgba(114, 192, 44, 0.3) !important; }
@@ -2619,16 +2619,16 @@
 ------------------------------------*/
 /* Color Green */
 .g-brd-green-top {
-  border-top-color: #72c02c !important; }
+  border-top-color: #a4d65e !important; }
 
 .g-brd-green-bottom {
-  border-bottom-color: #72c02c !important; }
+  border-bottom-color: #a4d65e !important; }
 
 .g-brd-green-left {
-  border-left-color: #72c02c !important; }
+  border-left-color: #a4d65e !important; }
 
 .g-brd-green-right {
-  border-right-color: #72c02c !important; }
+  border-right-color: #a4d65e !important; }
 
 /* Color Blue */
 .g-brd-blue-top {
@@ -2878,28 +2878,28 @@
 
 /* O */
 .g-brd-primary-top--hover:hover {
-  border-top-color: #72c02c !important; }
+  border-top-color: #a4d65e !important; }
 
 .g-brd-primary-top--hover:hover::after {
-  border-top-color: #72c02c; }
+  border-top-color: #a4d65e; }
 
 .g-brd-primary-top--active.active {
-  border-top-color: #72c02c !important; }
+  border-top-color: #a4d65e !important; }
 
 .g-brd-primary-top--active.active::after {
-  border-top-color: #72c02c; }
+  border-top-color: #a4d65e; }
 
 .g-brd-primary-bottom--hover:hover {
-  border-bottom-color: #72c02c !important; }
+  border-bottom-color: #a4d65e !important; }
 
 .g-brd-primary-bottom--hover:hover::after {
-  border-bottom-color: #72c02c; }
+  border-bottom-color: #a4d65e; }
 
 .g-brd-primary-bottom--active.active {
-  border-bottom-color: #72c02c !important; }
+  border-bottom-color: #a4d65e !important; }
 
 .g-brd-primary-bottom--active.active::after {
-  border-bottom-color: #72c02c; }
+  border-bottom-color: #a4d65e; }
 
 .g-brd-pinterest {
   border-color: #c8232c !important; }
@@ -4844,13 +4844,13 @@ svg.g-transition--linear polygon {
 
 /* Primary Colors */
 .g-color-primary {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 .u-block-hover:hover .g-color-primary--hover, .g-color-primary--hover:hover {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 .g-parent:hover .g-color-primary--parent-hover {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 .g-color-primary-opacity-0_3 {
   color: rgba(114, 192, 44, 0.3) !important; }
@@ -4859,13 +4859,13 @@ svg.g-transition--linear polygon {
   color: rgba(114, 192, 44, 0.4) !important; }
 
 .g-color-primary--active.active {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 .active .g-color-primary--parent-active {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 .g-color-primary--before::before, .g-color-primary--after::after {
-  color: #72c02c; }
+  color: #a4d65e; }
 
 /* Secondary Colors */
 .g-color-secondary {
@@ -5046,10 +5046,10 @@ svg.g-transition--linear polygon {
 ------------------------------------*/
 /* Color Green */
 .g-color-green {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 .g-color-green--hover:hover {
-  color: #72c02c !important; }
+  color: #a4d65e !important; }
 
 /* Color Blue */
 .g-color-blue {
