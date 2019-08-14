@@ -17,7 +17,7 @@ body {
   background-color: #fff; }
 
 a {
-  color: #72c02c;
+  color: #a4d65e;
   outline: none; }
 
 a:focus,
@@ -57,16 +57,16 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background-color: #72c02c; }
+  background-color: #a4d65e; }
 
 ::selection {
   color: #fff;
-  background-color: #72c02c; }
+  background-color: #a4d65e; }
 
 .g-bg-primary ::-moz-selection {
-  color: #72c02c;
+  color: #a4d65e;
   background-color: #fff; }
 
 .g-bg-primary ::selection {
-  color: #72c02c;
+  color: #a4d65e;
   background-color: #fff; }
