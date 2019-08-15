@@ -1,4 +1,8 @@
-/* Typography */
+/*-----------------------------------------------------------------------------
+
+- Typography  -
+
+-----------------------------------------------------------------------------*/
 html {font-size: 16px;}
 
 body {
@@ -31,9 +35,10 @@ h5 {font-size: 1.25em;}
 
 small, .text_small {font-size: 0.8em;}
 
+
 /*-----------------------------------------------------------------------------
 
-- Responsive Fixes  -
+- Front Page Responsive Fixes  -
 
 -----------------------------------------------------------------------------*/
 @media (max-width: 467px) {
@@ -42,8 +47,6 @@ small, .text_small {font-size: 0.8em;}
 		height: 75%;
 	}
 }
-
-
 
 /*-----------------------------------------------------------------------------
 
@@ -57,7 +60,7 @@ small, .text_small {font-size: 0.8em;}
 
 /*-----------------------------------------------------------------------------
 
-- Revolution Slider Overrides  -
+- Front Page Revolution Slider Overrides  -
 
 -----------------------------------------------------------------------------*/
 .tp-caption.News-Title,.News-Title
@@ -386,20 +389,6 @@ padding: 9px 10px; }
   background:rgba(255,255,255,1); 
 }
 
-
-
-/*-----------------------------------------------------------------------------
-
-- Revolution Slider 5.0 Navigatin Skin Style  -
-
- ZEUS SKIN
-
-author:  ThemePunch
-email:      info@themepunch.com
-website:    http://www.themepunch.com
------------------------------------------------------------------------------*/
-
-
 .post-tabs .tp-thumb {
 opacity:1
 }
@@ -472,15 +461,130 @@ opacity:1
 
 }
  
-/* GDI customizations */
-.site-block {
-  height: 150px !important;
+/*-----------------------------------------------------------------------------
+
+- Login pages -
+
+-----------------------------------------------------------------------------*/
+
+.img-login {
+    background-image: url("../img/photos/working.jpg");
 }
 
-.nounderline {
-  text-decoration: none !important;
+.img-register {
+    background-image: url("../img/photos/working.jpg");
 }
 
-.sponsor {
-  max-height: 165px !important;
+.img-login-recover {
+    background-image: url("../img/photos/working.jpg");
+}
+
+/*-----------------------------------------------------------------------------
+
+- Admin theme -
+
+-----------------------------------------------------------------------------*/
+#mainnav-container {
+    padding-top: 50px;
+    background-color: #000;
+}
+#mainnav, .mainnav-patch {
+	background-color: #000;
+
+}
+@media (min-width: 768px) {
+	.navbar-header:before {
+		background-color: #000;
+	}
+	#container.mainnav-in.easeInBack:not(.boxed-layout) #mainnav-container {
+        box-shadow: -20px 0 0 0 #000;
+    }
+	#container.mainnav-sm #mainnav-menu a:hover {
+		box-shadow: inset 4px 0 0 0 #6d893c;
+	}
+	#container.mainnav-sm .shortcut-grid:hover,
+    #container.mainnav-sm .popover.mainnav-shortcut {
+        background-color: #a4d65e;
+        color: #fff
+    }
+	 #container.mainnav-sm #mainnav .mainnav-widget .hover {
+        color: #fff;
+        background-color: #a4d65e;
+    }
+	 .menu-popover .single-content {
+        color: #fff;
+        background-color: #a4d65e;
+    }
+	.menu-popover>.popover-title {
+        border: 0;
+        border-radius: 0;
+        padding: 14px 20px;
+        background-color: #a4d65e;
+        font-size: 1.05em;
+        position: relative;
+        z-index: 5;
+        color: #fff
+    }
+	.menu-popover .mainnav-widget-content {
+        background-color: #a4d65e;
+    }
+	.menu-popover.popover, .menu-popover .sub-menu ul ul {
+        background-color: #000;
+        color: #fff;
+    }
+}
+#mainnav-menu {
+	background-color: #000;
+
+}
+#mainnav-menu >.active {
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    background-color: #726e64;
+	color: white;
+}
+#mainnav-menu>li>a:hover, #mainnav-menu>li>a:active {
+    color: #fff;
+}
+#mainnav-menu>li>a.hover {
+    color: #fff;
+    background-color: #a4d65e;
+    box-shadow: inset 4px 0 0 0 #6d893c;
+}
+.mainnav-sm .popover.mainnav-shortcut {
+    display: block!important;
+    border: 0;
+    margin-top: -42.57141px;
+
+    margin-left: -1px;
+    padding: 0;
+    box-shadow: none;
+    overflow: hidden;
+    width: auto;
+    max-width: 300px;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    left: 50px!important
+}
+@media (min-width: 1200px) {
+	#mainnav-menu ul a:hover {
+		background-color: #a4d65e;
+
+	}
+}
+.nano>.nano-content {
+    font-size: 14px;
+}
+#container.mainnav-sm #mainnav-menu>.active-link>a, #container.mainnav-sm #mainnav-menu>.active-sub>a, #container.mainnav-sm #mainnav-menu>.active-link a:hover, #container.mainnav-sm #mainnav-menu>.active-sub a:hover {
+    background-color: #a4d65e;
+    box-shadow: none;
+}
+#aside-container #aside .nav-tabs li:not(active) a {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px 0
 }
