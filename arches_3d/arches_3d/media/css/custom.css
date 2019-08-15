@@ -31,12 +31,35 @@ h5 {font-size: 1.25em;}
 
 small, .text_small {font-size: 0.8em;}
 
-/* Unify Overrides */
+/*-----------------------------------------------------------------------------
+
+- Responsive Fixes  -
+
+-----------------------------------------------------------------------------*/
+@media (max-width: 467px) {
+	.navbar-brand img {
+		width: 75%;
+		height: 75%;
+	}
+}
+
+
+
+/*-----------------------------------------------------------------------------
+
+- Unify Overrides  -
+
+-----------------------------------------------------------------------------*/
 .u-heading-v2-3--bottom::after {
 	width: 100% !important;
 	border-width: 3px !important;
 }
-/* Rev Slider Override */
+
+/*-----------------------------------------------------------------------------
+
+- Revolution Slider Overrides  -
+
+-----------------------------------------------------------------------------*/
 .tp-caption.News-Title,.News-Title
 {
 	background-color:transparent;
@@ -46,10 +69,10 @@ small, .text_small {font-size: 0.8em;}
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:"Roboto";
-	font-size:4em;
+	font-size:2.441em;
 	font-style:normal;
 	font-weight:900;
-  line-height: 1.15;
+  	line-height: 1;
 	padding:0;
 	text-decoration:none;
 }
@@ -62,14 +85,13 @@ small, .text_small {font-size: 0.8em;}
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:"Roboto";
-	font-size:1.563em;
+	font-size:1.25em;
 	font-style:normal;
 	font-weight:300;
-  line-height: 1.15;
+  	line-height: 1.15;
 	padding:0;
 	text-decoration:none;
 }
-
 .tp-caption.News-Subtitle:hover,.News-Subtitle:hover
 {
 	background-color:transparent;
@@ -80,16 +102,20 @@ small, .text_small {font-size: 0.8em;}
 	color: #a4d65e !important;
 	text-decoration:none;
 }
-/*-----------------------------------------------------------------------------
-
-- Revolution Slider 5.0 Navigatin Skin Style  -
-
- ZEUS SKIN
-
-author:  ThemePunch
-email:      info@themepunch.com
-website:    http://www.themepunch.com
------------------------------------------------------------------------------*/
+@media (min-width: 992px) { 
+	.tp-caption.News-Title,.News-Title
+	{
+		font-size:4em;
+		font-weight:900;
+	  	line-height: 1.15;
+	}
+	.tp-caption.News-Subtitle,.News-Subtitle
+	{
+		font-size:1.563em;
+		font-weight:300;
+	    line-height: 1.15;
+	}
+}
 /* ARROWS */
 .zeus.tparrows {
   cursor:pointer;
