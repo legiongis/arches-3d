@@ -4,8 +4,8 @@
 {% load i18n %}
 <!--=== Header ===-->
 <!-- Header -->
-<header id="js-header" class="u-header u-header--static">
-  <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+<header id="js-header" class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance" data-header-fix-moment="300">
+  <div class="u-header__section u-header__section--dark g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-py-10" data-header-fix-moment-classes="g-bg-black-opacity-0_7 g-py-0 g-brd-bottom g-brd-6 g-brd-primary">
     <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
       <div class="container">
         <!-- Responsive Toggle Button -->
@@ -22,70 +22,47 @@
 
         <!-- Logo -->
         <a href="/" class="navbar-brand d-flex">
-          <img src="{% static 'img/logos/gdh-logo.png' %}" width="50px" height="50px">
-          <p class='nav-link'>Lincoln County Archaeological Initiative - Round 10</p>
+          <img src="{% static 'img/logos/BLM-LCAI-logo.png' %}" width="393px" height="80px" alt="Lincoln County Archaeological Initiative - Round 10">
         </a>
         <!-- End Logo -->
 
         <!-- Navigation -->
         <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
-          <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
-
-
-
-
-
-            <!-- Intro -->
-            <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-              <a href="/" class="nav-link g-py-7 g-px-0">Home</a>
-            </li>
-
-            <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-              <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false"
-                aria-controls="nav-submenu-pages">{% trans "About Us" %}</a>
-              <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
-                id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+          <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-300 ml-auto">
+           <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+              <a id="nav-link-about" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false"
+                aria-controls="nav-submenu-about">{% trans "About" %}</a>
+              <ul class="hs-sub-menu list-unstyled g-bg-black u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                id="nav-submenu-about" aria-labelledby="nav-link-pages">
                 <li class="dropdown-item ">
-                  <a class="nav-link" href="/#about">Mission</a>
+                  <a class="nav-link" href="#innovation">{% trans "About the Project" %}</a>
                 </li>
                 <li class="dropdown-item ">
-                  <a class="nav-link" href="/#numbers">GDH in Numbers</a>
+                  <a class="nav-link" href="#process">{% trans "How 3D Scanning Works" %}</a>
                 </li>
                 <li class="dropdown-item ">
-                  <a class="nav-link" href="/#teamequipment">Team and Equipment</a>
-                </li>
-                <li class="dropdown-item ">
-                  <a class="nav-link" href="{% url 'publications' %}">Publications</a>
-                </li>
-                <li class="dropdown-item ">
-                  <a class="nav-link" href="{% url 'news' %}">News</a>
-                </li>
-                <li class="dropdown-item ">
-                  <a class="nav-link" href="{% url 'labs' %}">Projects We Admire</a>
+                  <a class="nav-link" href="#history">{% trans "What 3D Visualization Reveals" %}</a>
                 </li>
               </ul>
             </li>
-
-            <li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-              <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false"
-                aria-controls="nav-submenu-pages">Data</a>
-              <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
-                id="nav-submenu-pages" aria-labelledby="nav-link-pages">
+            <li class="hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+              <a id="nav-link-sites" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false"
+                aria-controls="nav-submenu-sites">{% trans "Sites" %}</a>
+              <ul class="hs-sub-menu list-unstyled g-bg-black u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
+                id="nav-submenu-sites" aria-labelledby="nav-link-pages">
                 <li class="dropdown-item ">
-                  <a class="nav-link" href="/#data">Data Overview</a>
+                  <a class="nav-link" href="#crescent">{% trans "Crescent City" %}</a>
                 </li>
                 <li class="dropdown-item ">
-                  <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+                  <a class="nav-link" href="#paiute">{% trans "Paiute Rocks" %}</a>
                 </li>
                 <li class="dropdown-item ">
-                  <a class="nav-link" href="{% url 'sites' %}">Heritage Sites</a>
+                  <a class="nav-link" href="#redpigment">{% trans "Red Pigment Canyon" %}</a>
                 </li>
               </ul>
             </li>
-
-
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
-              <a href="{% url 'search_home' %}" class="nav-link g-py-7 g-px-0">{% trans "Search" %}</a>
+              <a href="{% url 'search_home' %}" class="nav-link g-py-7 g-px-0"><i class="fas fa-search"></i> {% trans "Explore" %}</a>
             </li>
             {% if user|can_create_resource_instance %}
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
@@ -94,35 +71,28 @@
             {% endif %}
             {% if user|has_group:"Graph Editor" %}
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
-              <a href="{% url 'graph' '' %}" class="nav-link g-py-7 g-px-0">{% trans "Design" %}</a>
+              <a href="{% url 'graph' '' %}" class="nav-link g-py-7 g-px-0"><i class="fas fa-toolbox"></i>{% trans "Design" %}</a>
             </li>
             {% endif %}
             {% if user.username == 'anonymous' %}
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
               <a id="auth-link" href="{% url 'auth' %}?next={% url 'home' %}{% if user.username != 'anonymous' %}&logout=true{% endif %}"
-                class="nav-link g-py-7 g-px-0">
+                class="nav-link g-py-7 g-px-0"><i class="fas fa-sign-in-alt"></i> 
                 {% trans "Login" %}
               </a>
             </li>
             {% endif %}
-
-
             {% if user.username != 'anonymous' %}
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
-              <a href="{% url 'auth' %}?next={% url 'home' %}&logout=true" class="nav-link g-py-7 g-px-0">{% trans 'Logout' %}</a>
+              <a href="{% url 'auth' %}?next={% url 'home' %}&logout=true" class="nav-link g-py-7 g-px-0"><i class="fas fa-sign-out-alt"></i>{% trans 'Logout' %}</a>
             </li>
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
-              <a href="{% url 'user_profile_manager' %}" class="nav-link g-py-7 g-px-0">{% trans 'User Profile' %}</a>
+              <a href="{% url 'user_profile_manager' %}" class="nav-link g-py-7 g-px-0"><i class="fas fa-user"></i> {% trans 'User Profile' %}</a>
             </li>
             {% endif %}
-
-
-
-          </ul>
+	      </ul>
         </div>
         <!-- End Navigation -->
-
-
       </div>
     </nav>
   </div>

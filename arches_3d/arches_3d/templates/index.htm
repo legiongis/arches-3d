@@ -9,9 +9,12 @@
 <!--<![endif]-->
 
 <head>
-    <title>LCAI - IN PROGRESS</title>
+    <title>LCAI - Phase 10</title>
     {% include 'partials/meta.html' %}
-    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static 'img/favicon/site.webmanifest' %}">
     {% include 'partials/css.html' %}
 </head>
 <body>
@@ -19,12 +22,12 @@
     {% include 'partials/nav.html' %}
     {% include 'partials/slider.html' %}
     {% include 'partials/about.html' %}
-    {% include 'partials/sketchfab_gallery.html' %}
-    {% include 'partials/background_slider_1.html' %}
-    {% include 'partials/services.html' %}
-    {% include 'partials/gdh_in_numbers.html' %}
-    {% include 'partials/about_team_equipment.html' %}
-    {% include 'partials/sponsors.html' %}
+	{% include 'partials/process.html' %}
+	{% include 'partials/archaeology.html' %}
+	{% include 'partials/sites.html' %}
+	
+	
+  
     {% include 'partials/footer.html' %}
     {% include 'partials/link_to_top.html' %}
     {% include 'partials/javascript.html' %}

@@ -1,59 +1,76 @@
 {% load i18n %}
 {% load static %}
 <!-- About -->
-<section class="container g-pt-100 g-pb-70">
-  <div class="row align-items-center" id="about">
-    <div class="col-md-7 g-mb-30">
-      <div class="g-mb-20">
-        <span class="d-block g-color-gray-dark-v3 g-font-weight-700 g-font-size-13 text-uppercase"></span>
-        <h4 class="h4 g-color-black g-font-weight-700 text-uppercase">{% blocktrans %}LCAI site in progress. For more info see <a href="https://www.blm.gov/press-release/lincoln-county-archaeological-initiative-round-10-proposal-period-open">this press release</a>{% endblocktrans %}</h4>
-      </div>
-  </div>
-  <div class="row align-items-center" id="about">
-    <div class="col-md-7 g-mb-30">
-      <div class="g-mb-20">
-        <span class="d-block g-color-gray-dark-v3 g-font-weight-700 g-font-size-13 text-uppercase">{% trans "About Us" %}</span>
-        <h2 class="h1 g-color-black g-font-weight-700 text-uppercase">{% trans "Global Digital Heritage" %}</h2>
-      </div>
+<section id="about">
+	<a name="innovation"></a> 
+	<div class="shortcode-html">
+	  <!-- Info Blocks -->
+	  <div class="row no-gutters">
+		<!-- Info Image -->
+		<div class="col-lg-5 g-min-height-360 g-bg-size-cover g-bg-pos-center" data-bg-img-src="{% static 'img/photos/about.jpg' %}"></div>
+		<!-- End Info Image -->
 
-      <p class="lead">{% trans "Global Digital Heritage (GDH) is a not-for-profit, private research and education organization dedicated to documenting, monitoring, and preserving our global cultural and natural heritage. We use digital visualization, 3D virtualization, geospatial informatics, and open access solutions to provide digital data and 3D models to governments, regional institutions, museums, local scholars, and the public. A key element of our mission is the democratization of science-we make all data freely available to the world in support of cultural heritage, heritage management, education, public access, scientific research, and to enhance the digital humanities." %}</p>
-<p>
-  <a href="{% url 'publications' %}">Publications</a> | 
-  <a href="{% url 'news' %}">News</a> |
-<a href="{% url 'labs' %}">Projects We Admire</a>
-</p>
-    </div>
+		<div class="col-lg-7 g-bg-gray-dark-v1 g-pt-100 g-pb-80 g-px-80">
+		  <header class="g-mb-35">
+			<div class="g-mb-30">
+			  <span class="d-block g-color-primary g-font-weight-700 g-font-size-default text-uppercase g-mb-15">{% trans "About LCAI Phase 10" %}</span>
+			  <h2 class="h2 g-color-white g-font-weight-700 mb-0">{% trans "Cutting Edge Documentation and Monitoring" %}</h2>
+			</div>
+			<div class="g-brd-bottom g-brd-6 g-brd-primary"></div>
+		  </header>
 
-    <div class="col-md-5 g-mb-30">
-      <img class="img-fluid mb-4" src="{% static 'img/photos/herb_victor_rock_art.jpg' %}" alt="Image description">
-      <div class="text-center">
-      </div>
-    </div>
-  </div>
-  <div class="row align-items-top">
-    <div class="col-md-6 g-md-30">
-      <div class="g-mb-20">
-        <h2 class="h1 g-color-black g-font-weight-700 text-uppercase">{% trans "Mission" %}</h2>
+		  <p class="g-color-white-opacity-0_7 g-mb-65">{% trans '<a href="https://www.blm.gov/" title="Visit the Bureau of Land Management Website">The Bureau of Land Management</a> administers the <a href="https://edit.blm.gov/programs/cultural-heritage-and-paleontology/archaeology/what-we-manage/nevada/lincoln-county-archaeological-initiative" title="Visit the LCAI Website">Lincoln County Archaeological Initiative</a> to support archaeological projects in Lincoln County. Each year, the BLM seeks public input and establishes funding priorities for archaeological projects in Lincoln County. This website features the results of the Phase 10 3D Documentation Pilot Study lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a iaculis tortor.' %}</p>
 
-      </div>
-      <p class="lead">
-        {% trans 'We believe that many nations, local and regional museums, and universities have specific and spectacular places, monuments, and museum collections that are critical to the global scientific agenda. While these are often recognized for their heritage value, they are underutilized in science and research because of distance or because the scientific community does not know they exist.' %}
-      </p>
-      <p class="lead">
-        {% trans 'We use virtualization technology to digitize entire collections, entire museums, and entire archaeological and paleontological landscapes. We make virtual repositories available to any student, any child, any scientist or any enthusiast anywhere in the world at any time. We create online analytical tools to democratize education and research through global analyses and exploration. Our virtual repository approach allows scientific analyses of places, monuments, and collections on a global scale, and provides a mean to highlight the importance of those collections to their communities.' %}
-      </p>
-    </div>
-    <div class="col-md-6 g-md-30">
-      <div class="g-mb-20">
-        <h2 class="h1 g-color-black g-font-weight-700 text-uppercase">{% trans "What we offer" %}</h2>
+		  <div class="row align-items-stretch">
+			<div class="col-sm-6 g-mb-30">
+			  <!-- Article -->
+			  <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+				<div class="g-flex-middle-item">
+				  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{% trans "Project Component 1" %}</h4>
+				  <p class="g-color-white-opacity-0_7 mb-0">{% trans "Nunc dui dolor, elementum eu tincidunt sit amet, viverra non ligula. Integer eget lectus tristique tortor bibendum dapibus vel ut mauris." %}</p>
+				</div>
+			  </article>
+			  <!-- End Article -->
+			</div>
 
-      </div>
-      <p class="lead">
-        {% trans 'In the face of an increasingly hostile world, a global landscape where conflict, natural disasters, and rapid environmental changes are destroying our shared heritage at an accelerating rate, we provide 3D digital services to document and preserve places and specimens critical to our global heritage. We do this for free. We then return all of the data and results to the host institution or regional/local authorities who can do anything they wish with the materials. All we ask is that we are allowed to publish papers on the project, and to also include the scan data and results on our web site.' %}
-      </p>
+			<div class="col-sm-6 g-mb-30">
+			  <!-- Article -->
+			  <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+				<div class="g-flex-middle-item">
+				  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{% trans "Project Component 2" %}</h4>
+				  <p class="g-color-white-opacity-0_7 mb-0">{% trans "Nunc dui dolor, elementum eu tincidunt sit amet, viverra non ligula. Integer eget lectus tristique tortor bibendum dapibus vel ut mauris." %}</p>
+				</div>
+			  </article>
+			  <!-- End Article -->
+			</div>
+		  </div>
 
-    </div>
-  </div>
+		  <div class="row align-items-stretch">
+			<div class="col-sm-6 g-mb-30">
+			  <!-- Article -->
+			  <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+				<div class="g-flex-middle-item">
+				  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{% trans "Project Component 3" %}</h4>
+				  <p class="g-color-white-opacity-0_7 mb-0">{% trans "Nunc dui dolor, elementum eu tincidunt sit amet, viverra non ligula. Integer eget lectus tristique tortor bibendum dapibus vel ut mauris." %}</p>
+				</div>
+			  </article>
+			  <!-- End Article -->
+			</div>
 
-</section>
+			<div class="col-sm-6 g-mb-30">
+			  <!-- Article -->
+			  <article class="h-100 g-flex-middle g-brd-left g-brd-3 g-brd-primary g-brd-white--hover g-bg-black-opacity-0_8 g-transition-0_3 g-pa-20">
+				<div class="g-flex-middle-item">
+				  <h4 class="h6 g-color-white g-font-weight-600 text-uppercase g-mb-10">{% trans "Project Component 4" %}</h4>
+				  <p class="g-color-white-opacity-0_7 mb-0">{% trans "Nunc dui dolor, elementum eu tincidunt sit amet, viverra non ligula. Integer eget lectus tristique tortor bibendum dapibus vel ut mauris." %}</p>
+				</div>
+			  </article>
+			  <!-- End Article -->
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- End Info Blocks -->
+	</div>
+</section>          
 <!-- End About -->

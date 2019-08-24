@@ -71,12 +71,12 @@ define([
         setupPotree: function (sourcePath, pointcloudName) {
 
             viewer.setFOV(60);
-            viewer.setPointBudget(10000000);
-            viewer.useHQ = true;
+            viewer.setPointBudget(1 * 1000 * 1000);
 
-            viewer.setEDLEnabled(false);
+            viewer.setEDLEnabled(true);
             viewer.setBackground('gradient'); // ["skybox", "gradient", "black", "white"];
             viewer.setDescription('');
+			viewer.setNavigationMode(Potree.EarthControls);
             viewer.loadSettingsFromURL();
 
             let fullScreenToggle = document.createElement('img');
