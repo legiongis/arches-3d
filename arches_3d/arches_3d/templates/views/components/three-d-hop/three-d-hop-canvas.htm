@@ -2,8 +2,8 @@
 
 <!-- 3D HOP window and side buttons -->
 <div id="tdhop_render_area" class="report-render-area">
-  <div id="3dhop" class="tdhop" onMouseDown="if (event.preventDefault) event.preventDefault()">
-      
+  <div id="3dhop" class="tdhop" role="status" onMouseDown="if (event.preventDefault) event.preventDefault()">
+	  	      
         <div id="tdhlg"></div>
         <div id="toolbar">
 
@@ -60,7 +60,9 @@
 
         {% include 'views/components/three-d-hop/three-d-hop-panels.htm' %}
 
-        <canvas id="draw-canvas" />
+        <canvas id="draw-canvas" class="spinner-border" /><span class="sr-only">
+    		Loading...
+	  	</span>
   </div>
 </div>
 
