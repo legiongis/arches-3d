@@ -59,11 +59,12 @@
         </div>
 
         {% include 'views/components/three-d-hop/three-d-hop-panels.htm' %}
-
-        <canvas id="draw-canvas" class="spinner-border" /><span class="sr-only">
-    		Loading...
-	  	</span>
+		  <div id="loading" class="loading-mask" >		  </div>
+	  
+        <canvas id="draw-canvas" onload="" />
   </div>
 </div>
+<script>
 
+</script>
 <!-- End 3D HOP window and side buttons -->

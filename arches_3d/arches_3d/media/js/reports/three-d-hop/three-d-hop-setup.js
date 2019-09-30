@@ -79,23 +79,33 @@ define([
         $('#pickpoint-output').html("[ "+x+" , "+y+" , "+z+" ]");
     }
 
+	function testReadyoverride( ){
+		if (this._objectsToLoad != 0) return;
+		this.trackball.track(SglMat4.identity(), 0.0, 0.0, 0.0);
+
+		this._sceneReady = this._scenePrepare();
+		$('#loading').hide();
+		this.repaint();
+	}
 
     return {
 
         setup3DHOP: function (config) {
 
             window.presenter = new Presenter("draw-canvas");
-
             init3dhop();
             resize3DHopCanvas();
-
+		    
             window.presenter._onEndMeasurement = onEndMeasure;
             window.presenter._onEndPickingPoint = onEndPick;
             
             setSceneOnStartup(config);
             
+			window.presenter._testReady = testReadyoverride;
+			
             initActionsToolbar(config);
             sectiontoolInit();
+
         }
     }
 });
