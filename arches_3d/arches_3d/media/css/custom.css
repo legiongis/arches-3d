@@ -79,6 +79,22 @@ small, .text_small {font-size: 0.8em;}
 	padding:0;
 	text-decoration:none;
 }
+.tp-caption.News-Title-2,.News-Title-2
+{
+	background-color:transparent;
+	border-color:transparent;
+	border-radius:0 0 0 0;
+	border-style:none;
+	border-width:0;
+	color:rgba(255,255,255,1.00);
+	font-family:"Roboto";
+	font-size:1.563em;
+	font-style:normal;
+	font-weight:500;
+  	line-height: 1;
+	padding:0;
+	text-decoration:none;
+}
 .tp-caption.News-Subtitle,.News-Subtitle
 {
 	background-color:rgba(255,255,255,0);
@@ -112,6 +128,13 @@ small, .text_small {font-size: 0.8em;}
 		font-weight:900;
 	  	line-height: 1.15;
 	}
+	.tp-caption.News-Title-2,.News-Title-2
+	{
+		font-size:2em;
+		font-weight:500;
+	  	line-height: 1.15;
+	}
+	
 	.tp-caption.News-Subtitle,.News-Subtitle
 	{
 		font-size:1.563em;
