@@ -5,6 +5,7 @@
 .report-render-area {
     height: 685px;
     width: 100%;
+	overflow: hidden;
 }
 
 .fullscreen-button {
