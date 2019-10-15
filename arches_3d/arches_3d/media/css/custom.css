@@ -628,7 +628,31 @@ opacity:1
     color: rgba(255, 255, 255, 0.5);
     padding: 20px 0
 }
+/*-----------------------------------------------------------------------------
 
+- Saved Search overrides  -
+
+-----------------------------------------------------------------------------*/
+.search-query {
+    background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+.search-query-link-captions {
+    color: #a4d65e;
+    font-size: 1.2em;
+    font-weight: 900;
+}	
+.search-query-desc {
+    color: #fff;
+    font-size: 1em;
+    text-transform: none !important;
+	padding-top: 10px;
+	text-align: left;
+}
+.ss-grid-item img {
+	height: 100%;		
+}
+	
 /*-----------------------------------------------------------------------------
 
 - Potree Viewer  -
