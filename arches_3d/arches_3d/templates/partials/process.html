@@ -10,7 +10,8 @@
 		  <header class="g-mb-35">
 			<div class="g-mb-30">
 			  <span class="d-block g-color-primary g-font-weight-700 g-font-size-default text-uppercase g-mb-15">{% trans "Our Process" %}</span>
-			  <h2 class="h2 g-color-black g-font-weight-700 mb-0">{% trans "How 3D Scanning and Visualization Works" %}</h2>
+			  <h2 class="h2 g-color-black g-font-weight-700 mb-0">{% trans "3D Documentation" %}</h2>
+				<p>This pilot project utilized two different 3D documentation techniques: LiDAR and photogrammetry. LiDAR technology was used to capture the overall sites, including the structures, topography, and natural context of boulders and vegetation. Photogrammetry was used to capture the more detailed and smaller scale rock art panel features.</p>
 			</div>
 			<div class="g-brd-bottom g-brd-6 g-brd-primary"></div>
 		  </header>
@@ -19,14 +20,9 @@
 		  <ul class="row u-timeline-v2-wrap list-unstyled">
 			<li class="col-md-12 g-mb-40">
 			  <div class="row">
-				<!-- Timeline Date -->
-				<div class="col-md-3 text-md-right g-pt-30--md g-pr-40--md g-mb-20">
-				  <h4 class="text-uppercase g-font-weight-700">{% trans "Step One" %}</h4>
-				</div>
-				<!-- End Timeline Date -->
-
+				
 				<!-- Timeline Content -->
-				<div class="col-md-9 g-orientation-left g-pl-40--md">
+				<div class="col-md-11 offset-md-1 g-orientation-left g-pl-40--md">
 				  <!-- Timeline Dot -->
 				  <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
 					<i class="d-block g-width-18 g-height-18 g-bg-white g-brd-around g-brd-3 g-brd-black rounded-circle"></i>
@@ -44,7 +40,7 @@
 					<!-- End Timeline Arrow -->
 
 					<header class="g-brd-bottom g-brd-3 g-brd-primary g-pb-10 g-mb-25">
-					  <h3 class="g-font-weight-300 g-color-white">{% trans "Data Collection" %}</h3>
+					  <h3 class="g-font-weight-300 g-color-white">{% trans "LiDAR" %}</h3>
 					</header>
 
 					<div class="row">
@@ -52,8 +48,25 @@
 						<img class="img-fluid w-100" src="{% static 'img/photos/process/stepone.jpg' %}" alt="Image description">
 					  </div>
 					  <div class="col-md-8 g-color-white">
-						<p>{% trans "Vivamus ultricies urna nec condimentum consectetur. Vivamus ac varius nisl. Proin luctus luctus ligula. Donec at hendrerit ex. Vivamus euismod maximus nunc venenatis ultricies." %}</p>
-						<p class="mb-0">{% trans "Duis ut dignissim eros. Nulla risus risus, auctor sit amet euismod at, tincidunt hendrerit turpis. Donec ut diam at lectus pulvinar tincidunt in quis ipsum." %} </p>
+						<p>{% trans "LiDAR involves the use of a laser scanner, which sends out a controlled laser beam that rapidly measures objects. Every time the laser hits an object, a signal is sent back to the machine, ultimately recording the surface of the object. A laser scanner can collect up to 50,000 measurement points per second. Often 360 degree photographs are taken at the same location of a laser scan, so that accurate color values can be attached to the 3D data." %} </p>
+						<a class="btn u-btn-primary rounded-0 g-mr-10 g-mb-15" href="#modallidar" data-modal-target="#modallidar" data-modal-effect="fadein">Learn More</a>
+						<!-- Lidar modal window -->
+						<div id="modallidar" class="text-left g-max-width-700 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+						  <button type="button" class="close" onclick="Custombox.modal.close();">
+							<i class="hs-icon hs-icon-close"></i>
+						  </button>
+						  <h4 class="g-mb-20">LiDAR Data Collection</h4>
+						  <p>Using LiDAR to digitally scan a site, feature, or structure is different for every project. Depending on the desired outcomes and deliverables expected, the strategies involved can vary widely. For the most part though, the equipment used is similar. For the Lincoln County 3D Documentation Pilot Project, we used a Leica Scan Station C10 (fully robotic laser scanner), two heavy tripods and tribrachs (brackets to mount the scanner on the tripod), batteries to power the scanner, a digital SLR camera, a Nodal Ninja (a mounting arm for the camera), and finally a PC laptop to process the data (not needed in the field).</p>
+						  <p>Once a thorough site inspection has been completed so that scan locations and target locations have been identified, the scanner is set up in its first location. These scan locations are chosen to maximize efficient data collection and wide coverage of the feature being documented. After the appropriate settings are established, the scanner begins operation. </p>
+						  <p>Depending on how much area is being scanned, and at what point density, a single scan can take between 2 minutes and several hours to complete. Each scan location is specifically located to ensure that there is overlap in data between multiple scans. This is important for post-processing efforts once data collection is complete. It is critical to make sure that people and gear stay out of the way of the scanner’s line of site! </p>
+						  <p>Once scanning is completed, we use the digital SLR camera to take the photographs for photogrammetry, collecting HDR (High Dynamic Range) photos at each location. HDR enables the capture of high-quality images that provide more information than standard photography. We also collect raw images for greatest quality and color range. We collect a 365-degree sphere of images that we later stitch together and texture map onto the point cloud data for a more photo-realistic 3D model.</p>
+					      <p>Once scanning and HDR photography is complete at each location, everything is moved to the next location, and the process begins again. </p>
+						  <h4 class="g-mb-20">LiDAR Data Processing</h4>
+						  <p>Back in the office, LiDAR data processing includes several steps. The first is the process of registration: linking of all the separate scan locations together using the overlap of data captured in the field. Sometimes the software is able to automatically identify common points between scan locations, while other times a person needs to identify the common points manually. Eventually all the individual 3D scan locations are tied together, creating one single “scan world” or 3D model. </p>
+						  <p>The next step is photo-texturing: the process of adding the photo color information to the scan data. Since the scanner only records reflectivity values of the objects and features it scans, this is where the HDR panoramic photos we collect at each location come in. They are merged to create a 360 degree panoramic image which is aligned and applied to the scan data. </p>
+						  <p>Once registration and photo-texturing are complete, the scan data are ready to be exported across platforms and mined for a wide range of deliverables ranging from interpretive to research. </p>
+						</div>
+						<!-- End Lidar modal window -->
 					  </div>
 					</div>
 				  </article>
@@ -64,14 +77,10 @@
 
 			<li class="col-md-12 g-mb-40">
 			  <div class="row">
-				<!-- Timeline Date -->
-				<div class="col-md-3 text-md-right g-pt-30--md g-pr-40--md g-mb-20">
-				  <h4 class="text-uppercase g-font-weight-700">{% trans "Step Two" %}</h4>
-				</div>
-				<!-- End Timeline Date -->
+				
 
 				<!-- Timeline Content -->
-				<div class="col-md-9 g-orientation-left g-pl-40--md">
+				<div class="col-md-11 offset-md-1 g-orientation-left g-pl-40--md">
 				  <!-- Timeline Dot -->
 				  <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
 					<i class="d-block g-width-18 g-height-18 g-bg-white g-brd-around g-brd-3 g-brd-black rounded-circle"></i>
@@ -89,7 +98,7 @@
 					<!-- End Timeline Arrow -->
 
 					<header class="g-brd-bottom g-brd-3 g-brd-primary g-pb-10 g-mb-25">
-					  <h3 class="g-font-weight-300 g-color-white">{% trans "Digital Modeling" %}</h3>
+					  <h3 class="g-font-weight-300 g-color-white">{% trans "Photogrammetry" %}</h3>
 					</header>
 
 					<div class="row">
@@ -97,8 +106,7 @@
 						<img class="img-fluid w-100" src="//via.placeholder.com/400x270" alt="Image description">
 					  </div>
 					  <div class="col-md-8 g-color-white">
-						<p>{% trans "Vivamus ultricies urna nec condimentum consectetur. Vivamus ac varius nisl. Proin luctus luctus ligula. Donec at hendrerit ex. Vivamus euismod maximus nunc venenatis ultricies." %}</p>
-						<p class="mb-0">{% trans "Duis ut dignissim eros. Nulla risus risus, auctor sit amet euismod at, tincidunt hendrerit turpis. Donec ut diam at lectus pulvinar tincidunt in quis ipsum." %}</p>
+						<p>{% trans "Photogrammetry is the practice of using 2D photographs to create 3D digital models. A standard camera, but for this project a digital SLR camera, takes several photos of a subject, making sure each photo contains overlapping information, as well as photos from several different vantage points. These photos are then uploaded to a specific software that identifies the overlapping data and ultimately stitches all of the photos together, creating a 3D digital model. In order to scale the 3D digital model, scales were included in the photos." %}</p>
 					  </div>
 					</div>
 				  </article>
@@ -108,14 +116,10 @@
 			</li>
 			<li class="col-md-12 g-mb-40">
 			  <div class="row">
-				<!-- Timeline Date -->
-				<div class="col-md-3 text-md-right g-pt-30--md g-pr-40--md g-mb-20">
-				  <h4 class="text-uppercase g-font-weight-700">{% trans "Step Three" %}</h4>
-				</div>
-				<!-- End Timeline Date -->
+				
 
 				<!-- Timeline Content -->
-				<div class="col-md-9 g-orientation-left g-pl-40--md">
+				<div class="col-md-11 offset-md-1 g-orientation-left g-pl-40--md">
 				  <!-- Timeline Dot -->
 				  <div class="g-hidden-sm-down u-timeline-v2__icon g-top-35">
 					<i class="d-block g-width-18 g-height-18 g-bg-white g-brd-around g-brd-3 g-brd-black rounded-circle"></i>
@@ -133,7 +137,7 @@
 					<!-- End Timeline Arrow -->
 
 					<header class="g-brd-bottom g-brd-3 g-brd-primary g-pb-10 g-mb-25">
-					  <h3 class="g-font-weight-300 g-color-white">{% trans "Reverse Engineering" %}</h3>
+					  <h3 class="g-font-weight-300 g-color-white">{% trans "3D Data" %}</h3>
 					</header>
 
 					<div class="row">

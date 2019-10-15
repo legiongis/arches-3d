@@ -15,6 +15,8 @@
 <script src="{% static 'vendor/dzsparallaxer/dzsparallaxer.js' %}"></script>
 <script src="{% static 'vendor/dzsparallaxer/dzsscroller/scroller.js' %}"></script>
 <script src="{% static 'vendor/dzsparallaxer/advancedscroller/plugin.js' %}"></script>
+<script src="{% static 'vendor/custombox/custombox.min.js' %}"></script>
+
 
 <!-- JS Revolution Slider -->
 <script src="{% static 'vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
@@ -38,6 +40,8 @@
 <script src="{% static 'js/unify/components/hs.tabs.js' %}"></script>
 <script src="{% static 'js/unify/components/hs.counter.js' %}"></script>
 <script src="{% static 'js/unify/components/hs.go-to.js' %}"></script>
+<script src="{% static 'js/unify/components/hs.modal-window.js' %}"></script>
+
 
 <!-- Cubeportfolio -->
 <script src="{% static 'vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
@@ -185,7 +189,14 @@
 	  $('.dzsparallaxer').dzsparallaxer();
 	});
 </script>
-              
+         
+<script >
+  $(document).on('ready', function () {
+	// initialization of popups
+	$.HSCore.components.HSModalWindow.init('[data-modal-target]');
+  });
+</script>
+
 <script>
   (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
