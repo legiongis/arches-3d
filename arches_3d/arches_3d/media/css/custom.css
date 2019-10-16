@@ -661,3 +661,15 @@ opacity:1
 #potree_menu legend {
 	color: #fff;
 }
+
+/*-----------------------------------------------------------------------------
+
+- Image Carousel Viewer  -
+
+-----------------------------------------------------------------------------*/	
+.carousel, .carousel .item {
+    height: 685px !important;
+}
+.carousel-inner>.item>img {
+    object-fit: contain !important;
+}	
