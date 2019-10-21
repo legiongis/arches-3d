@@ -98,12 +98,17 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                         <!-- Page Title and Icon -->
                         <div class="ep-tools-title">
                             <h1 class="page-header text-overflow ep-graph-title">
-                                <i class="fa {{graph.iconclass|default:nav.icon}} text-center icon-wrap bg-gray ep-graph-title-icon"></i>
+                                <i class="fa {{graph.iconclass|default:nav.icon}} text-center icon-circle bg-gray ep-graph-title-icon"></i>
                                 <span>{% trans nav.title %}</span>
                             </h1>
                         </div>
                         {% endblock graph_title %}
 
+						<!-- Emulating Home Page Menu -->
+						<a href="{% url 'home' %}" class="ep-tools" target="_blank"><h5 class="hidden-xs">{% trans "Home" %}</h5></a>
+						<a href="{% url 'home' %}#innovation" class="ep-tools" target="_blank"><h5 class="hidden-xs">{% trans "About" %}</h5></a>
+						<a href="{% url 'home' %}#sites" class="ep-tools" target="_blank"><h5 class="hidden-xs">{% trans "Sites" %}</h5></a>	
+						
                         <!-- Login -->
                         {% if nav.login %}
                         <a href="{% url 'auth' %}?next={{ request.get_full_path }}{% if user.username != 'anonymous' %}&logout=true{% endif %}" class="ep-tools ep-tools-login">
