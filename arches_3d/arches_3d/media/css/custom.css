@@ -3,13 +3,14 @@
 - Typography  -
 
 -----------------------------------------------------------------------------*/
-html {font-size: 16px;}
+html {font-size: 16px !important;}
 
 body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.45;
+  font-size: 1em !important;
   color: #333;
 }
 
@@ -64,7 +65,7 @@ small, .text_small {font-size: 0.8em;}
   .u-timeline-v2-wrap::before {
     left: 8.4% !important;
   }
-
+}
 
 /*-----------------------------------------------------------------------------
 
@@ -525,16 +526,22 @@ opacity:1
 	background-color: #a4d65e;
 	border-color: #a4d65e;
 }	
-	
+.bg-dark {
+	background-color: black;
+}
+.d-lg-flex {
+	 display: flex !important; 
+}
 /* Left Sidebar */
-	
 #mainnav-container {
     padding-top: 50px;
     background-color: #000;
 }
 #mainnav, .mainnav-patch {
 	background-color: #000;
-
+}
+.navbar-header {
+    background-color: black;
 }
 @media (min-width: 768px) {
 	.navbar-header:before {
@@ -658,12 +665,32 @@ opacity:1
 	background: #a4d65e;
 	color: white;
 }
+.ep-graph-title {
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.ep-graph-title-icon {
+	color: black;
+}
+.ep-tools h5 {
+	font-size:0.92857rem;
+}
+
+.ep-help {
+	width: auto;
+}
+@media (min-width: 768px) {
+	.ep-help {
+		width: 500px;
+	}
+}
 .ep-help-toggle	{
 		background-color: #ffc148;
 		color: black;
 		height: 44px;
 }
-	
+
 /* Main Content Area */
 .content-panel {
   
@@ -673,7 +700,25 @@ opacity:1
 .ep-form-toolbar {
     background: #726e64;
     border-bottom: 1px solid #e9e9e9;
-}	
+	color: white;
+}
+
+
+	
+/*-----------------------------------------------------------------------------
+
+- Search overrides  -
+
+-----------------------------------------------------------------------------*/	
+.ep-form-toolbar .search-bar {
+	width: 200px;
+}
+@media (min-width: 768px) {
+	.ep-form-toolbar .search-bar {
+		width: 375px;
+	}
+}
+
 a .search-type-link {
     height: 50px;
     width: 50px;
@@ -692,7 +737,7 @@ a .search-type-link {
 
 .search-type-btn {
     height: 50px;
-    font-size: 1em;
+    font-size: 0.8em;
     color: white;
 	background-color: black;
 	border: 1px solid white;
@@ -706,19 +751,12 @@ a .search-type-link {
     padding-top: 5px;
 	font-size: 1em;
 }
-	
-/*-----------------------------------------------------------------------------
-
-- Search overrides  -
-
------------------------------------------------------------------------------*/	
 .card-form-preview-container { 
     background: #fff !important;
-
 }
 .search-control-container {
-    background-color: #fcfbfb;
-    border-right: solid 1px #ecebe9;
+	background-color: #fcfbfb;
+	border-right: solid 1px #ecebe9;
 }
 .search-listing {
     border: 1px solid #726e64;
@@ -780,24 +818,8 @@ a .search-type-link {
 .ss-grid-item img {
 	height: 100%;		
 }
-	
 /*-----------------------------------------------------------------------------
 
-- Potree Viewer  -
+- Report overrides see report.css -
 
------------------------------------------------------------------------------*/
-#potree_menu legend {
-	color: #fff;
-}
-
-/*-----------------------------------------------------------------------------
-
-- Image Carousel Viewer  -
-
------------------------------------------------------------------------------*/	
-.carousel, .carousel .item {
-    height: 685px !important;
-}
-.carousel-inner>.item>img {
-    object-fit: contain !important;
-}	
+-----------------------------------------------------------------------------*/		

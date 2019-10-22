@@ -26,7 +26,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 {% block main_content %}
-<div class='scroll-y'>
+<div>
 
     <div class='resource-report' data-bind='component: {
         name: reportLookup[report.get("template_id")()].componentname,
@@ -35,7 +35,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
         }
     }'></div>
 
-    <footer id="footer" style="background: #fff;"></footer>
     
 </div>
 {% endblock main_content %}

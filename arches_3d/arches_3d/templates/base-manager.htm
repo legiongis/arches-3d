@@ -32,7 +32,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
             {% block navheader %}
             <header id="navbar">
-
                 <div id="navbar-container" class="boxed" style="background-color: inherit; padding-right: 0px">
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand" data-bind="click: function () { navExpanded(!navExpanded()) }">
@@ -43,7 +42,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                         </a>
                     </div>
                 </div>
-
             </header>
             {% endblock navheader %}
 
@@ -74,10 +72,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
                     {% block header %}
                     <div class="ep-toolbar">
-
                         <!-- Tools Menu -->
                         {% if nav.menu %}
-                        <a id="menu-control" href="" class="ep-tools ep-tool-title" data-bind="click:function() { menuActive(!menuActive()); }, clickBubble: false">
+                        <a id="menu-control" href="" class="ep-tools ep-tool-title" data-bind="click:function() { menuActive(!menuActive()); }, clickBubble: true">
                             <div class="">{% trans "Manage" %}
                                 <i class="ion-more"></i>
                             </div>
@@ -93,7 +90,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                             {% endif %}
                         {% endif %}
 
-
                         {% block graph_title %}
                         <!-- Page Title and Icon -->
                         <div class="ep-tools-title">
@@ -105,9 +101,14 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                         {% endblock graph_title %}
 
 						<!-- Emulating Home Page Menu -->
-						<a href="{% url 'home' %}" class="ep-tools" target="_blank"><h5 class="hidden-xs">{% trans "Home" %}</h5></a>
-						<a href="{% url 'home' %}#innovation" class="ep-tools" target="_blank"><h5 class="hidden-xs">{% trans "About" %}</h5></a>
-						<a href="{% url 'home' %}#sites" class="ep-tools" target="_blank"><h5 class="hidden-xs">{% trans "Sites" %}</h5></a>	
+						<a href="{% url 'home' %}" class="ep-tools" target="_blank">
+							<h5 class="hidden-xs">{% trans "Home" %}</h5>
+							<div class="hidden-sm hidden-md hidden-lg"><i class="fa fa-home"></i></div>
+						</a>
+						<a href="{% url 'home' %}#innovation" class="ep-tools hidden-xs" target="_blank"><h5>{% trans "About" %}</h5></a>
+						<a href="{% url 'home' %}#sites" class="ep-tools hidden-xs" target="_blank">
+							<h5 class="hidden-xs">{% trans "Sites" %}</h5>
+						</a>	
 						
                         <!-- Login -->
                         {% if nav.login %}
@@ -115,8 +116,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                             <div class="" data-placement="bottom" data-toggle="tooltip" data-original-title="{% if user.username != 'anonymous' %}Logout{% else %}Login{% endif %}">
                                 {% if user.username == 'anonymous' %}
                                 <h5 class="hidden-xs">{% trans "Login" %}</h5>
+								<i class="hidden-sm hidden-md hidden-lg fa fa-sign-in" aria-hidden="true"></i>
                                 {% else %}
                                 <h5 class="hidden-xs">{% trans "Welcome" %}, {{ user.first_name|default:user.username }}</h5>
+								<i class="hidden-sm hidden-md hidden-lg fa fa-sign-out" aria-hidden="true"></i>
+
                                 {% endif %}
                             </div>
                         </a>
@@ -376,7 +380,48 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                 </aside>
                 {% endblock aside_container %}
             </div>
+			<!-- Copyright Footer -->
+			<footer class="bg-dark pad-top pad-btm">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-8 text-left">
+					<div class="d-lg-flex">
+					  	<small class="d-block pad-rgt" style="font-size: 1em;">2019 © All Rights Reserved.</small>
+						  <ul class="list-inline">
+							<li class="list-inline-item">
+							  <a href="#">Privacy Policy</a>
+							</li>
+							<li class="list-inline-item">
+							  <span>|</span>
+							</li>
+							<li class="list-inline-item">
+							  <a href="#">Terms of Use</a>
+							</li>
+							<li class="list-inline-item">
+							  <span>|</span>
+							</li>
+							<li class="list-inline-item">
+							  <a href="#">License</a>
+							</li>
+							<li class="list-inline-item">
+							  <span>|</span>
+							</li>
+							<li class="list-inline-item">
+							  <a href="#">Support</a>
+							</li>
+						  </ul>
+						</div>	  
+				  </div>
 
+				  <div class="col-md-4 text-right">
+					<a class="d-block" href="index.html">
+					  <img class="img-fluid" src="{% static 'img/logos/blm_ncl_logo.png' %}" alt="Logo">
+					</a>
+				  </div>
+				</div>
+			  </div>
+			</footer>
+			<!-- End Copyright Footer -->
             <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
         </div>
 
