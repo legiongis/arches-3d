@@ -90,7 +90,33 @@ function($, _, Backbone, bootstrap, arches, select2, ko, koMapping, viewdata) {
             }
             return relatable;
         },
-
+		
+		// Parse the display function results to handle thumbail image nodegroups - AML 2019				
+		parseDisplay: function(descvalue) { 
+			var descvaluehtml = descvalue;
+			//console.log(descvalue);
+			if (descvalue.startsWith("None")) {
+				var descvalue = descvalue.slice(6);
+			} 
+			if (descvalue.startsWith("None") || descvalue.startsWith("[")) {
+				var testsplit = descvalue.split(']', 2);
+				descvalue1 = testsplit[0];
+				descvalue1 = descvalue1.replace(/u'/g, "\"");
+				descvalue1 = descvalue1.replace(/u"/g, "\"");
+				descvalue1 = descvalue1.replace(/'/g, "\"");
+				descvalue1 = descvalue1.replace(/"accepted": True/g, "\"accepted\":1");
+				descvalue1 = descvalue1 + ']';
+				descvalue1 = JSON.parse( descvalue1 );
+				descvaluehtml = '<div class="media-left"><img class="img-fluid" src="' + descvalue1[0]['url'] + '" height=60></div>';	
+				//Check if a caption has also been included
+				if (testsplit[1]) {
+					descvalue2 = testsplit[1].slice(2);
+					descvaluehtml = descvaluehtml + '<div class="media-body">' + descvalue2 + '"</div>';	
+				}
+			}
+			return descvaluehtml;
+		},
+		
         updateResults: function(response){
             var self = this;
             koMapping.fromJS(response.paginator, this.paginator);
@@ -126,26 +152,11 @@ function($, _, Backbone, bootstrap, arches, select2, ko, koMapping, viewdata) {
                         "features": []
                     }
                 });
-				
-				// Parsing the display function results to handle images - AML 2019
-				var displaydesc = result._source.displaydescription;
-				if (displaydesc.startsWith("None")) {
-					var displaydesc = displaydesc.slice(6);
-					displaydesc = displaydesc.replace(/u'/g, "\"");
-					displaydesc = displaydesc.replace(/'/g, "\"");
-					//console.log(displaydesc);
-					displaydesc = JSON.parse( displaydesc );
-					//console.dir(displaydesc);
-					displaydesc = '<img src="' + displaydesc[0]['url'] + '" height=60>';				
-					console.log(displaydesc);
-
-				}
-								
                 this.results.push({
 					displayname: result._source.displayname,
                     resourceinstanceid: result._source.resourceinstanceid,
-                    displaydescription: displaydesc,
-                    "map_popup": result._source.map_popup,
+                    displaydescription: this.parseDisplay(result._source.displaydescription),
+					"map_popup": this.parseDisplay(result._source.map_popup),
                     "provisional_resource": result._source.provisional_resource,
                     geometries: ko.observableArray(result._source.geometries),
                     iconclass: graphdata ? graphdata.iconclass : '',

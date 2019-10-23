@@ -1,4 +1,4 @@
-var displayData, getUrl, ready;
+var displayData, getUrl, ready, parseDisplay;
 
 getUrl = function (url) {
   return $.getJSON(url, {

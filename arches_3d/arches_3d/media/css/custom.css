@@ -704,7 +704,6 @@ opacity:1
 }
 
 
-	
 /*-----------------------------------------------------------------------------
 
 - Search overrides  -
@@ -794,6 +793,8 @@ a .search-type-link {
 .time-filter-clear:hover {
     background: #000;
 }
+
+
 /*-----------------------------------------------------------------------------
 
 - Saved Search overrides  -
@@ -817,6 +818,35 @@ a .search-type-link {
 }
 .ss-grid-item img {
 	height: 100%;		
+}
+
+
+/*-----------------------------------------------------------------------------
+
+- Map overrides  -
+
+-----------------------------------------------------------------------------*/
+.hover-feature-info {
+    font-family: Roboto, sans-serif;
+    border: solid 1px #000;
+
+}
+.mapboxgl-map {
+    font: 14px/20px Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.hover-feature-title-bar {
+    background: #000;
+	color: white;
+}
+.hover-feature-title {
+	font-weight: 700;
+    max-width: 360px;
+}
+.hover-feature-footer a {
+    color: #a4d65e;
+    font-weight: 500;
+    padding-right: 10px;
 }
 /*-----------------------------------------------------------------------------
 
