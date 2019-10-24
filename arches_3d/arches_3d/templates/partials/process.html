@@ -103,11 +103,29 @@
 
 					<div class="row">
 					  <div class="col-md-4 g-mb-20 g-mb-0--md">
-						<img class="img-fluid w-100" src="//via.placeholder.com/400x270" alt="Image description">
+						<img class="img-fluid w-100" src="{% static 'img/photos/process/Photogrammetryprocess.jpg' %}" alt="Image description">
 					  </div>
 					  <div class="col-md-8 g-color-white">
 						<p>{% trans "Photogrammetry is the practice of using 2D photographs to create 3D digital models. A standard camera, but for this project a digital SLR camera, takes several photos of a subject, making sure each photo contains overlapping information, as well as photos from several different vantage points. These photos are then uploaded to a specific software that identifies the overlapping data and ultimately stitches all of the photos together, creating a 3D digital model. In order to scale the 3D digital model, scales were included in the photos." %}</p>
-					  </div>
+					  <a class="btn u-btn-primary rounded-0 g-mr-10 g-mb-15" href="#modalphoto" data-modal-target="#modalphoto" data-modal-effect="fadein">Learn More</a>
+						<!-- Photo modal window -->
+						<div id="modalphoto" class="text-left g-max-width-700 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+						  <button type="button" class="close" onclick="Custombox.modal.close();">
+							<i class="hs-icon hs-icon-close"></i>
+						  </button>
+						  <h4 class="g-mb-20">Photogrammetry Collection & Data Processing:</h4>
+						  <p>There are two basic types of photogrammetry documentation: aerial and close-range. For this project close-range photogrammetry was utilized due to the relatively small object sizes being documented. Aerial photogrammetry is used to capture larger landscapes and terrain.</p>
+							
+						  <p>The BLM, and specifically the BLM’s national center in Denver, has be practicing close-range photogrammetry since the late 1980s. The BLM’s national center in Denver has also been a training resource for the Center of Preservation Resource (CoPR) at the University of Colorado, Denver. Therefore, the techniques used by CoPR to digitally document the rock art panels for this project closely follow the processes outlined in the BLM’s Technical Note 428: <em>Aerial and Close-Range Photogrammetric Technology: Providing Resource Documentation, Interpretation, and Preservation.</em></p>
+							
+							
+							
+						  <p>To learn more about the BLM’s photogrammetry technical bulletin and the techniques utilized to digitally document the rock art panels for this project, use this link: <a href="https://www.blm.gov/documents/national-office/blm-library/technical-note/aerial-and-close-range-photogrammetric">Technical Note 428</a></p>
+
+						</div>
+						<!-- End Photo modal window -->
+						</div>
+						
 					</div>
 				  </article>
 				</div>
@@ -137,16 +155,15 @@
 					<!-- End Timeline Arrow -->
 
 					<header class="g-brd-bottom g-brd-3 g-brd-primary g-pb-10 g-mb-25">
-					  <h3 class="g-font-weight-300 g-color-white">{% trans "3D Data" %}</h3>
+					  <h3 class="g-font-weight-300 g-color-white">{% trans "360 Degree Virtual Tours" %}</h3>
 					</header>
 
 					<div class="row">
 					  <div class="col-md-4 g-mb-20 g-mb-0--md">
-						<img class="img-fluid w-100" src="//via.placeholder.com/400x270" alt="Image description">
+						<img class="img-fluid w-100" src="{% static 'img/photos/process/PanotourScreenshot.JPG' %}" alt="Image description">
 					  </div>
 					  <div class="col-md-8 g-color-white">
-						<p>{% trans "Vivamus ultricies urna nec condimentum consectetur. Vivamus ac varius nisl. Proin luctus luctus ligula. Donec at hendrerit ex. Vivamus euismod maximus nunc venenatis ultricies." %}</p>
-						<p class="mb-0">{% trans "Duis ut dignissim eros. Nulla risus risus, auctor sit amet euismod at, tincidunt hendrerit turpis. Donec ut diam at lectus pulvinar tincidunt in quis ipsum." %}</p>
+						<p>In an effort to capture the context of the three Archeological sites, 360 degree photography was taken throughout the sites. These 360 degree photographs create panoramic images, that when viewed using specific software, allows a viewer to pan-around 360 degrees, as if standing at the site. For this project, the 360 degree views were assembled together creating virtual tours of the site.  </p>
 					  </div>
 					</div>
 				  </article>
