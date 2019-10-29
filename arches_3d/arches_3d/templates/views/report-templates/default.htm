@@ -27,6 +27,8 @@
 	<div class="report-metadata-section" style="background-image: url('/media/img/background/topo1000_15.png');">
 	    <div class="container">
 			<div class="row" id="report-body">
+				
+				
 				<!--ko if: hasProvisionalData() && (editorContext === false) -->
 				<div class="report-provisional-flag">{% trans 'This resource has provisional edits (not displayed in this report)
 					that are pending review' %}
@@ -41,7 +43,7 @@
 				<div class="report-provisional-flag">{% trans 'This resource has provisional edits that are pending review' %}</div>
 				<!--/ko-->
 
-				<h2 class="text-center mar-no pad-btm pad-top">Metadata Report</h2>
+				
 				<div class="rp-report-section relative rp-report-section-root">
 					<div class="rp-report-section-title">
 						<!-- ko foreach: { data: report.cards, as: 'card' } -->

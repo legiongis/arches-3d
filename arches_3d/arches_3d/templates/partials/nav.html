@@ -46,6 +46,9 @@
 				<li class="dropdown-item ">
                   <a class="nav-link" href="rockart.htm">{% trans "Learn about Rock Art" %}</a>
                 </li>  
+				<li class="dropdown-item ">
+                  <a class="nav-link" href="rockart.htm#lincoln">{% trans "Lincoln County Rock Art" %}</a>
+                </li>    
               </ul>
             </li>
             <li class="hs-has-sub-menu nav-item g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
@@ -67,6 +70,7 @@
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
               <a href="{% url 'search_home' %}" class="nav-link g-py-7 g-px-0"><i class="fas fa-search"></i> {% trans "Explore" %}</a>
             </li>
+
             {% if user|can_create_resource_instance %}
             <li class="nav-item g-mx-10--lg g-mx-15--xl page-scroll">
               <a href="{% url 'resource' %}" class="nav-link g-py-7 g-px-0">{% trans "Manage Data" %}</a>

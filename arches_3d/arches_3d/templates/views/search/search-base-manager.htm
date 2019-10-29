@@ -18,10 +18,7 @@
                     <i class="fa fa-map-marker"></i>
                     <p>{% trans 'Map' %}</p>
                 </button>
-                <button class="hidden-xs btn search-type-btn relative" data-bind="css: {'active': selectedTab() === timeFilter}, click: function(){selectedTab(timeFilter)}">
-                    <i class="fa fa-calendar"></i>
-                    <p>{% trans 'Time' %}</p>
-                </button>
+
                 <button class="btn search-type-btn relative" data-bind="css: {'active': selectedTab() === savedSearches}, click: function(){selectedTab(savedSearches)}">
                     <i class="fa fa-bookmark"></i>
                     <p>{% trans 'Themes' %}</p>
@@ -30,12 +27,6 @@
                     <i class="fa fa-filter" aria-hidden="true"></i>
                     <p>{% trans 'Advanced' %}</p>
                 </button>
-           <!--     {% if user|can_read_resource_instance %}
-                <button class="btn search-type-btn relative" data-bind="css: {'active': selectedTab() === relatedResourcesManager}, click: function(){selectedTab(relatedResourcesManager)}">
-                    <i class="fa fa-code-fork"></i>
-                    <p>{% trans 'Related' %}</p>
-                </button>
-                {% endif %} -->
             </div>
         </div>
     </div>
@@ -88,20 +79,12 @@
                         {% include 'views/search/map-filter.htm' %}
                         <!-- /ko -->
                     </div>
-                    <div class="tab-pane" data-bind="css: {'active': selectedTab() === timeFilter}, with: timeFilter">
-                        {% include 'views/search/time-filter.htm' %}
-                    </div>
                     <div class="tab-pane" data-bind="css: {'active': selectedTab() === savedSearches}, with: savedSearches">
                         {% include 'views/search/saved-searches.htm' %}
                     </div>
                     <div class="tab-pane" data-bind="css: {'active': selectedTab() === advancedFilter}, with: advancedFilter">
                         {% include 'views/search/advanced-search.htm' %}
                     </div>
-                    <!-- ko if: selectedTab() === relatedResourcesManager -->
-                    <div class="tab-pane" data-bind="css: {'active': selectedTab() === relatedResourcesManager}, with: relatedResourcesManager">
-                        {% include 'views/resource/related-resources/related-resources-manager.htm' %}
-                    </div>
-                    <!-- /ko -->
                 </div>
             </div>
         </div>
