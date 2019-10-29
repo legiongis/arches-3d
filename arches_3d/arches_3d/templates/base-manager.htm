@@ -103,7 +103,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 						<!-- Emulating Home Page Menu -->
 						<a href="{% url 'home' %}" class="ep-tools" target="_blank">
 							<h5 class="hidden-xs">{% trans "Home" %}</h5>
-							<div class="hidden-sm hidden-md hidden-lg"><i class="fa fa-home"></i></div>
+							<div class="d-block d-sm-none"><i class="fa fa-home"></i></div>
 						</a>
 						<a href="{% url 'home' %}#innovation" class="ep-tools hidden-xs" target="_blank"><h5>{% trans "About" %}</h5></a>
 						<a href="{% url 'home' %}#sites" class="ep-tools hidden-xs" target="_blank">
@@ -116,10 +116,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
                             <div class="" data-placement="bottom" data-toggle="tooltip" data-original-title="{% if user.username != 'anonymous' %}Logout{% else %}Login{% endif %}">
                                 {% if user.username == 'anonymous' %}
                                 <h5 class="hidden-xs">{% trans "Login" %}</h5>
-								<i class="hidden-sm hidden-md hidden-lg fa fa-sign-in" aria-hidden="true"></i>
+								<i class="d-block d-sm-none fa fa-sign-in" aria-hidden="true"></i>
                                 {% else %}
                                 <h5 class="hidden-xs">{% trans "Welcome" %}, {{ user.first_name|default:user.username }}</h5>
-								<i class="hidden-sm hidden-md hidden-lg fa fa-sign-out" aria-hidden="true"></i>
+								<i class="d-block d-sm-none fa fa-sign-out" aria-hidden="true"></i>
 
                                 {% endif %}
                             </div>
@@ -389,25 +389,19 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 					  	<small class="d-block pad-rgt" style="font-size: 1em;">2019 © All Rights Reserved.</small>
 						  <ul class="list-inline">
 							<li class="list-inline-item">
-							  <a href="#">Privacy Policy</a>
-							</li>
-							<li class="list-inline-item">
-							  <span>|</span>
-							</li>
-							<li class="list-inline-item">
 							  <a href="#">Terms of Use</a>
 							</li>
 							<li class="list-inline-item">
-							  <span>|</span>
+							  	<span>|</span>
 							</li>
 							<li class="list-inline-item">
-							  <a href="#">License</a>
+			  					<a href="https://www.archesproject.org/">Arches Project</a>
 							</li>
 							<li class="list-inline-item">
-							  <span>|</span>
+							  	<span>|</span>
 							</li>
 							<li class="list-inline-item">
-							  <a href="#">Support</a>
+			 				  	<a href="https://github.com/legiongis/arches-3d">Source Code</a>
 							</li>
 						  </ul>
 						</div>	  
