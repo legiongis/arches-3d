@@ -751,7 +751,7 @@ define([
                             var maxZoom = ko.unwrap(self.maxZoom);
                             maxZoom = maxZoom > 17 ? 17 : maxZoom;
                             map.fitBounds(bounds, {
-                                padding: 45,
+                                padding: 150,
                                 maxZoom: maxZoom
                             });
                         }

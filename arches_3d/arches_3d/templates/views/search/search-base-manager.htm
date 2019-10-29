@@ -33,7 +33,22 @@
 
     <div class="flex">
         <div class="flex">
-
+			<!-- Card Container -->
+            <div class="card-form-preview-container" >
+                <div class="tab-content relative">
+                    <div class="tab-pane map-filter-panel" data-bind="css: {'active': selectedTab() === mapFilter}">
+                        <!-- ko with: mapFilter -->
+                        {% include 'views/search/map-filter.htm' %}
+                        <!-- /ko -->
+                    </div>
+                    <div class="tab-pane" data-bind="css: {'active': selectedTab() === savedSearches}, with: savedSearches">
+                        {% include 'views/search/saved-searches.htm' %}
+                    </div>
+                    <div class="tab-pane" data-bind="css: {'active': selectedTab() === advancedFilter}, with: advancedFilter">
+                        {% include 'views/search/advanced-search.htm' %}
+                    </div>
+                </div>
+            </div>
             <!--Form Listing -->
             <div class="hidden-xs left-column-crud-container search-control-container" style="background-image: url('{% static "img/background/topo1000_15.png" %}');" data-bind="with: searchResults, css: { 'slide': !resultsExpanded() }">
                 <!-- Title Block -->
@@ -71,22 +86,7 @@
                 </div>
             </div>
 
-            <!-- Card Container -->
-            <div class="card-form-preview-container" >
-                <div class="tab-content relative">
-                    <div class="tab-pane map-filter-panel" data-bind="css: {'active': selectedTab() === mapFilter}">
-                        <!-- ko with: mapFilter -->
-                        {% include 'views/search/map-filter.htm' %}
-                        <!-- /ko -->
-                    </div>
-                    <div class="tab-pane" data-bind="css: {'active': selectedTab() === savedSearches}, with: savedSearches">
-                        {% include 'views/search/saved-searches.htm' %}
-                    </div>
-                    <div class="tab-pane" data-bind="css: {'active': selectedTab() === advancedFilter}, with: advancedFilter">
-                        {% include 'views/search/advanced-search.htm' %}
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>
