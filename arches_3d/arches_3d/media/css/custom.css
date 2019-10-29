@@ -689,7 +689,11 @@ opacity:1
 .ep-tools h5 {
 	font-size:0.92857rem;
 }
-
+.ep-toolbar a:hover, .ep-toolbar a:focus {
+    text-decoration: none;
+    color: white;
+    outline: 0!important;
+}
 .ep-help {
 	width: auto;
 }
