@@ -1,0 +1,41 @@
+{% load i18n %}
+
+<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/report.css" />
+
+<!-- ko if: !configForm -->
+{% block report %}
+<!-- Report Title Bar -->
+<div class="relative report-title-bar">
+
+    <!-- Title Block -->
+    <div class="report-toolbar-preview ep-form-toolbar">
+        <h4 class="report-toolbar-title"><span data-bind="text: report.get('name')"></span> - <span
+            data-bind="text: report.get('displayname') "></span></h4>
+    </div>
+</div>
+
+<!-- Report Content -->
+<div class="rp-report-container-preview">
+
+    {% block header %}
+    {% endblock header %}
+
+    {% block body %}
+
+      
+
+
+    {% endblock body %}
+
+
+</div>
+
+
+{% endblock report %}
+<!-- /ko -->
+
+
+<!-- ko if: configForm && (configType === 'header') -->
+{% block header_form %}
+{% endblock header_form %}
+<!-- /ko -->
