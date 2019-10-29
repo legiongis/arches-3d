@@ -16,15 +16,15 @@
               <img id="zoomout"     title="Zoom Out"               src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/zoomout.png"/><br/>
             <!--ZOOM-->
 
-            <!--LIGHTING-->
+            <!--LIGHTING
               <img id="lighting_off" title="Enable Lighting"       src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lighting_off.png" style="position:absolute;"/>
               <img id="lighting"     title="Disable Lighting"      src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lighting.png" style="visibility:hidden;"/><br/>
-            <!--LIGHTING-->
+            LIGHTING-->
 
-            <!--LIGHT-->
+            <!--LIGHT
               <img id="light_on"    title="Disable Light Control"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lightcontrol_on.png" style="position:absolute; visibility:hidden;"/>
               <img id="light"       title="Enable Light Control"   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/lightcontrol.png"/><br/>
-            <!--LIGHT-->
+            LIGHT-->
 
             <!--MEASURE-->
               <img id="measure_on"  title="Disable Measure Tool"   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/measure_on.png" style="position:absolute; visibility:hidden;"/>
@@ -41,10 +41,10 @@
               <img id="sections"    title="Enable Plane Sections"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections.png"/><br/>
             <!--SECTIONS-->
 
-            <!--COLOR-->
+            <!--COLOR
               <img id="color_on"    title="Disable Solid Color"    src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/color_on.png" style="position:absolute; visibility:hidden;"/>
               <img id="color"       title="Enable Solid Color"     src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/color.png"/><br/>
-            <!--COLOR-->
+           COLOR-->
 
             <!--CAMERA-->
               <img id="perspective"  title="Perspective Camera"    src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/perspective.png" style="position:absolute; visibility:hidden;"/>
@@ -52,12 +52,58 @@
             <!--CAMERA-->
 
             <!--FULLSCREEN-->
-              <img id="full_on"     title="Exit Full Screen"       src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full_on.png" style="position:absolute; display: none;"/>
-              <img id="full"        title="Full Screen"            src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full.png"/>
+              <img id="full_on"     title="Exit Full Screen"       src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full_on.png" style="display: none;"/>
+              <img id="full"        title="Full Screen"            src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full.png"/><br/>
             <!--FULLSCREEN-->
 
+			<!--HELP-->
+              <img id="help" data-target="#help-modal" data-toggle="modal" title="Help" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/help.png"/>
+			
+            <!--HELP-->
         </div>
+ 		<!--Help Modal-->
+		<div class="modal" id="help-modal" role="dialog" tabindex="-1" aria-labelledby="help-modal" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
 
+					<!--Modal header-->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+						<h4 class="modal-title">3DHOP Viewer Help</h4>
+					</div>
+
+
+					<!--Modal body-->
+					<div class="modal-body">
+						<p class="text-semibold text-main">Mouse Controls</p>
+						<p>Rotate the model by pressing your left mouse button and dragging.</p>
+						<p>Zoom in and out using your mouse scroll wheel.</p>
+						<br>
+						<p class="text-semibold text-main">How to Measure</p>
+						<p>Click <img  width="30" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/measure.png"/> to enable measuring. Click once on the first point you'd like to measure and then click on the second point where you would like to stop measuring. The measurement will be displayed to the right of the icon. Click <img   width="30"   src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/measure_on.png" /> to turn it off.</p>
+						<br>
+						<p class="text-semibold text-main">How to Pick a Point</p>
+						<p>Click <img width="30" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/pick.png"/> to enable point picking. Click a point on the surface of the 3D model, and you will see the XYZ position of the point picked displayed to the right of the icon. Click  <img  width="30" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/pick_on.png" /> to turn it off.</p>
+						<br>
+						<p class="text-semibold text-main">How to Section the Model</p>
+						<p>Click <img  width="30" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections.png"/> to open up the "sectioning" interface. Clicking on one of the three buttons on the left activates/deactivates the X, Y and Z sectioning plane, the three sliders moves the corresponding sectioning plane across the extent of the scene. The "flip" checkboxes invert the direction of the corresponding sectioning plane. The two checkboxes in the lower part of the interface toggles the visibility of the sectioning planes and of the highlighted border. Click <img width="30" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/sections_on.png" /> to turn it off.</p>
+						<br>
+						<p class="text-semibold text-main">How to Change Perspective</p>
+						<p>Click <img  width="30"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/orthographic.png"/> to switch to orthographic projection (typically used in technical drawings). Click  <img   width="30"  src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/perspective.png" /> to switch to perspective projection (similar to human sight).</p>
+						<br>
+						
+						<p class="text-semibold text-main">How to Toggle Fullscreen</p>
+						<p>Click on the <img  width="30" src="{{ STATIC_URL }}packages/three-d-hop/minimal/skins/dark/full.png"/> icon to toggle fullscreen mode.</p>
+					</div>
+					<!--Modal footer-->
+					<div class="modal-footer">
+						<button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Help Modal -->
+	  
         {% include 'views/components/three-d-hop/three-d-hop-panels.htm' %}
 		  <div id="loading" class="loading-mask" >		  </div>
 	  

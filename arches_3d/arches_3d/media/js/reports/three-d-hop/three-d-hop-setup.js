@@ -68,7 +68,7 @@ define([
     function onEndMeasure(measure) {
         // measure.toFixed(2) sets the number of decimals when displaying the measure
         // depending on the model measure units, use "mm","m","km" or whatever you have
-        $('#measure-output').html(measure.toFixed(2));
+        $('#measure-output').html(measure.toFixed(2)+ " m");
     }
 
     function onEndPick(point) {
