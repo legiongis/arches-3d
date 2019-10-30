@@ -111,7 +111,10 @@
             <div class="leaflet-control-container">
                 <div class="leaflet-top leaflet-left">
                     <div class="leaflet-control-zoom leaflet-bar leaflet-control">
-                        <a class="leaflet-control-zoom-in" href="#" title="{% trans "Zoom in" %}" role="button" aria-label='{% trans "Zoom in" %}' data-bind="click: function(){map.zoomIn()}, css:{'leaflet-disabled': atMaxZoom}">+</a>
+                        <!-- Add a home button that returns to the default search boundaries AML 2019 -->
+						<a class="" style="background-position: -342px -2px;" href="#" title="{% trans 'Return to features' %}" data-bind="click: function(){fitToAggregationBounds()}"><span class="sr-only">{% trans "Return to features" %}</span><i class="fa fa-home"></i></a>
+						
+						<a class="leaflet-control-zoom-in" href="#" title="{% trans "Zoom in" %}" role="button" aria-label='{% trans "Zoom in" %}' data-bind="click: function(){map.zoomIn()}, css:{'leaflet-disabled': atMaxZoom}">+</a>
                         <a class="leaflet-control-zoom-out" href="#" title="{% trans "Zoom out" %}" role="button" aria-label='{% trans "Zoom out" %}' data-bind="click: function(){map.zoomOut()}, css:{'leaflet-disabled': atMinZoom}">-</a>
                     </div>
                     <div class="leaflet-draw leaflet-control">
