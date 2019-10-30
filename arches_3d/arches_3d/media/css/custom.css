@@ -1,3 +1,8 @@
+/* TEMP HIDING OF MISSING CAPTION */
+.search-listing-body .media-body {
+  display: none;
+}
+
 /*-----------------------------------------------------------------------------
 
 - Typography  -

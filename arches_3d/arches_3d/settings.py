@@ -219,7 +219,7 @@ CACHE_BY_USER = {'anonymous': 3600 * 24}
 # if get_optional_env_variable('OVERRIDE_RESOURCE_MODEL_LOCK'):
 OVERRIDE_RESOURCE_MODEL_LOCK = True
 
-APP_TITLE = 'Global Digital Heritage'
+APP_TITLE = 'Lincoln County 3D'
 COPYRIGHT_TEXT = 'All Rights Reserved.'
 COPYRIGHT_YEAR = datetime.datetime.now().year
 
