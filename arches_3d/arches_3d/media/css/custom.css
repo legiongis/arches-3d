@@ -50,6 +50,16 @@ small, .text_small {font-size: 0.8em;}
 	}
 }
 
+#aboutcontent, #rockovcontent, #rockmecontent {
+    padding-left: 20px;
+	padding-right: 20px;
+  }
+@media (min-width: 768px) {
+  #aboutcontent, #rockovcontent, #rockmecontent {
+    padding-left: 80px;
+	padding-right: 80px;
+  }
+}
 /*-----------------------------------------------------------------------------
 
 - Unify Overrides  -
