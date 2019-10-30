@@ -36,11 +36,13 @@
 {% endblock config_form %}
 
 {% block report %}
-<dt data-bind="text: label"></dt>
+<dt data-bind="text: label" ></dt>
 <!-- ko foreach: valueObjects -->
 <dd>
-    <p data-bind="text: thumbUrl"></p>
-    <a data-bind="text: name, attr: { href: reportUrl }" target="_blank"></a>
+	<a data-bind="attr: { href: reportUrl }" target="_blank">
+		<img height="200" data-bind="attr: { src: thumbUrl }">
+		<span data-bind="text: name"</span>
+	</a>
 </dd>
 <!-- /ko -->
 <!-- ko if: valueObjects().length === 0 -->
