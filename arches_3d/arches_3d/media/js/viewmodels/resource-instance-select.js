@@ -3,7 +3,8 @@ define([
     'jquery',
     'viewmodels/widget',
     'arches',
-], function(ko, $, WidgetViewModel, arches) {
+    'arches_3d',
+], function(ko, $, WidgetViewModel, arches, arches_3d) {
     var nameLookup = {};
     var ResourceInstanceSelectViewModel = function(params) {
         var self = this;
@@ -32,10 +33,26 @@ define([
         this.valueObjects = ko.computed(function () {
             displayName();
             return self.valueList().map(function(value) {
+                var thumb = '';
+                $.ajax({
+                    type: 'GET',
+                    async: false,
+                    url: arches_3d.urls.node_values,
+                    data: {
+                        resourceid: value,
+                        node_name: 'Thumbnail'
+                    },
+                    success: function(response){
+                        if (response.length > 0){
+                            thumb = response[0].url;
+                        }
+                    },
+                });
                 return {
                     id: value,
                     name: nameLookup[value],
-                    reportUrl: arches.urls.resource_report + value
+                    reportUrl: arches.urls.resource_report + value,
+                    thumbUrl: thumb,
                 };
             }).filter(function(item) {
                 return item.name;
