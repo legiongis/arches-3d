@@ -75,7 +75,7 @@ define([
 
             viewer.setEDLEnabled(true);
             viewer.setBackground('gradient'); // ["skybox", "gradient", "black", "white"];
-            viewer.setDescription('');
+            viewer.setDescription('Left click and drag to Pan. Right click and drag to Orbit. Scroll mouse wheel to zoom. Click on Menu icon in top left for more tools, such as measuring. Click on icon in bottom left to toggle full screen.');
 			viewer.setNavigationMode(Potree.EarthControls);
             viewer.loadSettingsFromURL();
 
